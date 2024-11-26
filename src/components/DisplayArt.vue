@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import Filters from "./Filters.vue";
 import artwork from "../data/artData";
 import sketches from "../data/sketchData";
 
@@ -31,6 +32,7 @@ const openTab = () => {
     <div class="tab-content active" id="artTab">
       <div class="artwork">
         <ul class="art-list" aria-live="polite">
+          <Filters />
           <li v-for="(image, index) of images" :key="index">
             <div :class="`artpiece--${index}`">
               <img :src="`../src/assets/art/${image.link}`" :alt="image.desc" />

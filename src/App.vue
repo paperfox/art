@@ -1,7 +1,7 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
 import DisplayArt from "./components/DisplayArt.vue";
 import LeftRail from "./components/LeftRail.vue";
+import Modal from "./components/Modal.vue";
 import Footer from "./components/Footer.vue";
 </script>
 
@@ -9,6 +9,7 @@ import Footer from "./components/Footer.vue";
   <div class="container">
     <LeftRail />
     <DisplayArt />
+    <Modal />
     <Footer />
   </div>
 </template>
