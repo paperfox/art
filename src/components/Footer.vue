@@ -1,61 +1,80 @@
-<script setup></script>
+<script setup>
+import DeckArray from "../data/footerContent.js";
+
+const socials = DeckArray;
+
+const windowWidth = window.innerWidth;
+console.log(windowWidth);
+const isSmallScreen = windowWidth < 768;
+// import { ref, computed, onMounted, onUnmounted } from "vue";
+
+// export default
+//   setup() {
+//     const windowWidth = ref(window.innerWidth);
+
+//     const isSmallScreen = computed(() => windowWidth.value < 768); // Adjust breakpoint as needed
+
+//     const onResize = () => {
+//       windowWidth.value = window.innerWidth;
+//     };
+
+//     onMounted(() => {
+//       window.addEventListener("resize", onResize);
+//     });
+
+//     onUnmounted(() => {
+//       window.removeEventListener("resize", onResize);
+//     });
+
+//     return {
+//       windowWidth,
+//       isSmallScreen,
+//     };
+//   },
+// };
+
+// const isSmallScreen = windowWidth < 768;
+
+// export default {
+//   data() {
+//     return {
+//       windowWidth: window.innerWidth,
+//     };
+//   },
+//   computed: {
+//     isSmallScreen() {
+//       return this.windowWidth < 768; // Adjust breakpoint as needed
+//     },
+//   },
+//   mounted() {
+//     window.addEventListener("resize", this.onResize);
+//   },
+//   unmounted() {
+//     window.removeEventListener("resize", this.onResize);
+//   },
+//   methods: {
+//     onResize() {
+//       this.windowWidth = window.innerWidth;
+//     },
+//   },
+// };
+</script>
 
 <template>
-  <footer class="mobile-only">
+  <!-- <footer> -->
+  <footer
+    :class="{
+      'mobile-only': isSmallScreen,
+      'desktop-only': !isSmallScreen,
+    }"
+  >
     <ul class="social-links">
-      <li class="m-3">
-        <a
-          href="https://www.instagram.com/paperfoxmakesart/"
-          target="_blank"
-          rel="noreferrer"
-        >
+      <li class="m-3" v-for="social of socials">
+        <a :href="social.link" target="_blank" rel="noreferrer">
           <img
-            src="../assets/logos/instagramlogo.svg"
-            alt="Instagram"
-            class="dark-mode"
-          />
-        </a>
-      </li>
-      <li class="m-3">
-        <a href="https://cara.app/paperfox" target="_blank" rel="noreferrer">
-          <img
-            src="../assets/logos/cara-app-logo-circle.svg"
-            alt="Cara"
-            class="dark-mode"
-          />
-        </a>
-      </li>
-      <li class="m-3">
-        <a
-          href="https://www.natickartassociation.org/nathalie-garfinkle"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="../assets/logos/NAA_Logo_Final_C2.png"
-            alt="Natick Art Association"
-          />
-        </a>
-      </li>
-      <li class="m-3">
-        <a href="https://github.com/paperfox" target="_blank" rel="noreferrer">
-          <img
-            src="../assets/logos/github-mark.svg"
-            alt="GitHub"
-            class="dark-mode"
-          />
-        </a>
-      </li>
-      <li class="m-3">
-        <a
-          href="https://www.linkedin.com/in/nathaliegarfinkle/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="../assets/logos/linkedinlogo.svg"
-            alt="LinkedIn"
-            class="dark-mode"
+            :src="`../src/assets/logos/${social.icon}`"
+            :alt="social.title"
+            :class="{ addFilter: 'dark-mode' }"
           />
         </a>
       </li>

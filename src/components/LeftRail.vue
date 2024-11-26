@@ -1,4 +1,10 @@
-<script setup></script>
+<script setup>
+import Footer from "./Footer.vue";
+
+const windowWidth = window.innerWidth;
+console.log(windowWidth);
+const isSmallScreen = windowWidth < 768;
+</script>
 
 <template>
   <aside class="left-rail">
@@ -22,7 +28,8 @@
         find her playing with her dog, or out in her garden.
       </p>
     </div>
-    <ul class="social-links desktop-only">
+    <Footer v-if="!isSmallScreen" />
+    <!-- <ul class="social-links desktop-only">
       <li class="m-3">
         <a
           href="https://www.instagram.com/paperfoxmakesart/"
@@ -63,7 +70,7 @@
           <img src="../assets/logos/linkedinlogo.svg" alt="LinkedIn" />
         </a>
       </li>
-    </ul>
+    </ul> -->
   </aside>
 </template>
 

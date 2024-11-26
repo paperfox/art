@@ -19,12 +19,12 @@ const openTab = () => {
   <main class="main">
     <ul class="nav-tabs">
       <li>
-        <button class="tab-control active" onclick="openTab(event, 'artTab')">
+        <button class="tab-control active" @click="openTab(event, 'artTab')">
           Artwork
         </button>
       </li>
       <li>
-        <button class="tab-control" onclick="openTab(event, 'sketchTab')">
+        <button class="tab-control" @click="openTab(event, 'sketchTab')">
           Sketchbook
         </button>
       </li>

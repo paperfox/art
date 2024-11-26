@@ -1,6 +1,7 @@
 <script setup></script>
 
 <template>
+  <!-- this should use v-show and should take in the instance of the image that was clicked -->
   <div class="modal" id="art-modal">
     <div class="modal-dialog">
       <header class="modal-header">
