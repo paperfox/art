@@ -15,15 +15,13 @@ const isSmallScreen = windowWidth < 768;
     <div>
       <h3>About</h3>
       <p>
-        A lifetime creative, Nathalie sticks to painting the things she loves
-        and bring her joy. This leads her across the map of wildlife to fantasy
-        creatures, figures to landscapes, and most definitely some pet
-        portraits. Her illustrative, but varied, style draws inspiration from
-        animation and the Japanese woodblock printing tradition, especially the
-        Shin Hanga movement of the early 20th century. While she occasionally
-        dabbles in many other media, the vast majority of her work is in
-        watercolor and ink. If she's not working on some art or adding something
-        new to her
+        A lifetime creative, Nathalie sticks to painting the things that bring
+        her joy. This leads her across the map of wildlife to fantasy creatures,
+        figures to landscapes, and most definitely some pet portraits. Her
+        illustrative, but varied, style draws inspiration from animation and the
+        Japanese woodblock printing tradition. While she occasionally dabbles in
+        other media, most of her work is in watercolor and ink. If she's not
+        creating artwork or adding something new to her
         <a href="https://paperfox.github.io/tarot/">Tarot App</a>, you'll likely
         find her playing with her dog, or out in her garden.
       </p>
