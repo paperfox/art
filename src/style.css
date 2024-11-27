@@ -6,7 +6,7 @@
 }
 
 :root {
-  font-family: "Quicksand", Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 
   font-synthesis: none;
@@ -66,9 +66,15 @@ body {
 
 /* Typography */
 h1 {
-  font-size: 3.2em;
+  font-size: 4.8rem;
   line-height: 1.1;
   margin: 1.6rem 0;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.8rem;
 }
 
 a {
@@ -147,12 +153,9 @@ main {
   }
 
   .tab-control {
-    border-top: 0.2rem solid var(--tertiary-bg);
+    border-top: 0.2rem solid transparent;
     cursor: pointer;
-    color: var(--text-body);
     font-weight: 600;
-    font-size: 1.6rem;
-    background-color: var(--tertiary-bg);
     padding: var(--xs-spacing);
     width: 100%;
     opacity: 0.8;
@@ -205,7 +208,7 @@ details,
   }
 }
 
-[class*="artpiece-"] {
+[class*='artpiece-'] {
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
   /* align-items: end; */
@@ -354,11 +357,11 @@ details,
     margin-inline: auto;
   }
 
-  [class*="art-list"] li {
+  [class*='art-list'] li {
     width: 50%;
   }
 
-  [class*="artpiece-"] {
+  [class*='artpiece-'] {
     &,
     img {
       height: auto;
@@ -368,7 +371,7 @@ details,
 }
 
 @media (max-width: 580px) {
-  [class*="art-list"] li {
+  [class*='art-list'] li {
     width: 100%;
   }
 }
@@ -376,10 +379,10 @@ details,
 /* Required because svg color scheming wasn't working on iPhone */
 @media (prefers-color-scheme: dark) {
   .social-links .dark-mode {
-    -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(100%)
-      saturate(1%) hue-rotate(100deg) brightness(100%) contrast(100%);
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%)
-      hue-rotate(100deg) brightness(100%) contrast(100%);
+    -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(100deg)
+      brightness(100%) contrast(100%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(100deg) brightness(100%)
+      contrast(100%);
   }
 }
 

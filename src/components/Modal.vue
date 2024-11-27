@@ -1,54 +1,43 @@
 <script setup>
-import { ref } from "vue";
-const modalVisible = ref(false);
+import { inject, ref } from 'vue';
+import { onClickOutside } from '@vueuse/core';
 
-const openModal = () => {
-  modalVisible.value = true;
-};
+const isModalVisible = inject('isModalVisible');
+const modalImage = inject('modalImage');
+const closeModal = inject('closeModal');
 
-const closeModal = () => {
-  modalVisible.value = false;
-};
+const modal = ref(null);
+
+onClickOutside(modal, () => {
+  closeModal();
+});
 </script>
 
 <template>
-  <!-- this should use v-show and should take in the instance of the image that was clicked -->
-  <div class="modal is-visible" id="art-modal" v-show="modalVisible">
-    <div class="modal-dialog">
+  <div :class="`${isModalVisible ? 'modal is-visible' : 'modal'}`" id="art-modal" v-show="isModalVisible">
+    <div class="modal-dialog" ref="modal">
       <header class="modal-header">
-        <h2 class="modal-title">Modal Title</h2>
-        <button
-          class="close-modal"
-          aria-label="close modal"
-          data-close=""
-          @click="closeModal"
-        >
-          ×
-        </button>
+        <h2 class="modal-title">{{ modalImage?.title }}</h2>
+        <button class="close-modal" aria-label="close modal" @click="closeModal">×</button>
       </header>
       <section class="modal-content">
-        <p>Modal content</p>
+        <img :src="`../src/assets/art/${modalImage?.link}`" :alt="modalImage?.desc" />
+        <p>{{ modalImage?.desc }}</p>
       </section>
     </div>
   </div>
-  <button @click="openModal">Open Modal</button>
 </template>
 
 <style scoped>
-/* Modal */
 .modal {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--base-spacing);
   background: rgba(var(--black), 0.8);
   cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.35s ease-in;
+  display: none;
   backdrop-filter: blur(3px);
   width: 100%;
   height: 100%;
@@ -69,19 +58,17 @@ const closeModal = () => {
   img {
     max-width: 100%;
     max-height: 65vh;
-    /* margin-inline: var(--xs-spacing); */
   }
 }
 
 .modal.is-visible {
-  visibility: visible;
-  opacity: 1;
+  display: flex;
 }
 
 .modal-dialog {
   position: relative;
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
   max-width: 90%;
   max-height: 90%;
   border-radius: 0.4rem;
@@ -95,7 +82,6 @@ const closeModal = () => {
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--xs-spacing);
-  /* background-color: var(--tertiary-bg); */
 
   .modal-title {
     margin-inline: auto;
@@ -116,10 +102,5 @@ const closeModal = () => {
   &:focus-visible {
     color: var(--text-body);
   }
-}
-
-/* stop background scrolling  */
-.no-scroll {
-  overflow: hidden;
 }
 </style>
