@@ -169,18 +169,11 @@ main {
   }
 }
 
-.tab-content {
-  display: none;
-}
-.tab-content.active {
-  display: block;
-}
-
 details,
 .filters,
 .pagination,
 .modal .content,
-.tab-content.active {
+.tab-content {
   padding: var(--base-spacing);
 }
 

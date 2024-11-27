@@ -354,7 +354,11 @@
     "content": ["jellyfish", "bird", "animal", "fantasy"],
     "forSale": false,
     "link": "bitter_dreams.jpg",
-    "additionalImages": ["bitter_dreams_addl1.jpg", "bitter_dreams_addl2.jpg", "bitter_dreams_addl3.jpg"]
+    "additionalImages": [
+      "bitter_dreams_addl1.jpg",
+      "bitter_dreams_addl2.jpg",
+      "bitter_dreams_addl3.jpg"
+    ]
   },
   {
     "title": "2024 Pride - Featuring Miko",
@@ -1675,7 +1679,14 @@
     "date": "Mar 18, 2009",
     "desc": "Leather necklace with 2 cats playing",
     "dimensions": "3 inches",
-    "media": ["sculpture", "sculpey", "acrylic", "mixed media", "jewelry", "painting"],
+    "media": [
+      "sculpture",
+      "sculpey",
+      "acrylic",
+      "mixed media",
+      "jewelry",
+      "painting"
+    ],
     "content": ["cat", "animal"],
     "forSale": false,
     "link": "jester_and_the_ninja.jpg"
@@ -1812,7 +1823,7 @@
     "additionalImages": ["raw_sculpture.png"]
   },
   {
-    "title": "The Pharoah's Daughter",
+    "title": "The Pharoah’s Daughter",
     "date": "Mar 16, 2008",
     "desc": "micron pen, colored pencil, and marker of an anthropomorphic cat/wolf in egyptian garb",
     "dimensions": "8.5x11 inches",

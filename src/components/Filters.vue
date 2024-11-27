@@ -1,9 +1,30 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+const activeFilters = ref([]);
+// filter art based on if media or content includes filters
+</script>
 
 <template>
   <details>
     <summary>Filters</summary>
     <div class="filters">
+      <label>
+        <input type="checkbox" value="watercolor" v-model="activeFilters" />
+        Watercolor
+      </label>
+      <label>
+        <input type="checkbox" value="ink" v-model="activeFilters" />
+        Ink
+      </label>
+      <label>
+        <input type="checkbox" value="printmaking" v-model="activeFilters" />
+        Printmaking
+      </label>
+      <label>
+        <input type="checkbox" value="painting" v-model="activeFilters" />
+        Acrylic/Oil
+      </label>
+      {{ activeFilters }}
       <div>
         <h3>Media</h3>
         <div class="categories">
