@@ -7,7 +7,7 @@
     "media": ["watercolor"],
     "content": ["zebra", "animal"],
     "forSale": false,
-    "link": "mountain_zebra.jpg"
+    "link": "mountain_zebra.webp"
   },
   {
     "title": "Mountain Zebra Line Art",
@@ -17,7 +17,7 @@
     "media": ["digital"],
     "content": ["zebra", "animal"],
     "forSale": false,
-    "link": "mountain_zebra_lines.png"
+    "link": "mountain_zebra_lines.webp"
   },
   {
     "title": "Takahe",
@@ -27,7 +27,7 @@
     "media": ["watercolor", "micron pen", "ink"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "takahe.jpg"
+    "link": "takahe.webp"
   },
   {
     "title": "Giant Panda",
@@ -37,7 +37,7 @@
     "media": ["watercolor", "micron pen", "ink"],
     "content": ["panda", "animal"],
     "forSale": false,
-    "link": "giant_panda.jpg"
+    "link": "giant_panda.webp"
   },
   {
     "title": "Giant Panda Line Art",
@@ -47,7 +47,7 @@
     "media": ["micron pen", "ink"],
     "content": ["panda", "animal"],
     "forSale": false,
-    "link": "giant_panda_lines.jpg"
+    "link": "giant_panda_lines.webp"
   },
   {
     "title": "Oof",
