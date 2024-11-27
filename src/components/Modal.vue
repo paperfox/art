@@ -21,7 +21,7 @@ onClickOutside(modal, () => {
         <button class="close-modal" aria-label="close modal" @click="closeModal">×</button>
       </header>
       <section class="modal-content">
-        <img :src="`../src/assets/art/${modalImage?.link}`" :alt="modalImage?.desc" />
+        <img :src="`./art/${modalImage?.link}`" :alt="modalImage?.desc" />
         <p>{{ modalImage?.desc }}</p>
       </section>
     </div>
