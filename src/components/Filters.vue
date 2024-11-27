@@ -8,36 +8,29 @@ const activeFilters = ref([]);
   <details>
     <summary>Filters</summary>
     <div class="filters">
-      <label>
-        <input type="checkbox" value="watercolor" v-model="activeFilters" />
-        Watercolor
-      </label>
-      <label>
-        <input type="checkbox" value="ink" v-model="activeFilters" />
-        Ink
-      </label>
-      <label>
-        <input type="checkbox" value="printmaking" v-model="activeFilters" />
-        Printmaking
-      </label>
-      <label>
-        <input type="checkbox" value="painting" v-model="activeFilters" />
-        Acrylic/Oil
-      </label>
-      {{ activeFilters }}
       <div>
         <h3>Media</h3>
         <div class="categories">
-          <button class="btn-badge" type="button" id="filter-watercolor">
+          <label class="btn-badge">
+            <input type="checkbox" value="watercolor" v-model="activeFilters" />
             Watercolor
-          </button>
-          <button class="btn-badge" type="button" id="filter-ink">Ink</button>
-          <button class="btn-badge" type="button" id="filter-printmaking">
+          </label>
+          <label class="btn-badge">
+            <input type="checkbox" value="ink" v-model="activeFilters" />
+            Ink
+          </label>
+          <label class="btn-badge">
+            <input
+              type="checkbox"
+              value="printmaking"
+              v-model="activeFilters"
+            />
             Printmaking
-          </button>
-          <button class="btn-badge" type="button" id="filter-acrylic">
+          </label>
+          <label class="btn-badge">
+            <input type="checkbox" value="painting" v-model="activeFilters" />
             Acrylic/Oil
-          </button>
+          </label>
         </div>
       </div>
       <div>
@@ -63,6 +56,9 @@ const activeFilters = ref([]);
           </button>
         </div>
       </div>
+    </div>
+    <div>
+      {{ activeFilters }}
     </div>
   </details>
 </template>
