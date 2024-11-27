@@ -38,7 +38,7 @@ const testing = (imgData) => {
         <ul class="art-list" aria-live="polite">
           <li v-for="(image, index) of images" :key="condense(image.title)">
             <div :class="`artpiece--${index}`">
-              <img :src="`../src/assets/art/${image.link}`" :alt="image.desc" />
+              <img :src="`./src/assets/art/${image.link}`" :alt="image.desc" />
               <button type="button" class="open-modal" :data-open="`modal${index}`" @click="testing(image)">
                 <span>{{ image.title }} {{ index }}</span>
               </button>
@@ -65,7 +65,7 @@ const testing = (imgData) => {
         <ul class="art-list" aria-live="polite">
           <li v-for="(sketch, index) of sketches" :key="condense(sketch.title)">
             <div :class="`artpiece--${index}`">
-              <img :src="`../src/assets/art/${sketch.link}`" :alt="sketch.desc" />
+              <img :src="`./src/assets/art/${sketch.link}`" :alt="sketch.desc" />
             </div>
           </li>
         </ul>
