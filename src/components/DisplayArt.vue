@@ -40,7 +40,7 @@ const testing = (imgData) => {
             <div :class="`artpiece--${index}`">
               <img :src="`./art/${image.link}`" :alt="image.desc" />
               <button type="button" class="open-modal" :data-open="`modal${index}`" @click="testing(image)">
-                <span>{{ image.title }} {{ index }}</span>
+                <span>{{ image.title }}</span>
               </button>
             </div>
           </li>
