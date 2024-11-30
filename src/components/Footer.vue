@@ -9,7 +9,10 @@ const socials = footerLinks;
     <ul class="social-links">
       <li class="m-3" v-for="social of socials">
         <a :href="social.link" target="_blank" rel="noreferrer">
-          <img :src="`./logos/${social.icon}`" :alt="social.title" :class="{ addFilter: 'dark-mode' }" />
+          <picture>
+            <source :srcset="`./logos/white/${social.icon}`" media="(prefers-color-scheme: dark)" />
+            <img :src="`./logos/${social.icon}`" :alt="social.title" media="(prefers-color-scheme: light)" />
+          </picture>
         </a>
       </li>
     </ul>
