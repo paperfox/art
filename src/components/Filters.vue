@@ -29,13 +29,11 @@ const filterButtons = [
   { filterType: 'content', filterValue: 'vehicle' },
 ];
 
-// Computed property for filtered arts
+// Computed property for filters
 const filteredArts = computed(() => {
   if (!activeFilter.value) {
-    console.log(artwork);
     return artwork;
   }
-  console.log(artwork.filter((art) => art[activeFilter.value.filterType].includes(activeFilter.value.filterValue)));
   return artwork.filter((art) => art[activeFilter.value.filterType].includes(activeFilter.value.filterValue));
 });
 
@@ -44,8 +42,6 @@ const applyFilter = (filter) => {
   activeFilter.value = filter;
   activeClasses.value[filter.filterValue] = !activeClasses.value[filter.filterValue];
 };
-
-const active = ref(false);
 </script>
 
 <template>

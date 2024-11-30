@@ -1,11 +1,11 @@
 <script setup>
 import { ref } from 'vue';
 import Filters from './Filters.vue';
-import artwork from '../data/artData';
 import inProgress from '../data/sketchData';
 import ArtLists from './ArtLists.vue';
 
-let images = artwork;
+defineProps(['artwork']);
+
 let sketches = inProgress;
 
 const selectedTab = ref(true);
