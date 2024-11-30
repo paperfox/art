@@ -31,9 +31,7 @@ provide('isModalVisible', isModalVisible);
   <div class="container">
     <LeftRail />
     <DisplayArt />
-    <div>
-      <Footer v-if="isSmallScreen" />
-    </div>
+    <Footer v-if="isSmallScreen" />
     <Modal />
   </div>
 </template>
