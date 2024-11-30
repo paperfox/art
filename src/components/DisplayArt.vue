@@ -7,39 +7,33 @@ import inProgress from '../data/sketchData';
 let images = artwork;
 let sketches = inProgress;
 
-const newItemPriority = ref(true);
+const selectedTab = ref(true);
 
 const condense = (img) => {
   return img.split(' ').join('').replace(',', '').replace('’', '');
-};
-
-const openModal = inject('openModal');
-
-const testing = (imgData) => {
-  openModal(imgData);
 };
 </script>
 
 <template>
   <main class="main">
     <div class="nav-tabs">
-      <label :class="`${newItemPriority ? 'tab-control active' : 'tab-control'}`">
-        <input type="radio" v-model="newItemPriority" value="true" checked />
+      <label :class="`${selectedTab ? 'tab-control active' : 'tab-control'}`">
+        <input type="radio" v-model="selectedTab" value="true" checked />
         Artwork
       </label>
-      <label :class="`${!newItemPriority ? 'tab-control active' : 'tab-control'}`">
-        <input type="radio" v-model="newItemPriority" value="" />
+      <label :class="`${!selectedTab ? 'tab-control active' : 'tab-control'}`">
+        <input type="radio" v-model="selectedTab" value="" />
         Sketchbook
       </label>
     </div>
-    <div class="tab-content" id="artTab" v-show="newItemPriority">
+    <div class="tab-content" id="artTab" v-show="selectedTab">
       <div class="artwork">
         <!-- <Filters /> -->
         <ul class="art-list" aria-live="polite">
           <li v-for="(image, index) of images" :key="condense(image.title)">
             <div :class="`artpiece--${index}`">
               <img :src="`./art/${image.link}`" :alt="image.desc" />
-              <button type="button" class="open-modal" :data-open="`modal${index}`" @click="testing(image)">
+              <button type="button" class="open-modal" :data-open="`modal${index}`" @click="$emit('open-modal', image)">
                 <span>{{ image.title }}</span>
               </button>
             </div>
@@ -60,7 +54,7 @@ const testing = (imgData) => {
         </ul> -->
       </div>
     </div>
-    <div class="tab-content" id="sketchTab" v-show="!newItemPriority">
+    <div class="tab-content" id="sketchTab" v-show="!selectedTab">
       <div class="artwork">
         <ul class="art-list" aria-live="polite">
           <li v-for="(sketch, index) of sketches" :key="condense(sketch.title)">

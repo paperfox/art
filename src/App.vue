@@ -9,23 +9,23 @@ const windowWidth = window.innerWidth;
 console.log(windowWidth);
 const isSmallScreen = windowWidth < 768;
 
-const isModalVisible = ref(false);
-const modalImage = ref(null);
-
-const openModal = (image) => {
-  modalImage.value = image;
-  isModalVisible.value = true;
-  // console.log(image);
+export default {
+  data() {
+    return {
+      isModalVisible: false,
+      modalImage: null,
+    };
+  },
+  methods: {
+    openModal(image) {
+      this.modalImage = image;
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
+    },
+  },
 };
-
-const closeModal = () => {
-  isModalVisible.value = false;
-};
-
-provide('openModal', openModal);
-provide('closeModal', closeModal);
-provide('modalImage', modalImage);
-provide('isModalVisible', isModalVisible);
 </script>
 
 <template>
@@ -35,7 +35,7 @@ provide('isModalVisible', isModalVisible);
     <div>
       <Footer v-if="isSmallScreen" />
     </div>
-    <Modal />
+    <Modal :image="modalImage" v-if="isModalVisible" @close="closeModal" />
   </div>
 </template>
 
