@@ -41,6 +41,12 @@ const filteredArts = computed(() => {
 const applyFilter = (filter) => {
   activeFilter.value = filter;
   activeClasses.value[filter.filterValue] = !activeClasses.value[filter.filterValue];
+  // Reset all inactive filters - remove this once I can apply multiple filters
+  filterButtons.forEach((btn) => {
+    if (btn.filterValue !== filter.filterValue) {
+      activeClasses.value[btn.filterValue] = false;
+    }
+  });
 };
 </script>
 
