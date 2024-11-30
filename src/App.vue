@@ -5,10 +5,6 @@ import LeftRail from './components/LeftRail.vue';
 import Modal from './components/Modal.vue';
 import Footer from './components/Footer.vue';
 
-// come back to this, there's gotta be a way to improve it
-const windowWidth = window.innerWidth;
-const isSmallScreen = windowWidth < 768;
-
 const isModalVisible = ref(false);
 const modalImage = ref(null);
 
@@ -31,7 +27,7 @@ provide('isModalVisible', isModalVisible);
   <div class="container">
     <LeftRail />
     <DisplayArt />
-    <Footer v-if="isSmallScreen" />
+    <Footer />
     <Modal />
   </div>
 </template>

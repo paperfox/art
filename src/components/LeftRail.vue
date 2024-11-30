@@ -1,9 +1,5 @@
 <script setup>
 import Footer from './Footer.vue';
-
-// come back to this, there's gotta be a way to improve it
-const windowWidth = window.innerWidth;
-const isSmallScreen = windowWidth < 768;
 </script>
 
 <template>
@@ -24,7 +20,7 @@ const isSmallScreen = windowWidth < 768;
         in her garden.
       </p>
     </div>
-    <Footer v-if="!isSmallScreen" />
+    <Footer />
   </aside>
 </template>
 
