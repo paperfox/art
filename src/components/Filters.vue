@@ -1,66 +1,71 @@
 <script setup>
-import { ref } from "vue";
-const activeFilters = ref([]);
-// filter art based on if media or content includes filters
+import { ref, computed } from 'vue';
+import artwork from '../data/artData';
+import ArtLists from './ArtLists.vue';
+
+// Props
+const props = defineProps({
+  artwork: {
+    type: Array,
+    required: true,
+  },
+});
+
+// Reactive state
+const activeFilter = ref(null);
+const activeClasses = ref({});
+
+// Filter buttons
+const filterButtons = [
+  { filterType: 'media', filterValue: 'watercolor' },
+  { filterType: 'media', filterValue: 'ink' },
+  { filterType: 'media', filterValue: 'printmaking' },
+  { filterType: 'media', filterValue: 'painting' },
+  { filterType: 'content', filterValue: 'animal' },
+  { filterType: 'content', filterValue: 'fanart' },
+  { filterType: 'content', filterValue: 'fantasy' },
+  { filterType: 'content', filterValue: 'people' },
+  { filterType: 'content', filterValue: 'plant' },
+  { filterType: 'content', filterValue: 'vehicle' },
+];
+
+// Computed property for filtered arts
+const filteredArts = computed(() => {
+  if (!activeFilter.value) {
+    console.log(artwork);
+    return artwork;
+  }
+  console.log(artwork.filter((art) => art[activeFilter.value.filterType].includes(activeFilter.value.filterValue)));
+  return artwork.filter((art) => art[activeFilter.value.filterType].includes(activeFilter.value.filterValue));
+});
+
+// Method to apply filter
+const applyFilter = (filter) => {
+  activeFilter.value = filter;
+  activeClasses.value[filter.filterValue] = !activeClasses.value[filter.filterValue];
+};
+
+const active = ref(false);
 </script>
 
 <template>
-  <details>
-    <summary>Filters</summary>
-    <div class="filters">
-      <div>
-        <h3>Media</h3>
-        <div class="categories">
-          <label class="btn-badge">
-            <input type="checkbox" value="watercolor" v-model="activeFilters" />
-            Watercolor
-          </label>
-          <label class="btn-badge">
-            <input type="checkbox" value="ink" v-model="activeFilters" />
-            Ink
-          </label>
-          <label class="btn-badge">
-            <input
-              type="checkbox"
-              value="printmaking"
-              v-model="activeFilters"
-            />
-            Printmaking
-          </label>
-          <label class="btn-badge">
-            <input type="checkbox" value="painting" v-model="activeFilters" />
-            Acrylic/Oil
-          </label>
-        </div>
+  <div>
+    <details>
+      <summary>Filters</summary>
+      <div id="filters">
+        <button
+          v-for="filter in filterButtons"
+          :key="filter.filterValue"
+          class="btn-badge"
+          :class="{ 'active-filters': activeClasses[filter.filterValue] }"
+          @click="applyFilter(filter)"
+        >
+          {{ filter.filterValue }}
+        </button>
       </div>
-      <div>
-        <h3>Subject</h3>
-        <div class="categories">
-          <button class="btn-badge" type="button" id="filter-animals">
-            Animals
-          </button>
-          <button class="btn-badge" type="button" id="filter-fantasy">
-            Fantasy
-          </button>
-          <button class="btn-badge" type="button" id="filter-fanart">
-            Fan Art
-          </button>
-          <button class="btn-badge" type="button" id="filter-people">
-            People
-          </button>
-          <button class="btn-badge" type="button" id="filter-plants">
-            Plants
-          </button>
-          <button class="btn-badge" type="button" id="filter-vehicles">
-            Vehicles
-          </button>
-        </div>
-      </div>
-    </div>
-    <div>
-      {{ activeFilters }}
-    </div>
-  </details>
+    </details>
+    <ArtLists :images="filteredArts" />
+  </div>
 </template>
 
 <style scoped></style>

@@ -2,9 +2,8 @@
 import DeckArray from '../data/footerContent.js';
 
 const socials = DeckArray;
-
+// come back to this, there's gotta be a way to improve it
 const windowWidth = window.innerWidth;
-console.log(windowWidth);
 const isSmallScreen = windowWidth < 768;
 </script>
 

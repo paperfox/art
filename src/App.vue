@@ -5,8 +5,8 @@ import LeftRail from './components/LeftRail.vue';
 import Modal from './components/Modal.vue';
 import Footer from './components/Footer.vue';
 
+// come back to this, there's gotta be a way to improve it
 const windowWidth = window.innerWidth;
-console.log(windowWidth);
 const isSmallScreen = windowWidth < 768;
 
 const isModalVisible = ref(false);
@@ -15,7 +15,6 @@ const modalImage = ref(null);
 const openModal = (image) => {
   modalImage.value = image;
   isModalVisible.value = true;
-  // console.log(image);
 };
 
 const closeModal = () => {
