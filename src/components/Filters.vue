@@ -17,16 +17,18 @@ const activeClasses = ref({});
 
 // Filter buttons
 const filterButtons = [
-  { filterType: 'media', filterValue: 'watercolor' },
-  { filterType: 'media', filterValue: 'ink' },
-  { filterType: 'media', filterValue: 'printmaking' },
-  { filterType: 'media', filterValue: 'painting' },
-  { filterType: 'content', filterValue: 'animal' },
-  { filterType: 'content', filterValue: 'fanart' },
-  { filterType: 'content', filterValue: 'fantasy' },
-  { filterType: 'content', filterValue: 'people' },
-  { filterType: 'content', filterValue: 'plant' },
-  { filterType: 'content', filterValue: 'vehicle' },
+  { filterType: 'media', filterValue: 'watercolor', fitlerName: 'Watercolor' },
+  { filterType: 'media', filterValue: 'ink', fitlerName: 'Ink' },
+  { filterType: 'media', filterValue: 'printmaking', fitlerName: 'Printmaking' },
+  { filterType: 'media', filterValue: 'digital', fitlerName: 'Digital' },
+  { filterType: 'media', filterValue: 'painting', fitlerName: 'Acrylic/Oil' },
+  { filterType: 'media', filterValue: 'sculpture', fitlerName: 'Sculpture' },
+  { filterType: 'content', filterValue: 'animal', fitlerName: 'Animal' },
+  { filterType: 'content', filterValue: 'fanart', fitlerName: 'Fan Art' },
+  { filterType: 'content', filterValue: 'fantasy', fitlerName: 'Fantasy' },
+  { filterType: 'content', filterValue: 'people', fitlerName: 'People' },
+  { filterType: 'content', filterValue: 'plant', fitlerName: 'Plants' },
+  { filterType: 'content', filterValue: 'vehicle', fitlerName: 'Vehicles' },
 ];
 
 // Computed property for filters
@@ -62,7 +64,7 @@ const applyFilter = (filter) => {
           :class="{ 'active-filters': activeClasses[filter.filterValue] }"
           @click="applyFilter(filter)"
         >
-          {{ filter.filterValue }}
+          {{ filter.fitlerName }}
         </button>
       </div>
     </details>

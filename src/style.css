@@ -177,6 +177,12 @@ details,
   padding: var(--base-spacing);
 }
 
+summary {
+  cursor: pointer;
+  padding-bottom: var(--base-spacing);
+  margin-bottom: var(--base-spacing);
+}
+
 .btn-badge,
 .tab-control {
   input {
