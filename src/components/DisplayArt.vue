@@ -12,6 +12,12 @@ const selectedTab = ref(true);
 const condense = (img) => {
   return img.split(' ').join('').replace(',', '').replace('’', '');
 };
+
+const openModal = inject('openModal');
+
+const modal = (imgData) => {
+  openModal(imgData);
+};
 </script>
 
 <template>
@@ -33,7 +39,7 @@ const condense = (img) => {
           <li v-for="(image, index) of images" :key="condense(image.title)">
             <div :class="`artpiece--${index}`">
               <img :src="`./art/${image.link}`" :alt="image.desc" />
-              <button type="button" class="open-modal" :data-open="`modal${index}`" @click="$emit('open-modal', image)">
+              <button type="button" class="open-modal" :data-open="`modal${index}`" @click="modal(image)">
                 <span>{{ image.title }}</span>
               </button>
             </div>

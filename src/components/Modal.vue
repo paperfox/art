@@ -2,6 +2,10 @@
 import { inject, ref } from 'vue';
 import { onClickOutside } from '@vueuse/core';
 
+const isModalVisible = inject('isModalVisible');
+const modalImage = inject('modalImage');
+const closeModal = inject('closeModal');
+
 const modal = ref(null);
 
 onClickOutside(modal, () => {
