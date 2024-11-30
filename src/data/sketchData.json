@@ -157,7 +157,7 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "play__sketch.jpg"
+    "link": "sketch-play.webp"
   },
   {
     "title": "Dragonfly",
@@ -167,6 +167,6 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "dragonfly__sketch.jpg"
+    "link": "sketch-dragonfly.webp"
   }
 ]
