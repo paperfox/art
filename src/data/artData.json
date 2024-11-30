@@ -794,8 +794,7 @@
     "media": ["micron pen", "ink"],
     "content": ["dog", "animal"],
     "forSale": false,
-    "link": "yoga_dogs.webp",
-    "additionalImages": ["yoga_dogs_more.webp"]
+    "link": "yoga_dogs.webp"
   },
   {
     "title": "Tiny Dragon",
