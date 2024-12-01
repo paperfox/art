@@ -3,9 +3,6 @@
     path {
         fill: #000000;
     }
-    @media (prefers-color-scheme: dark) {
-        path { fill: #FFFFFF; }
-    }
 </style>
 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 <g transform="translate(-705.000000, -41.000000)">
