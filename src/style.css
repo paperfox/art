@@ -1,9 +1,7 @@
 /* Core */
 *,
 *:before,
-*:after {
-  box-sizing: border-box;
-}
+*:after { box-sizing: border-box; }
 
 :root {
   font-family: 'Quicksand', Avenir, Helvetica, Arial, sans-serif;
@@ -46,14 +44,10 @@
   --rows: 6;
 }
 
-html {
-  font-size: 62.5%;
-}
+html { font-size: 62.5%; }
 
 /* body { */
-body {
-  margin: 0;
-}
+body { margin: 0; }
 
 .container {
   margin: 0;
@@ -70,21 +64,15 @@ h1 {
   line-height: 1.1;
   margin: 1.6rem 0;
 }
-h2 {
-  font-size: 2.2rem;
-}
-h3 {
-  font-size: 1.8rem;
-}
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.8rem; }
 
 a {
   font-weight: 500;
   color: var(--link);
   text-decoration: underline;
 
-  &:hover {
-    color: var(--text-body);
-  }
+  &:hover { color: var(--text-body); }
 }
 
 button {
@@ -99,16 +87,12 @@ ul {
   padding: 0;
   margin: 0;
 
-  li {
-    display: inline-block;
-  }
+  li { display: inline-block; }
 }
 
 /* Layout */
 main,
-aside {
-  height: 100vh;
-}
+aside { height: 100vh; }
 
 aside {
   width: 40%;
@@ -131,9 +115,7 @@ main {
   background-color: var(--tertiary-bg);
   display: flex;
 
-  li {
-    width: 50%;
-  }
+  li { width: 50%; }
 
   .tab-control {
     border-top: 0.2rem solid transparent;
@@ -156,9 +138,7 @@ details,
 .filters,
 .pagination,
 .modal .content,
-.tab-content {
-  padding: var(--base-spacing);
-}
+.tab-content { padding: var(--base-spacing); }
 
 summary {
   cursor: pointer;
@@ -183,17 +163,13 @@ summary {
 .modal .content {
   display: flex;
 
-  & > div + div {
-    margin-left: 2.4rem;
-  }
+  & > div + div { margin-left: 2.4rem; }
 
   .categories {
     display: inline-block;
     vertical-align: top;
 
-    & + .categories {
-      margin-left: var(--base-spacing);
-    }
+    & + .categories { margin-left: var(--base-spacing); }
   }
 }
 
@@ -205,9 +181,7 @@ summary {
   padding: var(--base-spacing);
 
   &,
-  img {
-    height: 21rem;
-  }
+  img { height: 21rem; }
 
   * {
     grid-column-start: 1;
@@ -251,9 +225,8 @@ summary {
   li {
     padding: var(--base-spacing);
     border-radius: 0.4rem;
-    button {
-      font-size: 4rem;
-    }
+
+    button { font-size: 4rem; }
 
     button {
       padding: 0 var(--base-spacing) var(--base-spacing);
@@ -274,9 +247,7 @@ summary {
         cursor: default;
         opacity: 0.5;
 
-        &:hover {
-          text-decoration: none;
-        }
+        &:hover { text-decoration: none; }
       }
     }
   }
@@ -304,9 +275,8 @@ summary {
   &:hover {
     color: var(--text-body);
     border-color: var(--link);
-    &.active-filters {
-      color: var(--main-bg);
-    }
+
+    &.active-filters { color: var(--main-bg); }
   }
 
   &:focus-visible {
@@ -317,68 +287,37 @@ summary {
 
 /* Responsive */
 @media (min-width: 1000px) {
-  aside {
-    width: 30%;
-  }
-  main {
-    width: 70%;
-  }
+  aside { width: 30%; }
+  main  { width: 70%; }
 }
 
 @media (min-width: 1400px) {
-  aside {
-    width: 25%;
-  }
-  main {
-    width: 75%;
-  }
+  aside { width: 25%; }
+  main  { width: 75%; }
 }
 
 @media (min-width: 1700px) {
-  aside {
-    width: 18%;
-  }
-  main {
-    width: 82%;
-  }
+  aside { width: 18%; }
+  main  { width: 82%; }
 }
 
 @media (max-width: 768px) {
-  .container {
-    display: block;
-  }
+  main                        { box-shadow: none; }
+  .container                  { display: block; }
+  .nav-tabs                   { background-color: var(--secondary-bg); }
+  .modal-content div:has(img) { margin-inline: auto; }
+  [class*='art-list'] li      { width: 50%; }
 
   aside,
-  main {
+  main  { 
     height: unset;
-  }
-  aside {
-    width: 100%;
-  }
-
-  .nav-tabs {
-    background-color: var(--secondary-bg);
-  }
-
-  .modal-content div:has(img) {
-    margin-inline: auto;
+    width: 100%; 
   }
 
   .modal-content {
     flex-direction: column;
 
-    img {
-      max-width: 100%;
-    }
-  }
-
-  main {
-    width: 100%;
-    box-shadow: none;
-  }
-
-  [class*='art-list'] li {
-    width: 50%;
+    img { max-width: 100%; }
   }
 
   [class*='artpiece-'] {
@@ -391,7 +330,5 @@ summary {
 }
 
 @media (max-width: 580px) {
-  [class*='art-list'] li {
-    width: 100%;
-  }
+  [class*='art-list'] li { width: 100%; }
 }

@@ -48,9 +48,11 @@ onClickOutside(modal, () => {
   justify-content: center;
   flex-direction: column;
   margin: var(--xs-spacing) 2.4rem var(--base-spacing);
+
   * {
     margin: var(--base-spacing) auto;
   }
+
   div:has(img) {
     max-width: 70rem;
   }

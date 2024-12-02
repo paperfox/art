@@ -26,6 +26,7 @@ const selectedTab = ref(true);
     <div class="tab-content" id="artTab" v-show="selectedTab">
       <div class="artwork">
         <Filters />
+        <!-- Add pagination - 40ish items per page  -->
       </div>
     </div>
     <div class="tab-content" id="sketchTab" v-show="!selectedTab">

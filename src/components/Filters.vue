@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import artwork from '../data/artData';
 import ArtLists from './ArtLists.vue';
 
@@ -14,6 +14,10 @@ const activeFilters = ref([{ filterType: 'featured', filterValue: 'true', filter
 const activeFilterClass = ref({
   true: true, // featured selected by default - this naming is confusing
 });
+
+//preloading images
+const newImages = ref([]);
+const images = artwork.map((art) => `./art/${art.link}`);
 
 // Filter buttons
 const filterButtons = [
@@ -56,6 +60,25 @@ const applyFilter = (filter) => {
   }
   activeFilterClass.value[filter.filterValue] = !activeFilterClass.value[filter.filterValue];
 };
+
+// Preload images before rendering
+function preloadImages(imageUrls) {
+  return Promise.all(
+    imageUrls.map((url) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = url;
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+    }),
+  );
+}
+
+onMounted(async () => {
+  await preloadImages(images);
+  newImages.value = images;
+});
 </script>
 
 <template>
