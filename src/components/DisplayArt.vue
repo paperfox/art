@@ -4,7 +4,7 @@ import Filters from './Filters.vue';
 import inProgress from '../data/sketchData';
 import ArtLists from './ArtLists.vue';
 
-defineProps(['artwork']);
+defineProps(['filteredArts']);
 
 let sketches = inProgress;
 

@@ -334,6 +334,15 @@ summary {
   }
 }
 
+@media (min-width: 1700px) {
+  aside {
+    width: 18%;
+  }
+  main {
+    width: 82%;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     display: block;

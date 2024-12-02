@@ -7,7 +7,8 @@
     "media": ["watercolor"],
     "content": ["zebra", "animal"],
     "forSale": false,
-    "link": "mountain_zebra.webp"
+    "link": "mountain_zebra.webp",
+    "featured": ["true"]
   },
   {
     "title": "Mountain Zebra Line Art",
@@ -17,7 +18,8 @@
     "media": ["digital"],
     "content": ["zebra", "animal"],
     "forSale": false,
-    "link": "mountain_zebra_lines.webp"
+    "link": "mountain_zebra_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "Takahe",
@@ -27,7 +29,8 @@
     "media": ["watercolor", "micron pen", "ink"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "takahe.webp"
+    "link": "takahe.webp",
+    "featured": ["true"]
   },
   {
     "title": "Giant Panda",
@@ -37,7 +40,8 @@
     "media": ["watercolor", "micron pen", "ink"],
     "content": ["panda", "animal"],
     "forSale": false,
-    "link": "giant_panda.webp"
+    "link": "giant_panda.webp",
+    "featured": ["true"]
   },
   {
     "title": "Giant Panda Line Art",
@@ -47,7 +51,8 @@
     "media": ["micron pen", "ink"],
     "content": ["panda", "animal"],
     "forSale": false,
-    "link": "giant_panda_lines.webp"
+    "link": "giant_panda_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "Oof",
@@ -57,7 +62,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["cheetah", "animal"],
     "forSale": false,
-    "link": "oof.webp"
+    "link": "oof.webp",
+    "featured": ["true"]
   },
   {
     "title": "Oof Line Art",
@@ -67,7 +73,8 @@
     "media": ["micron pen", "ink"],
     "content": ["cheetah", "animal"],
     "forSale": false,
-    "link": "oof_lines.webp"
+    "link": "oof_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "Philippine Eagle",
@@ -77,7 +84,8 @@
     "media": ["watercolor"],
     "content": ["eagle", "animal"],
     "forSale": false,
-    "link": "philippine_eagle.webp"
+    "link": "philippine_eagle.webp",
+    "featured": ["true"]
   },
   {
     "title": "Marsican Brown Bear",
@@ -87,7 +95,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["bear", "animal"],
     "forSale": false,
-    "link": "marsican_brown_bear.webp"
+    "link": "marsican_brown_bear.webp",
+    "featured": ["true"]
   },
   {
     "title": "Marsican Brown Bear Line Art",
@@ -97,7 +106,8 @@
     "media": ["micron pen", "ink"],
     "content": ["bear", "animal"],
     "forSale": false,
-    "link": "marsican_brown_bear_lines.webp"
+    "link": "marsican_brown_bear_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "Bush Dog",
@@ -107,7 +117,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["dog", "animal"],
     "forSale": false,
-    "link": "bush_dog.webp"
+    "link": "bush_dog.webp",
+    "featured": ["false"]
   },
   {
     "title": "Bush Dog Line Art",
@@ -117,7 +128,8 @@
     "media": ["micron pen", "ink"],
     "content": ["dog", "animal"],
     "forSale": false,
-    "link": "bush_dog_lines.webp"
+    "link": "bush_dog_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "MacQueen’s Bustard, Firebird",
@@ -127,7 +139,8 @@
     "media": ["ink", "watercolor"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "macqueen_s_bustard.webp"
+    "link": "macqueen_s_bustard.webp",
+    "featured": ["true"]
   },
   {
     "title": "MacQueen’s Bustard, Firebird Line Art",
@@ -137,7 +150,8 @@
     "media": ["digital"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "macqueen_s_bustard_lines.webp"
+    "link": "macqueen_s_bustard_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "Mountain Gazelle",
@@ -147,7 +161,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["gazelle", "animal"],
     "forSale": false,
-    "link": "mountain_gazelle.webp"
+    "link": "mountain_gazelle.webp",
+    "featured": ["true"]
   },
   {
     "title": "Mountain Gazelle Line Art",
@@ -157,7 +172,8 @@
     "media": ["micron pen", "ink"],
     "content": ["gazelle", "animal"],
     "forSale": false,
-    "link": "mountain_gazelle_lines.webp"
+    "link": "mountain_gazelle_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "Sea Serpent Dreams of Flying",
@@ -167,7 +183,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["dragon", "iguana", "animal", "fantasy"],
     "forSale": false,
-    "link": "sea_serpent_dreams_of_flying.webp"
+    "link": "sea_serpent_dreams_of_flying.webp",
+    "featured": ["true"]
   },
   {
     "title": "Sea Serpent Dreams of Flying Line Art",
@@ -177,7 +194,8 @@
     "media": ["micron pen", "ink"],
     "content": ["dragon", "iguana", "animal", "fantasy"],
     "forSale": false,
-    "link": "sea_serpent_dreams_of_flying_lines.webp"
+    "link": "sea_serpent_dreams_of_flying_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "Pernambuco Pygmy-owl",
@@ -187,7 +205,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "pernambuco_pygmy_owl.webp"
+    "link": "pernambuco_pygmy_owl.webp",
+    "featured": ["true"]
   },
   {
     "title": "Pernambuco Pygmy-owl Line Art",
@@ -197,7 +216,8 @@
     "media": ["micron pen", "ink"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "pernambuco_pygmy_owl_lines.webp"
+    "link": "pernambuco_pygmy_owl_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "Conflict",
@@ -207,7 +227,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "conflict.webp"
+    "link": "conflict.webp",
+    "featured": ["true"]
   },
   {
     "title": "Conflict Line Art",
@@ -217,7 +238,8 @@
     "media": ["micron pen", "ink"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "conflict_lines.webp"
+    "link": "conflict_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "Namdapha Flying Squirrel",
@@ -227,7 +249,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["squirrel", "animal"],
     "forSale": false,
-    "link": "namdapha_flying_squirrel.webp"
+    "link": "namdapha_flying_squirrel.webp",
+    "featured": ["true"]
   },
   {
     "title": "Namdapha Flying Squirrel Line Art",
@@ -237,7 +260,8 @@
     "media": ["micron pen", "ink"],
     "content": ["squirrel", "animal"],
     "forSale": false,
-    "link": "namdapha_flying_squirrel_lines.webp"
+    "link": "namdapha_flying_squirrel_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "Mexican Wolf",
@@ -247,7 +271,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["wolf", "animal", "fantasy"],
     "forSale": false,
-    "link": "mexican_wolf.webp"
+    "link": "mexican_wolf.webp",
+    "featured": ["true"]
   },
   {
     "title": "Mexican Wolf Line Art",
@@ -257,7 +282,8 @@
     "media": ["micron pen", "ink"],
     "content": ["wolf", "animal", "fantasy"],
     "forSale": false,
-    "link": "mexican_wolf_lines.webp"
+    "link": "mexican_wolf_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "Red Panda",
@@ -267,7 +293,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["animal", "fantasy"],
     "forSale": false,
-    "link": "red_panda.webp"
+    "link": "red_panda.webp",
+    "featured": ["false"]
   },
   {
     "title": "Red Panda Line Art",
@@ -277,7 +304,8 @@
     "media": ["micron pen", "ink"],
     "content": ["animal", "fantasy"],
     "forSale": false,
-    "link": "red_panda_lines.webp"
+    "link": "red_panda_lines.webp",
+    "featured": ["false"]
   },
   {
     "title": "Jason and Colin",
@@ -287,7 +315,8 @@
     "media": ["micron pen", "ink"],
     "content": ["animal", "people", "fantasy", "fanart"],
     "forSale": false,
-    "link": "jason_and_colin_lines.webp"
+    "link": "jason_and_colin_lines.webp",
+    "featured": ["true"]
   },
   {
     "title": "Raven Queen",
@@ -297,7 +326,8 @@
     "media": ["digital"],
     "content": ["people", "fantasy", "fanart"],
     "forSale": false,
-    "link": "raven_queen.webp"
+    "link": "raven_queen.webp",
+    "featured": ["true"]
   },
   {
     "title": "Page of Pentacles",
@@ -307,7 +337,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["bird", "animal", "fantasy"],
     "forSale": false,
-    "link": "page_of_pentacles.webp"
+    "link": "page_of_pentacles.webp",
+    "featured": ["true"]
   },
   {
     "title": "Sunshine",
@@ -317,7 +348,8 @@
     "media": ["linocut", "printmaking"],
     "content": ["bird", "flower", "plant", "animal"],
     "forSale": false,
-    "link": "sunshine.webp"
+    "link": "sunshine.webp",
+    "featured": ["true"]
   },
   {
     "title": "Seabirds",
@@ -327,7 +359,8 @@
     "media": ["linocut", "printmaking"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "seabirds.webp"
+    "link": "seabirds.webp",
+    "featured": ["true"]
   },
   {
     "title": "Jellyfish",
@@ -343,7 +376,8 @@
       "jellyfish_print_addl2.webp",
       "jellyfish_print_addl3.webp",
       "jellyfish_print_addl4.webp"
-    ]
+    ],
+    "featured": ["true"]
   },
   {
     "title": "Bitter Dreams",
@@ -354,7 +388,8 @@
     "content": ["jellyfish", "bird", "animal", "fantasy"],
     "forSale": false,
     "link": "bitter_dreams.webp",
-    "additionalImages": ["bitter_dreams_addl1.webp", "bitter_dreams_addl2.webp", "bitter_dreams_addl3.webp"]
+    "additionalImages": ["bitter_dreams_addl1.webp", "bitter_dreams_addl2.webp", "bitter_dreams_addl3.webp"],
+    "featured": ["true"]
   },
   {
     "title": "2024 Pride - Featuring Miko",
@@ -364,7 +399,8 @@
     "media": ["digital"],
     "content": ["dog", "pride", "animal", "fantasy"],
     "forSale": false,
-    "link": "miko_pride.webp"
+    "link": "miko_pride.webp",
+    "featured": ["true"]
   },
   {
     "title": "Kingfisher",
@@ -374,7 +410,8 @@
     "media": ["watercolor"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "kingfisher.webp"
+    "link": "kingfisher.webp",
+    "featured": ["true"]
   },
   {
     "title": "Clark, Destroyer of Gardens",
@@ -384,7 +421,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["rabbit", "animal"],
     "forSale": false,
-    "link": "clark.webp"
+    "link": "clark.webp",
+    "featured": ["true"]
   },
   {
     "title": "Salmon Run",
@@ -394,7 +432,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["fish", "animal", "bear", "landscape"],
     "forSale": false,
-    "link": "salmon_run.webp"
+    "link": "salmon_run.webp",
+    "featured": ["true"]
   },
   {
     "title": "Dhole Party",
@@ -404,7 +443,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["dog", "animal", "landscape"],
     "forSale": false,
-    "link": "dhole_party.webp"
+    "link": "dhole_party.webp",
+    "featured": ["true"]
   },
   {
     "title": "Pancakes with Henry",
@@ -414,7 +454,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["demon", "horror", "fantasy", "people", "fanart"],
     "forSale": false,
-    "link": "pancakes_with_henry.webp"
+    "link": "pancakes_with_henry.webp",
+    "featured": ["true"]
   },
   {
     "title": "Japanese River Otter",
@@ -424,7 +465,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["otter", "animal"],
     "forSale": false,
-    "link": "japanese_river_otter.webp"
+    "link": "japanese_river_otter.webp",
+    "featured": ["true"]
   },
   {
     "title": "Himalayan Brown Bear",
@@ -434,7 +476,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["bear", "animal"],
     "forSale": false,
-    "link": "himalayan_brown_bear.webp"
+    "link": "himalayan_brown_bear.webp",
+    "featured": ["true"]
   },
   {
     "title": "Indian Bison",
@@ -444,7 +487,8 @@
     "media": ["watercolor"],
     "content": ["bison", "animal"],
     "forSale": false,
-    "link": "indian_bison.webp"
+    "link": "indian_bison.webp",
+    "featured": ["true"]
   },
   {
     "title": "Indian Bison Ink",
@@ -454,7 +498,8 @@
     "media": ["micron pen", "ink"],
     "content": ["bison", "animal"],
     "forSale": false,
-    "link": "indian_bison_ink.webp"
+    "link": "indian_bison_ink.webp",
+    "featured": ["true"]
   },
   {
     "title": "Muddy Dragon",
@@ -464,7 +509,8 @@
     "media": ["digital"],
     "content": ["alligator", "animal"],
     "forSale": false,
-    "link": "muddy_dragon.webp"
+    "link": "muddy_dragon.webp",
+    "featured": ["false"]
   },
   {
     "title": "European Rabbit",
@@ -474,7 +520,8 @@
     "media": ["digital"],
     "content": ["rabbit", "animal"],
     "forSale": false,
-    "link": "european_rabbit.webp"
+    "link": "european_rabbit.webp",
+    "featured": ["false"]
   },
   {
     "title": "Bees",
@@ -484,7 +531,8 @@
     "media": ["digital"],
     "content": ["insect", "animal"],
     "forSale": false,
-    "link": "bees.webp"
+    "link": "bees.webp",
+    "featured": ["false"]
   },
   {
     "title": "Finnish Forest Reindeer",
@@ -494,17 +542,19 @@
     "media": ["digital"],
     "content": ["butterfly", "people", "animal", "insect", "fantasy"],
     "forSale": false,
-    "link": "finnish_forest_reindeer.webp"
+    "link": "finnish_forest_reindeer.webp",
+    "featured": ["true"]
   },
   {
     "title": "Jaguar",
     "date": "Oct 27, 2021",
-    "desc": "Black and goal watercolor of a jaguar sitting in water.",
+    "desc": "Black and gold watercolor of a jaguar sitting in water.",
     "dimensions": "6x8 inches",
     "media": ["ink"],
     "content": ["jaguar", "animal"],
     "forSale": false,
-    "link": "jaguar.webp"
+    "link": "jaguar.webp",
+    "featured": ["false"]
   },
   {
     "title": "Green Peafowl",
@@ -514,7 +564,8 @@
     "media": ["watercolor"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "green_peafowl.webp"
+    "link": "green_peafowl.webp",
+    "featured": ["false"]
   },
   {
     "title": "Rusty-spotted Cat",
@@ -524,7 +575,8 @@
     "media": ["micron pen", "ink"],
     "content": ["frog", "animal"],
     "forSale": false,
-    "link": "rusty_spotted_cat.webp"
+    "link": "rusty_spotted_cat.webp",
+    "featured": ["false"]
   },
   {
     "title": "Honduran White Bat",
@@ -534,7 +586,8 @@
     "media": ["micron pen", "ink"],
     "content": ["bats", "animal"],
     "forSale": false,
-    "link": "honduran_white_bat.webp"
+    "link": "honduran_white_bat.webp",
+    "featured": ["false"]
   },
   {
     "title": "Gopher Frog",
@@ -544,7 +597,8 @@
     "media": ["micron pen", "ink"],
     "content": ["frog", "animal"],
     "forSale": false,
-    "link": "gopher_frog.webp"
+    "link": "gopher_frog.webp",
+    "featured": ["false"]
   },
   {
     "title": "Long-whiskered Owlet",
@@ -554,7 +608,8 @@
     "media": ["micron pen", "ink"],
     "content": ["owl", "animal"],
     "forSale": false,
-    "link": "long_whiskered_owlet.webp"
+    "link": "long_whiskered_owlet.webp",
+    "featured": ["true"]
   },
   {
     "title": "Yangtze Giant Soft Shell Turtle",
@@ -564,7 +619,8 @@
     "media": ["digital"],
     "content": ["turtle", "animal"],
     "forSale": false,
-    "link": "yangtze_giant_soft_shell_turtle.webp"
+    "link": "yangtze_giant_soft_shell_turtle.webp",
+    "featured": ["false"]
   },
   {
     "title": "Horseshoe Crab",
@@ -574,7 +630,8 @@
     "media": ["watercolor"],
     "content": ["crab", "animal"],
     "forSale": false,
-    "link": "horseshoe_crab.webp"
+    "link": "horseshoe_crab.webp",
+    "featured": ["false"]
   },
   {
     "title": "Philippine Eagle-owl",
@@ -584,7 +641,8 @@
     "media": ["watercolor"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "philippine_eagle_owl.webp"
+    "link": "philippine_eagle_owl.webp",
+    "featured": ["true"]
   },
   {
     "title": "Elkhorn Coral ",
@@ -594,7 +652,8 @@
     "media": ["watercolor"],
     "content": ["coral", "plant"],
     "forSale": false,
-    "link": "elkhorn_coral.webp"
+    "link": "elkhorn_coral.webp",
+    "featured": ["false"]
   },
   {
     "title": "Wolverine",
@@ -604,7 +663,8 @@
     "media": ["micron pen", "ink"],
     "content": ["wolverine", "animal"],
     "forSale": false,
-    "link": "wolverine.webp"
+    "link": "wolverine.webp",
+    "featured": ["true"]
   },
   {
     "title": "Southern Cassowary",
@@ -614,7 +674,8 @@
     "media": ["digital"],
     "content": ["bird", "dinosaur", "animal"],
     "forSale": false,
-    "link": "southern_cassowary.webp"
+    "link": "southern_cassowary.webp",
+    "featured": ["true"]
   },
   {
     "title": "Sun Bear",
@@ -624,7 +685,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["bear", "animal"],
     "forSale": false,
-    "link": "sun_bear.webp"
+    "link": "sun_bear.webp",
+    "featured": ["false"]
   },
   {
     "title": "Sea Tangle",
@@ -634,7 +696,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["people", "plant", "fantasy"],
     "forSale": false,
-    "link": "sea_tangle.webp"
+    "link": "sea_tangle.webp",
+    "featured": ["false"]
   },
   {
     "title": "Mao",
@@ -644,7 +707,8 @@
     "media": ["ink"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "mao.webp"
+    "link": "mao.webp",
+    "featured": ["false"]
   },
   {
     "title": "Large Blue Butterfly",
@@ -654,7 +718,8 @@
     "media": ["watercolor", "ink"],
     "content": ["butterfly", "animal", "insect"],
     "forSale": false,
-    "link": "large_blue_butterfly.webp"
+    "link": "large_blue_butterfly.webp",
+    "featured": ["false"]
   },
   {
     "title": "Amazonian Manatee",
@@ -664,7 +729,8 @@
     "media": ["micron pen", "ink"],
     "content": ["manatee", "animal", "people", "fantasy"],
     "forSale": false,
-    "link": "amazonian_manatee.webp"
+    "link": "amazonian_manatee.webp",
+    "featured": ["false"]
   },
   {
     "title": "Mangroves",
@@ -674,7 +740,8 @@
     "media": ["watercolor"],
     "content": ["tree", "plant"],
     "forSale": false,
-    "link": "mangroves.webp"
+    "link": "mangroves.webp",
+    "featured": ["false"]
   },
   {
     "title": "African Wild Dog",
@@ -684,7 +751,8 @@
     "media": ["watercolor"],
     "content": ["dog", "animal"],
     "forSale": false,
-    "link": "painted_wolf.webp"
+    "link": "painted_wolf.webp",
+    "featured": ["true"]
   },
   {
     "title": "Reeve’s Pheasant",
@@ -694,7 +762,8 @@
     "media": ["watercolor", "acrylic", "painting"],
     "content": ["bird", "animal", "fantasy"],
     "forSale": false,
-    "link": "reeve_s_pheasant.webp"
+    "link": "reeve_s_pheasant.webp",
+    "featured": ["true"]
   },
   {
     "title": "Desert Tortoise",
@@ -704,7 +773,8 @@
     "media": ["digital"],
     "content": ["turtle", "tortoise", "animal"],
     "forSale": false,
-    "link": "desert_tortoise.webp"
+    "link": "desert_tortoise.webp",
+    "featured": ["false"]
   },
   {
     "title": "Two-spot Ladybug",
@@ -714,7 +784,8 @@
     "media": ["watercolor"],
     "content": ["insect", "ladybug", "animal"],
     "forSale": false,
-    "link": "two_spot_ladybug.webp"
+    "link": "two_spot_ladybug.webp",
+    "featured": ["true"]
   },
   {
     "title": "Asiatic Lion",
@@ -724,7 +795,8 @@
     "media": ["watercolor", "micron pen", "ink"],
     "content": ["cat", "animal"],
     "forSale": false,
-    "link": "asiatic_lion.webp"
+    "link": "asiatic_lion.webp",
+    "featured": ["false"]
   },
   {
     "title": "Pampas Deer",
@@ -734,7 +806,8 @@
     "media": ["micron pen", "ink"],
     "content": ["deer", "animal"],
     "forSale": false,
-    "link": "pampas_deer.webp"
+    "link": "pampas_deer.webp",
+    "featured": ["false"]
   },
   {
     "title": "Riverine Rabbit",
@@ -744,7 +817,8 @@
     "media": ["watercolor", "ink"],
     "content": ["rabbit", "animal"],
     "forSale": false,
-    "link": "riverine_rabbit.webp"
+    "link": "riverine_rabbit.webp",
+    "featured": ["false"]
   },
   {
     "title": "Hillstar Hummingbird",
@@ -754,7 +828,8 @@
     "media": ["watercolor"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "hillstar_hummingbird.webp"
+    "link": "hillstar_hummingbird.webp",
+    "featured": ["false"]
   },
   {
     "title": "Irimote cat",
@@ -764,7 +839,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["cat", "animal"],
     "forSale": false,
-    "link": "irimote_cat.webp"
+    "link": "irimote_cat.webp",
+    "featured": ["true"]
   },
   {
     "title": "Tarquin",
@@ -774,7 +850,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["catboy", "animal", "people", "fantasy", "fanart"],
     "forSale": false,
-    "link": "tarquin.webp"
+    "link": "tarquin.webp",
+    "featured": ["true"]
   },
   {
     "title": "Almost Rabbits, II",
@@ -784,7 +861,8 @@
     "media": ["woodblock", "printmaking"],
     "content": ["rabbit", "animal", "fantasy"],
     "forSale": false,
-    "link": "almost_rabbits_II.webp"
+    "link": "almost_rabbits_II.webp",
+    "featured": ["true"]
   },
   {
     "title": "Yoga Dogs",
@@ -794,7 +872,8 @@
     "media": ["micron pen", "ink"],
     "content": ["dog", "animal"],
     "forSale": false,
-    "link": "yoga_dogs.webp"
+    "link": "yoga_dogs.webp",
+    "featured": ["false"]
   },
   {
     "title": "Tiny Dragon",
@@ -804,7 +883,8 @@
     "media": ["micron pen", "ink"],
     "content": ["dragon", "animal", "fantasy"],
     "forSale": false,
-    "link": "tiny_dragon.webp"
+    "link": "tiny_dragon.webp",
+    "featured": ["true"]
   },
   {
     "title": "Amir Leopard",
@@ -814,7 +894,8 @@
     "media": ["micron pen", "ink"],
     "content": ["leopard", "animal"],
     "forSale": false,
-    "link": "amir_leopard.webp"
+    "link": "amir_leopard.webp",
+    "featured": ["false"]
   },
   {
     "title": "Sea Star",
@@ -824,7 +905,8 @@
     "media": ["micron pen", "ink"],
     "content": ["leopard", "animal"],
     "forSale": false,
-    "link": "starfish.webp"
+    "link": "starfish.webp",
+    "featured": ["false"]
   },
   {
     "title": "White Kermode Bear",
@@ -834,7 +916,8 @@
     "media": ["micron pen", "ink"],
     "content": ["bear", "animal"],
     "forSale": false,
-    "link": "white_kermode_bear.webp"
+    "link": "white_kermode_bear.webp",
+    "featured": ["false"]
   },
   {
     "title": "Great Bustard",
@@ -844,7 +927,8 @@
     "media": ["micron pen", "ink"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "great_bustard.webp"
+    "link": "great_bustard.webp",
+    "featured": ["false"]
   },
   {
     "title": "Sacred Blue Lily of the Nile",
@@ -854,7 +938,8 @@
     "media": ["ink", "watercolor"],
     "content": ["waterlily", "plant"],
     "forSale": false,
-    "link": "sacred_blue_lily_of_the_nile.webp"
+    "link": "sacred_blue_lily_of_the_nile.webp",
+    "featured": ["true"]
   },
   {
     "title": "Narwhal",
@@ -864,7 +949,8 @@
     "media": ["micron pen", "ink"],
     "content": ["fish", "animal"],
     "forSale": false,
-    "link": "narwhal.webp"
+    "link": "narwhal.webp",
+    "featured": ["false"]
   },
   {
     "title": "White-spotted Char",
@@ -874,7 +960,8 @@
     "media": ["micron pen", "ink"],
     "content": ["fish", "animal"],
     "forSale": false,
-    "link": "white_spotted_char.webp"
+    "link": "white_spotted_char.webp",
+    "featured": ["true"]
   },
   {
     "title": "Rhinoceros Hornbill",
@@ -884,7 +971,8 @@
     "media": ["ink"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "rhinoceros_hornbill.webp"
+    "link": "rhinoceros_hornbill.webp",
+    "featured": ["false"]
   },
   {
     "title": "Short-nosed Sea Snake",
@@ -894,7 +982,8 @@
     "media": ["micron pen", "ink"],
     "content": ["snake", "animal"],
     "forSale": false,
-    "link": "short-nosed_sea_snake.webp"
+    "link": "short-nosed_sea_snake.webp",
+    "featured": ["false"]
   },
   {
     "title": "Alcathoe Bat",
@@ -904,7 +993,8 @@
     "media": ["micron pen", "ink"],
     "content": ["leopard", "animal"],
     "forSale": false,
-    "link": "alcathoe_bat.webp"
+    "link": "alcathoe_bat.webp",
+    "featured": ["false"]
   },
   {
     "title": "Waling-waling orchid",
@@ -914,7 +1004,8 @@
     "media": ["micron pen", "ink"],
     "content": ["flower", "plant"],
     "forSale": false,
-    "link": "waling_waling_orchid.webp"
+    "link": "waling_waling_orchid.webp",
+    "featured": ["false"]
   },
   {
     "title": "Imperial Pidgeon",
@@ -924,7 +1015,8 @@
     "media": ["ink"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "imperial_pidgeon.webp"
+    "link": "imperial_pidgeon.webp",
+    "featured": ["true"]
   },
   {
     "title": "Manta Ray",
@@ -934,7 +1026,8 @@
     "media": ["ink"],
     "content": ["sting ray", "animal"],
     "forSale": true,
-    "link": "manta_ray.webp"
+    "link": "manta_ray.webp",
+    "featured": ["false"]
   },
   {
     "title": "Long-snouted Seahorse",
@@ -944,7 +1037,8 @@
     "media": ["micron pen", "ink"],
     "content": ["seahorse", "animal"],
     "forSale": true,
-    "link": "long_snouted_seahorse.webp"
+    "link": "long_snouted_seahorse.webp",
+    "featured": ["true"]
   },
   {
     "title": "Ring-tailed Lemur",
@@ -954,7 +1048,8 @@
     "media": ["micron pen", "ink"],
     "content": ["lemur", "animal"],
     "forSale": false,
-    "link": "ring_tailed_lemur.webp"
+    "link": "ring_tailed_lemur.webp",
+    "featured": ["false"]
   },
   {
     "title": "Hamerkop",
@@ -964,7 +1059,8 @@
     "media": ["ink"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "hamerkop.webp"
+    "link": "hamerkop.webp",
+    "featured": ["false"]
   },
   {
     "title": "Moorhen",
@@ -974,7 +1070,8 @@
     "media": ["ink", "watercolor"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "moorhen.webp"
+    "link": "moorhen.webp",
+    "featured": ["false"]
   },
   {
     "title": "Salamander",
@@ -984,7 +1081,8 @@
     "media": ["micron pen", "ink"],
     "content": ["salamander", "animal", "fantasy"],
     "forSale": false,
-    "link": "salamander.webp"
+    "link": "salamander.webp",
+    "featured": ["false"]
   },
   {
     "title": "Snow Leopard",
@@ -994,7 +1092,8 @@
     "media": ["ink", "watercolor"],
     "content": ["leopard", "animal"],
     "forSale": false,
-    "link": "snow_leopard.webp"
+    "link": "snow_leopard.webp",
+    "featured": ["true"]
   },
   {
     "title": "Snowy Owl",
@@ -1004,7 +1103,8 @@
     "media": ["micron pen", "ink"],
     "content": ["owl", "animal"],
     "forSale": false,
-    "link": "snowy_owl.webp"
+    "link": "snowy_owl.webp",
+    "featured": ["false"]
   },
   {
     "title": "Kapok Tree",
@@ -1014,7 +1114,8 @@
     "media": ["ink"],
     "content": ["tree", "landscape", "plant"],
     "forSale": false,
-    "link": "kapok_tree.webp"
+    "link": "kapok_tree.webp",
+    "featured": ["false"]
   },
   {
     "title": "Four-horned Chameleon",
@@ -1024,7 +1125,8 @@
     "media": ["micron pen", "ink"],
     "content": ["lizard", "animal", "plant"],
     "forSale": false,
-    "link": "four_horned_chameleon.webp"
+    "link": "four_horned_chameleon.webp",
+    "featured": ["false"]
   },
   {
     "title": "Golden snub-nosed monkey",
@@ -1034,7 +1136,8 @@
     "media": ["micron pen", "ink"],
     "content": ["monkey", "animal"],
     "forSale": false,
-    "link": "golden_snub_nosed_monkey.webp"
+    "link": "golden_snub_nosed_monkey.webp",
+    "featured": ["false"]
   },
   {
     "title": "Tibetan antelope",
@@ -1044,7 +1147,8 @@
     "media": ["ink"],
     "content": ["antelope", "animal"],
     "forSale": false,
-    "link": "tibetan_antelope.webp"
+    "link": "tibetan_antelope.webp",
+    "featured": ["false"]
   },
   {
     "title": "Bee",
@@ -1054,7 +1158,8 @@
     "media": ["micron pen", "ink"],
     "content": ["bee", "animal", "flower", "plant"],
     "forSale": false,
-    "link": "bee.webp"
+    "link": "bee.webp",
+    "featured": ["false"]
   },
   {
     "title": "Brown-eared Pheasant",
@@ -1064,7 +1169,8 @@
     "media": ["micron pen", "ink"],
     "content": ["bird", "animal"],
     "forSale": false,
-    "link": "brown_eared_pheasant.webp"
+    "link": "brown_eared_pheasant.webp",
+    "featured": ["false"]
   },
   {
     "title": "Balete Tree",
@@ -1074,7 +1180,8 @@
     "media": ["ink"],
     "content": ["tree", "landscape", "plant"],
     "forSale": false,
-    "link": "balete_tree.webp"
+    "link": "balete_tree.webp",
+    "featured": ["false"]
   },
   {
     "title": "White Spotted Bush Frog",
@@ -1084,7 +1191,8 @@
     "media": ["micron pen", "ink"],
     "content": ["frog", "animal"],
     "forSale": false,
-    "link": "white_spotted_bush_frog.webp"
+    "link": "white_spotted_bush_frog.webp",
+    "featured": ["false"]
   },
   {
     "title": "Slender Snouted Crocodile",
@@ -1094,7 +1202,8 @@
     "media": ["micron pen", "ink"],
     "content": ["crocodile", "animal"],
     "forSale": false,
-    "link": "slender_snouted_crocodile.webp"
+    "link": "slender_snouted_crocodile.webp",
+    "featured": ["false"]
   },
   {
     "title": "Scottish Wildcat",
@@ -1104,7 +1213,8 @@
     "media": ["micron pen", "ink"],
     "content": ["cat", "animal"],
     "forSale": false,
-    "link": "scottish_wildcat.webp"
+    "link": "scottish_wildcat.webp",
+    "featured": ["false"]
   },
   {
     "title": "Eld's Deer",
@@ -1114,7 +1224,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "eld_s_deer.webp"
+    "link": "eld_s_deer.webp",
+    "featured": ["true"]
   },
   {
     "title": "Jindo Puppy",
@@ -1124,7 +1235,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "jindo_puppy.webp"
+    "link": "jindo_puppy.webp",
+    "featured": ["false"]
   },
   {
     "title": "Grumpy Cat",
@@ -1134,7 +1246,8 @@
     "media": ["watercolor"],
     "content": ["cat", "animal", "fanart"],
     "forSale": false,
-    "link": "grumpy_cat.webp"
+    "link": "grumpy_cat.webp",
+    "featured": ["false"]
   },
   {
     "title": "Lady in Black",
@@ -1144,7 +1257,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "lady_in_black.webp"
+    "link": "lady_in_black.webp",
+    "featured": ["false"]
   },
   {
     "title": "For the Blood God",
@@ -1154,7 +1268,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["people", "fantasy", "fanart"],
     "forSale": false,
-    "link": "for_the_blood_god.webp"
+    "link": "for_the_blood_god.webp",
+    "featured": ["false"]
   },
   {
     "title": "Miqo'te",
@@ -1164,7 +1279,8 @@
     "media": ["digital"],
     "content": ["people", "fantasy", "fanart"],
     "forSale": false,
-    "link": "miqo_te.webp"
+    "link": "miqo_te.webp",
+    "featured": ["false"]
   },
   {
     "title": "Stalking but Unaware",
@@ -1174,7 +1290,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "stalking_unaware.webp"
+    "link": "stalking_unaware.webp",
+    "featured": ["false"]
   },
   {
     "title": "Phoenix's Shadow",
@@ -1184,7 +1301,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "phoenix_s_shadow.webp"
+    "link": "phoenix_s_shadow.webp",
+    "featured": ["true"]
   },
   {
     "title": "Just Before Dawn",
@@ -1194,7 +1312,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "just_before_dawn.webp"
+    "link": "just_before_dawn.webp",
+    "featured": ["true"]
   },
   {
     "title": "Almost Rabbits, I",
@@ -1204,7 +1323,8 @@
     "media": ["woodblock", "printmaking"],
     "content": ["rabbit", "animal", "fantasy"],
     "forSale": false,
-    "link": "almost_rabbits.webp"
+    "link": "almost_rabbits.webp",
+    "featured": ["true"]
   },
   {
     "title": "White Mage",
@@ -1214,7 +1334,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["people", "fantasy", "fanart"],
     "forSale": false,
-    "link": "white_mage.webp"
+    "link": "white_mage.webp",
+    "featured": ["false"]
   },
   {
     "title": "A Small Hunt",
@@ -1224,17 +1345,19 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "a_small_hunt.webp"
+    "link": "a_small_hunt.webp",
+    "featured": ["false"]
   },
   {
-    "title": "Almost Rabbits",
+    "title": "Almost Rabbits, Watercolor",
     "date": "Nov 20, 2019",
     "desc": "Watercolor of a pair of jackalopes looking up at the full moon next to a leafless tree, the moon has a silhouette of a rabbit making medicine in it.",
     "dimensions": "5x7 inches",
     "media": ["watercolor", "ink"],
     "content": ["rabbit", "animal", "fantasy"],
     "forSale": false,
-    "link": "almost_rabbits_watercolor.webp"
+    "link": "almost_rabbits_watercolor.webp",
+    "featured": ["true"]
   },
   {
     "title": "Adding Wings to a Tiger",
@@ -1244,7 +1367,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "adding_wings_to_a_tiger.webp"
+    "link": "adding_wings_to_a_tiger.webp",
+    "featured": ["true"]
   },
   {
     "title": "Shepherds",
@@ -1254,7 +1378,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "shepherds.webp"
+    "link": "shepherds.webp",
+    "featured": ["false"]
   },
   {
     "title": "Wow, Fall!",
@@ -1264,7 +1389,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "wow_fall.webp"
+    "link": "wow_fall.webp",
+    "featured": ["false"]
   },
   {
     "title": "Catch",
@@ -1274,7 +1400,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "catch.webp"
+    "link": "catch.webp",
+    "featured": ["false"]
   },
   {
     "title": "Alpha and Omega",
@@ -1284,7 +1411,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["vehicle", "fantasy", "fanart"],
     "forSale": false,
-    "link": "alpha_and_omega.webp"
+    "link": "alpha_and_omega.webp",
+    "featured": ["true"]
   },
   {
     "title": "Nighttime Beach",
@@ -1294,7 +1422,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "nighttime_beach.webp"
+    "link": "nighttime_beach.webp",
+    "featured": ["true"]
   },
   {
     "title": "Juno",
@@ -1304,7 +1433,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "juno.webp"
+    "link": "juno.webp",
+    "featured": ["false"]
   },
   {
     "title": "Making Medicine",
@@ -1314,7 +1444,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "making_medicine.webp"
+    "link": "making_medicine.webp",
+    "featured": ["false"]
   },
   {
     "title": "Sling",
@@ -1324,7 +1455,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "sling.webp"
+    "link": "sling.webp",
+    "featured": ["false"]
   },
   {
     "title": "Ghost",
@@ -1334,7 +1466,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "ghost.webp"
+    "link": "ghost.webp",
+    "featured": ["true"]
   },
   {
     "title": "Enchanted",
@@ -1344,7 +1477,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "enchanted.webp"
+    "link": "enchanted.webp",
+    "featured": ["true"]
   },
   {
     "title": "Grand Tetons National Park",
@@ -1354,7 +1488,8 @@
     "media": ["ink"],
     "content": ["landscape", "tree", "mountain", "plant"],
     "forSale": false,
-    "link": "grand_tetons_national_park.webp"
+    "link": "grand_tetons_national_park.webp",
+    "featured": ["false"]
   },
   {
     "title": "Playing Crow",
@@ -1364,7 +1499,8 @@
     "media": ["ink"],
     "content": ["crow", "animal"],
     "forSale": false,
-    "link": "playing_crow.webp"
+    "link": "playing_crow.webp",
+    "featured": ["true"]
   },
   {
     "title": "The Jeebs",
@@ -1374,7 +1510,8 @@
     "media": ["micron pen", "ink", "colored pencil"],
     "content": ["dog", "animal"],
     "forSale": false,
-    "link": "the_jeebs.webp"
+    "link": "the_jeebs.webp",
+    "featured": ["false"]
   },
   {
     "title": "Family Portrait",
@@ -1384,7 +1521,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["dog", "animal"],
     "forSale": false,
-    "link": "family_portrait.webp"
+    "link": "family_portrait.webp",
+    "featured": ["false"]
   },
   {
     "title": "Red Jindos Pet Portrait",
@@ -1394,7 +1532,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["dog", "animal"],
     "forSale": false,
-    "link": "red_jindos_pet_portrait.webp"
+    "link": "red_jindos_pet_portrait.webp",
+    "featured": ["true"]
   },
   {
     "title": "Shepherds of Love",
@@ -1404,7 +1543,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["dog", "animal"],
     "forSale": false,
-    "link": "shepherds_of_love.webp"
+    "link": "shepherds_of_love.webp",
+    "featured": ["true"]
   },
   {
     "title": "Noble Steed",
@@ -1414,7 +1554,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["dog", "animal", "fantasy"],
     "forSale": false,
-    "link": "noble_steed.webp"
+    "link": "noble_steed.webp",
+    "featured": ["false"]
   },
   {
     "title": "Spiderdog",
@@ -1424,7 +1565,8 @@
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["dog", "animal", "fantasy", "fanart"],
     "forSale": false,
-    "link": "spiderdog.webp"
+    "link": "spiderdog.webp",
+    "featured": ["false"]
   },
   {
     "title": "Puppy Love",
@@ -1434,7 +1576,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "puppy_love.webp"
+    "link": "puppy_love.webp",
+    "featured": ["false"]
   },
   {
     "title": "Finnley's Treasure",
@@ -1444,7 +1587,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "finnley_s_treasure.webp"
+    "link": "finnley_s_treasure.webp",
+    "featured": ["true"]
   },
   {
     "title": "The Researcher",
@@ -1454,7 +1598,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "the_researcher.webp"
+    "link": "the_researcher.webp",
+    "featured": ["false"]
   },
   {
     "title": "Dodger",
@@ -1464,7 +1609,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "dodger.webp"
+    "link": "dodger.webp",
+    "featured": ["false"]
   },
   {
     "title": "Lil Jindo Pet Portrait",
@@ -1474,7 +1620,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "lil_jindo_pet_portrait.webp"
+    "link": "lil_jindo_pet_portrait.webp",
+    "featured": ["false"]
   },
   {
     "title": "Goji Pet Portrait",
@@ -1484,7 +1631,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "goji_pet_portrait.webp"
+    "link": "goji_pet_portrait.webp",
+    "featured": ["true"]
   },
   {
     "title": "Rudy",
@@ -1494,7 +1642,8 @@
     "media": ["acrylic", "painting"],
     "content": ["dog", "animal"],
     "forSale": false,
-    "link": "rudy.webp"
+    "link": "rudy.webp",
+    "featured": ["false"]
   },
   {
     "title": "Bahia Pez Vela",
@@ -1504,7 +1653,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "bahia_pez_vela.webp"
+    "link": "bahia_pez_vela.webp",
+    "featured": ["true"]
   },
   {
     "title": "Chasing Stray Hares",
@@ -1514,7 +1664,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "chasing_stray_hares.webp"
+    "link": "chasing_stray_hares.webp",
+    "featured": ["false"]
   },
   {
     "title": "Dog Alphabet",
@@ -1524,7 +1675,8 @@
     "media": "",
     "content": "",
     "forSale": false,
-    "link": "dog_alphabet.webp"
+    "link": "dog_alphabet.webp",
+    "featured": ["true"]
   },
   {
     "title": "Akasha",
@@ -1535,7 +1687,8 @@
     "content": "",
     "forSale": false,
     "link": "akasha.webp",
-    "additionalImages": ["akasha_sketch.webp"]
+    "additionalImages": ["akasha_sketch.webp"],
+    "featured": ["false"]
   },
   {
     "title": "Family Canidae Poster",
@@ -1546,7 +1699,8 @@
     "content": "",
     "forSale": false,
     "link": "family_canidae_poster.webp",
-    "additionalImages": ["family_canidae_goods.webp"]
+    "additionalImages": ["family_canidae_goods.webp"],
+    "featured": ["false"]
   },
   {
     "title": "Nightsong",
@@ -1556,7 +1710,8 @@
     "media": ["sculpture", "sculpey", "acrylic", "painting"],
     "content": ["wolf", "anthro", "fantasy", "animal"],
     "forSale": false,
-    "link": "nightsong_commission.webp"
+    "link": "nightsong_commission.webp",
+    "featured": ["false"]
   },
   {
     "title": "Unfinished Red Wolf",
@@ -1566,7 +1721,8 @@
     "media": ["colored pencil", "pencil"],
     "content": ["wolf", "animal"],
     "forSale": false,
-    "link": "unfinished_idea.webp"
+    "link": "unfinished_idea.webp",
+    "featured": ["false"]
   },
   {
     "title": "Copper Phoenix",
@@ -1576,7 +1732,8 @@
     "media": ["sculpture", "sculpey", "acrylic", "painting"],
     "content": ["phoenix", "fantasy", "animal"],
     "forSale": false,
-    "link": "copper_phoenix.webp"
+    "link": "copper_phoenix.webp",
+    "featured": ["false"]
   },
   {
     "title": "Red",
@@ -1587,7 +1744,8 @@
     "content": ["wolf", "animal"],
     "forSale": false,
     "link": "red_sculpture.webp",
-    "additionalImages": ["red_sculpture_more_angles.webp"]
+    "additionalImages": ["red_sculpture_more_angles.webp"],
+    "featured": ["false"]
   },
   {
     "title": "F430",
@@ -1597,7 +1755,8 @@
     "media": ["colored pencil"],
     "content": ["car", "vehicle"],
     "forSale": false,
-    "link": "f430.webp"
+    "link": "f430.webp",
+    "featured": ["false"]
   },
   {
     "title": "The Other Side",
@@ -1607,7 +1766,8 @@
     "media": ["micron pen", "watercolor"],
     "content": ["horse", "animal"],
     "forSale": false,
-    "link": "the_other_side.webp"
+    "link": "the_other_side.webp",
+    "featured": ["false"]
   },
   {
     "title": "Classic",
@@ -1617,7 +1777,8 @@
     "media": ["micron pen", "watercolor"],
     "content": ["car", "vehicle"],
     "forSale": false,
-    "link": "classic.webp"
+    "link": "classic.webp",
+    "featured": ["false"]
   },
   {
     "title": "Sally Lightfoot Crab",
@@ -1627,7 +1788,8 @@
     "media": ["colored pencil"],
     "content": ["crab", "animal"],
     "forSale": false,
-    "link": "sally_lightfoot_crab.webp"
+    "link": "sally_lightfoot_crab.webp",
+    "featured": ["true"]
   },
   {
     "title": "Portrait of a Mink",
@@ -1637,7 +1799,8 @@
     "media": ["watercolor"],
     "content": ["mink", "skeleton", "animal"],
     "forSale": false,
-    "link": "portrait_of_a_mink.webp"
+    "link": "portrait_of_a_mink.webp",
+    "featured": ["true"]
   },
   {
     "title": "Mountain God",
@@ -1647,7 +1810,8 @@
     "media": ["sculpture", "sculpey", "acrylic", "painting"],
     "content": ["cat", "animal", "fantasy"],
     "forSale": false,
-    "link": "mountain_god.webp"
+    "link": "mountain_god.webp",
+    "featured": ["false"]
   },
   {
     "title": "Herd Watching",
@@ -1657,7 +1821,8 @@
     "media": ["micron pen", "watercolor"],
     "content": ["dog", "cow", "animal"],
     "forSale": false,
-    "link": "herd_watching.webp"
+    "link": "herd_watching.webp",
+    "featured": ["false"]
   },
   {
     "title": "Soul",
@@ -1667,7 +1832,8 @@
     "media": ["watercolor"],
     "content": ["butterfly", "animal", "fantasy"],
     "forSale": false,
-    "link": "soul.webp"
+    "link": "soul.webp",
+    "featured": ["false"]
   },
   {
     "title": "Jester and the Ninja",
@@ -1677,7 +1843,8 @@
     "media": ["sculpture", "sculpey", "acrylic", "mixed media", "jewelry", "painting"],
     "content": ["cat", "animal"],
     "forSale": false,
-    "link": "jester_and_the_ninja.webp"
+    "link": "jester_and_the_ninja.webp",
+    "featured": ["false"]
   },
   {
     "title": "Sunset on the Cosmos",
@@ -1687,7 +1854,8 @@
     "media": ["watercolor"],
     "content": ["fox", "animal", "fantasy"],
     "forSale": false,
-    "link": "sunset_on_the_cosmos.webp"
+    "link": "sunset_on_the_cosmos.webp",
+    "featured": ["false"]
   },
   {
     "title": "Galapagos",
@@ -1697,7 +1865,8 @@
     "media": ["micron pen", "watercolor"],
     "content": ["iguana", "animal", "fantasy"],
     "forSale": false,
-    "link": "galapagos.webp"
+    "link": "galapagos.webp",
+    "featured": ["true"]
   },
   {
     "title": "Christmas in the Woods",
@@ -1707,7 +1876,8 @@
     "media": ["micron pen", "watercolor"],
     "content": ["fox", "rabbit", "animal", "fantasy"],
     "forSale": false,
-    "link": "christmas_in_the_woods.webp"
+    "link": "christmas_in_the_woods.webp",
+    "featured": ["false"]
   },
   {
     "title": "Time to Decorate",
@@ -1717,7 +1887,8 @@
     "media": ["micron pen", "watercolor"],
     "content": ["dog", "animal"],
     "forSale": false,
-    "link": "time_to_decorate.webp"
+    "link": "time_to_decorate.webp",
+    "featured": ["false"]
   },
   {
     "title": "Littlest Helper",
@@ -1727,7 +1898,8 @@
     "media": ["micron pen", "watercolor"],
     "content": ["hamster", "animal"],
     "forSale": false,
-    "link": "littlest_helper.webp"
+    "link": "littlest_helper.webp",
+    "featured": ["false"]
   },
   {
     "title": "A Gift",
@@ -1737,7 +1909,8 @@
     "media": ["acrylic", "painting"],
     "content": ["naga", "snake", "fantasy", "animal", "people"],
     "forSale": false,
-    "link": "a_gift.webp"
+    "link": "a_gift.webp",
+    "featured": ["false"]
   },
   {
     "title": "Corvus Research Project",
@@ -1747,7 +1920,8 @@
     "media": ["micron pen", "watercolor"],
     "content": ["raven", "animal", "fantasy"],
     "forSale": false,
-    "link": "corvus_research_project.webp"
+    "link": "corvus_research_project.webp",
+    "featured": ["false"]
   },
   {
     "title": "Keeper of the Valley",
@@ -1757,7 +1931,8 @@
     "media": ["micron pen", "colored pencil"],
     "content": ["wolf", "skeleton", "animal", "fantasy"],
     "forSale": false,
-    "link": "keeper_of_the_valley.webp"
+    "link": "keeper_of_the_valley.webp",
+    "featured": ["false"]
   },
   {
     "title": "Helping the Honey Bee",
@@ -1767,7 +1942,8 @@
     "media": ["micron pen", "watercolor"],
     "content": ["rabbit", "bee", "animal"],
     "forSale": false,
-    "link": "helping_the_honey_bee.webp"
+    "link": "helping_the_honey_bee.webp",
+    "featured": ["false"]
   },
   {
     "title": "Laughing Demon",
@@ -1777,7 +1953,8 @@
     "media": ["sculpture", "sculpey"],
     "content": ["wolf", "demon", "fantasy", "animal"],
     "forSale": false,
-    "link": "laughing_demon.webp"
+    "link": "laughing_demon.webp",
+    "featured": ["false"]
   },
   {
     "title": "The Jewel Collector",
@@ -1787,7 +1964,8 @@
     "media": ["sculpture", "sculpey", "mixed media"],
     "content": ["leopard", "cat", "fantasy", "animal"],
     "forSale": false,
-    "link": "the_jewel_collector.webp"
+    "link": "the_jewel_collector.webp",
+    "featured": ["false"]
   },
   {
     "title": "Pearl",
@@ -1797,7 +1975,8 @@
     "media": ["micron pen", "ink"],
     "content": ["dog", "animal"],
     "forSale": false,
-    "link": "pearl.webp"
+    "link": "pearl.webp",
+    "featured": ["false"]
   },
   {
     "title": "Time For Bed, Mr.Demon",
@@ -1808,7 +1987,8 @@
     "content": ["wolf", "demon", "child", "fantasy", "animal"],
     "forSale": false,
     "link": "time_for_bed_mr_demon.webp",
-    "additionalImages": ["raw_sculpture.webp"]
+    "additionalImages": ["raw_sculpture.webp"],
+    "featured": ["false"]
   },
   {
     "title": "The Pharoah’s Daughter",
@@ -1818,7 +1998,8 @@
     "media": ["micron pen", "colored pencil", "marker"],
     "content": ["wolf", "cat", "anthro", "fantasy", "animal"],
     "forSale": false,
-    "link": "the_pharaoh_s_daughter.webp"
+    "link": "the_pharaoh_s_daughter.webp",
+    "featured": ["false"]
   },
   {
     "title": "Volatile",
@@ -1828,7 +2009,8 @@
     "media": ["colored pencil"],
     "content": ["wolf", "fantasy", "animal"],
     "forSale": false,
-    "link": "volatile.webp"
+    "link": "volatile.webp",
+    "featured": ["false"]
   },
   {
     "title": "The Jester",
@@ -1838,7 +2020,8 @@
     "media": ["micron pen", "colored pencil", "marker", "mixed media"],
     "content": ["wolf", "butterfly", "fantasy", "animal"],
     "forSale": false,
-    "link": "the_jester.webp"
+    "link": "the_jester.webp",
+    "featured": ["false"]
   },
   {
     "title": "Lady Levye",
@@ -1848,7 +2031,8 @@
     "media": ["micron pen", "colored pencil", "marker"],
     "content": ["rabbit", "jackalope", "fantasy", "animal"],
     "forSale": false,
-    "link": "lady_levye.webp"
+    "link": "lady_levye.webp",
+    "featured": ["false"]
   },
   {
     "title": "Raining in my dreams",
@@ -1858,7 +2042,8 @@
     "media": ["oil", "painting"],
     "content": ["car", "vehicle"],
     "forSale": false,
-    "link": "raining_in_my_dreams.webp"
+    "link": "raining_in_my_dreams.webp",
+    "featured": ["false"]
   },
   {
     "title": "No Mercy",
@@ -1868,7 +2053,8 @@
     "media": ["micron pen", "digital"],
     "content": ["octopus", "animal", "fantasy"],
     "forSale": false,
-    "link": "no_mercy.png"
+    "link": "no_mercy.png",
+    "featured": ["false"]
   },
   {
     "title": "Corvette",
@@ -1878,7 +2064,8 @@
     "media": ["pencil"],
     "content": ["car", "vehicle"],
     "forSale": false,
-    "link": "corvette.webp"
+    "link": "corvette.webp",
+    "featured": ["false"]
   },
   {
     "title": "Open road",
@@ -1888,7 +2075,8 @@
     "media": ["pencil"],
     "content": ["motorcycle", "vehicle"],
     "forSale": false,
-    "link": "open_road.webp"
+    "link": "open_road.webp",
+    "featured": ["false"]
   },
   {
     "title": "Somewhere on the line",
@@ -1898,7 +2086,8 @@
     "media": ["micron pen", "marker"],
     "content": ["car", "vehicle"],
     "forSale": false,
-    "link": "somewhere_on_the_line.webp"
+    "link": "somewhere_on_the_line.webp",
+    "featured": ["false"]
   },
   {
     "title": "Goddess of the Sea",
@@ -1908,7 +2097,8 @@
     "media": ["watercolor"],
     "content": ["wolf", "anthro", "fantasy", "animal"],
     "forSale": false,
-    "link": "goddess_of_the_sea.webp"
+    "link": "goddess_of_the_sea.webp",
+    "featured": ["false"]
   },
   {
     "title": "Flight of the Phoenix",
@@ -1918,7 +2108,8 @@
     "media": ["mixed media", "marker", "fabric", "glitter"],
     "content": ["phoenix", "fantasy", "animal"],
     "forSale": false,
-    "link": "flight_of_the_phoenix.webp"
+    "link": "flight_of_the_phoenix.webp",
+    "featured": ["false"]
   },
   {
     "title": "If Only I Could Fly",
@@ -1928,6 +2119,7 @@
     "media": ["micron pen"],
     "content": ["cat", "ocelot", "fantasy", "animal"],
     "forSale": false,
-    "link": "if_only_i_could_fly.webp"
+    "link": "if_only_i_could_fly.webp",
+    "featured": ["false"]
   }
 ]
