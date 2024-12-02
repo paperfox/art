@@ -176,7 +176,7 @@ summary {
 [class*='artpiece-'] {
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
-  /* align-items: end; */
+  min-width: 9.4rem; 
   width: min-content;
   padding: var(--base-spacing);
 
