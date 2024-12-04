@@ -1672,7 +1672,7 @@
     "date": "May 8, 2011",
     "desc": "Letterpress print of an alphabet where every letter is a dog breed that starts with that letter",
     "dimensions": "6x9 inches",
-    "media": "",
+    "media": ["letterpress", "printmaking"],
     "content": "",
     "forSale": false,
     "link": "dog_alphabet.webp",

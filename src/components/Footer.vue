@@ -7,7 +7,7 @@ const socials = footerLinks;
 <template>
   <footer class="responsive">
     <ul class="social-links">
-      <li class="m-3" v-for="social of socials">
+      <li class="m-3" v-for="social of socials" :key="social.icon.slice(0, 5)">
         <a :href="social.link" target="_blank" rel="noreferrer">
           <picture>
             <source :srcset="`./logos/white/${social.icon}`" media="(prefers-color-scheme: dark)" />

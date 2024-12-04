@@ -97,6 +97,7 @@ onMounted(async () => {
         </button>
       </div>
     </details>
+    {{ filteredArts.length }}
     <ArtLists :images="filteredArts" />
   </div>
 </template>

@@ -21,6 +21,7 @@ provide('openModal', openModal);
 provide('closeModal', closeModal);
 provide('modalImage', modalImage);
 provide('isModalVisible', isModalVisible);
+// Lesson 8 flash messages - Touring Vue Router  has info on provide/inject stuff to refer back to
 </script>
 
 <template>

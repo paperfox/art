@@ -4,7 +4,7 @@ import Filters from './Filters.vue';
 import inProgress from '../data/sketchData';
 import ArtLists from './ArtLists.vue';
 
-defineProps(['filteredArts']);
+// defineProps(['filteredArts']);
 
 let sketches = inProgress;
 
@@ -26,7 +26,8 @@ const selectedTab = ref(true);
     <div class="tab-content" id="artTab" v-show="selectedTab">
       <div class="artwork">
         <Filters />
-        <!-- Add pagination - 40ish items per page  -->
+        <!-- Add pagination - 40ish items per page  
+         Lesson 3 Building pagingation - Touring Vue Router probably what I need here-->
       </div>
     </div>
     <div class="tab-content" id="sketchTab" v-show="!selectedTab">
