@@ -14,11 +14,11 @@ const selectedTab = ref(true);
 <template>
   <main class="main">
     <div class="nav-tabs">
-      <label :class="`${selectedTab ? 'tab-control active' : 'tab-control'}`">
+      <label :class="`${selectedTab ? 'tab-control active' : 'tab-control'}`" id="tab-art">
         <input type="radio" v-model="selectedTab" value="true" checked />
         Artwork
       </label>
-      <label :class="`${!selectedTab ? 'tab-control active' : 'tab-control'}`">
+      <label :class="`${!selectedTab ? 'tab-control active' : 'tab-control'}`" id="tab-sketch">
         <input type="radio" v-model="selectedTab" value="" />
         Sketchbook
       </label>

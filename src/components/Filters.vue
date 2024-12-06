@@ -6,16 +6,22 @@ import ArtLists from './ArtLists.vue';
 const props = defineProps({
   artwork: {
     type: Array,
-    required: true,
   },
 });
+
+// const props = defineProps({
+//   artwork: {
+//     type: Array,
+//     required: true,
+//   },
+// });
 
 const activeFilters = ref([{ filterType: 'featured', filterValue: 'true', filterName: 'Featured' }]);
 const activeFilterClass = ref({
   true: true, // featured selected by default - this naming is confusing
 });
 
-//preloading images
+// preloading images
 const newImages = ref([]);
 const images = artwork.map((art) => `./art/${art.link}`);
 
