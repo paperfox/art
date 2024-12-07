@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import { describe, it, test, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import DisplayArt from '../DisplayArt.vue';
 
 describe('art display', () => {
@@ -9,35 +9,20 @@ describe('art display', () => {
     const wrapper = mount(DisplayArt);
     expect(wrapper.classes('main')).toBe(true);
   });
-  it('shows art tab selected', () => {
+
+  it('shows art tab selected by default', async () => {
     const wrapper = mount(DisplayArt);
     const tabs = wrapper.find('.tab-control.active').text();
+    // the below works, i just have to fix how my images load becuase rn they load after the test runs
+    // const images = wrapper.findAll('img');
+    // expect(images).toHaveLength(5);
     expect(tabs).toBe('Artwork');
   });
-  test('select sketch tab', async () => {
-    // triggering an event that emites a promise so we need async to wait for it
-    const wrapper = mount(DisplayArt, {
-      data() {
-        return {
-          clicked: false,
-        };
-      },
-    });
-    const sketchTab = wrapper.find('.tab-control').text('');
-    // find is similar to native js 'querySelector' function
-    // await sketchTab.trigger('click');
-    console.log(sketchTab);
-    // expect(sketchTab.toH;
+
+  it('shows sketch tab selected', async () => {
+    const wrapper = mount(DisplayArt);
+    const tabs = wrapper.find('button#tab-sketch');
+    await tabs.trigger('click');
+    expect(tabs.classes()).toContain('active');
   });
 });
-
-// What do I need to test
-// App Loads - done
-// Artwork Images load with 'featured' filter selected
-// sketch tab shows sketch view
-// image button can be clicked to show modal
-// modal close button can be clicked to dismiss modal
-// modal background can be clicked to dismiss modal
-// esc can be clicked to dismiss modal
-// filters can be selected and selected filter has active state and list is filtered
-// filters can be unselected and unselected filter has active state removed and list is unfiltered

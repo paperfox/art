@@ -8,29 +8,31 @@ import ArtLists from './ArtLists.vue';
 
 let sketches = inProgress;
 
-const selectedTab = ref(true);
+const tab = ref('art');
 </script>
 
 <template>
   <main class="main">
     <div class="nav-tabs">
-      <label :class="`${selectedTab ? 'tab-control active' : 'tab-control'}`" id="tab-art">
-        <input type="radio" v-model="selectedTab" value="true" checked />
+      <button @click="tab = 'art'" :class="`${tab === 'art' ? 'tab-control active' : 'tab-control'}`" id="tab-art">
         Artwork
-      </label>
-      <label :class="`${!selectedTab ? 'tab-control active' : 'tab-control'}`" id="tab-sketch">
-        <input type="radio" v-model="selectedTab" value="" />
+      </button>
+      <button
+        @click="tab = 'sketch'"
+        :class="`${tab === 'sketch' ? 'tab-control active' : 'tab-control'}`"
+        id="tab-sketch"
+      >
         Sketchbook
-      </label>
+      </button>
     </div>
-    <div class="tab-content" id="artTab" v-show="selectedTab">
+    <div class="tab-content" id="artTab" v-show="tab === 'art'">
       <div class="artwork">
         <Filters />
         <!-- Add pagination - 40ish items per page  
          Lesson 3 Building pagingation - Touring Vue Router probably what I need here-->
       </div>
     </div>
-    <div class="tab-content" id="sketchTab" v-show="!selectedTab">
+    <div class="tab-content" id="sketchTab" v-show="tab === 'sketch'">
       <div class="artwork">
         <ArtLists :images="sketches" />
       </div>

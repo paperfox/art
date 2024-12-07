@@ -118,12 +118,14 @@ main {
   li { width: 50%; }
 
   .tab-control {
+    border: none;
     border-top: 0.2rem solid transparent;
     cursor: pointer;
     font-weight: 600;
     padding: var(--xs-spacing);
     width: 100%;
     opacity: 0.8;
+    background-color: transparent;
 
     &.active {
       background-color: var(--main-bg);
