@@ -22,7 +22,12 @@ onClickOutside(modal, () => {
       </header>
       <section class="modal-content">
         <img :src="`./art/${modalImage?.link}`" :alt="modalImage?.desc" />
-        <p>{{ modalImage?.desc }}</p>
+        <div>
+          <p>
+            {{ modalImage?.date }} &nbsp; | &nbsp;
+            {{ modalImage?.media.map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(', ') }}
+          </p>
+        </div>
       </section>
     </div>
   </div>
