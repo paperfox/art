@@ -37,6 +37,7 @@ const filterButtons = [
   { filterType: 'content', filterValue: 'animal', filterName: 'Animal' },
   { filterType: 'content', filterValue: 'fanart', filterName: 'Fan Art' },
   { filterType: 'content', filterValue: 'fantasy', filterName: 'Fantasy' },
+  { filterType: 'content', filterValue: 'landscape', filterName: 'Landscape' },
   { filterType: 'content', filterValue: 'people', filterName: 'People' },
   { filterType: 'content', filterValue: 'plant', filterName: 'Plants' },
   { filterType: 'content', filterValue: 'vehicle', filterName: 'Vehicles' },
@@ -102,8 +103,8 @@ onMounted(async () => {
           {{ filter.filterName }}
         </button>
       </div>
+      <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p>
     </details>
-    {{ filteredArts.length }}
     <ArtLists :images="filteredArts" />
   </div>
 </template>
