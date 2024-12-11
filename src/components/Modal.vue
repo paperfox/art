@@ -76,8 +76,8 @@ onClickOutside(modal, () => {
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 90%;
-  max-height: 90%;
+  max-width: fit-content;
+  max-height: fit-content;
   border-radius: 0.4rem;
   background: var(--main-bg);
   overflow: auto;

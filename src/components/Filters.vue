@@ -98,6 +98,7 @@ onMounted(async () => {
           :key="filter.filterValue"
           class="btn-badge"
           :class="{ 'active-filters': activeFilterClass[filter.filterValue] }"
+          :id="filter.filterValue === 'sculpture' ? 'separator' : 'owo'"
           @click="applyFilter(filter)"
         >
           {{ filter.filterName }}
@@ -109,4 +110,15 @@ onMounted(async () => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#separator {
+  margin-right: 3rem;
+
+  &::after {
+    content: ' |';
+    margin-left: 3rem;
+    position: absolute;
+    color: var(--text-body) !important;
+  }
+}
+</style>
