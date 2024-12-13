@@ -27,6 +27,7 @@ const tab = ref('art');
     </div>
     <div class="tab-content" id="artTab" v-show="tab === 'art'">
       <div class="artwork">
+        <!-- <img src="./art/preview/1.jpg" alt="Artwork" /> -->
         <Filters />
         <!-- Add pagination - 40ish items per page  
          Lesson 3 Building pagingation - Touring Vue Router probably what I need here-->
