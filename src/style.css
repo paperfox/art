@@ -308,7 +308,7 @@ summary {
   .container                  { display: block; }
   .nav-tabs                   { background-color: var(--secondary-bg); }
   .modal-content div:has(img) { margin-inline: auto; }
-  
+
   aside,
   main  { 
     height: unset;
@@ -320,10 +320,25 @@ summary {
 
     img { max-width: 100%; }
   }
+
+  .art-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li { margin-bottom: var(--xs-spacing); }
+  }
+
+  [class*='artpiece-'] {
+    &,
+    img { 
+      max-height: 16rem; 
+    }
+  }
 }
 
-@media (max-width: 600px) {
-  [class*='art-list'] li { width: 100%; }
+@media (max-width: 440px) {
+  .art-list li { width: 100%; }
 
   [class*='artpiece-'] {
     &,
@@ -333,3 +348,4 @@ summary {
     }
   }
 }
+

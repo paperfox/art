@@ -15,7 +15,7 @@ const modal = (imgData) => {
 
 // come back to this, there's gotta be a way to improve it
 const windowWidth = window.innerWidth;
-const isSmallScreen = windowWidth < 768;
+const isSmallScreen = windowWidth < 445;
 </script>
 
 <template>
