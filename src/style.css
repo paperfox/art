@@ -338,7 +338,7 @@ summary {
 }
 
 @media (max-width: 440px) {
-  .art-list li { width: 100%; }
+  /* .art-list li { width: 100%; }
 
   [class*='artpiece-'] {
     &,
@@ -346,6 +346,12 @@ summary {
       height: auto;
       width: 100%;
     }
-  }
+  } */
+  /* [class*='artpiece-'] {
+    &,
+    img { 
+      max-height: 14rem; 
+    }
+  } */
 }
 
