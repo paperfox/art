@@ -8,7 +8,7 @@
     "content": ["zebra", "animal"],
     "forSale": false,
     "link": "mountain_zebra.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Mountain Zebra Line Art",
@@ -140,7 +140,7 @@
     "content": ["bird", "animal"],
     "forSale": false,
     "link": "macqueen_s_bustard.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "MacQueen’s Bustard, Firebird Line Art",
@@ -272,7 +272,7 @@
     "content": ["wolf", "animal", "fantasy"],
     "forSale": false,
     "link": "mexican_wolf.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Mexican Wolf Line Art",
@@ -338,7 +338,7 @@
     "content": ["bird", "animal", "fantasy"],
     "forSale": false,
     "link": "page_of_pentacles.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Sunshine",
@@ -360,7 +360,7 @@
     "content": ["bird", "animal"],
     "forSale": false,
     "link": "seabirds.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Jellyfish",
@@ -377,7 +377,7 @@
       "jellyfish_print_addl3.webp",
       "jellyfish_print_addl4.webp"
     ],
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Bitter Dreams",
@@ -444,7 +444,7 @@
     "content": ["otter", "animal", "plant", "landscape"],
     "forSale": false,
     "link": "japanese_river_otter.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Dhole Party",
@@ -510,7 +510,7 @@
     "content": ["bat", "animal"],
     "forSale": false,
     "link": "Straw-Colored-Fruit-Bat.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Forest Owlet",
@@ -521,7 +521,7 @@
     "content": ["owl", "animal", "people"],
     "forSale": false,
     "link": "forest-owlet.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Egyptian Lion",
@@ -532,7 +532,7 @@
     "content": ["lion", "animal"],
     "forSale": false,
     "link": "egyptian-lion.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Mongolian Wild Horse",
@@ -543,7 +543,7 @@
     "content": ["horse", "animal"],
     "forSale": false,
     "link": "mongolian-wild-horse.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Zebra Duiker",
@@ -554,7 +554,7 @@
     "content": ["duiker", "animal"],
     "forSale": false,
     "link": "zebra-duiker.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Red Squirrel",
@@ -565,7 +565,7 @@
     "content": ["squirrel", "animal"],
     "forSale": false,
     "link": "red-squirrel.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Pinto's Spinetail",
@@ -576,7 +576,7 @@
     "content": ["bird", "animal"],
     "forSale": false,
     "link": "pintos-spinetail.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Panay Monitor",
@@ -587,7 +587,7 @@
     "content": ["lizard", "animal"],
     "forSale": false,
     "link": "panay-monitor.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Mandrake",
@@ -598,7 +598,7 @@
     "content": ["plant", "people"],
     "forSale": false,
     "link": "mandrake.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Yellow-billed Loon",
@@ -620,7 +620,7 @@
     "content": ["cat", "animal"],
     "forSale": false,
     "link": "tsushima-leopard-cat.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Lion’s Mane Jellyfish",
@@ -642,7 +642,7 @@
     "content": ["glacier", "landscape"],
     "forSale": false,
     "link": "lamplugh-glacier.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Amanita Mushroom",
@@ -653,7 +653,7 @@
     "content": ["mushroom", "plant"],
     "forSale": false,
     "link": "amanita-mushroom.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Fog at Sea",
@@ -675,7 +675,7 @@
     "content": ["plant", "landscape"],
     "forSale": false,
     "link": "alaska-sunset.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Nighttime Alaskan Sea",
@@ -686,7 +686,7 @@
     "content": ["plant", "landscape"],
     "forSale": false,
     "link": "nighttime-alaskan-sea.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "The Hermit",
@@ -708,7 +708,7 @@
     "content": ["bird", "animal"],
     "forSale": false,
     "link": "white-throated-magpie-jay-linocut.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Rainbow Inkblot Cat",
@@ -719,7 +719,7 @@
     "content": ["bird", "animal"],
     "forSale": false,
     "link": "rainbow-shadowcat.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Happy Pride Month - Finnley",
@@ -741,7 +741,7 @@
     "content": ["dragon", "fish", "animal", "fantasy"],
     "forSale": false,
     "link": "carp-dragon.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Queen of Cups",
@@ -796,7 +796,7 @@
     "content": ["animal", "fantasy"],
     "forSale": false,
     "link": "year-of-the-rabbit.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Landscape with Tree",
@@ -829,7 +829,7 @@
     "content": ["butterfly", "animal", "insect"],
     "forSale": false,
     "link": "rainbow-butterfly.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Cyan Jellyfish",
@@ -840,7 +840,7 @@
     "content": ["jellyfish", "animal"],
     "forSale": false,
     "link": "cyan-jellie.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Shadow Wolves",
@@ -851,7 +851,7 @@
     "content": ["wolf", "animal", "fantasy"],
     "forSale": false,
     "link": "shadow-wolves.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Fishing",
@@ -862,7 +862,7 @@
     "content": ["animal", "fantasy", "people", "fanart"],
     "forSale": false,
     "link": "fishing.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Crow in the Window",
@@ -873,7 +873,7 @@
     "content": ["crow", "bird", "animal"],
     "forSale": false,
     "link": "stormy-crow.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Portrait",
@@ -884,7 +884,7 @@
     "content": ["people"],
     "forSale": false,
     "link": "portrait-red.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Wyvern",
@@ -895,7 +895,7 @@
     "content": ["dragon", "animal", "fantasy"],
     "forSale": false,
     "link": "wyvern.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Muddy Dragon",
@@ -1060,7 +1060,7 @@
     "content": ["wolverine", "animal"],
     "forSale": false,
     "link": "wolverine.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Southern Cassowary",
@@ -1071,7 +1071,7 @@
     "content": ["bird", "dinosaur", "animal"],
     "forSale": false,
     "link": "southern_cassowary.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Sun Bear",
@@ -1236,7 +1236,7 @@
     "content": ["cat", "animal"],
     "forSale": false,
     "link": "irimote_cat.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Tarquin",
@@ -1335,7 +1335,7 @@
     "content": ["waterlily", "plant"],
     "forSale": false,
     "link": "sacred_blue_lily_of_the_nile.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Narwhal",
@@ -1412,7 +1412,7 @@
     "content": ["bird", "animal"],
     "forSale": false,
     "link": "imperial_pidgeon.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Manta Ray",
@@ -1434,7 +1434,7 @@
     "content": ["seahorse", "animal"],
     "forSale": true,
     "link": "long_snouted_seahorse.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Ring-tailed Lemur",
@@ -1929,7 +1929,7 @@
     "content": ["dog", "animal"],
     "forSale": false,
     "link": "red_jindos_pet_portrait.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Shepherds of Love",
@@ -2050,7 +2050,7 @@
     "content": ["plant", "landscape"],
     "forSale": false,
     "link": "bahia_pez_vela.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Chasing Stray Hares",
