@@ -162,7 +162,7 @@
     "content": ["gazelle", "animal"],
     "forSale": false,
     "link": "mountain_gazelle.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Mountain Gazelle Line Art",
@@ -477,7 +477,7 @@
     "content": ["bear", "animal"],
     "forSale": false,
     "link": "himalayan_brown_bear.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Indian Bison",
@@ -788,26 +788,114 @@
     "featured": ["true"]
   },
   {
-    "title": "Year of the Rabbit",
-    "date": "Jan 19, 2023",
+    "title": "Quetzal",
+    "date": "Oct 30, 2022",
     "desc": "",
-    "dimensions": "6x6 inches",
-    "media": ["watercolor", "ink"],
-    "content": ["animal", "fantasy"],
+    "dimensions": "6x8 inches",
+    "media": ["watercolor"],
+    "content": ["bird", "animal"],
     "forSale": false,
-    "link": "year-of-the-rabbit.webp",
+    "link": "quetzal.webp",
     "featured": ["false"]
   },
   {
-    "title": "Landscape with Tree",
-    "date": "Nov 24, 2021",
+    "title": "Giant Golden-Crowned Flying Fox",
+    "date": "Oct 29, 2022",
     "desc": "",
-    "dimensions": "8x12 inches",
+    "dimensions": "6x9 inches",
     "media": ["watercolor"],
-    "content": ["tree", "landscape", "plant"],
+    "content": ["bat", "animal", "fantasy"],
     "forSale": false,
-    "link": "leafless-tree-landscape.webp",
+    "link": "giant-golden-crowned-flying-fox.webp",
+    "featured": ["false"]
+  },
+  {
+    "title": "Black-footed Ferret",
+    "date": "Oct 27, 2022",
+    "desc": "",
+    "dimensions": "6x9 inches",
+    "media": ["Micron Pen", "watercolor"],
+    "content": ["animal"],
+    "forSale": false,
+    "link": "black-footed-ferret.webp",
+    "featured": ["false"]
+  },
+  {
+    "title": "Umbrella Thorn Acacia",
+    "date": "Oct 25, 2022",
+    "desc": "",
+    "dimensions": "6x9 inches",
+    "media": ["watercolor"],
+    "content": ["tree", "plant"],
+    "forSale": false,
+    "link": "umbrella-thorn-acacia.webp",
+    "featured": ["false"]
+  },
+  {
+    "title": "Ornate Eagle Ray",
+    "date": "Oct 25, 2022",
+    "desc": "",
+    "dimensions": "6x6 inches",
+    "media": ["Micron Pen"],
+    "content": ["animal"],
+    "forSale": false,
+    "link": "ornate-eagle-ray.webp",
+    "featured": ["false"]
+  },
+  {
+    "title": "Amate Tree",
+    "date": "Oct 24, 2022",
+    "desc": "",
+    "dimensions": "5x5 inches",
+    "media": ["watercolor"],
+    "content": ["tree", "plant"],
+    "forSale": false,
+    "link": "amate-tree.webp",
+    "featured": ["false"]
+  },
+  {
+    "title": "Eastern Spotted Skunk",
+    "date": "Oct 24, 2022",
+    "desc": "",
+    "dimensions": "5x5 inches",
+    "media": ["watercolor"],
+    "content": ["animal"],
+    "forSale": false,
+    "link": "eastern-spotted-skunk.webp",
+    "featured": ["false"]
+  },
+  {
+    "title": "Sad Mushroom",
+    "date": "Jun 27, 2022",
+    "desc": "",
+    "dimensions": "8x8 inches",
+    "media": ["watercolor", "ink"],
+    "content": ["landscape", "plant"],
+    "forSale": false,
+    "link": "sad-mushroom.webp",
     "featured": ["true"]
+  },
+  {
+    "title": "Cosmos",
+    "date": "Jan 27, 2022",
+    "desc": "",
+    "dimensions": "9x12 inches",
+    "media": ["watercolor", "ink"],
+    "content": ["bird", "animal"],
+    "forSale": false,
+    "link": "cosmos.webp",
+    "featured": ["true"]
+  },
+  {
+    "title": "House at Moonrise",
+    "date": "Jan 27, 2022",
+    "desc": "",
+    "dimensions": "5x5 inches",
+    "media": ["watercolor", "ink"],
+    "content": ["landscape", "plant"],
+    "forSale": false,
+    "link": "house-at-moonrise.webp",
+    "featured": ["false"]
   },
   {
     "title": "Sylver Sezari",
@@ -1159,7 +1247,7 @@
     "content": ["bird", "animal", "fantasy"],
     "forSale": false,
     "link": "reeve_s_pheasant.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Desert Tortoise",
@@ -1489,7 +1577,7 @@
     "content": ["leopard", "animal"],
     "forSale": false,
     "link": "snow_leopard.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Snowy Owl",
