@@ -308,8 +308,7 @@ summary {
   .container                  { display: block; }
   .nav-tabs                   { background-color: var(--secondary-bg); }
   .modal-content div:has(img) { margin-inline: auto; }
-  [class*='art-list'] li      { width: 50%; }
-
+  
   aside,
   main  { 
     height: unset;
@@ -321,6 +320,10 @@ summary {
 
     img { max-width: 100%; }
   }
+}
+
+@media (max-width: 600px) {
+  [class*='art-list'] li { width: 100%; }
 
   [class*='artpiece-'] {
     &,
@@ -329,8 +332,4 @@ summary {
       width: 100%;
     }
   }
-}
-
-@media (max-width: 580px) {
-  [class*='art-list'] li { width: 100%; }
 }
