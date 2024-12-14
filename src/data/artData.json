@@ -504,7 +504,7 @@
   {
     "title": "Straw-Colored Fruit Bat",
     "date": "Oct 23, 2023",
-    "desc": "",
+    "desc": "Black and brown micron pen drawing of a bat hanging off a branch buy the legs and 1 finger looking at the viewer.",
     "dimensions": "6x6 inches",
     "media": ["Micron Pen"],
     "content": ["bat", "animal"],
@@ -515,7 +515,7 @@
   {
     "title": "Forest Owlet",
     "date": "Oct 22, 2023",
-    "desc": "",
+    "desc": "A blond woman in a white dress steps over the root of a large tree deep in the forest as light filters through the leaves. In one hand is a shepherds crook, the other arm is lifted and an owlet is perched on it looking at her. Done in micron pen and watercolor.",
     "dimensions": "9x12 inches",
     "media": ["Micron Pen", "watercolor"],
     "content": ["owl", "animal", "people"],
@@ -526,7 +526,7 @@
   {
     "title": "Egyptian Lion",
     "date": "Oct 19, 2023",
-    "desc": "",
+    "desc": "Micron pen line art of an egyptian lion with a sylized sun behind him and a gradient that fills the sun and the lion going from yellow to sienna brown.",
     "dimensions": "6x9 inches",
     "media": ["Micron Pen", "watercolor"],
     "content": ["lion", "animal"],
@@ -779,7 +779,7 @@
   {
     "title": "Seven of Cups",
     "date": "Jan 26, 2023",
-    "desc": "",
+    "desc": "Puddingway, a loporrit from FInal Fantasy 14, sits reading a recipe book with bowls and cups of pudding around him while thinking of pudding.",
     "dimensions": "9x12 inches",
     "media": ["watercolor", "ink"],
     "content": ["people", "animal", "fantasy", "fanart"],
@@ -788,9 +788,20 @@
     "featured": ["true"]
   },
   {
+    "title": "T-rex Learns to Swim",
+    "date": "Dec 21, 2022",
+    "desc": "Watercolor painting of a t-rex swimming with a pink floating ring. There are little silver fish swimming near his feet and he's terrified of them.",
+    "dimensions": "7x7 inches",
+    "media": ["Micron Pen", "watercolor"],
+    "content": ["dinosaur", "animal", "fantasy"],
+    "forSale": false,
+    "link": "trexswim.webp",
+    "featured": ["true"]
+  },
+  {
     "title": "Quetzal",
     "date": "Oct 30, 2022",
-    "desc": "",
+    "desc": "A watercolor painting of a green bird with a long tail and a red chest doing a somersault midair so it's tail feathers are in a circle.",
     "dimensions": "6x8 inches",
     "media": ["watercolor"],
     "content": ["bird", "animal"],
@@ -801,7 +812,7 @@
   {
     "title": "Giant Golden-Crowned Flying Fox",
     "date": "Oct 29, 2022",
-    "desc": "",
+    "desc": "An anthropomorphic bat person in gold and blue swings upside down from pink aerial silks on a dark background.",
     "dimensions": "6x9 inches",
     "media": ["watercolor"],
     "content": ["bat", "animal", "fantasy"],
@@ -812,7 +823,7 @@
   {
     "title": "Black-footed Ferret",
     "date": "Oct 27, 2022",
-    "desc": "",
+    "desc": "Micron pen and watercolor of a ferret with a black mask curled up in a ball sleeping.",
     "dimensions": "6x9 inches",
     "media": ["Micron Pen", "watercolor"],
     "content": ["animal"],
@@ -823,7 +834,7 @@
   {
     "title": "Umbrella Thorn Acacia",
     "date": "Oct 25, 2022",
-    "desc": "",
+    "desc": "Abstract green watercolor marks make up the leaves of an umbrella thorn acacia tree with black watercolor making up the trunk and branches.",
     "dimensions": "6x9 inches",
     "media": ["watercolor"],
     "content": ["tree", "plant"],
@@ -834,7 +845,7 @@
   {
     "title": "Ornate Eagle Ray",
     "date": "Oct 25, 2022",
-    "desc": "",
+    "desc": "Micron pen drawing of an ornate eagle ray swimming downward with one fin dissolving into nothing.",
     "dimensions": "6x6 inches",
     "media": ["Micron Pen"],
     "content": ["animal"],
@@ -845,7 +856,7 @@
   {
     "title": "Amate Tree",
     "date": "Oct 24, 2022",
-    "desc": "",
+    "desc": "Watercolor painting of the roots of an amate tree with abstract green splatters.",
     "dimensions": "5x5 inches",
     "media": ["watercolor"],
     "content": ["tree", "plant"],
@@ -856,7 +867,7 @@
   {
     "title": "Eastern Spotted Skunk",
     "date": "Oct 24, 2022",
-    "desc": "",
+    "desc": "High contrast watercolor portrait of an eastern spotted skunk.",
     "dimensions": "5x5 inches",
     "media": ["watercolor"],
     "content": ["animal"],
@@ -867,10 +878,10 @@
   {
     "title": "Sad Mushroom",
     "date": "Jun 27, 2022",
-    "desc": "",
+    "desc": "A sad mushroom with a red cap sits with their legs kicked up and shining eyes as though they're about to cry. Inspired by the baby bun mini from Final Fantasy 14.",
     "dimensions": "8x8 inches",
     "media": ["watercolor", "ink"],
-    "content": ["landscape", "plant"],
+    "content": ["landscape", "plant", "fantasy", "fanart"],
     "forSale": false,
     "link": "sad-mushroom.webp",
     "featured": ["true"]
@@ -878,7 +889,7 @@
   {
     "title": "Cosmos",
     "date": "Jan 27, 2022",
-    "desc": "",
+    "desc": "Watercolor painting of a white-throated magpie jay sitting on a gold crescent holding a golden orb with an abstract pink, gold, and black background with a shining gold circle.",
     "dimensions": "9x12 inches",
     "media": ["watercolor", "ink"],
     "content": ["bird", "animal"],
@@ -889,13 +900,24 @@
   {
     "title": "House at Moonrise",
     "date": "Jan 27, 2022",
-    "desc": "",
+    "desc": "Watercolor gradient from blue to red to yellow with a crescent moon and stars with a black sillhouette of a house with a leafless tree on a hill in the foreground.",
     "dimensions": "5x5 inches",
     "media": ["watercolor", "ink"],
     "content": ["landscape", "plant"],
     "forSale": false,
     "link": "house-at-moonrise.webp",
     "featured": ["false"]
+  },
+  {
+    "title": "Landscape with Tree",
+    "date": "Nov 24, 2021",
+    "desc": "Watercolor painting of a leafless tree in the foreground with green hills in the background.",
+    "dimensions": "8x12 inches",
+    "media": ["watercolor"],
+    "content": ["tree", "landscape", "plant"],
+    "forSale": false,
+    "link": "leafless-tree-landscape.webp",
+    "featured": ["true"]
   },
   {
     "title": "Sylver Sezari",
