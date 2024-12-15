@@ -389,7 +389,7 @@
     "forSale": false,
     "link": "bitter_dreams.webp",
     "additionalImages": ["bitter_dreams_addl1.webp", "bitter_dreams_addl2.webp", "bitter_dreams_addl3.webp"],
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "2024 Pride - Featuring Miko",
@@ -796,7 +796,7 @@
     "content": ["dinosaur", "animal", "fantasy"],
     "forSale": false,
     "link": "trexswim.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Quetzal",
@@ -1060,7 +1060,7 @@
     "content": ["animal"],
     "forSale": false,
     "link": "chinese-broad-headed-pond-turtle.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Canada Warbler",
@@ -1071,7 +1071,7 @@
     "content": ["animal"],
     "forSale": false,
     "link": "canada-warbler.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Rowan Tree",
@@ -1082,7 +1082,7 @@
     "content": ["plant"],
     "forSale": false,
     "link": "rowan-tree.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Sierra Nevada Red Fox",
@@ -1093,7 +1093,7 @@
     "content": ["animal"],
     "forSale": false,
     "link": "sierra-nevada-red-fox.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "On the High Shelves",
@@ -1104,7 +1104,7 @@
     "content": ["plant"],
     "forSale": false,
     "link": "baby-bun-reaching.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Half Moon Over Trees",
@@ -1115,7 +1115,7 @@
     "content": ["plant", "landscape"],
     "forSale": false,
     "link": "half-moon-night-scene.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Sunflower",
@@ -1126,7 +1126,7 @@
     "content": ["plant"],
     "forSale": false,
     "link": "sunflower.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Daytime Mountainscape",
@@ -1137,7 +1137,7 @@
     "content": ["landscape"],
     "forSale": false,
     "link": "daytime-mountainscape.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Sunset Over Mountains",
@@ -1148,7 +1148,7 @@
     "content": ["landscape"],
     "forSale": false,
     "link": "sunset-over-mountains.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Sunset Over Water",
@@ -1159,7 +1159,7 @@
     "content": ["landscape"],
     "forSale": false,
     "link": "sunset-over-water.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Sad Mushroom",
@@ -1203,7 +1203,7 @@
     "content": ["tree", "landscape", "plant"],
     "forSale": false,
     "link": "leafless-tree-landscape.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Sylver Sezari",
@@ -1434,7 +1434,7 @@
     "content": ["bird", "animal"],
     "forSale": false,
     "link": "philippine_eagle_owl.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Elkhorn Coral ",
@@ -2116,7 +2116,7 @@
     "content": ["rabbit", "animal", "fantasy", "landscape"],
     "forSale": false,
     "link": "almost_rabbits.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "White Mage",
