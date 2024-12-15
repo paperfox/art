@@ -256,6 +256,7 @@ summary {
 }
 
 .btn-badge {
+  position: relative;
   display: inline-block;
   background-color: transparent;
   border: 0.1rem solid var(--text-body);

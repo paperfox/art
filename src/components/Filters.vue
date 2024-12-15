@@ -30,6 +30,7 @@ const filterButtons = [
   { filterType: 'featured', filterValue: 'true', filterName: 'Featured' },
   { filterType: 'media', filterValue: 'watercolor', filterName: 'Watercolor' },
   { filterType: 'media', filterValue: 'ink', filterName: 'Ink' },
+  { filterType: 'media', filterValue: 'micron pen', filterName: 'micron pen' },
   { filterType: 'media', filterValue: 'printmaking', filterName: 'Printmaking' },
   { filterType: 'media', filterValue: 'digital', filterName: 'Digital' },
   { filterType: 'media', filterValue: 'painting', filterName: 'Acrylic/Oil' },
