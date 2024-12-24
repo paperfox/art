@@ -14,7 +14,9 @@ describe('art display', () => {
     const wrapper = mount(DisplayArt);
     const tabs = wrapper.find('.tab-control.active').text();
     // the below works, i just have to fix how my images load becuase rn they load after the test runs
-    // const images = wrapper.findAll('img');
+    // onMounted might be what I need here so I look for images after compoennt mounts see
+    // vueschool component lifecycle hooks in vue component fundementals with composition api
+    const images = wrapper.findAll('img');
     // expect(images).toHaveLength(5);
     expect(tabs).toBe('Artwork');
   });
