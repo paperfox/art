@@ -7,7 +7,7 @@ const socials = footerLinks;
 <template>
   <footer class="responsive">
     <ul class="social-links">
-      <li class="m-3" v-for="social of socials" :key="social.icon.slice(0, 5)">
+      <li v-for="social of socials" :key="social.icon.slice(0, 5)">
         <a :href="social.link" target="_blank" rel="noreferrer">
           <picture>
             <source :srcset="`./logos/white/${social.icon}`" media="(prefers-color-scheme: dark)" />
@@ -27,9 +27,7 @@ footer {
 
 .social-links {
   padding: var(--base-spacing);
-  display: flex;
   justify-content: space-between;
-  list-style: none;
 
   img {
     height: 3.2rem;

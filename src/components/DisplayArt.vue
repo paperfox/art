@@ -40,5 +40,3 @@ const tab = ref('art');
     </div>
   </main>
 </template>
-
-<style scoped></style>

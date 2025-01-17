@@ -23,5 +23,3 @@ import Footer from './Footer.vue';
     <Footer />
   </aside>
 </template>
-
-<style scoped></style>

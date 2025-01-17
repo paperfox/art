@@ -17,14 +17,21 @@ const modal = (imgData) => {
 <template>
   <ul class="art-list" aria-live="polite">
     <li v-for="(image, index) of images" :key="condense(image.title)">
-      <div :class="`artpiece--${index}`">
+      <!-- <div :class="`artpiece--${index}`">
         <img :src="`./art/preview/${image.link}`" :alt="image.desc" />
-        <button type="button" class="open-modal" :data-open="`modal${index}`" @click="modal(image)">
+        <button type="button" class="btn-modal" :data-open="`modal${condense(image.title)}`" @click="modal(image)">
           <span>{{ image.title }}</span>
+        </button>
+      </div> -->
+
+      <div :class="`artpiece--${index}`">
+        <button type="button" class="btn-modal" :data-open="`modal${condense(image.title)}`" @click="modal(image)">
+          <figure>
+            <img :src="`./art/preview/${image.link}`" :alt="image.desc" />
+            <figcaption>{{ image.title }}</figcaption>
+          </figure>
         </button>
       </div>
     </li>
   </ul>
 </template>
-
-<style scoped></style>

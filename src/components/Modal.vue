@@ -94,20 +94,20 @@ onClickOutside(modal, () => {
     margin-inline: auto;
     padding-left: 5.6rem; /* accomodates the close button */
   }
-}
 
-.modal-header .close-modal {
-  color: var(--link);
-  float: right;
-  font-size: 4.2rem;
-  background: none;
-  border: 0.1rem solid transparent;
-  cursor: pointer;
-  padding: 0 var(--base-spacing);
+  .close-modal {
+    color: var(--link);
+    float: right;
+    font-size: 4.2rem;
+    background: none;
+    border: 0.1rem solid transparent;
+    cursor: pointer;
+    padding: 0 var(--base-spacing);
 
-  &:hover,
-  &:focus-visible {
-    color: var(--text-body);
+    &:hover,
+    &:focus-visible {
+      color: var(--text-body);
+    }
   }
 }
 </style>

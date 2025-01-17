@@ -70,23 +70,23 @@ const applyFilter = (filter) => {
 };
 
 // Preload images before rendering
-function preloadImages(imageUrls) {
-  return Promise.all(
-    imageUrls.map((url) => {
-      return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.src = url;
-        img.onload = resolve;
-        img.onerror = reject;
-      });
-    }),
-  );
-}
+// function preloadImages(imageUrls) {
+//   return Promise.all(
+//     imageUrls.map((url) => {
+//       return new Promise((resolve, reject) => {
+//         const img = new Image();
+//         img.src = url;
+//         img.onload = resolve;
+//         img.onerror = reject;
+//       });
+//     }),
+//   );
+// }
 
-onMounted(async () => {
-  await preloadImages(images);
-  newImages.value = images;
-});
+// onMounted(async () => {
+//   await preloadImages(images);
+//   newImages.value = images;
+// });
 </script>
 
 <template>
@@ -99,7 +99,7 @@ onMounted(async () => {
           :key="filter.filterValue"
           class="btn-badge"
           :class="{ 'active-filters': activeFilterClass[filter.filterValue] }"
-          :id="filter.filterValue === 'sculpture' ? 'separator' : 'owo'"
+          :id="filter.filterValue === 'sculpture' ? 'separator' : null"
           @click="applyFilter(filter)"
         >
           {{ filter.filterName }}
@@ -119,7 +119,7 @@ onMounted(async () => {
     content: ' |';
     margin-left: 3rem;
     position: absolute;
-    color: var(--text-body) !important;
+    color: var(--text-body);
   }
 }
 </style>
