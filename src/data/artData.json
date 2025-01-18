@@ -746,7 +746,7 @@
   {
     "title": "Queen of Cups",
     "date": "Jun 22, 2023",
-    "desc": "",
+    "desc": "Silhouette of an imperial pidgeon wearing a crown made of blue watercolor and black ink that appears to be poured from a goblet.",
     "dimensions": "9x12 inches",
     "media": ["watercolor", "ink"],
     "content": ["bird", "animal", "fantasy"],
@@ -757,9 +757,9 @@
   {
     "title": "Amelia",
     "date": "Apr 12, 2023",
-    "desc": "",
+    "desc": "Brown haired woman weaing black pants, brown shoes, steel blue shirt, and a disintegrating cloak sitting on a stoop of a worn building with a chicken wearing a blue bandana coming out of the door. On the door is a sign saying 'Bucky's Out of this World Restaurant'.",
     "dimensions": "9x12 inches",
-    "media": ["watercolor", "ink"],
+    "media": ["watercolor", "micron pen"],
     "content": ["people", "animal", "fantasy", "fanart"],
     "forSale": false,
     "link": "amelia.webp",
@@ -768,9 +768,9 @@
   {
     "title": "Seven of Wands",
     "date": "Feb 1, 2023",
-    "desc": "",
+    "desc": "Seven burnished poles with roots growing and holding them up with fire at the base and the night sky and stars behind. On the central pole, a hrothgar (a cat person from FFXIV) pole dances in an open button up tee shirt and jean shorts.",
     "dimensions": "9x12 inches",
-    "media": ["watercolor", "ink"],
+    "media": ["watercolor", "ink", "micron pen"],
     "content": ["people", "animal", "fantasy", "fanart"],
     "forSale": false,
     "link": "seven-of-wands.webp",
@@ -781,7 +781,7 @@
     "date": "Jan 26, 2023",
     "desc": "Puddingway, a loporrit from FInal Fantasy 14, sits reading a recipe book with bowls and cups of pudding around him while thinking of pudding.",
     "dimensions": "9x12 inches",
-    "media": ["watercolor", "ink"],
+    "media": ["watercolor", "micron pen"],
     "content": ["people", "animal", "fantasy", "fanart"],
     "forSale": false,
     "link": "seven-of-cups.webp",
@@ -911,7 +911,7 @@
   {
     "title": "Eastern Cougar",
     "date": "Oct 22, 2022",
-    "desc": "",
+    "desc": "Cougar on a path walking away from the viewer looking back with a forest in the background.",
     "dimensions": "8x8 inches",
     "media": ["micron pen", "watercolor"],
     "content": ["animal"],
@@ -933,7 +933,7 @@
   {
     "title": "Margay Cat",
     "date": "Oct 16, 2022",
-    "desc": "",
+    "desc": "Cat face with a gold circle behind it and silver coin in its mouth.",
     "dimensions": "6x6 inches",
     "media": ["watercolor", "micron pen"],
     "content": ["animal"],
@@ -944,7 +944,7 @@
   {
     "title": "Sea Otter",
     "date": "Oct 16, 2022",
-    "desc": "",
+    "desc": "Otter with hands on it's hips on an abstract background.",
     "dimensions": "6x6 inches",
     "media": ["watercolor", "micron pen"],
     "content": ["animal"],
@@ -1032,7 +1032,7 @@
   {
     "title": "European Oak",
     "date": "Oct 8, 2022",
-    "desc": "",
+    "desc": "Splattered green, yellow, and orange to make the leaves of an oak tree with a blue trunk.",
     "dimensions": "6x7 inches",
     "media": ["watercolor"],
     "content": ["plant"],
@@ -1076,7 +1076,7 @@
   {
     "title": "Rowan Tree",
     "date": "Oct 2, 2022",
-    "desc": "",
+    "desc": "Red paint splatters with leaves added to make it look like rowan berries.",
     "dimensions": "3x7 inches",
     "media": ["watercolor"],
     "content": ["plant"],
@@ -1098,10 +1098,10 @@
   {
     "title": "On the High Shelves",
     "date": "Aug 7, 2022",
-    "desc": "",
+    "desc": "Back view of FFXIV baby bun mushroom trying to reach a bowl on a high shelf.",
     "dimensions": "2.5x3.5 inches",
     "media": ["watercolor"],
-    "content": ["plant"],
+    "content": ["plant", "fantasy", "fanart"],
     "forSale": false,
     "link": "baby-bun-reaching.webp",
     "featured": ["false"]
@@ -1109,7 +1109,7 @@
   {
     "title": "Half Moon Over Trees",
     "date": "Aug 6, 2022",
-    "desc": "",
+    "desc": "Night scene with a half moon over trees on a purple blue sky.",
     "dimensions": "2.5x3.5 inches",
     "media": ["watercolor"],
     "content": ["plant", "landscape"],
@@ -1120,7 +1120,7 @@
   {
     "title": "Sunflower",
     "date": "Aug 4, 2022",
-    "desc": "",
+    "desc": "Simple small painting of a sunflower bloom with a bud in the background.",
     "dimensions": "2.5x3.5 inches",
     "media": ["watercolor"],
     "content": ["plant"],
@@ -1131,7 +1131,7 @@
   {
     "title": "Daytime Mountainscape",
     "date": "Aug 3, 2022",
-    "desc": "",
+    "desc": "Daytime blue sky with some white clouds over mountains.",
     "dimensions": "2.5x3.5 inches",
     "media": ["watercolor"],
     "content": ["landscape"],
@@ -1142,7 +1142,7 @@
   {
     "title": "Sunset Over Mountains",
     "date": "Aug 2, 2022",
-    "desc": "",
+    "desc": "Sunset after the sun has gone behind mountains.",
     "dimensions": "2.5x3.5 inches",
     "media": ["watercolor"],
     "content": ["landscape"],
@@ -1153,7 +1153,7 @@
   {
     "title": "Sunset Over Water",
     "date": "Aug 1, 2022",
-    "desc": "",
+    "desc": "Small watercolor painting of sunset reflecting in the clouds and sea.",
     "dimensions": "2.5x3.5 inches",
     "media": ["watercolor"],
     "content": ["landscape"],
@@ -1166,7 +1166,7 @@
     "date": "Jun 27, 2022",
     "desc": "A sad mushroom with a red cap sits with their legs kicked up and shining eyes as though they're about to cry. Inspired by the baby bun mini from Final Fantasy 14.",
     "dimensions": "8x8 inches",
-    "media": ["watercolor", "ink"],
+    "media": ["watercolor", "micron pen"],
     "content": ["landscape", "plant", "fantasy", "fanart"],
     "forSale": false,
     "link": "sad-mushroom.webp",
@@ -1219,7 +1219,7 @@
   {
     "title": "Rainbow Butterfly",
     "date": "Nov 20, 2021",
-    "desc": "",
+    "desc": " Butterfly painted in a rainbow gradient starting with yellow in the top left to blue in the bottom right.",
     "dimensions": "8x12 inches",
     "media": ["watercolor"],
     "content": ["butterfly", "animal", "insect"],
@@ -1230,7 +1230,7 @@
   {
     "title": "Cyan Jellyfish",
     "date": "Nov 20, 2021",
-    "desc": "",
+    "desc": "Jellyfish with frilly tendrils painted in light blues and some yellow with blue paint splatters.",
     "dimensions": "8x8 inches",
     "media": ["watercolor"],
     "content": ["jellyfish", "animal"],
