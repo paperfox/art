@@ -581,7 +581,7 @@
   {
     "title": "Panay Monitor",
     "date": "Oct 7, 2023",
-    "desc": "",
+    "desc": "Line art of a panay monitor lizard sitting on a branch facing left staring at the viewer.",
     "dimensions": "6x9 inches",
     "media": ["micron pen"],
     "content": ["lizard", "animal"],
@@ -592,7 +592,7 @@
   {
     "title": "Mandrake",
     "date": "Oct 6, 2023",
-    "desc": "",
+    "desc": "A person with their hand up with leaves instead of hair and purple flowers growing out of the long flowing leaves.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["plant", "people"],
@@ -735,7 +735,7 @@
   {
     "title": "Carp to Dragon Print",
     "date": "Jun 22, 2023",
-    "desc": "",
+    "desc": "A reduction linocut print of a carp turning into a dragon with a sun in the background.",
     "dimensions": "4x4 inches",
     "media": ["linocut", "printmaking"],
     "content": ["dragon", "fish", "animal", "fantasy"],
@@ -878,7 +878,7 @@
   {
     "title": "Loggerhead Sea Turtle",
     "date": "Oct 23, 2022",
-    "desc": "",
+    "desc": "Digital line art of a turtle swimming and looking at the viewer.",
     "dimensions": "6x6 inches",
     "media": ["digital"],
     "content": ["animal"],
@@ -900,7 +900,7 @@
   {
     "title": "Hawaiian Hibiscus",
     "date": "Oct 23, 2022",
-    "desc": "",
+    "desc": "A watercolor painting of a red orange hibiscus flower with 2 green leaves.",
     "dimensions": "6x6 inches",
     "media": ["watercolor"],
     "content": ["plant"],
@@ -999,7 +999,7 @@
   {
     "title": "Ohi’a Tree",
     "date": "Oct 11, 2022",
-    "desc": "",
+    "desc": "A tree with soft green foliage and red flowers and thin black trunks.",
     "dimensions": "6x8 inches",
     "media": ["watercolor"],
     "content": ["plant"],
@@ -1054,9 +1054,9 @@
   {
     "title": "Chinese Broad-headed Pond Turtle",
     "date": "Oct 4, 2022",
-    "desc": "",
+    "desc": "Silhouette of a mythical turtle with a yellow and red abstract background.",
     "dimensions": "4x4 inches",
-    "media": ["watercolor"],
+    "media": ["watercolor", "ink"],
     "content": ["animal"],
     "forSale": false,
     "link": "chinese-broad-headed-pond-turtle.webp",
@@ -1065,7 +1065,7 @@
   {
     "title": "Canada Warbler",
     "date": "Oct 3, 2022",
-    "desc": "",
+    "desc": "A canada warbler bird sitting on a sunflower pecking at the seeds with a leaf and a blue sky and white clouds in the background.",
     "dimensions": "6x9 inches",
     "media": ["watercolor"],
     "content": ["animal"],
@@ -1087,7 +1087,7 @@
   {
     "title": "Sierra Nevada Red Fox",
     "date": "Oct 1, 2022",
-    "desc": "",
+    "desc": "A red fox jumping through the snow chasing a fluttering light blue butterfly.",
     "dimensions": "5x5 inches",
     "media": ["micron pen", "watercolor"],
     "content": ["animal"],
@@ -1208,7 +1208,7 @@
   {
     "title": "Sylver Sezari",
     "date": "Nov 23, 2021",
-    "desc": "",
+    "desc": "Necromancer Sylver Sezari from Sylver Seeker in the foreground with his hand on the hood of his cloak and a string of bones in his other hand. In the background are glowing yellow eyes, bones, and wyvern and wolf shades.",
     "dimensions": "8x12 inches",
     "media": ["digital"],
     "content": ["people", "animal", "fantasy", "fanart"],
@@ -1241,7 +1241,7 @@
   {
     "title": "Shadow Wolves",
     "date": "Nov 16, 2021",
-    "desc": "",
+    "desc": "Shadowy wolves with glowing yellow eyes standing on a rocky ledge with a blue and black cloudy background.",
     "dimensions": "6x6 inches",
     "media": ["digital"],
     "content": ["wolf", "animal", "fantasy"],
@@ -1252,7 +1252,7 @@
   {
     "title": "Fishing",
     "date": "Nov 16, 2021",
-    "desc": "",
+    "desc": "A hrothgar from FFXIV sitting on a dock fishing with a bobber.",
     "dimensions": "6x6 inches",
     "media": ["micron pen", "watercolor"],
     "content": ["animal", "fantasy", "people", "fanart"],
@@ -1263,7 +1263,7 @@
   {
     "title": "Crow in the Window",
     "date": "Nov 12, 2021",
-    "desc": "",
+    "desc": "A crow perches on a book in a window with a stormy sky behind it. The test in the book is Annabel Lee by Poe.",
     "dimensions": "6x6 inches",
     "media": ["digital"],
     "content": ["crow", "bird", "animal"],
@@ -1274,7 +1274,7 @@
   {
     "title": "Portrait",
     "date": "Nov 8, 2021",
-    "desc": "",
+    "desc": "A portrait oin shades of red of a man stylized with large eyes.",
     "dimensions": "5x5 inches",
     "media": ["digital"],
     "content": ["people"],
@@ -1285,7 +1285,7 @@
   {
     "title": "Wyvern",
     "date": "Nov 7, 2021",
-    "desc": "",
+    "desc": "A wyvern flying over a deep canyon with a yellow glow coming out of it and yellow stars int he sky.",
     "dimensions": "6x6 inches",
     "media": ["digital"],
     "content": ["dragon", "animal", "fantasy"],
