@@ -40,3 +40,48 @@ const tab = ref('art');
     </div>
   </main>
 </template>
+
+<style scoped>
+/* Not Currently in use but I plan to reintroduce pagination  */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--base-spacing);
+
+  li {
+    padding: var(--base-spacing);
+    border-radius: 0.4rem;
+
+    button {
+      font-size: 4rem;
+    }
+
+    button {
+      padding: 0 var(--base-spacing) var(--base-spacing);
+      color: var(--link);
+      margin: 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      &:hover,
+      &:focus-visible {
+        color: var(--text-body);
+        text-decoration: underline;
+      }
+
+      &:disabled {
+        color: var(--text-body);
+        cursor: default;
+        opacity: 0.5;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+/* End pagination  */
+</style>

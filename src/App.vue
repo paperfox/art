@@ -34,5 +34,5 @@ provide('isModalVisible', isModalVisible);
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500..700&display=swap');
 </style>

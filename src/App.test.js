@@ -1,11 +1,22 @@
-import { describe, test, expect } from 'vitest';
+import { describe, test, it, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
+const { axe, toHaveNoViolations } = require('jest-axe');
 import App from './App.vue';
+
+expect.extend(toHaveNoViolations);
 
 test('App loads', () => {
   const wrapper = mount(App);
 
   expect(wrapper.text()).toContain('Art by Nathalie Garfinkle');
+});
+
+it('App does not have programmatic accessibility violations', async () => {
+  const wrapper = mount(App);
+  const results = await axe(wrapper.element);
+
+  // does not check color contrast
+  expect(results).toHaveNoViolations();
 });
 
 describe('Modal', () => {
