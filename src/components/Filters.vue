@@ -112,6 +112,48 @@ const applyFilter = (filter) => {
 </template>
 
 <style scoped>
+summary {
+  cursor: pointer;
+  padding-bottom: var(--base-spacing);
+  margin-bottom: var(--base-spacing);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn-badge {
+  position: relative;
+  border: 0.1rem solid var(--text-body);
+  border-radius: 4rem;
+  color: var(--text-body);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: var(--base-spacing) var(--xs-spacing);
+  letter-spacing: 0.1rem;
+  margin: 0 var(--base-spacing) var(--xs-spacing) 0;
+
+  &.active-filters {
+    background-color: var(--text-body);
+    color: var(--main-bg);
+  }
+
+  &:hover {
+    color: var(--text-body);
+    border-color: var(--link);
+
+    &.active-filters {
+      color: var(--main-bg);
+    }
+  }
+
+  &:focus-visible {
+    outline: 0.2rem dotted var(--link);
+    outline-offset: 0.2rem;
+  }
+}
+
 #separator {
   margin-right: 3rem;
 
