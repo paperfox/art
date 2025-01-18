@@ -392,7 +392,7 @@
     "featured": ["false"]
   },
   {
-    "title": "2024 Pride - Featuring Miko",
+    "title": "2024 Pride - Miko",
     "date": "Jun 4, 2024",
     "desc": "Digital portrait of Miko the Shiba Inu wearing a hat and bandana featuring the progress pride flag colors, celebrating 2024 pride month!",
     "dimensions": "3x2.5 inches",
@@ -537,10 +537,10 @@
   {
     "title": "Mongolian Wild Horse",
     "date": "Oct 19, 2023",
-    "desc": "",
+    "desc": "Brown short-maned horse with white wings flying on a blue background with 8 iridescent yellow stripes",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "watercolor"],
-    "content": ["horse", "animal"],
+    "content": ["horse", "animal", "fantasy"],
     "forSale": false,
     "link": "mongolian-wild-horse.webp",
     "featured": ["false"]
@@ -548,7 +548,7 @@
   {
     "title": "Zebra Duiker",
     "date": "Oct 14, 2023",
-    "desc": "",
+    "desc": "A zebra duiker running across a grassland with a sunset behind it with a duiker skeleton visble underground. The half sun and dark areas in the ground create a full circle.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "watercolor"],
     "content": ["duiker", "animal"],
@@ -559,7 +559,7 @@
   {
     "title": "Red Squirrel",
     "date": "Oct 12, 2023",
-    "desc": "",
+    "desc": "A red squirrel with a fluffy tail looks up at the viewer, shocked.",
     "dimensions": "6x9 inches",
     "media": ["watercolor"],
     "content": ["squirrel", "animal"],
@@ -570,7 +570,7 @@
   {
     "title": "Pinto's Spinetail",
     "date": "Oct 10, 2023",
-    "desc": "",
+    "desc": "Pinto's spinetail bird on a branch with a full moon and 8 stars in the sky behind it.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "watercolor"],
     "content": ["bird", "animal"],
@@ -603,7 +603,7 @@
   {
     "title": "Yellow-billed Loon",
     "date": "Oct 4, 2023",
-    "desc": "",
+    "desc": "A loon diving into a school of small fish holding a necklace in its beak with sand dollars on the sea floor.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["bird", "animal"],
@@ -614,7 +614,7 @@
   {
     "title": "Tsushima leopard cat",
     "date": "Oct 2, 2023",
-    "desc": "",
+    "desc": "Tsushima leopard cat walking across the hilts of 7 swords with an abstract black background.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "ink", "watercolor"],
     "content": ["cat", "animal"],
@@ -625,7 +625,7 @@
   {
     "title": "Lion’s Mane Jellyfish",
     "date": "Sep 11, 2023",
-    "desc": "",
+    "desc": "Watercolor painting of a lion's mane jellyfish with an abstract blue splatter background.",
     "dimensions": "6x9 inches",
     "media": ["watercolor"],
     "content": ["jellyfish", "animal"],
@@ -658,7 +658,7 @@
   {
     "title": "Fog at Sea",
     "date": "Sep 6, 2023",
-    "desc": "",
+    "desc": "The sea fades into the sky with no defined horizon line, the only thing visible is a fuzzy silhouette of a bird flying in the distance.",
     "dimensions": "6x9 inches",
     "media": ["watercolor"],
     "content": ["bird", "landscape", "animal"],
@@ -889,7 +889,7 @@
   {
     "title": "Seychelles Wolf Snake",
     "date": "Oct 23, 2022",
-    "desc": "",
+    "desc": "A snake wearing a crown with its tail curled under the edge of the crown.",
     "dimensions": "6x6 inches",
     "media": ["micron pen", "watercolor"],
     "content": ["animal"],
@@ -922,7 +922,7 @@
   {
     "title": "White Naped Crane",
     "date": "Oct 17, 2022",
-    "desc": "",
+    "desc": "A crane with its legs tucked under it's body and its head turned to the side on a soft green background.",
     "dimensions": "6x6 inches",
     "media": ["watercolor"],
     "content": ["animal"],
