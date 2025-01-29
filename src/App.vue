@@ -5,6 +5,8 @@ import LeftRail from './components/LeftRail.vue';
 import Modal from './components/Modal.vue';
 import Footer from './components/Footer.vue';
 
+// const setTheme = 'blue';
+
 const isModalVisible = ref(false);
 const modalImage = ref(null);
 
@@ -24,6 +26,7 @@ provide('isModalVisible', isModalVisible);
 </script>
 
 <template>
+  <!-- :data-theme="setTheme ? setTheme : null" -->
   <div class="container">
     <LeftRail />
     <DisplayArt />

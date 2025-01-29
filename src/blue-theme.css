@@ -1,0 +1,7 @@
+:root:has(.blue) {
+    --main-bg: rgb(0, 0, 42);
+    --secondary-bg: rgb(7, 7, 92);
+    --tertiary-bg: navy;
+    --text-body: rgb(197, 197, 197);
+    --link: goldenrod;
+}
