@@ -1,5 +1,35 @@
 [
   {
+    "title": "Year of the Snake 2",
+    "date": "Jan 19, 2025",
+    "desc": "Sketch a snake looping across and off the page facing right with its eye looking back at the viewer.",
+    "dimensions": "5x7.5 inches",
+    "media": ["10 color pen"],
+    "content": "",
+    "forSale": false,
+    "link": "sketch-year-of-the-snake2.webp"
+  },
+  {
+    "title": "Year of the Snake 1",
+    "date": "Jan 18, 2025",
+    "desc": "Sketch a snake curled up on the ground looking at the viewer wearing a party hat.",
+    "dimensions": "5x7.5 inches",
+    "media": ["10 color pen"],
+    "content": "",
+    "forSale": false,
+    "link": "sketch-year-of-the-snake1.webp"
+  },
+  {
+    "title": "Miko Portrait",
+    "date": "Nov 16, 2024",
+    "desc": "Sketch portrait of Miko the shiba inu with her nose super in the foreground.",
+    "dimensions": "5x7.5 inches",
+    "media": ["10 color pen"],
+    "content": "",
+    "forSale": false,
+    "link": "sketch-miko-face.webp"
+  },
+  {
     "title": "Takahe Sketch",
     "date": "Oct 26, 2024",
     "desc": "Sketch of a takahe bird, a flightless bird native to New Zealand, dancing.",

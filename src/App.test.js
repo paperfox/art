@@ -126,7 +126,7 @@ describe('Tab', () => {
 
     const artworkDiv = wrapper.find('#sketchTab');
     const images = artworkDiv.findAll('img[src$=".webp"], img[src$=".png"]');
-    expect(images).toHaveLength(15);
+    expect(images).toHaveLength(18);
   });
 
   test('Select Art tab after visiting Sketches tab', async () => {
