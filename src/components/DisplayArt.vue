@@ -1,12 +1,24 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import Filters from './Filters.vue';
 import inProgress from '../data/sketchData';
 import ArtLists from './ArtLists.vue';
 
+import { setTheme } from '../utils/theme';
+
+// setTheme();
+
 let sketches = inProgress;
 
 const tab = ref('art');
+
+watch(tab, (newTab) => {
+  if (newTab === 'sketch') {
+    setTheme('blue');
+  } else {
+    setTheme('yellow');
+  }
+});
 </script>
 
 <template>

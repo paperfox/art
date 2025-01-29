@@ -4,4 +4,12 @@
     --tertiary-bg: gold;
     --text-body: navy;
     --link: green;
+
+    @media (prefers-color-scheme: dark) {
+      --main-bg: #282a31;
+      --secondary-bg: #14151a;
+      --tertiary-bg: #202229;
+      --text-body: #feffdb;
+      --link: goldenrod;
+    }
 }
