@@ -112,6 +112,7 @@ main {
   .tab-control {
     border: none;
     border-top: 0.2rem solid transparent;
+    color: var(--text-body);
     cursor: pointer;
     font-weight: 600;
     padding: var(--xs-spacing);
