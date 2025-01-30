@@ -82,6 +82,11 @@ button {
   cursor: pointer;
 }
 
+*:focus-visible {
+  outline: .2rem dotted var(--link);
+  outline-offset: 0.2rem;
+}
+
 /* Layout */
 main,
 aside { height: 100vh; }
@@ -141,7 +146,7 @@ details,
 .btn-modal {
   min-width: 9.4rem; 
   width: min-content;
-  padding: var(--base-spacing);
+  margin: var(--base-spacing);
 
   &,
   img { height: 21rem; }

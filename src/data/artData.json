@@ -1,5 +1,16 @@
 [
   {
+    "title": "Year of the Snake",
+    "date": "Jan 29, 2025",
+    "desc": "Digital painting of a white snake wearing a crown and adorned with gold chains draped over the hilt of a sword pointing downward.",
+    "dimensions": "7x10 inches",
+    "media": ["digital"],
+    "content": ["snake", "animal"],
+    "forSale": false,
+    "link": "yearofthesnake.webp",
+    "featured": ["true"]
+  },
+  {
     "title": "Mountain Zebra",
     "date": "Oct 30, 2024",
     "desc": "Watercolor painting of a Mountain Zebra in gray and red, imitating flames and smoke.",
@@ -85,7 +96,7 @@
     "content": ["eagle", "animal"],
     "forSale": false,
     "link": "philippine_eagle.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Marsican Brown Bear",
