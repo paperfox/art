@@ -1,5 +1,35 @@
 [
   {
+    "title": "Little Birds - 3",
+    "date": "Feb 9, 2025",
+    "desc": "Sketch of two little birds in separate areas of the page in different poses.",
+    "dimensions": "5x7.5 inches",
+    "media": ["10 color pen"],
+    "content": "",
+    "forSale": false,
+    "link": "sketch-birds-3.webp"
+  },
+  {
+    "title": "Little Birds - 2",
+    "date": "Feb 8, 2025",
+    "desc": "Sketch of three little birds in separate areas of the page in different poses.",
+    "dimensions": "5x7.5 inches",
+    "media": ["10 color pen"],
+    "content": "",
+    "forSale": false,
+    "link": "sketch-birds-2.webp"
+  },
+  {
+    "title": "Little Birds - 1",
+    "date": "Feb 7, 2025",
+    "desc": "Sketch of two little birds in separate areas of the page. One has a little feather crest.",
+    "dimensions": "5x7.5 inches",
+    "media": ["10 color pen"],
+    "content": "",
+    "forSale": false,
+    "link": "sketch-birds-1.webp"
+  },
+  {
     "title": "Year of the Snake 2",
     "date": "Jan 19, 2025",
     "desc": "Sketch a snake looping across and off the page facing right with its eye looking back at the viewer.",

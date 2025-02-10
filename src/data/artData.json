@@ -1,5 +1,16 @@
 [
   {
+    "title": "Peacock Bass",
+    "date": "Jan 31, 2025",
+    "desc": "Watercolor painting of a peacock bass with a fly-fishing fly in it's mouth on a taught flyline half submerged swimming in the water.",
+    "dimensions": "7x10 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["fish", "animal"],
+    "forSale": false,
+    "link": "peacock-bass.webp",
+    "featured": ["false"]
+  },
+  {
     "title": "Year of the Snake",
     "date": "Jan 29, 2025",
     "desc": "Digital painting of a white snake wearing a crown and adorned with gold chains draped over the hilt of a sword pointing downward.",
