@@ -78,7 +78,7 @@ describe('Tab', () => {
 
     const artworkDiv = wrapper.find('#artTab');
     const images = artworkDiv.findAll('img[src$=".webp"], img[src$=".png"]');
-    expect(images).toHaveLength(264);
+    expect(images).toHaveLength(266);
   });
 
   test('Artwork tab - multiple filters can be selected at once', async () => {
@@ -100,7 +100,7 @@ describe('Tab', () => {
 
     const artworkDiv = wrapper.find('#artTab');
     const images = artworkDiv.findAll('img[src$=".webp"], img[src$=".png"]');
-    expect(images).toHaveLength(29);
+    expect(images).toHaveLength(28);
   });
 
   test('Sketches tab is not selected', () => {
@@ -126,7 +126,7 @@ describe('Tab', () => {
 
     const artworkDiv = wrapper.find('#sketchTab');
     const images = artworkDiv.findAll('img[src$=".webp"], img[src$=".png"]');
-    expect(images).toHaveLength(18);
+    expect(images).toHaveLength(21);
   });
 
   test('Select Art tab after visiting Sketches tab', async () => {
