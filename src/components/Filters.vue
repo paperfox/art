@@ -35,6 +35,9 @@ const filterButtons = [
   { filterType: 'content', filterValue: 'people', filterName: 'People' },
   { filterType: 'content', filterValue: 'plant', filterName: 'Plants' },
   { filterType: 'content', filterValue: 'vehicle', filterName: 'Vehicles' },
+  { filterType: 'content', filterValue: 'stickers', filterName: 'Stickers' },
+  { filterType: 'content', filterValue: 'cards', filterName: 'Greeting Cards' },
+  { filterType: 'content', filterValue: 'print', filterName: 'Prints' },
 ];
 
 // Computed property for filters

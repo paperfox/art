@@ -16,7 +16,7 @@
     "desc": "Digital painting of a white snake wearing a crown and adorned with gold chains draped over the hilt of a sword pointing downward.",
     "dimensions": "7x10 inches",
     "media": ["digital"],
-    "content": ["snake", "animal"],
+    "content": ["snake", "animal", "print"],
     "forSale": false,
     "link": "yearofthesnake.webp",
     "featured": ["true"]
@@ -60,7 +60,7 @@
     "desc": "Micron pen and watercolor of a panda sleeping on a crescent moon with 4 swords hanging below them.",
     "dimensions": "6x9 inches",
     "media": ["watercolor", "micron pen"],
-    "content": ["panda", "animal"],
+    "content": ["panda", "animal", "sticker"],
     "forSale": false,
     "link": "giant_panda.webp",
     "featured": ["true"]
@@ -82,7 +82,7 @@
     "desc": "Micron pen and watercolor of a cute young saharan cheetah tripping and falling while running.",
     "dimensions": "7x10 inches",
     "media": ["micron pen", "watercolor"],
-    "content": ["cheetah", "animal"],
+    "content": ["cheetah", "animal", "stickers"],
     "forSale": false,
     "link": "oof.webp",
     "featured": ["true"]
@@ -203,7 +203,7 @@
     "desc": "Micron pen and watercolor scene of a sea dragon, inspired by the Galapagos marine iguana, climbing a rock spire that is being struck by lightning in a stormy sea and sky.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "watercolor"],
-    "content": ["dragon", "iguana", "animal", "fantasy"],
+    "content": ["dragon", "iguana", "animal", "fantasy", "print"],
     "forSale": false,
     "link": "sea_serpent_dreams_of_flying.webp",
     "featured": ["true"]
@@ -225,7 +225,7 @@
     "desc": "Micron pen and watercolor of a Pernambuco Pygmy-owl on a light branch with 8 more branches in the background and a night sky.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "watercolor"],
-    "content": ["bird", "animal"],
+    "content": ["bird", "animal", "cards"],
     "forSale": false,
     "link": "pernambuco_pygmy_owl.webp",
     "featured": ["true"]
@@ -247,7 +247,7 @@
     "desc": "Micron pen and watercolor of two White-crowned Hornbills flying and arguing with 5 white branches in the background over a pink and gray sky.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "watercolor"],
-    "content": ["bird", "animal"],
+    "content": ["bird", "animal", "print"],
     "forSale": false,
     "link": "conflict.webp",
     "featured": ["true"]
@@ -419,7 +419,7 @@
     "desc": "Digital portrait of Miko the Shiba Inu wearing a hat and bandana featuring the progress pride flag colors, celebrating 2024 pride month!",
     "dimensions": "3x2.5 inches",
     "media": ["digital"],
-    "content": ["dog", "pride", "animal", "fantasy"],
+    "content": ["dog", "pride", "animal", "fantasy", "stickers"],
     "forSale": false,
     "link": "miko_pride.webp",
     "featured": ["true"]
@@ -452,7 +452,7 @@
     "desc": "Micron pen and watercolor of a bear carrying off a fish from a fish filled stream in Alaska with 9 sea stars. In the background is a misty forest.",
     "dimensions": "7x10 inches",
     "media": ["micron pen", "watercolor"],
-    "content": ["fish", "animal", "bear", "landscape"],
+    "content": ["fish", "animal", "bear", "landscape", "print"],
     "forSale": false,
     "link": "salmon_run.webp",
     "featured": ["true"]
@@ -463,7 +463,7 @@
     "desc": "Micron pen and watercolor of a Japanese River Otter on a fallen log with shelf fungi on it over a river.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "watercolor"],
-    "content": ["otter", "animal", "plant", "landscape"],
+    "content": ["otter", "animal", "plant", "landscape", "print"],
     "forSale": false,
     "link": "japanese_river_otter.webp",
     "featured": ["false"]
@@ -474,7 +474,7 @@
     "desc": "Micron pen and watercolor of three dholes playing near a stream with 3 pools of water with a dry grassy field behind them.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "watercolor"],
-    "content": ["dog", "animal", "landscape"],
+    "content": ["dog", "animal", "landscape", "print"],
     "forSale": false,
     "link": "dhole_party.webp",
     "featured": ["true"]
@@ -496,7 +496,7 @@
     "desc": "Micron pen and watercolor of a Himalayan Brown Bear sitting on a pile of rocks with the sunset in the background.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "watercolor"],
-    "content": ["bear", "animal"],
+    "content": ["bear", "animal", "print"],
     "forSale": false,
     "link": "himalayan_brown_bear.webp",
     "featured": ["false"]
@@ -540,7 +540,7 @@
     "desc": "A blond woman in a white dress steps over the root of a large tree deep in the forest as light filters through the leaves. In one hand is a shepherds crook, the other arm is lifted and an owlet is perched on it looking at her. Done in micron pen and watercolor.",
     "dimensions": "9x12 inches",
     "media": ["micron pen", "watercolor"],
-    "content": ["owl", "animal", "people"],
+    "content": ["owl", "animal", "people", "print"],
     "forSale": false,
     "link": "forest-owlet.webp",
     "featured": ["false"]
@@ -595,7 +595,7 @@
     "desc": "Pinto's spinetail bird on a branch with a full moon and 8 stars in the sky behind it.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "watercolor"],
-    "content": ["bird", "animal"],
+    "content": ["bird", "animal", "print"],
     "forSale": false,
     "link": "pintos-spinetail.webp",
     "featured": ["false"]
@@ -650,7 +650,7 @@
     "desc": "Watercolor painting of a lion's mane jellyfish with an abstract blue splatter background.",
     "dimensions": "6x9 inches",
     "media": ["watercolor"],
-    "content": ["jellyfish", "animal"],
+    "content": ["jellyfish", "animal", "print"],
     "forSale": false,
     "link": "lion-jelly.webp",
     "featured": ["true"]
@@ -683,7 +683,7 @@
     "desc": "The sea fades into the sky with no defined horizon line, the only thing visible is a fuzzy silhouette of a bird flying in the distance.",
     "dimensions": "6x9 inches",
     "media": ["watercolor"],
-    "content": ["bird", "landscape", "animal"],
+    "content": ["bird", "landscape", "animal", "print"],
     "forSale": false,
     "link": "fog-at-sea.webp",
     "featured": ["true"]
@@ -738,7 +738,7 @@
     "desc": "Watercolor splatters make a rainbow heart shape with a black cat silhouette grooming itself in the middle.",
     "dimensions": "9x12 inches",
     "media": ["linocut", "printmaking"],
-    "content": ["bird", "animal"],
+    "content": ["bird", "animal", "cards"],
     "forSale": false,
     "link": "rainbow-shadowcat.webp",
     "featured": ["false"]
@@ -749,7 +749,7 @@
     "desc": "Side view of Finnley the jindo dog carrying the progressive pride flag as it blows over his shoulder, done digitally.",
     "dimensions": "4x4 inches",
     "media": ["digital"],
-    "content": ["dog", "animal"],
+    "content": ["dog", "animal", "stickers"],
     "forSale": false,
     "link": "finn-pride.webp",
     "featured": ["true"]
@@ -1189,7 +1189,7 @@
     "desc": "A sad mushroom with a red cap sits with their legs kicked up and shining eyes as though they're about to cry. Inspired by the baby bun mini from Final Fantasy 14.",
     "dimensions": "8x8 inches",
     "media": ["watercolor", "micron pen"],
-    "content": ["landscape", "plant", "fantasy", "fanart"],
+    "content": ["landscape", "plant", "fantasy", "fanart", "print", "cards", "stickers"],
     "forSale": false,
     "link": "sad-mushroom.webp",
     "featured": ["true"]
@@ -1596,7 +1596,7 @@
     "desc": "Watercolor in red, yellow, blue, and black of a large two-spot ladybug made up of slightly abstract drips of paint, with the antenna and nead giving it distinct ladybug form.",
     "dimensions": "6x9 inches",
     "media": ["watercolor"],
-    "content": ["insect", "ladybug", "animal"],
+    "content": ["insect", "ladybug", "animal", "print", "cards", "stickers"],
     "forSale": false,
     "link": "two_spot_ladybug.webp",
     "featured": ["true"]
@@ -1772,7 +1772,7 @@
     "desc": "Micron pen and ink of a group of White-spotted Char swimming.",
     "dimensions": "7x8 inches",
     "media": ["micron pen", "ink"],
-    "content": ["fish", "animal"],
+    "content": ["fish", "animal", "print", "cards"],
     "forSale": false,
     "link": "white_spotted_char.webp",
     "featured": ["true"]
@@ -2113,7 +2113,7 @@
     "desc": "watercolor and ink painting crow flying holding a white ribbon with a jingle bell over a red and orange background.",
     "dimensions": "10x10 inches",
     "media": ["watercolor", "ink"],
-    "content": ["bird", "animal"],
+    "content": ["bird", "animal", "print", "cards"],
     "forSale": false,
     "link": "phoenix_s_shadow.webp",
     "featured": ["true"]
@@ -2168,7 +2168,7 @@
     "desc": "Watercolor of a pair of jackalopes looking up at the full moon next to a leafless tree, the moon has a silhouette of a rabbit making medicine in it.",
     "dimensions": "5x7 inches",
     "media": ["watercolor", "ink"],
-    "content": ["rabbit", "animal", "fantasy", "landscape"],
+    "content": ["rabbit", "animal", "fantasy", "landscape", "print", "cards"],
     "forSale": false,
     "link": "almost_rabbits_watercolor.webp",
     "featured": ["true"]
@@ -2278,7 +2278,7 @@
     "desc": "ink and white pen painting of a jellyfish",
     "dimensions": "6x10 inches",
     "media": ["ink"],
-    "content": ["jellyfish", "animal"],
+    "content": ["jellyfish", "animal", "print"],
     "forSale": false,
     "link": "ghost.webp",
     "featured": ["true"]
@@ -2510,7 +2510,7 @@
     "desc": "colored pencil drawing of a ferrari f430",
     "dimensions": "18x24 inches",
     "media": ["micron pen", "marker", "digital"],
-    "content": ["dog", "animal"],
+    "content": ["dog", "animal", "stickers"],
     "forSale": false,
     "link": "family_canidae_poster.webp",
     "additionalImages": ["family_canidae_goods.webp"],
