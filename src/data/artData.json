@@ -60,7 +60,7 @@
     "desc": "Micron pen and watercolor of a panda sleeping on a crescent moon with 4 swords hanging below them.",
     "dimensions": "6x9 inches",
     "media": ["watercolor", "micron pen"],
-    "content": ["panda", "animal", "sticker"],
+    "content": ["panda", "animal", "stickers"],
     "forSale": false,
     "link": "giant_panda.webp",
     "featured": ["true"]
@@ -225,7 +225,7 @@
     "desc": "Micron pen and watercolor of a Pernambuco Pygmy-owl on a light branch with 8 more branches in the background and a night sky.",
     "dimensions": "6x9 inches",
     "media": ["micron pen", "watercolor"],
-    "content": ["bird", "animal", "cards"],
+    "content": ["bird", "animal", "cards", "print"],
     "forSale": false,
     "link": "pernambuco_pygmy_owl.webp",
     "featured": ["true"]
@@ -242,7 +242,7 @@
     "featured": ["false"]
   },
   {
-    "title": "Conflict",
+    "title": "How We Dance",
     "date": "Oct 8, 2024",
     "desc": "Micron pen and watercolor of two White-crowned Hornbills flying and arguing with 5 white branches in the background over a pink and gray sky.",
     "dimensions": "6x9 inches",
@@ -804,7 +804,7 @@
     "desc": "Puddingway, a loporrit from FInal Fantasy 14, sits reading a recipe book with bowls and cups of pudding around him while thinking of pudding.",
     "dimensions": "9x12 inches",
     "media": ["watercolor", "micron pen"],
-    "content": ["people", "animal", "fantasy", "fanart"],
+    "content": ["people", "animal", "fantasy", "fanart", "print"],
     "forSale": false,
     "link": "seven-of-cups.webp",
     "featured": ["true"]
@@ -2234,7 +2234,7 @@
     "desc": "ink painting of a beach under a full moon with a cloudy sky",
     "dimensions": "6x9 inches",
     "media": ["ink"],
-    "content": ["landscape"],
+    "content": ["landscape", "print"],
     "forSale": false,
     "link": "nighttime_beach.webp",
     "featured": ["true"]
