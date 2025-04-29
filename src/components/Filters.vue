@@ -26,15 +26,11 @@ const filterButtons = [
   { filterType: 'media', filterValue: 'micron pen', filterName: 'micron pen' },
   { filterType: 'media', filterValue: 'printmaking', filterName: 'Printmaking' },
   { filterType: 'media', filterValue: 'digital', filterName: 'Digital' },
-  { filterType: 'media', filterValue: 'painting', filterName: 'Acrylic/Oil' },
-  { filterType: 'media', filterValue: 'sculpture', filterName: 'Sculpture' },
   { filterType: 'content', filterValue: 'animal', filterName: 'Animal' },
-  { filterType: 'content', filterValue: 'fanart', filterName: 'Fan Art' },
   { filterType: 'content', filterValue: 'fantasy', filterName: 'Fantasy' },
   { filterType: 'content', filterValue: 'landscape', filterName: 'Landscape' },
   { filterType: 'content', filterValue: 'people', filterName: 'People' },
   { filterType: 'content', filterValue: 'plant', filterName: 'Plants' },
-  { filterType: 'content', filterValue: 'vehicle', filterName: 'Vehicles' },
 ];
 
 // Computed property for filters
@@ -73,7 +69,7 @@ const applyFilter = (filter) => {
           :key="filter.filterValue"
           class="btn-badge"
           :class="{ 'active-filters': activeFilterClass[filter.filterValue] }"
-          :id="filter.filterValue === 'sculpture' ? 'separator' : null"
+          :id="filter.filterValue === 'digital' ? 'separator' : null"
           @click="applyFilter(filter)"
         >
           {{ filter.filterName }}

@@ -20,7 +20,7 @@ const modal = (imgData) => {
       <div :class="`artpiece--${index}`">
         <button type="button" class="btn-modal" :data-open="`modal${condense(image.title)}`" @click="modal(image)">
           <figure>
-            <img :src="`./art/preview/${image.link}`" :alt="image.desc" />
+            <img :src="`./art/${image.link}`" :alt="image.desc" />
             <figcaption>{{ image.title }}</figcaption>
           </figure>
         </button>
