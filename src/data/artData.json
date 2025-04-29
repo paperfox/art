@@ -513,17 +513,6 @@
     "featured": ["false"]
   },
   {
-    "title": "The Hermit",
-    "date": "Aug 23, 2023",
-    "desc": "A sylvari from guild wars 2 sitting in a crook of a tree with paper lanterns hanging from a branch above writing in a journal, done digitally.",
-    "dimensions": "9x12 inches",
-    "media": ["digital"],
-    "content": ["people", "fantasy", "fanart", "plant"],
-    "forSale": false,
-    "link": "the-hermit.webp",
-    "featured": ["true"]
-  },
-  {
     "title": "White-throated Magpie Jay Linocut",
     "date": "Jul 21, 2023",
     "desc": "Linocut print of a white-throated magpie jay and a hibiscus flower.",
@@ -566,17 +555,6 @@
     "forSale": false,
     "link": "carp-dragon.webp",
     "featured": ["false"]
-  },
-  {
-    "title": "Queen of Cups",
-    "date": "Jun 22, 2023",
-    "desc": "Silhouette of an imperial pidgeon wearing a crown made of blue watercolor and black ink that appears to be poured from a goblet.",
-    "dimensions": "9x12 inches",
-    "media": ["watercolor", "ink"],
-    "content": ["bird", "animal", "fantasy"],
-    "forSale": false,
-    "link": "queen-of-cups.webp",
-    "featured": ["true"]
   },
   {
     "title": "Amelia",
@@ -1052,17 +1030,6 @@
     "featured": ["true"]
   },
   {
-    "title": "Nighttime Beach",
-    "date": "Oct 27, 2019",
-    "desc": "ink painting of a beach under a full moon with a cloudy sky",
-    "dimensions": "6x9 inches",
-    "media": ["ink"],
-    "content": ["landscape", "print"],
-    "forSale": false,
-    "link": "nighttime_beach.webp",
-    "featured": ["true"]
-  },
-  {
     "title": "Ghost",
     "date": "Oct 22, 2019",
     "desc": "ink and white pen painting of a jellyfish",
@@ -1071,17 +1038,6 @@
     "content": ["jellyfish", "animal", "print"],
     "forSale": false,
     "link": "ghost.webp",
-    "featured": ["true"]
-  },
-  {
-    "title": "Enchanted",
-    "date": "Oct 21, 2019",
-    "desc": "black and gold ink painting of a tiger in water looking at a purple watercolor butterfly",
-    "dimensions": "6x9 inches",
-    "media": ["ink", "watercolor"],
-    "content": ["cat", "animal"],
-    "forSale": false,
-    "link": "enchanted.webp",
     "featured": ["true"]
   },
   {
