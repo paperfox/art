@@ -59,7 +59,7 @@ const applyFilter = (filter) => {
 <template>
   <div>
     <details>
-      <summary>Filters</summary>
+      <summary>Filter Artwork</summary>
       <div id="filters">
         <button
           v-for="filter in filterButtons"
@@ -85,11 +85,24 @@ const applyFilter = (filter) => {
 summary {
   cursor: pointer;
   padding-bottom: var(--base-spacing);
+  margin-inline: auto;
   margin-bottom: var(--base-spacing);
+  text-align: right;
 
   &:hover {
     text-decoration: underline;
   }
+  &&::marker {
+    content: '';
+  }
+}
+
+#filters {
+  background-color: var(--tertiary-bg);
+  padding: 1.5rem 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn-badge {

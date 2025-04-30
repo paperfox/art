@@ -12,6 +12,10 @@ const tab = ref('art');
 
 <template>
   <main class="main">
+    <div>
+      <h1>Paperfox</h1>
+      <h2>Art by Nathalie Garfinkle</h2>
+    </div>
     <div class="nav-tabs">
       <button @click="tab = 'art'" :class="`${tab === 'art' ? 'tab-control active' : 'tab-control'}`" id="tab-art">
         Artwork
@@ -24,16 +28,16 @@ const tab = ref('art');
         Events & Shop
       </button>
       <button
-        @click="tab = 'sketch'"
-        :class="`${tab === 'sketch' ? 'tab-control active' : 'tab-control'}`"
-        id="tab-sketch"
+        @click="tab = 'about'"
+        :class="`${tab === 'about' ? 'tab-control active' : 'tab-control'}`"
+        id="tab-about"
       >
         About
       </button>
       <button
-        @click="tab = 'sketch'"
-        :class="`${tab === 'sketch' ? 'tab-control active' : 'tab-control'}`"
-        id="tab-sketch"
+        @click="tab = 'contact'"
+        :class="`${tab === 'contact' ? 'tab-control active' : 'tab-control'}`"
+        id="tab-contact"
       >
         Contact
       </button>
@@ -45,7 +49,11 @@ const tab = ref('art');
     </div>
     <div class="tab-content" id="sketchTab" v-show="tab === 'sketch'">
       <div class="artwork">
-        <!-- <ArtLists :images="sketches" /> -->
+        <ArtLists :images="sketches" />
+      </div>
+    </div>
+    <div class="tab-content" id="aboutTab" v-show="tab === 'about'">
+      <div class="artwork">
         <div>
           <h3>About</h3>
           <p>
@@ -57,6 +65,14 @@ const tab = ref('art');
             <a href="https://paperfox-tarot.netlify.app/" target="_blank">Tarot App</a>, you'll likely find her playing
             with her dog, or out in her garden.
           </p>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="aboutTab" v-show="tab === 'contact'">
+      <div class="artwork">
+        <div>
+          <h3>Contact</h3>
+          <p>contact info goes here</p>
         </div>
       </div>
     </div>

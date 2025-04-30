@@ -8,7 +8,7 @@ import Footer from './Footer.vue';
       <h1>Paperfox</h1>
       <h2>Art by Nathalie Garfinkle</h2>
     </div>
-    <div class="test--right">
+    <div>
       <h3>Art</h3>
       <h3>Shop</h3>
       <h3>Stickers</h3>
