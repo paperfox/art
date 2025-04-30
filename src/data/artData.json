@@ -66,17 +66,6 @@
     "featured": ["true"]
   },
   {
-    "title": "Oof",
-    "date": "Oct 24, 2024",
-    "desc": "Micron pen and watercolor of a cute young saharan cheetah tripping and falling while running.",
-    "dimensions": "7x10 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["cheetah", "animal", "stickers"],
-    "forSale": false,
-    "link": "oof.webp",
-    "featured": ["true"]
-  },
-  {
     "title": "Philippine Eagle",
     "date": "Oct 22, 2024",
     "desc": "Watercolor portrait of a Philippine Eagle looking over its shoulder.",
@@ -96,17 +85,6 @@
     "content": ["bear", "animal"],
     "forSale": false,
     "link": "marsican_brown_bear.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Bush Dog",
-    "date": "Oct 18, 2024",
-    "desc": "Micron pen and watercolor portrait of a bush dog with abstract green foliage in the background.",
-    "dimensions": "2.5x3.5 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["dog", "animal"],
-    "forSale": false,
-    "link": "bush_dog.webp",
     "featured": ["false"]
   },
   {
@@ -165,17 +143,6 @@
     "featured": ["true"]
   },
   {
-    "title": "Namdapha Flying Squirrel",
-    "date": "Oct 6, 2024",
-    "desc": "Micron pen and watercolor of a Namdapha Flying Squirrel climbing down a tree.",
-    "dimensions": "2.5x3.5 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["squirrel", "animal"],
-    "forSale": false,
-    "link": "namdapha_flying_squirrel.webp",
-    "featured": ["true"]
-  },
-  {
     "title": "Mexican Wolf",
     "date": "Oct 4, 2024",
     "desc": "Micron pen, ink, and watercolor of a Mexican Wolf running in front of trees and its face is a skull.",
@@ -184,17 +151,6 @@
     "content": ["wolf", "animal", "fantasy"],
     "forSale": false,
     "link": "mexican_wolf.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Jason and Colin",
-    "date": "Aug 1, 2024",
-    "desc": "Micron pen line art for fan art I'm working on of He Who Fights With Monsters of characters Jason and Colin. Jason is holding a lemonade and about to step of a ledge, Colin is a pile of leeches following behind him.",
-    "dimensions": "8x10 inches",
-    "media": ["micron pen"],
-    "content": ["animal", "people", "fantasy", "fanart"],
-    "forSale": false,
-    "link": "jason_and_colin_lines.webp",
     "featured": ["false"]
   },
   {
@@ -269,17 +225,6 @@
     "forSale": false,
     "link": "twoOfPentacles.webp",
     "featured": ["false"]
-  },
-  {
-    "title": "2024 Pride - Miko",
-    "date": "Jun 4, 2024",
-    "desc": "Digital portrait of Miko the Shiba Inu wearing a hat and bandana featuring the progress pride flag colors, celebrating 2024 pride month!",
-    "dimensions": "3x2.5 inches",
-    "media": ["digital"],
-    "content": ["dog", "pride", "animal", "fantasy", "stickers"],
-    "forSale": false,
-    "link": "miko_pride.webp",
-    "featured": ["true"]
   },
   {
     "title": "Salmon Run",
@@ -392,17 +337,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Pinto's Spinetail",
-    "date": "Oct 10, 2023",
-    "desc": "Pinto's spinetail bird on a branch with a full moon and 8 stars in the sky behind it.",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["bird", "animal", "print"],
-    "forSale": false,
-    "link": "pintos-spinetail.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Panay Monitor",
     "date": "Oct 7, 2023",
     "desc": "Line art of a panay monitor lizard sitting on a branch facing left staring at the viewer.",
@@ -411,17 +345,6 @@
     "content": ["lizard", "animal"],
     "forSale": false,
     "link": "panay-monitor.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Mandrake",
-    "date": "Oct 6, 2023",
-    "desc": "A person with their hand up with leaves instead of hair and purple flowers growing out of the long flowing leaves.",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen", "ink", "watercolor"],
-    "content": ["plant", "people"],
-    "forSale": false,
-    "link": "mandrake.webp",
     "featured": ["false"]
   },
   {
@@ -434,17 +357,6 @@
     "forSale": false,
     "link": "yellow-billed-loon.webp",
     "featured": ["true"]
-  },
-  {
-    "title": "Tsushima leopard cat",
-    "date": "Oct 2, 2023",
-    "desc": "Tsushima leopard cat walking across the hilts of 7 swords with an abstract black background.",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen", "ink", "watercolor"],
-    "content": ["cat", "animal"],
-    "forSale": false,
-    "link": "tsushima-leopard-cat.webp",
-    "featured": ["false"]
   },
   {
     "title": "Lion’s Mane Jellyfish",
@@ -466,17 +378,6 @@
     "content": ["glacier", "landscape"],
     "forSale": false,
     "link": "lamplugh-glacier.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Amanita Mushroom",
-    "date": "Sep 8, 2023",
-    "desc": "A mushroom with a red cap growing out of a mossy root with fallen logs in the background done in watercolor.",
-    "dimensions": "6x9 inches",
-    "media": ["watercolor"],
-    "content": ["mushroom", "plant"],
-    "forSale": false,
-    "link": "amanita-mushroom.webp",
     "featured": ["false"]
   },
   {
@@ -513,17 +414,6 @@
     "featured": ["false"]
   },
   {
-    "title": "White-throated Magpie Jay Linocut",
-    "date": "Jul 21, 2023",
-    "desc": "Linocut print of a white-throated magpie jay and a hibiscus flower.",
-    "dimensions": "6x8 inches",
-    "media": ["linocut", "printmaking"],
-    "content": ["bird", "animal"],
-    "forSale": false,
-    "link": "white-throated-magpie-jay-linocut.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Rainbow Inkblot Cat",
     "date": "Jul 10, 2023",
     "desc": "Watercolor splatters make a rainbow heart shape with a black cat silhouette grooming itself in the middle.",
@@ -532,28 +422,6 @@
     "content": ["bird", "animal", "cards"],
     "forSale": false,
     "link": "rainbow-shadowcat.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Happy Pride Month - Finnley",
-    "date": "Jun 26, 2023",
-    "desc": "Side view of Finnley the jindo dog carrying the progressive pride flag as it blows over his shoulder, done digitally.",
-    "dimensions": "4x4 inches",
-    "media": ["digital"],
-    "content": ["dog", "animal", "stickers"],
-    "forSale": false,
-    "link": "finn-pride.webp",
-    "featured": ["true"]
-  },
-  {
-    "title": "Carp to Dragon Print",
-    "date": "Jun 22, 2023",
-    "desc": "A reduction linocut print of a carp turning into a dragon with a sun in the background.",
-    "dimensions": "4x4 inches",
-    "media": ["linocut", "printmaking"],
-    "content": ["dragon", "fish", "animal", "fantasy"],
-    "forSale": false,
-    "link": "carp-dragon.webp",
     "featured": ["false"]
   },
   {
@@ -623,17 +491,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Canada Warbler",
-    "date": "Oct 3, 2022",
-    "desc": "A canada warbler bird sitting on a sunflower pecking at the seeds with a leaf and a blue sky and white clouds in the background.",
-    "dimensions": "6x9 inches",
-    "media": ["watercolor"],
-    "content": ["animal"],
-    "forSale": false,
-    "link": "canada-warbler.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Sunset Over Water",
     "date": "Aug 1, 2022",
     "desc": "Small watercolor painting of sunset reflecting in the clouds and sea.",
@@ -700,17 +557,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Crow in the Window",
-    "date": "Nov 12, 2021",
-    "desc": "A crow perches on a book in a window with a stormy sky behind it. The test in the book is Annabel Lee by Poe.",
-    "dimensions": "6x6 inches",
-    "media": ["digital"],
-    "content": ["crow", "bird", "animal"],
-    "forSale": false,
-    "link": "stormy-crow.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Finnish Forest Reindeer",
     "date": "Oct 28, 2021",
     "desc": "Digital art of a druid reclining wearing a a reindeer skull mask with glowing red butterflies around him.",
@@ -742,17 +588,6 @@
     "forSale": false,
     "link": "long_whiskered_owlet.webp",
     "featured": ["true"]
-  },
-  {
-    "title": "Philippine Eagle-owl",
-    "date": "Oct 19, 2021",
-    "desc": "Watercolor portrait of Philippine Eagle-owl looking surprised back over it's shoulder.",
-    "dimensions": "6x6 inches",
-    "media": ["watercolor"],
-    "content": ["bird", "animal"],
-    "forSale": false,
-    "link": "philippine_eagle_owl.webp",
-    "featured": ["false"]
   },
   {
     "title": "Large Blue Butterfly",
@@ -854,17 +689,6 @@
     "featured": ["false"]
   },
   {
-    "title": "White Kermode Bear",
-    "date": "Oct 30, 2020",
-    "desc": "Micron pen drawing of a white kermode bear eating a fish.",
-    "dimensions": "8x8 inches",
-    "media": ["micron pen"],
-    "content": ["bear", "animal"],
-    "forSale": false,
-    "link": "white_kermode_bear.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Sacred Blue Lily of the Nile",
     "date": "Oct 28, 2020",
     "desc": "Black ink and blue and yellow watercolor paining of a waterlily and two lily pads.",
@@ -898,17 +722,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Moorhen",
-    "date": "Oct 16, 2020",
-    "desc": "Black ink portrait of a moorhen with a a red-orange watercolor beak.",
-    "dimensions": "8x8 inches",
-    "media": ["ink", "watercolor"],
-    "content": ["bird", "animal"],
-    "forSale": false,
-    "link": "moorhen.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Kapok Tree",
     "date": "Oct 11, 2020",
     "desc": "Black ink painting of a Kapok Tree.",
@@ -928,17 +741,6 @@
     "content": ["lizard", "animal", "plant"],
     "forSale": false,
     "link": "four_horned_chameleon.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "White Spotted Bush Frog",
-    "date": "Oct 5, 2020",
-    "desc": "micron pen drawing of a White Spotted Bush Frog on a leaf.",
-    "dimensions": "8.5x11 inches",
-    "media": ["micron pen"],
-    "content": ["frog", "animal"],
-    "forSale": false,
-    "link": "white_spotted_bush_frog.webp",
     "featured": ["false"]
   },
   {
@@ -972,28 +774,6 @@
     "content": ["fish", "animal"],
     "forSale": false,
     "link": "stalking_unaware.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Just Before Dawn",
-    "date": "Jan 4, 2020",
-    "desc": "watercolor painting blue and white winged wolf on a lit iron lampost in the pre-dawn night sky.",
-    "dimensions": "11x14 inches",
-    "media": ["micron pen", "watercolor", "ink"],
-    "content": ["dog", "animal", "fantasy"],
-    "forSale": false,
-    "link": "just_before_dawn.webp",
-    "featured": ["true"]
-  },
-  {
-    "title": "Almost Rabbits, I",
-    "date": "Dec 13, 2019",
-    "desc": "Woodblock print of a pair of jackalopes looking up at the full moon, the moon has a silhouette of a rabbit making medicine in it.",
-    "dimensions": "5x7 inches",
-    "media": ["woodblock", "printmaking"],
-    "content": ["rabbit", "animal", "fantasy", "landscape"],
-    "forSale": false,
-    "link": "almost_rabbits.webp",
     "featured": ["false"]
   },
   {
@@ -1052,17 +832,6 @@
     "featured": ["true"]
   },
   {
-    "title": "Shepherds of Love",
-    "date": "Jan 23, 2015",
-    "desc": "micron pen and watercolor painting of two german shepherd puppies touching noses and paws to make a heart",
-    "dimensions": "8x18 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["dog", "animal"],
-    "forSale": false,
-    "link": "shepherds_of_love.webp",
-    "featured": ["true"]
-  },
-  {
     "title": "Noble Steed",
     "date": "Jan 27, 2015",
     "desc": "micron and watercolor of a white jindo with a black and white rabbit riding on it with a castle in the background",
@@ -1094,17 +863,5 @@
     "forSale": false,
     "link": "goji_pet_portrait.webp",
     "featured": ["true"]
-  },
-  {
-    "title": "Family Canidae Poster",
-    "date": "May 2, 2010",
-    "desc": "colored pencil drawing of a ferrari f430",
-    "dimensions": "18x24 inches",
-    "media": ["micron pen", "marker", "digital"],
-    "content": ["dog", "animal", "stickers"],
-    "forSale": false,
-    "link": "family_canidae_poster.webp",
-    "additionalImages": ["family_canidae_goods.webp"],
-    "featured": ["false"]
   }
 ]

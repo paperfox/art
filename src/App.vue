@@ -1,9 +1,9 @@
 <script setup>
 import { ref, provide } from 'vue';
 import DisplayArt from './components/DisplayArt.vue';
-import LeftRail from './components/LeftRail.vue';
+// import LeftRail from './components/LeftRail.vue';
 import Modal from './components/Modal.vue';
-import Footer from './components/Footer.vue';
+// import Footer from './components/Footer.vue';
 
 const isModalVisible = ref(false);
 const modalImage = ref(null);
@@ -25,9 +25,9 @@ provide('isModalVisible', isModalVisible);
 
 <template>
   <div class="container">
-    <LeftRail />
+    <!-- <LeftRail /> -->
     <DisplayArt />
-    <Footer />
+    <!-- <Footer /> -->
     <Modal />
   </div>
 </template>

@@ -9,14 +9,12 @@ const props = defineProps({
   },
 });
 
-const activeFilters = ref([{ filterType: 'featured', filterValue: 'true', filterName: 'Featured' }]);
-const activeFilterClass = ref({
-  true: true, // featured selected by default - this naming is confusing
-});
-
-// preloading images
-const newImages = ref([]);
-const images = artwork.map((art) => `./art/${art.link}`);
+// const activeFilters = ref([{ filterType: 'featured', filterValue: 'true', filterName: 'Featured' }]);
+// const activeFilterClass = ref({
+//   true: true, // featured selected by default - this naming is confusing
+// });
+const activeFilters = ref([]);
+const activeFilterClass = ref({});
 
 // Filter buttons
 const filterButtons = [
@@ -28,7 +26,6 @@ const filterButtons = [
   { filterType: 'media', filterValue: 'digital', filterName: 'Digital' },
   { filterType: 'content', filterValue: 'animal', filterName: 'Animal' },
   { filterType: 'content', filterValue: 'fantasy', filterName: 'Fantasy' },
-  { filterType: 'content', filterValue: 'landscape', filterName: 'Landscape' },
   { filterType: 'content', filterValue: 'people', filterName: 'People' },
   { filterType: 'content', filterValue: 'plant', filterName: 'Plants' },
 ];
@@ -68,7 +65,10 @@ const applyFilter = (filter) => {
           v-for="filter in filterButtons"
           :key="filter.filterValue"
           class="btn-badge"
-          :class="{ 'active-filters': activeFilterClass[filter.filterValue] }"
+          :class="[
+            { 'active-filters': activeFilterClass[filter.filterValue] },
+            { [filter.filterValue]: activeFilterClass[filter.filterValue] },
+          ]"
           :id="filter.filterValue === 'digital' ? 'separator' : null"
           @click="applyFilter(filter)"
         >

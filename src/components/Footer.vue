@@ -5,7 +5,7 @@ const socials = footerLinks;
 </script>
 
 <template>
-  <footer class="responsive">
+  <footer>
     <ul class="social-links">
       <li v-for="social of socials" :key="social.icon.slice(0, 5)">
         <a :href="social.link" target="_blank" rel="noreferrer">
@@ -23,6 +23,8 @@ const socials = footerLinks;
 footer {
   width: 100%;
   margin: var(--xs-spacing) auto;
+  margin-top: -6rem;
+  max-width: 550px;
 }
 
 .social-links {
@@ -35,7 +37,7 @@ footer {
 }
 
 /* Responsive */
-@media (min-width: 768.02px) {
+/* @media (min-width: 768.02px) {
   main + .responsive {
     display: none;
   }
@@ -50,5 +52,5 @@ footer {
     width: 80%;
     margin-inline: auto;
   }
-}
+} */
 </style>
