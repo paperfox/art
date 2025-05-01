@@ -2,6 +2,7 @@
 import { ref, computed, onMounted } from 'vue';
 import artwork from '../data/artData';
 import ArtLists from './ArtLists.vue';
+import ArtMasonry from './ArtMasonry.vue';
 
 const props = defineProps({
   artwork: {
@@ -77,7 +78,8 @@ const applyFilter = (filter) => {
       </div>
       <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p>
     </details>
-    <ArtLists :images="filteredArts" />
+    <!-- <ArtLists :images="filteredArts" /> -->
+    <ArtMasonry :images="filteredArts" />
   </div>
 </template>
 
