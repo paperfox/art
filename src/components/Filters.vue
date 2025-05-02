@@ -64,7 +64,7 @@ const applyFilter = (filter) => {
           {{ filter.filterName }}
         </button>
       </div>
-      <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p>
+      <!-- <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p> -->
     </details>
     <ArtMasonry :images="filteredArts" />
   </div>
@@ -87,10 +87,8 @@ summary {
 }
 
 #filters {
-  background-color: var(--tertiary-bg);
-  padding: 1.5rem 1.5rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
@@ -105,6 +103,10 @@ summary {
   padding: var(--base-spacing) var(--xs-spacing);
   letter-spacing: 0.1rem;
   margin: 0 var(--base-spacing) var(--xs-spacing) 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &.active-filters {
     background-color: var(--text-body);

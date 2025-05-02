@@ -110,17 +110,6 @@
     "featured": ["true"]
   },
   {
-    "title": "Mexican Wolf",
-    "date": "Oct 4, 2024",
-    "desc": "Micron pen, ink, and watercolor of a Mexican Wolf running in front of trees and its face is a skull.",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen", "ink", "watercolor"],
-    "content": ["wolf", "animal", "fantasy"],
-    "forSale": false,
-    "link": "mexican_wolf.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Raven Queen",
     "date": "Jul 29, 2024",
     "desc": "Digital portrait of the Raven Queen from A Practical Guide to Sorcery, holding feathers with feathers falling around her and her shadow shows a raven demon. Below her knees she dissolves into feathers.",
@@ -260,17 +249,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Zebra Duiker",
-    "date": "Oct 14, 2023",
-    "desc": "A zebra duiker running across a grassland with a sunset behind it with a duiker skeleton visble underground. The half sun and dark areas in the ground create a full circle.",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["duiker", "animal"],
-    "forSale": false,
-    "link": "zebra-duiker.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Red Squirrel",
     "date": "Oct 12, 2023",
     "desc": "A red squirrel with a fluffy tail looks up at the viewer, shocked.",
@@ -345,17 +323,6 @@
     "content": ["plant", "landscape"],
     "forSale": false,
     "link": "alaska-sunset.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Nighttime Alaskan Sea",
-    "date": "Sep 2, 2023",
-    "desc": "Night sky with big dipper in Alaska over the ocean with a few islands sillhoutted in black.",
-    "dimensions": "6x9 inches",
-    "media": ["watercolor"],
-    "content": ["plant", "landscape"],
-    "forSale": false,
-    "link": "nighttime-alaskan-sea.webp",
     "featured": ["false"]
   },
   {
