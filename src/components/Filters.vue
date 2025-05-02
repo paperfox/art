@@ -1,7 +1,6 @@
 <script setup>
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed } from 'vue';
 import artwork from '../data/artData';
-import ArtLists from './ArtLists.vue';
 import ArtMasonry from './ArtMasonry.vue';
 
 const props = defineProps({
@@ -13,19 +12,14 @@ const props = defineProps({
 const activeFilters = ref([]);
 const activeFilterClass = ref({});
 
-// Filter buttons
 const filterButtons = [
   { filterType: 'media', filterValue: 'watercolor', filterName: 'Watercolor' },
   { filterType: 'media', filterValue: 'ink', filterName: 'Ink' },
   { filterType: 'media', filterValue: 'micron pen', filterName: 'micron pen' },
   { filterType: 'media', filterValue: 'printmaking', filterName: 'Printmaking' },
   { filterType: 'media', filterValue: 'digital', filterName: 'Digital' },
-  { filterType: 'content', filterValue: 'animal', filterName: 'Animal' },
-  { filterType: 'content', filterValue: 'fantasy', filterName: 'Fantasy' },
-  { filterType: 'content', filterValue: 'people', filterName: 'People' },
 ];
 
-// Computed property for filters
 const filteredArts = computed(() => {
   if (activeFilters.value.length === 0) {
     return artwork;
@@ -52,7 +46,7 @@ const applyFilter = (filter) => {
 </script>
 
 <template>
-  <div>
+  <div class="artwork">
     <details>
       <summary>Filter Artwork</summary>
       <div id="filters">
@@ -64,7 +58,7 @@ const applyFilter = (filter) => {
             { 'active-filters': activeFilterClass[filter.filterValue] },
             { [filter.filterValue]: activeFilterClass[filter.filterValue] },
           ]"
-          :id="filter.filterValue === 'digital' ? 'separator' : null"
+          :id="`filter-${filter.filterValue}`"
           @click="applyFilter(filter)"
         >
           {{ filter.filterName }}
@@ -72,7 +66,6 @@ const applyFilter = (filter) => {
       </div>
       <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p>
     </details>
-    <!-- <ArtLists :images="filteredArts" /> -->
     <ArtMasonry :images="filteredArts" />
   </div>
 </template>
@@ -130,17 +123,6 @@ summary {
   &:focus-visible {
     outline: 0.2rem dotted var(--link);
     outline-offset: 0.2rem;
-  }
-}
-
-#separator {
-  margin-right: 3rem;
-
-  &::after {
-    content: ' |';
-    margin-left: 3rem;
-    position: absolute;
-    color: var(--text-body);
   }
 }
 </style>

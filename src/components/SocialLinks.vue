@@ -13,10 +13,10 @@ const props = defineProps({
 
 const filteredSocials = computed(() => {
   if (props.showSocialTitles) {
-    return socials; // Show all 6 items
+    return socials;
   }
-  // Show only the first 5 items when showSocialTitles is false
-  return socials.slice(1, 5);
+
+  return socials.slice(0, 4);
 });
 </script>
 

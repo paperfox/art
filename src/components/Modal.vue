@@ -5,8 +5,18 @@ import { onClickOutside } from '@vueuse/core';
 const isModalVisible = inject('isModalVisible');
 const modalImage = inject('modalImage');
 const closeModal = inject('closeModal');
+// const filteredArts = inject('filteredArts'); // Inject the full array of art pieces
 
 const modal = ref(null);
+
+// Track the current index of the modal image
+// const currentIndex = ref(artPieces.value.findIndex((art) => art === modalImage.value));
+
+// // Function to go to the next art piece
+// const gotoNext = () => {
+//   currentIndex.value = (currentIndex.value + 1) % artPieces.value.length; // Loop back to the start if at the end
+//   modalImage.value = artPieces.value[currentIndex.value];
+// };
 
 onClickOutside(modal, () => {
   closeModal();
@@ -27,6 +37,13 @@ onClickOutside(modal, () => {
             {{ modalImage?.date }} &nbsp; | &nbsp;
             {{ modalImage?.media.map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(', ') }}
           </p>
+          <!-- <button
+            aria-label="next button"
+            @click="gotoNext"
+            style="margin: 0 auto; display: block; font-size: 2.4rem; color: var(--link)"
+          >
+            See next art piece ({{ artPieces[currentIndex]?.title || 'First Art Piece' }})
+          </button> -->
         </div>
       </section>
     </div>

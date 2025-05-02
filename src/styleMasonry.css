@@ -1,13 +1,8 @@
-/* Core */
 *,
 *:before,
 *:after { box-sizing: border-box; }
 
 :root {
-  font-family: 'Sen', Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-
   /* Colors */
   --main-bg: #282a31;
   --secondary-bg: #14151a;
@@ -25,29 +20,41 @@
     --link: #a01818;
   }
 
-  color: var(--text-body);
-  background-color: var(--main-bg);
-
   /* Spacing */
   --base-spacing: 0.8rem;
   --xs-spacing: calc(var(--base-spacing) * 2);
+  --sm-spacing: calc(var(--base-spacing) * 3);
 
-  /* Grid */
-  /* --columns: 1; */
-  /* --rows: 6; */
+  /* Borders and Outlines */
+  --border-weight: 0.2rem;
+
+  /* Root Page Styles */
+  font-family: 'Sen', Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-body);
+  background-color: var(--main-bg);
 }
 
 html { font-size: 62.5%; }
-body { margin: 0; }
 
-.container {
-  /* display: flex;
-  place-items: center;
-  min-height: 100vh; */
+body { 
+  margin: 0; 
   font-size: 1.6rem;
+  max-width: 170rem;
+  margin-inline: auto;
+  padding: var(--base-spacing) var(--sm-spacing);
 }
 
+body:has(.modal.is-visible) {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+main { width: 100%; }
+
 /* Typography */
+
 h1 {
   font-size: 5.1rem;
   line-height: 1.1;
@@ -57,41 +64,6 @@ h1 {
 
 h2 { font-size: 2.2rem; font-weight: 500;}
 h3 { font-size: 1.8rem; font-weight: 600;}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  li {
-    padding: 0;
-    margin: 0;
-
-  }
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--base-spacing);
-
-  .nav-brand {
-    display: flex;
-    align-items: center;
-
-    h2 {
-      margin: 0 0 var(--base-spacing) ;
-    }
-
-    .nav-logo {
-      width: 12rem;
-      display: inline-block;
-      margin-top: var(--base-spacing);
-      margin-right: var(--xs-spacing);
-    }
-  }
-}
 
 a {
   color: var(--link);
@@ -110,16 +82,74 @@ button {
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 0;
+    margin: 0;
+
+  }
+}
+
+/* Grid */
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item { width: 33.333%; }
+.grid-item { float: left; }
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  padding: var(--base-spacing) calc(var(--base-spacing) *1.5);
+}
+
+@media (max-width: 992px) {
+  #artTab .artwork div { padding-left: .5rem; }
+  .grid-sizer,
+  .grid-item           { width: 50%; }
+  .grid-item img       { padding: var(--base-spacing) calc(var(--base-spacing) *1.25); }
+}
+
+/* Content */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--base-spacing);
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+
+    h2 {
+      margin: 0 0 var(--base-spacing);
+    }
+
+    .nav-logo {
+      width: 10rem;
+      display: inline-block;
+      margin-top: var(--base-spacing);
+      margin-right: var(--xs-spacing);
+    }
+  }
+}
+
 *:focus-visible {
-  outline: .2rem dotted var(--link);
-  outline-offset: 0.2rem;
+  outline: var(--border-weight) dotted var(--link);
+  outline-offset: var(--border-weight);
 }
 
-main {
-  width: 100%;
-}
-
-/* Main Content */
 .nav-tabs {
   display: flex;
 
@@ -127,7 +157,7 @@ main {
 
   .tab-control {
     border: none;
-    border-bottom: 0.2rem solid transparent;
+    border-bottom: var(--border-weight) solid transparent;
     color: var(--text-body);
     cursor: pointer;
     font-weight: 600;
@@ -137,12 +167,12 @@ main {
     background-color: transparent;
 
     &.active {
-      border-bottom: 0.2rem solid var(--link);
+      border-bottom: var(--border-weight) solid var(--link);
       opacity: 1;
     }
     
     &:hover:not(.active) {
-      border-bottom: 0.2rem solid var(--text-body);
+      border-bottom: var(--border-weight) solid var(--text-body);
       color: var(--link);
       opacity: 1;
     }
@@ -153,53 +183,98 @@ main {
   padding: var(--xs-spacing);
   margin-inline: auto;
   max-width: 100rem;
-  display: flex;
-  /* justify-content: center; */
-  & > * { width: 45%;}
-  img {width: 100%;}
+
+  img   { width: 100%; }
+
+  & > div {
+    display: flex;
+    gap: var(--sm-spacing);
+    align-items: baseline;
+    
+    & > * { width: 45%; }
+  }
+}
+
+#aboutTab .text-content > div {
+  align-items: flex-start;
 }
 
 details,
 .tab-content { padding: var(--base-spacing); }
 
 .btn-modal {
-
   &,
   img { width: 100%;}
 }
 
-/* -- grid styles -- */
+/* Responsive */
 
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.grid-sizer,
-.grid-item {
-  width: 33.333%;
-}
-
-.grid-item {
-  float: left;
-}
-
-.grid-item img {
-  display: block;
-  max-width: 100%;
-  padding: 2rem
-}
-
-@media (max-width: 991.98px) {
-  #artTab .artwork div { padding-left: .5rem; }
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
+@media (max-width: 992px) {
+  .navbar .nav-brand {
+    h1        { font-size: 4rem; }
+    h2        { font-size: 1.8rem; }
+    .nav-logo { width: 7rem; }
   }
 
-  .grid-item img {
-    padding: 1rem
+  body {
+    padding-inline: var(--base-spacing);
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar .nav-brand {
+    h1        { font-size: 3.5rem; }
+    h2        { font-size: 1.6rem; }
+    .nav-logo { width: 6rem; }
+  }
+
+  body        { padding-inline: 0; }
+}
+
+@media (max-width: 768px) {
+  .navbar,
+  .nav-tabs {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--base-spacing) var(--sm-spacing);
+  }
+
+  .nav-tabs {
+    margin: var(--base-spacing) 0;
+    width: 100%;
+
+    .tab-control {
+      text-align: right;
+      border-bottom: none;
+      border-right: var(--border-weight) solid transparent;
+
+      &.active {
+        border-bottom: none;
+        border-right: var(--border-weight) solid var(--link);
+      }
+
+      &:hover:not(.active) {
+        border-bottom: none;
+        border-right: var(--border-weight) solid var(--text-body);
+      }
+    }
+  }
+
+  .text-content {
+    max-width: 60rem;
+
+    picture   { 
+      max-height: 30rem;
+      overflow: hidden;
+      max-width: 30rem;
+      margin-inline: auto;
+      border-radius: 50%;
+    }
+    
+    & > div {
+      flex-direction: column; 
+
+      & > * { width: 100%; }
+    }
   }
 }

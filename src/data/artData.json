@@ -66,17 +66,6 @@
     "featured": ["false"]
   },
   {
-    "title": "MacQueen’s Bustard, Firebird",
-    "date": "Oct 16, 2024",
-    "desc": "Watercolor and ink painting of a firebird inspired by the MacQueen’s Bustard, a yellow, red, and orange bird on a red and black background.",
-    "dimensions": "6x9 inches",
-    "media": ["ink", "watercolor"],
-    "content": ["bird", "animal"],
-    "forSale": false,
-    "link": "macqueen_s_bustard.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Mountain Gazelle",
     "date": "Oct 14, 2024",
     "desc": "Micron pen and watercolor portrait of a Mountain Gazelle with a sunny sky in the background.",
@@ -257,17 +246,6 @@
     "content": ["bison", "animal"],
     "forSale": false,
     "link": "indian_bison.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Indian Bison Ink",
-    "date": "Oct 25, 2023",
-    "desc": "Portrait of the right half of an Indian Bison's face in micron pen.",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen"],
-    "content": ["bison", "animal"],
-    "forSale": false,
-    "link": "indian_bison_ink.webp",
     "featured": ["false"]
   },
   {

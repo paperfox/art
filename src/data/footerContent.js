@@ -1,11 +1,5 @@
 const footerLinks = [
   {
-    title: 'art.paperfox@gmail.com',
-    link: 'art.paperfox+webcontact@gmail.com',
-    icon: 'emailicon.svg',
-    addFilter: true,
-  },
-  {
     title: 'Instagram',
     link: 'https://www.instagram.com/paperfoxmakesart/',
     icon: 'instagramlogo.svg',
