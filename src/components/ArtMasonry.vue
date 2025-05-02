@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive, inject, onMounted, watch } from 'vue';
+import { ref, reactive, inject, onMounted, watch, nextTick } from 'vue';
 import Masonry from 'masonry-layout';
 import imagesLoaded from 'imagesloaded';
 
@@ -30,16 +30,39 @@ function updateImageHeight(index) {
 let masonryInstance = null;
 
 // Function to initialize Masonry and imagesLoaded
+// const initializeMasonry = () => {
+//   const grid = document.querySelector('.grid');
+//   if (!grid) return;
+
+//   // Initialize Masonry
+//   masonryInstance = new Masonry(grid, {
+//     itemSelector: '.grid-item',
+//     columnWidth: '.grid-sizer',
+//     percentPosition: true,
+//     // horizontalOrder: true,
+//     gutter: 0, // Optional: Adjust the spacing between items
+//   });
+
+//   // Use imagesLoaded to ensure layout updates after images are loaded
+//   imagesLoaded(grid, () => {
+//     masonryInstance.layout();
+//   });
+// };
+
 const initializeMasonry = () => {
   const grid = document.querySelector('.grid');
   if (!grid) return;
+
+  // If Masonry instance already exists, destroy it before reinitializing
+  if (masonryInstance) {
+    masonryInstance.destroy();
+  }
 
   // Initialize Masonry
   masonryInstance = new Masonry(grid, {
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
     percentPosition: true,
-    horizontalOrder: true,
     gutter: 0, // Optional: Adjust the spacing between items
   });
 
@@ -58,7 +81,9 @@ watch(
   () => props.images,
   () => {
     // Reinitialize Masonry when images change
-    initializeMasonry();
+    nextTick(() => {
+      initializeMasonry();
+    });
   },
 );
 </script>
@@ -68,15 +93,12 @@ watch(
     <li class="grid-sizer" aria-hidden="true"></li>
     <li v-for="(image, index) of images" :key="condense(image.title)" class="grid-item">
       <button type="button" class="btn-modal" :data-open="`modal${condense(image.title)}`" @click="modal(image)">
-        <!-- <figure> -->
         <img
           :src="`./art/${image.link}`"
           :alt="`${image.title}: ${image.desc}`"
           ref="imageRefs"
           @load="updateImageHeight(index)"
         />
-        <!-- <figcaption>{{ image.title }}</figcaption>
-        </figure> -->
       </button>
     </li>
   </ul>

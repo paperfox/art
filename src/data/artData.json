@@ -33,28 +33,6 @@
     "featured": ["true"]
   },
   {
-    "title": "Mountain Zebra",
-    "date": "Oct 30, 2024",
-    "desc": "Watercolor painting of a Mountain Zebra in gray and red, imitating flames and smoke.",
-    "dimensions": "6x9 inches",
-    "media": ["watercolor"],
-    "content": ["zebra", "animal"],
-    "forSale": false,
-    "link": "mountain_zebra.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Takahe",
-    "date": "Oct 28, 2024",
-    "desc": "Micron pen and watercolor of a takahe, a flightless blue-green bird, in a dancing pose.",
-    "dimensions": "3x4 inches",
-    "media": ["watercolor", "micron pen"],
-    "content": ["bird", "animal"],
-    "forSale": false,
-    "link": "takahe.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Giant Panda",
     "date": "Oct 28, 2024",
     "desc": "Micron pen and watercolor of a panda sleeping on a crescent moon with 4 swords hanging below them.",
@@ -174,17 +152,6 @@
     "forSale": false,
     "link": "sunshine.webp",
     "featured": ["true"]
-  },
-  {
-    "title": "Seabirds",
-    "date": "Jun 23, 2024",
-    "desc": "Linocut and gelli print of a seabirds over water.",
-    "dimensions": "10x14 inches",
-    "media": ["linocut", "printmaking"],
-    "content": ["bird", "animal"],
-    "forSale": false,
-    "link": "seabirds.webp",
-    "featured": ["false"]
   },
   {
     "title": "Jellyfish",
@@ -469,17 +436,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Hawaiian Hibiscus",
-    "date": "Oct 23, 2022",
-    "desc": "A watercolor painting of a red orange hibiscus flower with 2 green leaves.",
-    "dimensions": "6x6 inches",
-    "media": ["watercolor"],
-    "content": ["plant"],
-    "forSale": false,
-    "link": "hawaiian-hibiscus.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Virginia Big-eared Bat",
     "date": "Oct 9, 2022",
     "desc": "A bat flying into the foreground with a cafe opening in the background with additional bats handing from the ceiling.",
@@ -488,17 +444,6 @@
     "content": ["animal"],
     "forSale": false,
     "link": "virginia-big-eared-bat.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Sunset Over Water",
-    "date": "Aug 1, 2022",
-    "desc": "Small watercolor painting of sunset reflecting in the clouds and sea.",
-    "dimensions": "2.5x3.5 inches",
-    "media": ["watercolor"],
-    "content": ["landscape"],
-    "forSale": false,
-    "link": "sunset-over-water.webp",
     "featured": ["false"]
   },
   {
@@ -535,17 +480,6 @@
     "featured": ["true"]
   },
   {
-    "title": "Rainbow Butterfly",
-    "date": "Nov 20, 2021",
-    "desc": " Butterfly painted in a rainbow gradient starting with yellow in the top left to blue in the bottom right.",
-    "dimensions": "8x12 inches",
-    "media": ["watercolor"],
-    "content": ["butterfly", "animal", "insect"],
-    "forSale": false,
-    "link": "rainbow-butterfly.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Cyan Jellyfish",
     "date": "Nov 20, 2021",
     "desc": "Jellyfish with frilly tendrils painted in light blues and some yellow with blue paint splatters.",
@@ -568,17 +502,6 @@
     "featured": ["true"]
   },
   {
-    "title": "Gopher Frog",
-    "date": "Oct 23, 2021",
-    "desc": "Micron pen drawing of a frog jumping with a black brush stroke in the background.",
-    "dimensions": "6x6 inches",
-    "media": ["micron pen", "ink"],
-    "content": ["frog", "animal"],
-    "forSale": false,
-    "link": "gopher_frog.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Long-whiskered Owlet",
     "date": "Oct 22, 2021",
     "desc": "Micron pen drawing of an owlet with the night sky behind it.",
@@ -588,28 +511,6 @@
     "forSale": false,
     "link": "long_whiskered_owlet.webp",
     "featured": ["true"]
-  },
-  {
-    "title": "Large Blue Butterfly",
-    "date": "Oct 12, 2021",
-    "desc": "Watercolor and ink painting of a Large blue butterfly flying with gold ink splatters.",
-    "dimensions": "6x8 inches",
-    "media": ["watercolor", "ink"],
-    "content": ["butterfly", "animal", "insect"],
-    "forSale": false,
-    "link": "large_blue_butterfly.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "African Wild Dog",
-    "date": "Oct 10, 2021",
-    "desc": "A sitting african wild dog, also known as painted wolf, staring at the viewer in watercolor.",
-    "dimensions": "4x6 inches",
-    "media": ["watercolor"],
-    "content": ["dog", "animal"],
-    "forSale": false,
-    "link": "painted_wolf.webp",
-    "featured": ["false"]
   },
   {
     "title": "Reeve’s Pheasant",

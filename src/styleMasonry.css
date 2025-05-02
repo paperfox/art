@@ -4,8 +4,8 @@
 *:after { box-sizing: border-box; }
 
 :root {
-  font-family: 'Quicksand', Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-family: 'Sen', Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
   line-height: 1.5;
 
   /* Colors */
@@ -49,13 +49,14 @@ body { margin: 0; }
 
 /* Typography */
 h1 {
-  font-size: 4.8rem;
+  font-size: 5.1rem;
   line-height: 1.1;
-  margin: 1.6rem 0;
+  margin: var(--base-spacing) 0 0;
+  font-weight: 400;
 }
 
-h2 { font-size: 2.2rem; }
-h3 { font-size: 1.8rem; }
+h2 { font-size: 2.2rem; font-weight: 500;}
+h3 { font-size: 1.8rem; font-weight: 600;}
 
 ul {
   list-style: none;
@@ -69,9 +70,27 @@ ul {
   }
 }
 
-footer ul {
+.navbar {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--base-spacing);
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+
+    h2 {
+      margin: 0 0 var(--base-spacing) ;
+    }
+
+    .nav-logo {
+      width: 12rem;
+      display: inline-block;
+      margin-top: var(--base-spacing);
+      margin-right: var(--xs-spacing);
+    }
+  }
 }
 
 a {
@@ -102,36 +121,42 @@ main {
 
 /* Main Content */
 .nav-tabs {
-  box-shadow: inset 0 -0.5rem 0.6rem rgba(var(--black) 0.1);
-  background-color: var(--tertiary-bg);
   display: flex;
 
   li { width: 50%; }
 
   .tab-control {
     border: none;
-    border-top: 0.2rem solid transparent;
+    border-bottom: 0.2rem solid transparent;
     color: var(--text-body);
     cursor: pointer;
     font-weight: 600;
-    padding: var(--xs-spacing);
+    padding: var(--base-spacing);
     width: 100%;
     opacity: 0.8;
     background-color: transparent;
 
     &.active {
-      background-color: var(--main-bg);
-      box-shadow: 0 -0.5rem 0.5rem rgba(var(--black), 0.1);
-      border-top: 0.2rem solid var(--link);
+      border-bottom: 0.2rem solid var(--link);
       opacity: 1;
     }
     
     &:hover:not(.active) {
-      border-top: 0.2rem solid var(--text-body);
+      border-bottom: 0.2rem solid var(--text-body);
       color: var(--link);
       opacity: 1;
     }
   }
+}
+
+.text-content {
+  padding: var(--xs-spacing);
+  margin-inline: auto;
+  max-width: 100rem;
+  display: flex;
+  /* justify-content: center; */
+  & > * { width: 45%;}
+  img {width: 100%;}
 }
 
 details,
@@ -141,45 +166,9 @@ details,
 
   &,
   img { width: 100%;}
-
-  figure {
-    position: relative;
-    margin: 0;
-
-    figcaption {
-      background: rgba(var(--black), 0.7);
-      padding: var(--base-spacing);
-      position: absolute;
-      bottom: .4rem;
-      left: 0;
-      width: 100%;
-    }
-    
-    &:hover figcaption,
-    &:focus-visible figcaption {
-      background: rgba(var(--black), 1);
-      text-decoration: underline;
-    }
-  }
 }
 
-.art-list {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: space-between;
-}
-
-.item {
-  position: relative;
-  margin-bottom: 1rem;
-}
-
-
-/* ---- grid ---- */
-
-/* .grid {
-  background: #DDD;
-} */
+/* -- grid styles -- */
 
 /* clear fix */
 .grid:after {
@@ -187,8 +176,6 @@ details,
   display: block;
   clear: both;
 }
-
-/* ---- .grid-item ---- */
 
 .grid-sizer,
 .grid-item {

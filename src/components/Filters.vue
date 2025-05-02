@@ -10,16 +10,11 @@ const props = defineProps({
   },
 });
 
-// const activeFilters = ref([{ filterType: 'featured', filterValue: 'true', filterName: 'Featured' }]);
-// const activeFilterClass = ref({
-//   true: true, // featured selected by default - this naming is confusing
-// });
 const activeFilters = ref([]);
 const activeFilterClass = ref({});
 
 // Filter buttons
 const filterButtons = [
-  { filterType: 'featured', filterValue: 'true', filterName: 'Featured' },
   { filterType: 'media', filterValue: 'watercolor', filterName: 'Watercolor' },
   { filterType: 'media', filterValue: 'ink', filterName: 'Ink' },
   { filterType: 'media', filterValue: 'micron pen', filterName: 'micron pen' },
@@ -28,7 +23,6 @@ const filterButtons = [
   { filterType: 'content', filterValue: 'animal', filterName: 'Animal' },
   { filterType: 'content', filterValue: 'fantasy', filterName: 'Fantasy' },
   { filterType: 'content', filterValue: 'people', filterName: 'People' },
-  { filterType: 'content', filterValue: 'plant', filterName: 'Plants' },
 ];
 
 // Computed property for filters

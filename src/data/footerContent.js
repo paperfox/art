@@ -1,5 +1,11 @@
 const footerLinks = [
   {
+    title: 'art.paperfox@gmail.com',
+    link: 'art.paperfox+webcontact@gmail.com',
+    icon: 'emailicon.svg',
+    addFilter: true,
+  },
+  {
     title: 'Instagram',
     link: 'https://www.instagram.com/paperfoxmakesart/',
     icon: 'instagramlogo.svg',
@@ -12,15 +18,15 @@ const footerLinks = [
     addFilter: true,
   },
   {
-    title: 'Natick Art Association',
-    link: 'https://www.natickartassociation.org/nathalie-garfinkle',
-    icon: 'NAA_Logo_Final_C2.png',
-  },
-  {
     title: 'GitHub',
     link: 'https://github.com/paperfox',
     icon: 'github-mark.svg',
     addFilter: true,
+  },
+  {
+    title: 'Natick Art Association',
+    link: 'https://www.natickartassociation.org/nathalie-garfinkle',
+    icon: 'NAA_Logo_Final_C2.png',
   },
   {
     title: 'LinkedIn',
