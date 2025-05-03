@@ -12,7 +12,8 @@ const formElements = ref([
     labelText: 'Name',
     placeholder: 'Name',
     isRequired: true,
-    modelValue: null,
+    isError: false,
+    modelValue: '',
   },
   {
     id: 'input-email',
@@ -22,7 +23,8 @@ const formElements = ref([
     labelText: 'Email',
     placeholder: 'Email',
     isRequired: true,
-    modelValue: null,
+    isError: false,
+    modelValue: '',
   },
   {
     id: 'input-subject',
@@ -32,7 +34,8 @@ const formElements = ref([
     labelText: 'Subject',
     placeholder: 'Subject',
     isRequired: true,
-    modelValue: null,
+    isError: false,
+    modelValue: '',
   },
   {
     id: 'input-message',
@@ -42,11 +45,42 @@ const formElements = ref([
     labelText: 'Message',
     placeholder: 'Message',
     isRequired: true,
-    modelValue: null,
+    isError: false,
+    modelValue: '',
   },
 ]);
 
-console.log('Contact form elements:', formElements);
+const isSubmitting = ref(false);
+
+// Handle form submission
+const handleSubmit = () => {
+  console.log(formElements.value);
+  isSubmitting.value = true;
+
+  // Simulate form submission
+  setTimeout(() => {
+    isSubmitting.value = false;
+    alert('Form submitted successfully!');
+  }, 2000);
+};
+
+const validateInputs = () => {
+  let isValid = true;
+
+  formElements.value = formElements.value.map((element) => {
+    if (element.isRequired && !element.modelValue.trim()) {
+      element.isError = true;
+      isValid = false;
+    } else {
+      element.isError = false;
+    }
+    return element; // Return the updated object
+  });
+
+  return isValid;
+};
+
+console.log();
 </script>
 
 <template>
@@ -54,16 +88,16 @@ console.log('Contact form elements:', formElements);
     <h3>Contact</h3>
     <div>
       <div>
-        <p>
-          You can find me on the web at these places, or drop me an email at
-          <a href="mailto:art.paperfox+webcontact@gmail.com">art.paperfox@gmail.com</a> if you have specific questions.
-        </p>
+        <p>You can find me on the web at these places, or drop me an email if you have specific questions.</p>
         <SocialLinks :showSocialTitles="true" />
       </div>
       <div>
         <form @submit.prevent="handleSubmit">
+          <p class="text-right">All fields are required.</p>
           <FormInput v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
-          <button type="submit" class="btn-submit">Send</button>
+          <button type="submit" class="btn-submit" @click="validateInputs">
+            {{ isSubmitting ? 'Sending' : 'Send' }}
+          </button>
         </form>
       </div>
     </div>
@@ -77,17 +111,10 @@ form {
   gap: var(--xs-spacing);
   margin: var(--base-spacing) auto;
   max-width: 400px;
+}
 
-  input,
-  textarea {
-    font-family: inherit;
-    padding: var(--xs-spacing);
-    border: 0;
-    border-bottom: var(--border-weight) solid var(--text-body);
-    font-size: 1.6rem;
-    color: var(--text-body);
-    background-color: var(--secondary-bg);
-    margin-bottom: var(--xs-spacing);
-  }
+.text-right {
+  text-align: right;
+  margin: 0;
 }
 </style>

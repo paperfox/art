@@ -35,10 +35,8 @@ const filteredSocials = computed(() => {
 </template>
 
 <style scoped>
-ul {
-  img {
-    height: 3.2rem;
-  }
+ul img {
+  height: 3.2rem;
 }
 
 .footer-socials {

@@ -1,5 +1,6 @@
 <script setup>
 import { ref, provide, computed } from 'vue';
+import '@fontsource/sen';
 import Filters from './components/Filters.vue';
 import inProgress from './data/sketchData';
 import SocialLinks from './components/SocialLinks.vue';
@@ -12,7 +13,7 @@ import Modal from './components/Modal.vue';
 const isModalVisible = ref(false);
 const modalImage = ref(null);
 
-const tabs = [{ name: 'Art' }, { name: 'Sketch' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
+const tabs = [{ name: 'Art' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
 
 const openModal = (image) => {
   modalImage.value = image;
@@ -63,36 +64,35 @@ const tab = ref('art');
       </div>
     </nav>
 
-    <div class="tab-content" id="artTab" v-if="tab === 'art'">
+    <div class="tab-content" id="artTab" v-show="tab === 'art'">
       <Filters />
     </div>
-    <div class="tab-content" id="sketchTab" v-if="tab === 'sketch'">
+    <!-- <div class="tab-content" id="sketchTab" v-show="tab === 'sketch'">
       <div class="artwork">
         <ArtMasonry :images="inProgress" />
       </div>
-    </div>
-    <div class="tab-content" id="eventTab" v-if="tab === 'events'">
+    </div> -->
+    <div class="tab-content" id="eventTab" v-show="tab === 'events'">
       <TabEvents />
     </div>
-    <div class="tab-content" id="aboutTab" v-if="tab === 'about'">
+    <div class="tab-content" id="aboutTab" v-show="tab === 'about'">
       <TabAbout />
     </div>
-    <div class="tab-content" id="aboutTab" v-if="tab === 'contact'">
+    <div class="tab-content" id="aboutTab" v-show="tab === 'contact'">
       <TabContact />
     </div>
-    <footer>
-      <SocialLinks />
-    </footer>
   </main>
+  <footer>
+    <SocialLinks />
+  </footer>
   <Modal />
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
-
 footer {
   width: 100%;
   margin: var(--xs-spacing) auto;
   max-width: 400px;
+  padding-inline: var(--xs-spacing);
 }
 </style>

@@ -1,7 +1,8 @@
 <script setup>
-import { inject, onMounted, watch, nextTick } from 'vue';
+import { inject, onMounted, watch, nextTick, ref } from 'vue';
 import Masonry from 'masonry-layout';
 import imagesLoaded from 'imagesloaded';
+import { set } from '@vueuse/core';
 
 const props = defineProps(['images']);
 
@@ -17,6 +18,16 @@ const modal = (imgData) => {
 
 // Masonry instance
 let masonryInstance = null;
+
+const isLoading = ref(true);
+
+const loadingComplete = () => {
+  setTimeout(() => {
+    isLoading.value = false;
+  }, 1000);
+};
+
+loadingComplete();
 
 const initializeMasonry = () => {
   const grid = document.querySelector('.grid');
@@ -38,6 +49,7 @@ const initializeMasonry = () => {
 
   imagesLoaded(grid, () => {
     masonryInstance.layout();
+    loadingComplete();
   });
 };
 
@@ -56,12 +68,15 @@ watch(
 </script>
 
 <template>
-  <ul class="grid" aria-live="polite">
-    <li class="grid-sizer" aria-hidden="true"></li>
-    <li v-for="image of images" :key="image.title" class="grid-item">
-      <button type="button" class="btn-modal" :data-open="`modal${condense(image.title)}`" @click="modal(image)">
-        <img :src="`./art/${image.link}`" :alt="`${image.title}: ${image.desc}`" />
-      </button>
-    </li>
-  </ul>
+  <p :style="!isLoading ? 'opacity: 0' : ''">Loading...</p>
+  <div :style="isLoading ? 'opacity: 0' : ''">
+    <ul class="grid" aria-live="polite">
+      <li class="grid-sizer" aria-hidden="true"></li>
+      <li v-for="image of images" :key="image.title" class="grid-item">
+        <button type="button" class="btn-modal" :data-open="`modal${condense(image.title)}`" @click="modal(image)">
+          <img :src="`./art/${image.link}`" :alt="`${image.title}: ${image.desc}`" />
+        </button>
+      </li>
+    </ul>
+  </div>
 </template>

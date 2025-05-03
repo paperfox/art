@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue';
+import { ref } from 'vue';
 
 const props = defineProps({
   componentType: {
@@ -9,6 +9,10 @@ const props = defineProps({
   id: {
     type: String,
     required: true,
+  },
+  isError: {
+    type: Boolean,
+    default: false,
   },
   isRequired: {
     type: Boolean,
@@ -26,6 +30,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  placeholder: {
+    type: String,
+    default: null,
+  },
   type: {
     type: String,
     default: 'text',
@@ -37,11 +45,17 @@ const props = defineProps({
 });
 
 defineEmits(['update:modelValue']);
+const emailError = ref(false);
+
+const isValidEmail = (email) => {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
+};
 </script>
 
 <template>
   <div class="form-input">
-    <label :for="id" :class="modelValue ? 'float' : null">{{ labelText }}</label>
+    <label :for="id" :class="modelValue ? 'float' : null">{{ labelText }} </label>
     <component
       :is="componentType"
       :type="type"
@@ -51,7 +65,17 @@ defineEmits(['update:modelValue']);
       :rows="componentType === 'textarea' ? 6 : null"
       :value="modelValue"
       @input="$emit('update:modelValue', $event.target.value)"
+      oninvalid="setCustomValidity(' ');"
     />
+    <div
+      :class="
+        isError && !modelValue ? 'form-error' : name === 'email' && !isValidEmail(modelValue) ? 'form-error' : null
+      "
+      role="alert"
+    >
+      <span v-if="isError && !modelValue">Please enter {{ name === 'email' ? 'an' : 'a' }} {{ name }}.</span>
+      <span v-else-if="modelValue && name === 'email' && !isValidEmail(modelValue)">Please enter a valid email.</span>
+    </div>
   </div>
 </template>
 
@@ -70,6 +94,22 @@ defineEmits(['update:modelValue']);
     transition: all 0.4s ease;
   }
 
+  input,
+  textarea {
+    font-family: inherit;
+    padding: var(--xs-spacing);
+    border: 0;
+    border-bottom: var(--border-weight) solid var(--text-body);
+    font-size: 1.6rem;
+    color: var(--text-body);
+    background-color: var(--secondary-bg);
+
+    &:focus {
+      outline: none;
+      border-bottom-color: var(--link);
+    }
+  }
+
   .float,
   &:focus-within label {
     position: absolute;
@@ -78,19 +118,12 @@ defineEmits(['update:modelValue']);
   }
 }
 
-input,
-textarea {
-  font-family: inherit;
-  padding: var(--xs-spacing);
-  border: 0;
-  border-bottom: var(--border-weight) solid var(--text-body);
-  font-size: 1.6rem;
-  color: var(--text-body);
-  background-color: var(--secondary-bg);
+.form-error {
+  color: var(--error);
+  margin-top: var(--base-spacing);
+}
 
-  &:focus {
-    outline: none;
-    border-bottom-color: var(--link);
-  }
+.required {
+  color: var(--link);
 }
 </style>
