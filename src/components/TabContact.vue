@@ -76,25 +76,3 @@ console.log('Contact form elements:', formElements);
     </div>
   </div>
 </template>
-
-<style scoped>
-form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--xs-spacing);
-  margin: var(--base-spacing) auto;
-  max-width: 400px;
-
-  input,
-  textarea {
-    font-family: inherit;
-    padding: var(--xs-spacing);
-    border: 0;
-    border-bottom: var(--border-weight) solid var(--text-body);
-    font-size: 1.6rem;
-    color: var(--text-body);
-    background-color: var(--secondary-bg);
-    margin-bottom: var(--xs-spacing);
-  }
-}
-</style>

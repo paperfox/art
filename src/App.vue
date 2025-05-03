@@ -1,5 +1,7 @@
 <script setup>
 import { ref, provide, computed } from 'vue';
+import '@fontsource/sen';
+
 import Filters from './components/Filters.vue';
 import inProgress from './data/sketchData';
 import SocialLinks from './components/SocialLinks.vue';
@@ -86,13 +88,3 @@ const tab = ref('art');
   </main>
   <Modal />
 </template>
-
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
-
-footer {
-  width: 100%;
-  margin: var(--xs-spacing) auto;
-  max-width: 400px;
-}
-</style>
