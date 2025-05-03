@@ -76,3 +76,13 @@ console.log('Contact form elements:', formElements);
     </div>
   </div>
 </template>
+
+<style scoped>
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xs-spacing);
+  margin: var(--base-spacing) auto;
+  max-width: 400px;
+}
+</style>

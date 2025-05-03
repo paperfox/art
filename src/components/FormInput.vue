@@ -54,3 +54,43 @@ defineEmits(['update:modelValue']);
     />
   </div>
 </template>
+
+<style scoped>
+.form-input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  margin-top: 2rem;
+
+  label {
+    position: absolute;
+    top: 1.4rem;
+    left: 1.6rem;
+    transition: all 0.4s ease;
+  }
+
+  input,
+  textarea {
+    font-family: inherit;
+    padding: var(--xs-spacing);
+    border: 0;
+    border-bottom: var(--border-weight) solid var(--text-body);
+    font-size: 1.6rem;
+    color: var(--text-body);
+    background-color: var(--secondary-bg);
+
+    &:focus {
+      outline: none;
+      border-bottom-color: var(--link);
+    }
+  }
+
+  .float,
+  &:focus-within label {
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+  }
+}
+</style>
