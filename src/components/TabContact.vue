@@ -120,6 +120,21 @@ form {
   gap: var(--xs-spacing);
   margin: var(--base-spacing) auto;
   max-width: 400px;
+
+  .btn-submit {
+    padding: 2rem;
+    background: transparent;
+    color: var(--text-body);
+    font-weight: 600;
+    border: 2px solid var(--text-body);
+    margin-top: var(--base-spacing);
+
+    &:hover {
+      border-color: var(--link);
+      background-color: var(--tertiary-bg);
+      color: var(--link);
+    }
+  }
 }
 
 .text-right {
