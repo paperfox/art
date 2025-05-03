@@ -19,7 +19,7 @@
         <li>
           <p>
             <strong>Natick Open Studios</strong><br />
-            October 18/19, 2025 in Downtown Natick, MA
+            October 18 and 19, 2025 in downtown Natick, MA
           </p>
         </li>
       </ul>

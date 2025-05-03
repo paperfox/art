@@ -85,23 +85,23 @@ ul li {
 }
 
 .social-inst {
-  background-image: url('./logos/instagramlogo.svg');
+  background-image: url('../logos/instagramlogo.svg');
 }
 .social-cara {
-  background-image: url('./logos/cara-app-logo-circle.svg');
+  background-image: url('../logos/cara-app-logo-circle.svg');
 }
 .social-gith {
-  background-image: url('./logos/github-mark.svg');
+  background-image: url('../logos/github-mark.svg');
 }
 .social-nati {
   width: 4rem;
-  background-image: url('./logos/NAA_Logo_Final_C2.png');
+  background-image: url('../logos/NAA_Logo_Final_C2.png');
 
   filter: none;
   margin-right: calc(var(--base-spacing) * -1);
 }
 .social-link {
-  background-image: url('./logos/linkedinlogo.svg');
+  background-image: url('../logos/linkedinlogo.svg');
 }
 
 .footer-socials {
