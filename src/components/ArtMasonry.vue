@@ -27,7 +27,7 @@ const loadingComplete = () => {
   }, 1000);
 };
 
-loadingComplete();
+// loadingComplete();
 
 const initializeMasonry = () => {
   const grid = document.querySelector('.grid');
@@ -51,6 +51,10 @@ const initializeMasonry = () => {
     masonryInstance.layout();
     loadingComplete();
   });
+
+  setInterval(() => {
+    masonryInstance.layout();
+  }, 300);
 };
 
 onMounted(() => {
