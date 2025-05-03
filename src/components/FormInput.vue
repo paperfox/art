@@ -119,7 +119,7 @@ const isValidEmail = (email) => {
 }
 
 .form-error {
-  color: red;
+  color: #c51010;
   margin-top: var(--base-spacing);
 }
 </style>

@@ -81,10 +81,10 @@ const tab = ref('art');
     <div class="tab-content" id="aboutTab" v-show="tab === 'contact'">
       <TabContact />
     </div>
-    <footer>
-      <SocialLinks />
-    </footer>
   </main>
+  <footer>
+    <SocialLinks />
+  </footer>
   <Modal />
 </template>
 

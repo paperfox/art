@@ -13,7 +13,7 @@
   --black: 0, 0, 0;
 
   @media (prefers-color-scheme: light) {
-    --main-bg: #ffffff;
+    --main-bg: #e6dfd9;
     --secondary-bg: #f1f1f1;
     --tertiary-bg: #fbfbfb;
     --text-body: #000000;
@@ -37,6 +37,13 @@
 }
 
 html { font-size: 62.5%; }
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95vh;
+}
 
 body { 
   margin: 0; 
