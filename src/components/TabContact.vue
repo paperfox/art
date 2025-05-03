@@ -52,15 +52,18 @@ const formElements = ref([
 
 const isSubmitting = ref(false);
 
-// Handle form submission
 const handleSubmit = () => {
+  const isValid = validateInputs();
+  if (!isValid) {
+    return;
+  }
+
   console.log(formElements.value);
   isSubmitting.value = true;
 
-  // Simulate form submission
   setTimeout(() => {
     isSubmitting.value = false;
-    alert('Form submitted successfully!');
+    alert("Thanks for testing but this doesn't actually do anything <3");
   }, 2000);
 };
 
@@ -74,28 +77,26 @@ const validateInputs = () => {
     } else {
       element.isError = false;
     }
-    return element; // Return the updated object
+    return element;
   });
 
   return isValid;
 };
-
-console.log();
 </script>
 
 <template>
   <div class="text-content">
-    <h3>Contact</h3>
+    <h1>Contact</h1>
     <div>
       <div>
         <p>You can find me on the web at these places, or drop me an email if you have specific questions.</p>
         <SocialLinks :showSocialTitles="true" />
       </div>
       <div>
-        <form @submit.prevent="handleSubmit">
+        <form @submit.prevent="handleSubmit" novalidate>
           <p class="text-right">All fields are required.</p>
           <FormInput v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
-          <button type="submit" class="btn-submit" @click="validateInputs">
+          <button type="submit" class="btn-submit">
             {{ isSubmitting ? 'Sending' : 'Send' }}
           </button>
         </form>

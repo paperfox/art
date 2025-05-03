@@ -30,7 +30,7 @@
     "content": ["snake", "animal", "print"],
     "forSale": false,
     "link": "yearofthesnake.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Giant Panda",
@@ -41,7 +41,7 @@
     "content": ["panda", "animal", "stickers"],
     "forSale": false,
     "link": "giant_panda.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Philippine Eagle",
@@ -52,17 +52,6 @@
     "content": ["eagle", "animal"],
     "forSale": false,
     "link": "philippine_eagle.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Marsican Brown Bear",
-    "date": "Oct 20, 2024",
-    "desc": "Micron pen and watercolor of a Marsican Brown Bear walking in front of the night sky with the Ursa Major constellation visible.",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["bear", "animal"],
-    "forSale": false,
-    "link": "marsican_brown_bear.webp",
     "featured": ["false"]
   },
   {
@@ -118,7 +107,7 @@
     "content": ["people", "fantasy", "fanart"],
     "forSale": false,
     "link": "raven_queen.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Sunshine",
@@ -129,7 +118,7 @@
     "content": ["bird", "flower", "plant", "animal"],
     "forSale": false,
     "link": "sunshine.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Jellyfish",
@@ -213,7 +202,7 @@
     "content": ["demon", "horror", "fantasy", "people", "fanart"],
     "forSale": false,
     "link": "pancakes_with_henry.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Himalayan Brown Bear",
@@ -279,7 +268,7 @@
     "content": ["bird", "animal"],
     "forSale": false,
     "link": "yellow-billed-loon.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Lion’s Mane Jellyfish",
@@ -290,7 +279,7 @@
     "content": ["jellyfish", "animal", "print"],
     "forSale": false,
     "link": "lion-jelly.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Lamplugh Glacier",
@@ -312,7 +301,7 @@
     "content": ["bird", "landscape", "animal", "print"],
     "forSale": false,
     "link": "fog-at-sea.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Alaska Sunset",
@@ -345,7 +334,7 @@
     "content": ["people", "animal", "fantasy", "fanart"],
     "forSale": false,
     "link": "amelia.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Seven of Wands",
@@ -356,7 +345,7 @@
     "content": ["people", "animal", "fantasy", "fanart"],
     "forSale": false,
     "link": "seven-of-wands.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Seven of Cups",
@@ -367,28 +356,6 @@
     "content": ["people", "animal", "fantasy", "fanart", "print"],
     "forSale": false,
     "link": "seven-of-cups.webp",
-    "featured": ["true"]
-  },
-  {
-    "title": "Giant Golden-Crowned Flying Fox",
-    "date": "Oct 29, 2022",
-    "desc": "An anthropomorphic bat person in gold and blue swings upside down from pink aerial silks on a dark background.",
-    "dimensions": "6x9 inches",
-    "media": ["watercolor"],
-    "content": ["bat", "animal", "fantasy"],
-    "forSale": false,
-    "link": "giant-golden-crowned-flying-fox.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Virginia Big-eared Bat",
-    "date": "Oct 9, 2022",
-    "desc": "A bat flying into the foreground with a cafe opening in the background with additional bats handing from the ceiling.",
-    "dimensions": "6x6 inches",
-    "media": ["watercolor"],
-    "content": ["animal"],
-    "forSale": false,
-    "link": "virginia-big-eared-bat.webp",
     "featured": ["false"]
   },
   {
@@ -400,7 +367,7 @@
     "content": ["landscape", "plant", "fantasy", "fanart", "print", "cards", "stickers"],
     "forSale": false,
     "link": "sad-mushroom.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Cosmos",
@@ -411,7 +378,7 @@
     "content": ["bird", "animal"],
     "forSale": false,
     "link": "cosmos.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Sylver Sezari",
@@ -422,7 +389,7 @@
     "content": ["people", "animal", "fantasy", "fanart"],
     "forSale": false,
     "link": "sylver-seeker.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Cyan Jellyfish",
@@ -444,7 +411,7 @@
     "content": ["butterfly", "people", "animal", "insect", "fantasy"],
     "forSale": false,
     "link": "finnish_forest_reindeer.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Long-whiskered Owlet",
@@ -455,7 +422,7 @@
     "content": ["owl", "animal"],
     "forSale": false,
     "link": "long_whiskered_owlet.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Reeve’s Pheasant",
@@ -477,7 +444,7 @@
     "content": ["insect", "ladybug", "animal", "print", "cards", "stickers"],
     "forSale": false,
     "link": "two_spot_ladybug.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Irimote cat",
@@ -499,7 +466,7 @@
     "content": ["catboy", "animal", "people", "fantasy", "fanart"],
     "forSale": false,
     "link": "tarquin.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Almost Rabbits, II",
@@ -510,7 +477,7 @@
     "content": ["rabbit", "animal", "fantasy", "landscape"],
     "forSale": false,
     "link": "almost_rabbits_II.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Tiny Dragon",
@@ -521,7 +488,7 @@
     "content": ["dragon", "animal", "fantasy"],
     "forSale": false,
     "link": "tiny_dragon.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Amir Leopard",
@@ -554,7 +521,7 @@
     "content": ["fish", "animal", "print", "cards"],
     "forSale": false,
     "link": "white_spotted_char.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Long-snouted Seahorse",
@@ -565,17 +532,6 @@
     "content": ["seahorse", "animal"],
     "forSale": true,
     "link": "long_snouted_seahorse.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Kapok Tree",
-    "date": "Oct 11, 2020",
-    "desc": "Black ink painting of a Kapok Tree.",
-    "dimensions": "8x8 inches",
-    "media": ["ink"],
-    "content": ["tree", "landscape", "plant"],
-    "forSale": false,
-    "link": "kapok_tree.webp",
     "featured": ["false"]
   },
   {
@@ -598,7 +554,7 @@
     "content": ["deer", "animal"],
     "forSale": false,
     "link": "eld_s_deer.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Grumpy Cat",
@@ -631,7 +587,7 @@
     "content": ["rabbit", "animal", "fantasy", "landscape", "print", "cards"],
     "forSale": false,
     "link": "almost_rabbits_watercolor.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Adding Wings to a Tiger",
@@ -642,7 +598,7 @@
     "content": ["cat", "animal", "fantasy"],
     "forSale": false,
     "link": "adding_wings_to_a_tiger.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Alpha and Omega",
@@ -653,7 +609,7 @@
     "content": ["vehicle", "fantasy", "fanart"],
     "forSale": false,
     "link": "alpha_and_omega.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Ghost",
@@ -664,7 +620,7 @@
     "content": ["jellyfish", "animal", "print"],
     "forSale": false,
     "link": "ghost.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Playing Crow",
@@ -675,17 +631,6 @@
     "content": ["crow", "animal"],
     "forSale": false,
     "link": "playing_crow.webp",
-    "featured": ["true"]
-  },
-  {
-    "title": "Noble Steed",
-    "date": "Jan 27, 2015",
-    "desc": "micron and watercolor of a white jindo with a black and white rabbit riding on it with a castle in the background",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["dog", "animal", "fantasy"],
-    "forSale": false,
-    "link": "noble_steed.webp",
     "featured": ["false"]
   },
   {
@@ -697,7 +642,7 @@
     "content": ["dog", "animal"],
     "forSale": false,
     "link": "finnley_s_treasure.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Goji Pet Portrait",
@@ -708,6 +653,6 @@
     "content": ["dog", "animal"],
     "forSale": false,
     "link": "goji_pet_portrait.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   }
 ]

@@ -65,7 +65,6 @@ const isValidEmail = (email) => {
       :rows="componentType === 'textarea' ? 6 : null"
       :value="modelValue"
       @input="$emit('update:modelValue', $event.target.value)"
-      oninvalid="setCustomValidity(' ');"
     />
     <div
       :class="
@@ -121,6 +120,7 @@ const isValidEmail = (email) => {
 .form-error {
   color: var(--error);
   margin-top: var(--base-spacing);
+  font-weight: 500;
 }
 
 .required {

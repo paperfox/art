@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div class="text-content">
-    <h3>Events</h3>
+    <h1>Events</h1>
     <div>
       <div>
         <p>

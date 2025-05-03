@@ -1,6 +1,5 @@
 <script setup>
-import { ref, provide, computed } from 'vue';
-import '@fontsource/sen';
+import { ref, provide } from 'vue';
 import Filters from './components/Filters.vue';
 import inProgress from './data/sketchData';
 import SocialLinks from './components/SocialLinks.vue';
@@ -47,8 +46,8 @@ const tab = ref('art');
           </picture>
         </a>
         <div>
-          <h1>Paperfox</h1>
-          <h2>Art by Nathalie Garfinkle</h2>
+          <p class="logo-text">PAPERFOX</p>
+          <p class="logo-byline">Art by Nathalie Garfinkle</p>
         </div>
       </div>
       <div class="nav-tabs">
@@ -78,7 +77,7 @@ const tab = ref('art');
     <div class="tab-content" id="aboutTab" v-show="tab === 'about'">
       <TabAbout />
     </div>
-    <div class="tab-content" id="aboutTab" v-show="tab === 'contact'">
+    <div class="tab-content" id="contactTab" v-show="tab === 'contact'">
       <TabContact />
     </div>
   </main>
@@ -89,6 +88,8 @@ const tab = ref('art');
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
 footer {
   width: 100%;
   margin: var(--xs-spacing) auto;

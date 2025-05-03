@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div class="text-content">
-    <h3>About</h3>
+    <h1>About</h1>
     <div>
       <picture> <img :src="`./nathalie-naos.jpg`" alt="Photo of Nathalie at her booth at an art market" /></picture>
       <div>
@@ -30,13 +30,18 @@
 </template>
 
 <style scoped>
+.text-content picture {
+  max-height: 60rem;
+  overflow: hidden;
+  max-width: 60rem;
+  border-radius: 50%;
+}
+
 @media (max-width: 768px) {
   .text-content picture {
     max-height: 30rem;
-    overflow: hidden;
     max-width: 30rem;
     margin-inline: auto;
-    border-radius: 50%;
   }
 }
 </style>

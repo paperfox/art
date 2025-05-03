@@ -13,6 +13,7 @@ const activeFilters = ref([]);
 const activeFilterClass = ref({});
 
 const filterButtons = [
+  { filterType: 'featured', filterValue: 'true', filterName: 'Featured' },
   { filterType: 'media', filterValue: 'watercolor', filterName: 'Watercolor' },
   { filterType: 'media', filterValue: 'ink', filterName: 'Ink' },
   { filterType: 'media', filterValue: 'micron pen', filterName: 'micron pen' },
@@ -46,6 +47,7 @@ const applyFilter = (filter) => {
 </script>
 
 <template>
+  <h1 class="visually-hidden">Artwork</h1>
   <div class="artwork">
     <details>
       <summary>Filter Artwork</summary>
@@ -64,7 +66,7 @@ const applyFilter = (filter) => {
           {{ filter.filterName }}
         </button>
       </div>
-      <!-- <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p> -->
+      <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p>
     </details>
     <ArtMasonry :images="filteredArts" />
   </div>
