@@ -64,21 +64,21 @@ const tab = ref('art');
       </div>
     </nav>
 
-    <div class="tab-content" id="artTab" v-if="tab === 'art'">
+    <div class="tab-content" id="artTab" v-show="tab === 'art'">
       <Filters />
     </div>
-    <div class="tab-content" id="sketchTab" v-if="tab === 'sketch'">
+    <div class="tab-content" id="sketchTab" v-show="tab === 'sketch'">
       <div class="artwork">
         <ArtMasonry :images="inProgress" />
       </div>
     </div>
-    <div class="tab-content" id="eventTab" v-if="tab === 'events'">
+    <div class="tab-content" id="eventTab" v-show="tab === 'events'">
       <TabEvents />
     </div>
-    <div class="tab-content" id="aboutTab" v-if="tab === 'about'">
+    <div class="tab-content" id="aboutTab" v-show="tab === 'about'">
       <TabAbout />
     </div>
-    <div class="tab-content" id="aboutTab" v-if="tab === 'contact'">
+    <div class="tab-content" id="aboutTab" v-show="tab === 'contact'">
       <TabContact />
     </div>
     <footer>
