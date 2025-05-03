@@ -19,16 +19,6 @@ const modal = (imgData) => {
 // Masonry instance
 let masonryInstance = null;
 
-const isLoading = ref(true);
-
-const loadingComplete = () => {
-  setTimeout(() => {
-    isLoading.value = false;
-  }, 1000);
-};
-
-// loadingComplete();
-
 const initializeMasonry = () => {
   const grid = document.querySelector('.grid');
   if (!grid) return;
@@ -39,22 +29,15 @@ const initializeMasonry = () => {
     masonryInstance.destroy();
   }
 
-  // Initialize Masonry
-  masonryInstance = new Masonry(grid, {
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    percentPosition: true,
-    gutter: 0,
+  // Initialize Masonry after images load
+  imagesLoaded(grid, function () {
+    masonryInstance = new Masonry(grid, {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true,
+      gutter: 0,
+    });
   });
-
-  imagesLoaded(grid, () => {
-    masonryInstance.layout();
-    loadingComplete();
-  });
-
-  setInterval(() => {
-    masonryInstance.layout();
-  }, 300);
 };
 
 onMounted(() => {
@@ -72,15 +55,12 @@ watch(
 </script>
 
 <template>
-  <p :style="!isLoading ? 'opacity: 0' : ''">Loading...</p>
-  <div :style="isLoading ? 'opacity: 0' : ''">
-    <ul class="grid" aria-live="polite">
-      <li class="grid-sizer" aria-hidden="true"></li>
-      <li v-for="image of images" :key="image.title" class="grid-item">
-        <button type="button" class="btn-modal" :data-open="`modal${condense(image.title)}`" @click="modal(image)">
-          <img :src="`./art/${image.link}`" :alt="`${image.title}: ${image.desc}`" />
-        </button>
-      </li>
-    </ul>
-  </div>
+  <ul class="grid" aria-live="polite">
+    <li class="grid-sizer" aria-hidden="true"></li>
+    <li v-for="image of images" :key="image.title" class="grid-item">
+      <button type="button" class="btn-modal" :data-open="`modal${condense(image.title)}`" @click="modal(image)">
+        <img :src="`./art/${image.link}`" :alt="`${image.title}: ${image.desc}`" />
+      </button>
+    </li>
+  </ul>
 </template>
