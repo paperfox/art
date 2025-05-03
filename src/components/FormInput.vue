@@ -55,7 +55,7 @@ const isValidEmail = (email) => {
 
 <template>
   <div class="form-input">
-    <label :for="id" :class="modelValue ? 'float' : null">{{ labelText }} <span class="requred">*</span></label>
+    <label :for="id" :class="modelValue ? 'float' : null">{{ labelText }} </label>
     <component
       :is="componentType"
       :type="type"
@@ -118,13 +118,12 @@ const isValidEmail = (email) => {
   }
 }
 
-.required,
 .form-error {
   color: var(--error);
   margin-top: var(--base-spacing);
 }
 
-.form-error {
-  margin-top: var(--base-spacing);
+.required {
+  color: var(--link);
 }
 </style>

@@ -93,5 +93,6 @@ footer {
   width: 100%;
   margin: var(--xs-spacing) auto;
   max-width: 400px;
+  padding-inline: var(--xs-spacing);
 }
 </style>

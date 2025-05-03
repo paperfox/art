@@ -11,6 +11,7 @@
   --link: #de7826;
   --white: 255, 255, 255;
   --black: 0, 0, 0;
+  --error: #e78585;
 
   @media (prefers-color-scheme: light) {
     --main-bg: #e6dfd9;
@@ -18,6 +19,7 @@
     --tertiary-bg: #fbfbfb;
     --text-body: #000000;
     --link: #a01818;
+    --error: #c51010;
   }
 
   /* Spacing */
@@ -262,14 +264,6 @@ details,
 
   .text-content {
     max-width: 60rem;
-
-    picture   { 
-      max-height: 30rem;
-      overflow: hidden;
-      max-width: 30rem;
-      margin-inline: auto;
-      border-radius: 50%;
-    }
     
     & > div {
       flex-direction: column; 

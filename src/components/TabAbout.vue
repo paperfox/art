@@ -28,3 +28,15 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+@media (max-width: 768px) {
+  .text-content picture {
+    max-height: 30rem;
+    overflow: hidden;
+    max-width: 30rem;
+    margin-inline: auto;
+    border-radius: 50%;
+  }
+}
+</style>

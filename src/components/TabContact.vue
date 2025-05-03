@@ -93,6 +93,7 @@ console.log();
       </div>
       <div>
         <form @submit.prevent="handleSubmit">
+          <p class="text-right">All fields are required.</p>
           <FormInput v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
           <button type="submit" class="btn-submit" @click="validateInputs">
             {{ isSubmitting ? 'Sending' : 'Send' }}
@@ -110,5 +111,10 @@ form {
   gap: var(--xs-spacing);
   margin: var(--base-spacing) auto;
   max-width: 400px;
+}
+
+.text-right {
+  text-align: right;
+  margin: 0;
 }
 </style>
