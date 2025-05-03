@@ -52,6 +52,11 @@ const formElements = ref([
 
 const isSubmitting = ref(false);
 
+const isValidEmail = (email) => {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
+};
+
 const handleSubmit = () => {
   const isValid = validateInputs();
   if (!isValid) {
@@ -71,7 +76,10 @@ const validateInputs = () => {
   let isValid = true;
 
   formElements.value = formElements.value.map((element) => {
-    if (element.isRequired && !element.modelValue.trim()) {
+    if (
+      (element.isRequired && !element.modelValue.trim()) ||
+      (element.name === 'email' && !isValidEmail(element.modelValue))
+    ) {
       element.isError = true;
       isValid = false;
     } else {
