@@ -24,7 +24,7 @@ const isLoading = ref(true);
 const loadingComplete = () => {
   setTimeout(() => {
     isLoading.value = false;
-  }, 2000);
+  }, 1000);
 };
 
 loadingComplete();

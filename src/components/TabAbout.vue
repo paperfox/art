@@ -3,7 +3,7 @@
   <div class="text-content">
     <h1>About</h1>
     <div>
-      <picture> <img :src="`./nathalie-naos.jpg`" alt="Photo of Nathalie at her booth at an art market" /></picture>
+      <picture> <img :src="`./nathalie-naos3.jpg`" alt="Photo of Nathalie at her booth at an art market" /></picture>
       <div>
         <p>
           A lifetime creative, Nathalie sticks to painting the things that bring her joy. This leads her across the map
@@ -31,16 +31,18 @@
 
 <style scoped>
 .text-content picture {
-  max-height: 60rem;
+  max-height: 70rem;
   overflow: hidden;
-  max-width: 60rem;
+  max-width: 70rem;
   border-radius: 50%;
+  margin-top: var(--base-spacing);
 }
 
 @media (max-width: 768px) {
   .text-content picture {
     max-height: 30rem;
     max-width: 30rem;
+    margin-top: 0;
     margin-inline: auto;
   }
 }
