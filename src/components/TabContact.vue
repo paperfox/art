@@ -12,7 +12,8 @@ const formElements = ref([
     labelText: 'Name',
     placeholder: 'Name',
     isRequired: true,
-    modelValue: null,
+    isError: false,
+    modelValue: '',
   },
   {
     id: 'input-email',
@@ -22,7 +23,8 @@ const formElements = ref([
     labelText: 'Email',
     placeholder: 'Email',
     isRequired: true,
-    modelValue: null,
+    isError: false,
+    modelValue: '',
   },
   {
     id: 'input-subject',
@@ -32,7 +34,8 @@ const formElements = ref([
     labelText: 'Subject',
     placeholder: 'Subject',
     isRequired: true,
-    modelValue: null,
+    isError: false,
+    modelValue: '',
   },
   {
     id: 'input-message',
@@ -42,21 +45,42 @@ const formElements = ref([
     labelText: 'Message',
     placeholder: 'Message',
     isRequired: true,
-    modelValue: null,
+    isError: false,
+    modelValue: '',
   },
 ]);
 
 const isSubmitting = ref(false);
+
+// Handle form submission
 const handleSubmit = () => {
+  console.log(formElements.value);
   isSubmitting.value = true;
+
   // Simulate form submission
   setTimeout(() => {
     isSubmitting.value = false;
-    alert('Form submitted!');
+    alert('Form submitted successfully!');
   }, 2000);
 };
 
-console.log('Contact form elements:', formElements);
+const validateInputs = () => {
+  let isValid = true;
+
+  formElements.value = formElements.value.map((element) => {
+    if (element.isRequired && !element.modelValue.trim()) {
+      element.isError = true;
+      isValid = false;
+    } else {
+      element.isError = false;
+    }
+    return element; // Return the updated object
+  });
+
+  return isValid;
+};
+
+console.log();
 </script>
 
 <template>
@@ -70,7 +94,9 @@ console.log('Contact form elements:', formElements);
       <div>
         <form @submit.prevent="handleSubmit">
           <FormInput v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
-          <button type="submit" class="btn-submit">{{ isSubmitting ? 'Sending' : 'Send' }}</button>
+          <button type="submit" class="btn-submit" @click="validateInputs">
+            {{ isSubmitting ? 'Sending' : 'Send' }}
+          </button>
         </form>
       </div>
     </div>

@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue';
+import { ref } from 'vue';
 
 const props = defineProps({
   componentType: {
@@ -9,6 +9,10 @@ const props = defineProps({
   id: {
     type: String,
     required: true,
+  },
+  isError: {
+    type: Boolean,
+    default: false,
   },
   isRequired: {
     type: Boolean,
@@ -26,6 +30,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  placeholder: {
+    type: String,
+    default: null,
+  },
   type: {
     type: String,
     default: 'text',
@@ -37,6 +45,12 @@ const props = defineProps({
 });
 
 defineEmits(['update:modelValue']);
+const emailError = ref(false);
+
+const isValidEmail = (email) => {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
+};
 </script>
 
 <template>
@@ -51,7 +65,17 @@ defineEmits(['update:modelValue']);
       :rows="componentType === 'textarea' ? 6 : null"
       :value="modelValue"
       @input="$emit('update:modelValue', $event.target.value)"
+      oninvalid="setCustomValidity(' ');"
     />
+    <div
+      :class="
+        isError && !modelValue ? 'form-error' : name === 'email' && !isValidEmail(modelValue) ? 'form-error' : null
+      "
+      role="alert"
+    >
+      <span v-if="isError && !modelValue">Please enter {{ name === 'email' ? 'an' : 'a' }} {{ name }}.</span>
+      <span v-else-if="modelValue && name === 'email' && !isValidEmail(modelValue)">Please enter a valid email.</span>
+    </div>
   </div>
 </template>
 
@@ -92,5 +116,10 @@ defineEmits(['update:modelValue']);
     top: -2.5rem;
     left: 0;
   }
+}
+
+.form-error {
+  color: red;
+  margin-top: var(--base-spacing);
 }
 </style>

@@ -13,7 +13,7 @@ import Modal from './components/Modal.vue';
 const isModalVisible = ref(false);
 const modalImage = ref(null);
 
-const tabs = [{ name: 'Art' }, { name: 'Sketch' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
+const tabs = [{ name: 'Art' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
 
 const openModal = (image) => {
   modalImage.value = image;
@@ -67,11 +67,11 @@ const tab = ref('art');
     <div class="tab-content" id="artTab" v-show="tab === 'art'">
       <Filters />
     </div>
-    <div class="tab-content" id="sketchTab" v-show="tab === 'sketch'">
+    <!-- <div class="tab-content" id="sketchTab" v-show="tab === 'sketch'">
       <div class="artwork">
         <ArtMasonry :images="inProgress" />
       </div>
-    </div>
+    </div> -->
     <div class="tab-content" id="eventTab" v-show="tab === 'events'">
       <TabEvents />
     </div>
