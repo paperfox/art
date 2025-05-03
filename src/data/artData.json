@@ -8,7 +8,7 @@
     "content": ["dragon", "wyvern", "animal", "fantasy", "print"],
     "forSale": false,
     "link": "sunset-wyvern.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Peacock Bass",
@@ -74,7 +74,7 @@
     "content": ["dragon", "iguana", "animal", "fantasy", "print"],
     "forSale": false,
     "link": "sea_serpent_dreams_of_flying.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "Pernambuco Pygmy-owl",
@@ -85,7 +85,7 @@
     "content": ["bird", "animal", "cards", "print"],
     "forSale": false,
     "link": "pernambuco_pygmy_owl.webp",
-    "featured": ["true"]
+    "featured": ["false"]
   },
   {
     "title": "How We Dance",
