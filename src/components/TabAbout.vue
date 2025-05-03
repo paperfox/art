@@ -15,6 +15,10 @@
           with her dog, out in her garden, or rebuilding parts of this site.
         </p>
         <p>
+          While she is primarily based in the northeastern United States, she loves to travel and see new and exciting
+          places, plants, and animals.
+        </p>
+        <p>
           Looking for a piece of art not listed here? Recently the build of older work was moved to an archive. If it's
           a piece of Nathalie's work that was posted online, it's almost guaranteed to be listed there.
           <br />
