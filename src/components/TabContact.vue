@@ -2,7 +2,6 @@
 import { ref } from 'vue';
 import FormFields from './FormFields.vue';
 import SocialLinks from './SocialLinks.vue';
-import { useReCaptcha } from 'vue-recaptcha-v3';
 import emailjs from '@emailjs/browser';
 
 const formElements = ref([
@@ -80,14 +79,6 @@ const validateInputs = () => {
 
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
-// reCAPTCHA composable
-console.log(import.meta.env.VITE_YOUR_SITE_KEY);
-const { executeRecaptcha } = useReCaptcha({
-  siteKey: import.meta.env.VITE_YOUR_SITE_KEY,
-  invisible: true,
-});
-console.log(executeRecaptcha);
-
 const submitForm = async (event) => {
   const isValid = validateInputs();
   if (!isValid) {
@@ -95,14 +86,8 @@ const submitForm = async (event) => {
   }
 
   try {
-    // Trigger reCAPTCHA and get the token
-    const token = await executeRecaptcha('submitForm');
-
-    // Check if the reCAPTCHA token is valid
-    if (!token) {
-      alert('reCAPTCHA verification failed. Please try again.');
-      return; // Stop if reCAPTCHA fails
-    }
+    // Trigger the reCAPTCHA
+    const token = await executeRecaptcha();
 
     // Attach the token to your EmailJS data
     const templateParams = formElements.value.reduce((params, element) => {
@@ -122,16 +107,32 @@ const submitForm = async (event) => {
     );
 
     alert('Message sent successfully!');
-    success('Message sent successfully!');
-    formElements.value.forEach((element) => {
-      element.modelValue = '';
-    });
-  } catch (err) {
-    console.error('Error submitting form:', err);
+  } catch (error) {
+    console.error('Error submitting form:', error);
     alert('Failed to send message. Please try again.');
   } finally {
     isSubmitting.value = false;
   }
+};
+
+// Function to trigger Google reCAPTCHA and get the token
+const executeRecaptcha = () => {
+  return new Promise((resolve, reject) => {
+    if (!window.grecaptcha) {
+      reject('reCAPTCHA not loaded');
+      return;
+    }
+
+    // Execute the invisible reCAPTCHA
+    window.grecaptcha
+      .execute(import.meta.env.VITE_YOUR_SITE_KEY, { action: 'submit' })
+      .then((token) => {
+        resolve(token);
+      })
+      .catch((error) => {
+        reject(error);
+      });
+  });
 };
 </script>
 
