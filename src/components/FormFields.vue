@@ -117,12 +117,6 @@ const isValidEmail = (email) => {
   }
 }
 
-.form-error {
-  color: var(--error);
-  margin-top: var(--base-spacing);
-  font-weight: 500;
-}
-
 .required {
   color: var(--link);
 }

@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import FormFields from './FormFields.vue';
 import SocialLinks from './SocialLinks.vue';
 import emailjs from '@emailjs/browser';
@@ -52,6 +52,8 @@ const formElements = ref([
 ]);
 
 const isSubmitting = ref(false);
+const success = ref(false);
+const error = ref(false);
 
 const isValidEmail = (email) => {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -80,12 +82,15 @@ const validateInputs = () => {
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 const submitForm = async (event) => {
+  error.value = false;
+
   const isValid = validateInputs();
   if (!isValid) {
     return;
   }
 
   try {
+    isSubmitting.value = true;
     const token = await executeRecaptcha();
 
     // Data to EmailJS + token
@@ -105,14 +110,18 @@ const submitForm = async (event) => {
       import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
     );
 
-    alert('Message sent successfully!');
+    success.value = true;
+
+    setTimeout(() => {
+      success.value = false;
+    }, 3000);
 
     formElements.value.forEach((element) => {
       element.modelValue = '';
     });
-  } catch (error) {
-    console.error('Error submitting form:', error);
-    alert('Failed to send message. Please try again.');
+  } catch (err) {
+    console.error('Error submitting form:', err);
+    error.value = true;
   } finally {
     isSubmitting.value = false;
   }
@@ -137,6 +146,14 @@ const executeRecaptcha = () => {
       });
   });
 };
+
+watch(
+  formElements,
+  () => {
+    error.value = false;
+  },
+  { deep: true },
+);
 </script>
 
 <template>
@@ -151,9 +168,13 @@ const executeRecaptcha = () => {
         <form @submit.prevent="submitForm(formElements)" novalidate id="contact-form">
           <p class="text-right">All fields are required.</p>
           <FormFields v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
+          <p v-if="success">Message sent! <br />Thanks for reaching out, I'll get back to you shortly.</p>
           <button type="submit" class="btn-submit">
             {{ isSubmitting ? 'Sending' : 'SEND' }}
           </button>
+          <p role="alert" class="form-error">
+            <span class="form-error" v-if="error">Error sending message. Please try again.</span>
+          </p>
         </form>
       </div>
     </div>
@@ -174,7 +195,7 @@ form {
     color: var(--text-body);
     font-weight: 600;
     border: var(--border-weight) solid var(--text-body);
-    margin-top: var(--base-spacing);
+    margin-top: var(--xs-spacing);
 
     &:hover {
       border-color: var(--link);

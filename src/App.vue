@@ -1,5 +1,5 @@
 <script setup>
-import { ref, provide, watch } from 'vue';
+import { ref, provide, onMounted, watch } from 'vue';
 import Filters from './components/Filters.vue';
 import SocialLinks from './components/SocialLinks.vue';
 import TabContact from './components/TabContact.vue';
@@ -32,6 +32,11 @@ provide('openModal', openModal);
 provide('closeModal', closeModal);
 provide('modalImage', modalImage);
 provide('isModalVisible', isModalVisible);
+
+onMounted(() => {
+  const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
+  recaptchaBadge.style.display = 'none';
+});
 
 watch(tab, (newTab) => {
   const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
@@ -85,11 +90,6 @@ watch(tab, (newTab) => {
     <div class="tab-content" id="artTab" v-show="tab === 'art'" @click="handleTabContentClick()">
       <Filters />
     </div>
-    <!-- <div class="tab-content" id="sketchTab" v-show="tab === 'sketch'">
-      <div class="artwork">
-        <ArtMasonry :images="inProgress" />
-      </div>
-    </div> -->
     <div class="tab-content" id="eventTab" v-show="tab === 'events'" @click="handleTabContentClick()">
       <TabEvents />
     </div>

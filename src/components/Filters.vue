@@ -13,11 +13,11 @@ const activeFilters = ref([]);
 const activeFilterClass = ref({});
 
 const filterButtons = [
-  { filterType: 'media', filterValue: 'watercolor', filterName: 'Watercolor' },
-  { filterType: 'media', filterValue: 'ink', filterName: 'Ink' },
+  { filterType: 'media', filterValue: 'watercolor', filterName: 'Watercolor & Ink' },
   { filterType: 'media', filterValue: 'micron pen', filterName: 'micron pen' },
   { filterType: 'media', filterValue: 'printmaking', filterName: 'Printmaking' },
   { filterType: 'media', filterValue: 'digital', filterName: 'Digital' },
+  { filterType: '', filterValue: 'clear', filterName: 'Clear filters' },
 ];
 
 const filteredArts = computed(() => {
@@ -25,23 +25,24 @@ const filteredArts = computed(() => {
     return artwork;
   }
   return artwork.filter((art) => {
-    return activeFilters.value.every((filter) => {
-      return art[filter.filterType].includes(filter.filterValue);
-    });
+    return art[activeFilters.value.filterType].includes(activeFilters.value.filterValue);
   });
 });
 
-// Method to apply filter and toggle active button class
 const applyFilter = (filter) => {
-  const index = activeFilters.value.findIndex(
-    (f) => f.filterType === filter.filterType && f.filterValue === filter.filterValue,
-  );
-  if (index === -1) {
-    activeFilters.value.push(filter);
+  if (filter.filterValue === 'clear') {
+    activeFilters.value = [];
+    activeFilterClass.value = {};
+  } else if (activeFilters.value === filter) {
+    activeFilters.value = null;
+    activeFilterClass.value[filter.filterValue] = false;
   } else {
-    activeFilters.value.splice(index, 1);
+    if (activeFilters.value) {
+      activeFilterClass.value[activeFilters.value.filterValue] = false;
+    }
+    activeFilters.value = filter;
+    activeFilterClass.value[filter.filterValue] = true;
   }
-  activeFilterClass.value[filter.filterValue] = !activeFilterClass.value[filter.filterValue];
 };
 </script>
 
@@ -65,7 +66,7 @@ const applyFilter = (filter) => {
           {{ filter.filterName }}
         </button>
       </div>
-      <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p>
+      <!-- <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p> -->
     </details>
     <ArtMasonry :images="filteredArts" />
   </div>

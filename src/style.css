@@ -284,6 +284,19 @@ button.toggle {
   display: none;
 }
 
+.form-error {
+  color: var(--error);
+  font-weight: 500;
+
+  &:has(span) {
+    margin-top: var(--base-spacing);
+  }
+}
+
+p:has(.form-error) {
+  margin: 0;
+}
+
 /* Responsive */
 
 @media (max-width: 992px) {
