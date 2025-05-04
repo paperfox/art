@@ -13,6 +13,8 @@ const isOpen = ref(false);
 
 const tabs = [{ name: 'Art' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
 
+const tab = ref('art');
+
 const openModal = (image) => {
   modalImage.value = image;
   isModalVisible.value = true;
@@ -22,12 +24,14 @@ const closeModal = () => {
   isModalVisible.value = false;
 };
 
+const handleTabContentClick = () => {
+  isOpen.value = false;
+};
+
 provide('openModal', openModal);
 provide('closeModal', closeModal);
 provide('modalImage', modalImage);
 provide('isModalVisible', isModalVisible);
-
-const tab = ref('art');
 
 watch(tab, (newTab) => {
   const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
@@ -61,11 +65,14 @@ watch(tab, (newTab) => {
           <!-- <span class="toggle-icon" :class="{ open: isOpen }"></span> -->
           MENU
         </button>
-        <div class="nav-tabs" :class="!isOpen ? 'closed' : ''">
+        <div ref="navTabsRef" class="nav-tabs" :class="!isOpen ? 'closed' : ''">
           <button
             v-for="tabItem of tabs"
             :key="tabItem.name"
-            @click="tab = tabItem.name.toLowerCase()"
+            @click="
+              tab = tabItem.name.toLowerCase();
+              handleTabContentClick();
+            "
             :class="{ 'tab-control': true, active: tab === tabItem.name.toLowerCase() }"
             :id="`tab-${tabItem.name}`"
           >
@@ -75,7 +82,7 @@ watch(tab, (newTab) => {
       </div>
     </nav>
 
-    <div class="tab-content" id="artTab" v-show="tab === 'art'">
+    <div class="tab-content" id="artTab" v-show="tab === 'art'" @click="handleTabContentClick()">
       <Filters />
     </div>
     <!-- <div class="tab-content" id="sketchTab" v-show="tab === 'sketch'">
@@ -83,13 +90,13 @@ watch(tab, (newTab) => {
         <ArtMasonry :images="inProgress" />
       </div>
     </div> -->
-    <div class="tab-content" id="eventTab" v-show="tab === 'events'">
+    <div class="tab-content" id="eventTab" v-show="tab === 'events'" @click="handleTabContentClick()">
       <TabEvents />
     </div>
-    <div class="tab-content" id="aboutTab" v-show="tab === 'about'">
+    <div class="tab-content" id="aboutTab" v-show="tab === 'about'" @click="handleTabContentClick()">
       <TabAbout />
     </div>
-    <div class="tab-content" id="contactTab" v-show="tab === 'contact'">
+    <div class="tab-content" id="contactTab" v-show="tab === 'contact'" @click="handleTabContentClick()">
       <TabContact />
     </div>
   </main>

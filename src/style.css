@@ -8,7 +8,7 @@
   /* Colors */
   --main-bg: #282a31;
   --secondary-bg: #14151a;
-  --tertiary-bg: #202229;
+  --tertiary-bg: #373941;
   --text-body: #d4d4d6;
   --link: #de7826;
   --white: 255, 255, 255;
@@ -18,7 +18,7 @@
   @media (prefers-color-scheme: light) {
     --main-bg: #e6dfd9;
     --secondary-bg: #f1f1f1;
-    --tertiary-bg: #fbfbfb;
+    --tertiary-bg: #f0ece9;
     --text-body: #000000;
     --link: #a01818;
     --error: #c70000;
@@ -325,7 +325,7 @@ button.toggle {
   .nav-tabs {
     margin: var(--base-spacing) 0;
     padding: var(--sm-spacing);
-    background-color: var(--secondary-bg);
+    background-color: var(--tertiary-bg);
     position: absolute;
     right: var(--base-spacing);
     z-index: 100;
@@ -355,6 +355,8 @@ button.toggle {
     &.closed {
       padding: 0;
       background-color: var(--link);
+      z-index: auto;
+
       .tab-control {
         border-right: var(--border-weight) solid transparent !important;
         transition: all 0.4s ease;
@@ -391,6 +393,10 @@ button.toggle {
     .nav-logo {
       width: 6rem;
     }
+  }
+
+  button.toggle {
+    padding-right: 0.8rem;
   }
 
   body {
