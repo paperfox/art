@@ -126,4 +126,10 @@ const isValidEmail = (email) => {
 .required {
   color: var(--link);
 }
+
+@media (prefers-color-scheme: dark) {
+  input {
+    color-scheme: dark;
+  }
+}
 </style>

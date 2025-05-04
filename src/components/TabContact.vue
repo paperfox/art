@@ -82,7 +82,10 @@ emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 // reCAPTCHA composable
 console.log(import.meta.env.VITE_YOUR_SITE_KEY);
-const { executeRecaptcha } = useReCaptcha;
+const { executeRecaptcha } = useReCaptcha({
+  siteKey: import.meta.env.VITE_YOUR_SITE_KEY,
+  invisible: true,
+});
 console.log(executeRecaptcha);
 
 const submitForm = async (event) => {
@@ -121,7 +124,7 @@ const submitForm = async (event) => {
     alert('Message sent successfully!');
     success('Message sent successfully!');
     formElements.value.forEach((element) => {
-      element.modelValue = ''; // Clear the input fields after successful submission
+      element.modelValue = '';
     });
   } catch (err) {
     console.error('Error submitting form:', err);
