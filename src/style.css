@@ -213,7 +213,7 @@ ul {
     align-items: baseline;
     justify-content: space-between;
     
-    & > * { width: 47%; }
+    & > * { width: 48%; }
   }
 }
 

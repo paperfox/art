@@ -119,7 +119,7 @@ form {
   flex-direction: column;
   gap: var(--xs-spacing);
   margin: var(--base-spacing) auto;
-  max-width: 400px;
+  max-width: 55rem;
 
   .btn-submit {
     padding: 2rem;
@@ -127,7 +127,7 @@ form {
     color: var(--text-body);
     font-weight: 600;
     border: 2px solid var(--text-body);
-    margin-top: var(--base-spacing);
+    margin-top: var(--xs-spacing);
 
     &:hover {
       border-color: var(--link);
