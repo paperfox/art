@@ -280,10 +280,6 @@ details,
   border: 0;
 }
 
-button.toggle {
-  display: none;
-}
-
 .form-error {
   color: var(--error);
   font-weight: 500;
@@ -328,13 +324,6 @@ p:has(.form-error) {
     padding: var(--base-spacing);
   }
 
-  button.toggle {
-    display: block;
-    text-align: right;
-    color: var(--link);
-    font-weight: 600;
-  }
-
   .nav-tabs {
     margin: var(--base-spacing) 0;
     padding: var(--sm-spacing);
@@ -364,24 +353,6 @@ p:has(.form-error) {
         border-right: var(--border-weight) solid var(--text-body);
       }
     }
-
-    &.closed {
-      padding: 0;
-      background-color: transparent;
-      z-index: -1;
-      margin-top: -1rem;
-      box-shadow: none;
-
-      .tab-control {
-        border-right: var(--border-weight) solid transparent !important;
-        transition: all 0.4s ease;
-        right: var(--xs-spacing);
-        height: 1px;
-        overflow: hidden;
-        padding: 0;
-        margin: 0;
-      }
-    }
   }
 
   .text-content {
@@ -408,10 +379,6 @@ p:has(.form-error) {
     .nav-logo {
       width: 6rem;
     }
-  }
-
-  button.toggle {
-    padding-right: 0.8rem;
   }
 
   body {

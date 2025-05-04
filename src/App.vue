@@ -66,9 +66,14 @@ watch(tab, (newTab) => {
         </div>
       </div>
       <div>
-        <button type="button" class="toggle" @click="isOpen = !isOpen" aria-label="Toggle navigation">
-          <!-- <span class="toggle-icon" :class="{ open: isOpen }"></span> -->
-          MENU
+        <button
+          type="button"
+          class="toggle"
+          :class="!isOpen ? 'closed' : ''"
+          @click="isOpen = !isOpen"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggle-icon" />
         </button>
         <div ref="navTabsRef" class="nav-tabs" :class="!isOpen ? 'closed' : ''">
           <button
@@ -114,5 +119,53 @@ footer {
   margin: var(--xs-spacing) auto;
   max-width: 45rem;
   padding-inline: var(--xs-spacing);
+}
+
+button.toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  button.toggle {
+    display: block;
+    text-align: right;
+    .toggle-icon {
+      display: block;
+      width: 3.2rem;
+      height: 3.2rem;
+      margin: var(--base-spacing);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('../close.svg');
+    }
+
+    &.closed .toggle-icon {
+      background-image: url('../menu.svg');
+    }
+
+    @media (prefers-color-scheme: dark) {
+      filter: invert(100%);
+    }
+  }
+
+  .nav-tabs.closed {
+    padding: 0;
+    background-color: transparent;
+    z-index: -1;
+    margin-top: -1rem;
+    box-shadow: none;
+    right: var(--sm-spacing);
+
+    .tab-control {
+      border-right: var(--border-weight) solid transparent !important;
+      transition: all 0.4s ease;
+      right: var(--xs-spacing);
+      height: 1px;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+    }
+  }
 }
 </style>

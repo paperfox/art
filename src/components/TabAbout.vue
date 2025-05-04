@@ -3,7 +3,7 @@
   <div class="text-content">
     <h1>About</h1>
     <div>
-      <picture> <img :src="`./nathalie-naos3.jpg`" alt="Photo of Nathalie at her booth at an art market" /></picture>
+      <picture> <img :src="`./nathalie-naos.jpg`" alt="Photo of Nathalie at her booth at an art market" /></picture>
       <div>
         <p>
           A lifetime creative, Nathalie sticks to painting the things that bring her joy. This leads her across the map
