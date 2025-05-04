@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import FormFields from './FormFields.vue';
 import SocialLinks from './SocialLinks.vue';
+import { useReCaptcha } from 'vue-recaptcha-v3';
 import emailjs from '@emailjs/browser';
 
 const formElements = ref([
@@ -77,42 +78,54 @@ const validateInputs = () => {
   return isValid;
 };
 
-const error = (message) => {
-  alert(message);
-};
-
-const success = (message) => {
-  alert(message);
-};
-
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
+// reCAPTCHA composable
+console.log(import.meta.env.VITE_YOUR_SITE_KEY);
+const { executeRecaptcha } = useReCaptcha;
+console.log(executeRecaptcha);
 
 const submitForm = async (event) => {
   const isValid = validateInputs();
   if (!isValid) {
-    return;
+    return; // Stop if form validation fails
   }
 
-  isSubmitting.value = true;
-
-  const templateParams = formElements.value.reduce((params, element) => {
-    params[element.name] = element.modelValue;
-    return params;
-  }, {});
-
   try {
+    // Trigger reCAPTCHA and get the token
+    const token = await executeRecaptcha('submitForm');
+
+    // Check if the reCAPTCHA token is valid
+    if (!token) {
+      alert('reCAPTCHA verification failed. Please try again.');
+      return; // Stop if reCAPTCHA fails
+    }
+
+    // Attach the token to your EmailJS data
+    const templateParams = formElements.value.reduce((params, element) => {
+      params[element.name] = element.modelValue;
+      return params;
+    }, {});
+
+    // Add the reCAPTCHA token
+    templateParams['g-recaptcha-response'] = token;
+
+    // Send email using EmailJS
     await emailjs.send(
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       templateParams,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
     );
-    success('Email sent successfully!');
+
+    alert('Message sent successfully!');
+    success('Message sent successfully!');
     formElements.value.forEach((element) => {
       element.modelValue = ''; // Clear the input fields after successful submission
     });
   } catch (err) {
-    console.error('Failed to send email:', err);
-    error('Failed to send email. Please try again later.');
+    console.error('Error submitting form:', err);
+    alert('Failed to send message. Please try again.');
   } finally {
     isSubmitting.value = false;
   }
@@ -128,7 +141,7 @@ const submitForm = async (event) => {
         <SocialLinks :showSocialTitles="true" />
       </div>
       <div>
-        <form @submit.prevent="submitForm(formElements)" novalidate>
+        <form @submit.prevent="submitForm(formElements)" novalidate id="contact-form">
           <p class="text-right">All fields are required.</p>
           <FormFields v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
           <button type="submit" class="btn-submit">
