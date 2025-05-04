@@ -82,7 +82,7 @@ emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 const submitForm = async (event) => {
   const isValid = validateInputs();
   if (!isValid) {
-    return; // Stop if form validation fails
+    return;
   }
   if (!window.grecaptcha) {
     console.error('reCAPTCHA not loaded');
@@ -92,10 +92,9 @@ const submitForm = async (event) => {
   }
 
   try {
-    // Trigger the reCAPTCHA
     const token = await executeRecaptcha();
 
-    // Attach the token to your EmailJS data
+    // Data to EmailJS + token
     const templateParams = formElements.value.reduce((params, element) => {
       params[element.name] = element.modelValue;
       return params;
@@ -104,7 +103,7 @@ const submitForm = async (event) => {
     // Add the reCAPTCHA token
     templateParams['g-recaptcha-response'] = token;
 
-    // Send email using EmailJS
+    // Send email with EmailJS
     await emailjs.send(
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
@@ -113,6 +112,10 @@ const submitForm = async (event) => {
     );
 
     alert('Message sent successfully!');
+
+    formElements.value.forEach((element) => {
+      element.modelValue = '';
+    });
   } catch (error) {
     console.error('Error submitting form:', error);
     alert('Failed to send message. Please try again.');
@@ -121,7 +124,7 @@ const submitForm = async (event) => {
   }
 };
 
-// Function to trigger Google reCAPTCHA and get the token
+// Trigger Google reCAPTCHA and get the token
 const executeRecaptcha = () => {
   return new Promise((resolve, reject) => {
     if (!window.grecaptcha) {
@@ -140,8 +143,6 @@ const executeRecaptcha = () => {
       });
   });
 };
-
-// window.grecaptcha.execute(import.meta.env.VITE_YOUR_SITE_KEY, { action: 'submit' });
 </script>
 
 <template>
@@ -160,7 +161,6 @@ const executeRecaptcha = () => {
             {{ isSubmitting ? 'Sending' : 'Send' }}
           </button>
         </form>
-        <!-- <div class="g-recaptcha" data-sitekey="VITE_YOUR_SITE_KEY" data-callback="onSubmit" data-size="invisible"></div> -->
       </div>
     </div>
   </div>
