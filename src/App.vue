@@ -1,5 +1,5 @@
 <script setup>
-import { ref, provide } from 'vue';
+import { ref, provide, watch } from 'vue';
 import Filters from './components/Filters.vue';
 import SocialLinks from './components/SocialLinks.vue';
 import TabContact from './components/TabContact.vue';
@@ -27,6 +27,13 @@ provide('modalImage', modalImage);
 provide('isModalVisible', isModalVisible);
 
 const tab = ref('art');
+
+watch(tab, (newTab) => {
+  const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
+  if (recaptchaBadge) {
+    recaptchaBadge.style.display = newTab === 'contact' ? 'block' : 'none';
+  }
+});
 </script>
 
 <template>
@@ -91,7 +98,7 @@ const tab = ref('art');
 footer {
   width: 100%;
   margin: var(--xs-spacing) auto;
-  max-width: 400px;
+  max-width: 45rem;
   padding-inline: var(--xs-spacing);
 }
 </style>

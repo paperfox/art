@@ -84,12 +84,6 @@ const submitForm = async (event) => {
   if (!isValid) {
     return;
   }
-  if (!window.grecaptcha) {
-    console.error('reCAPTCHA not loaded');
-    return;
-  } else {
-    console.log('reCAPTCHA loaded');
-  }
 
   try {
     const token = await executeRecaptcha();
@@ -172,14 +166,14 @@ form {
   flex-direction: column;
   gap: var(--xs-spacing);
   margin: var(--base-spacing) auto;
-  max-width: 400px;
+  max-width: 55rem;
 
   .btn-submit {
     padding: 2rem;
     background: transparent;
     color: var(--text-body);
     font-weight: 600;
-    border: 2px solid var(--text-body);
+    border: var(--border-weight) solid var(--text-body);
     margin-top: var(--base-spacing);
 
     &:hover {

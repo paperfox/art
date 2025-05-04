@@ -59,6 +59,7 @@ const filteredSocials = computed(() => {
     <li v-for="social of filteredSocials" :key="social.icon.slice(0, 5)">
       <a :href="social.link" target="_blank" rel="noreferrer">
         <span :class="`social social-${social.title.slice(0, 4).toLowerCase()}`"></span>
+        <span v-if="!showSocialTitles" class="visually-hidden">{{ social.title }}</span>
         <p v-if="showSocialTitles">{{ social.title }} - {{ social.socialHandle }}</p>
       </a>
     </li>
@@ -121,6 +122,13 @@ ul li {
     margin: 0;
     padding: 0;
     margin-left: var(--xs-spacing);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-socials {
+    padding: var(--base-spacing) calc(var(--xs-spacing) * 2.5);
+    justify-content: space-evenly;
   }
 }
 </style>
