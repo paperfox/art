@@ -354,8 +354,10 @@ button.toggle {
 
     &.closed {
       padding: 0;
-      background-color: var(--link);
-      z-index: auto;
+      background-color: transparent;
+      z-index: -1;
+      margin-top: -1rem;
+      box-shadow: none;
 
       .tab-control {
         border-right: var(--border-weight) solid transparent !important;

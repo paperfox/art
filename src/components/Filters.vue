@@ -91,6 +91,7 @@ summary {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  gap: var(--base-spacing);
 }
 
 .btn-badge {
@@ -103,11 +104,6 @@ summary {
   text-transform: uppercase;
   padding: var(--base-spacing) var(--xs-spacing);
   letter-spacing: 0.1rem;
-  margin: 0 var(--base-spacing) var(--xs-spacing) 0;
-
-  &:last-child {
-    margin-right: 0;
-  }
 
   &.active-filters {
     background-color: var(--text-body);
