@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 import FormFields from './FormFields.vue';
 import SocialLinks from './SocialLinks.vue';
 import emailjs from '@emailjs/browser';
@@ -52,7 +52,6 @@ const formElements = ref([
 ]);
 
 const isSubmitting = ref(false);
-let recaptchaWidgetId = null;
 
 const isValidEmail = (email) => {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -89,8 +88,6 @@ const success = (message) => {
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 const submitForm = async (event) => {
-  event.preventDefault;
-
   const isValid = validateInputs();
   if (!isValid) {
     return;
@@ -98,52 +95,28 @@ const submitForm = async (event) => {
 
   isSubmitting.value = true;
 
-  // Trigger reCAPTCHA
-  if (recaptchaWidgetId !== null) {
-    grecaptcha.execute(recaptchaWidgetId);
-  } else {
-    console.error('reCAPTCHA widget not initialized.');
-    isSubmitting.value = false;
-  }
-};
-
-// Callback function for reCAPTCHA
-const onReCaptchaSuccess = async (token) => {
   const templateParams = formElements.value.reduce((params, element) => {
     params[element.name] = element.modelValue;
     return params;
   }, {});
 
   try {
-    await emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, {
-      ...templateParams,
-      'g-recaptcha-response': token,
-    });
-    alert('Email sent successfully!');
+    await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      templateParams,
+    );
+    success('Email sent successfully!');
     formElements.value.forEach((element) => {
       element.modelValue = ''; // Clear the input fields after successful submission
     });
-  } catch (error) {
-    console.error('Failed to send email:', error);
-    alert('Failed to send email. Please try again later.');
+  } catch (err) {
+    console.error('Failed to send email:', err);
+    error('Failed to send email. Please try again later.');
   } finally {
     isSubmitting.value = false;
   }
 };
-
-// Initialize reCAPTCHA on mount
-onMounted(() => {
-  if (typeof grecaptcha !== 'undefined') {
-    recaptchaWidgetId = grecaptcha.render('recaptcha-container', {
-      sitekey: 'YOUR_SITE_KEY',
-      size: 'invisible',
-      callback: onReCaptchaSuccess,
-    });
-    console.log('reCAPTCHA initialized with widget ID:', recaptchaWidgetId);
-  } else {
-    console.error('reCAPTCHA script not loaded.');
-  }
-});
 </script>
 
 <template>
@@ -155,14 +128,13 @@ onMounted(() => {
         <SocialLinks :showSocialTitles="true" />
       </div>
       <div>
-        <form @submit.prevent="submitForm(formElements)" novalidate id="contactForm" class="g-recaptcha">
+        <form @submit.prevent="submitForm(formElements)" novalidate>
           <p class="text-right">All fields are required.</p>
           <FormFields v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
           <button type="submit" class="btn-submit">
             {{ isSubmitting ? 'Sending' : 'Send' }}
           </button>
         </form>
-        <div id="recaptcha-container" style="display: none"></div>
       </div>
     </div>
   </div>
@@ -174,7 +146,7 @@ form {
   flex-direction: column;
   gap: var(--xs-spacing);
   margin: var(--base-spacing) auto;
-  max-width: 55rem;
+  max-width: 400px;
 
   .btn-submit {
     padding: 2rem;
@@ -182,7 +154,7 @@ form {
     color: var(--text-body);
     font-weight: 600;
     border: 2px solid var(--text-body);
-    margin-top: var(--xs-spacing);
+    margin-top: var(--base-spacing);
 
     &:hover {
       border-color: var(--link);
