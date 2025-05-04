@@ -13,7 +13,6 @@ const activeFilters = ref([]);
 const activeFilterClass = ref({});
 
 const filterButtons = [
-  { filterType: 'featured', filterValue: 'true', filterName: 'Featured' },
   { filterType: 'media', filterValue: 'watercolor', filterName: 'Watercolor' },
   { filterType: 'media', filterValue: 'ink', filterName: 'Ink' },
   { filterType: 'media', filterValue: 'micron pen', filterName: 'micron pen' },
