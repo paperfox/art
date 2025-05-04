@@ -280,6 +280,10 @@ details,
   border: 0;
 }
 
+button.toggle {
+  display: none;
+}
+
 /* Responsive */
 
 @media (max-width: 992px) {
@@ -312,6 +316,7 @@ details,
   }
 
   button.toggle {
+    display: block;
     text-align: right;
     color: var(--link);
     font-weight: 600;
