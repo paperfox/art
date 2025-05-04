@@ -178,7 +178,7 @@ form {
 
     &:hover {
       border-color: var(--link);
-      background-color: var(--tertiary-bg);
+      background-color: var(--secondary-bg);
       color: var(--link);
     }
   }
