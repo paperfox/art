@@ -84,6 +84,12 @@ const submitForm = async (event) => {
   if (!isValid) {
     return; // Stop if form validation fails
   }
+  if (!window.grecaptcha) {
+    console.error('reCAPTCHA not loaded');
+    return;
+  } else {
+    console.log('reCAPTCHA loaded');
+  }
 
   try {
     // Trigger the reCAPTCHA
@@ -134,6 +140,8 @@ const executeRecaptcha = () => {
       });
   });
 };
+
+// window.grecaptcha.execute(import.meta.env.VITE_YOUR_SITE_KEY, { action: 'submit' });
 </script>
 
 <template>
@@ -152,6 +160,7 @@ const executeRecaptcha = () => {
             {{ isSubmitting ? 'Sending' : 'Send' }}
           </button>
         </form>
+        <!-- <div class="g-recaptcha" data-sitekey="VITE_YOUR_SITE_KEY" data-callback="onSubmit" data-size="invisible"></div> -->
       </div>
     </div>
   </div>
