@@ -1,9 +1,7 @@
 <script setup>
 import { ref, provide } from 'vue';
 import Filters from './components/Filters.vue';
-import inProgress from './data/sketchData';
 import SocialLinks from './components/SocialLinks.vue';
-import ArtMasonry from './components/ArtMasonry.vue';
 import TabContact from './components/TabContact.vue';
 import TabAbout from './components/TabAbout.vue';
 import TabEvents from './components/TabEvents.vue';

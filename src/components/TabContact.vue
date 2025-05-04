@@ -1,7 +1,8 @@
 <script setup>
 import { ref } from 'vue';
-import FormInput from './FormInput.vue';
+import FormFields from './FormFields.vue';
 import SocialLinks from './SocialLinks.vue';
+import emailjs from '@emailjs/browser';
 
 const formElements = ref([
   {
@@ -57,21 +58,6 @@ const isValidEmail = (email) => {
   return emailPattern.test(email);
 };
 
-const handleSubmit = () => {
-  const isValid = validateInputs();
-  if (!isValid) {
-    return;
-  }
-
-  console.log(formElements.value);
-  isSubmitting.value = true;
-
-  setTimeout(() => {
-    isSubmitting.value = false;
-    alert("Thanks for testing but this doesn't actually do anything <3");
-  }, 2000);
-};
-
 const validateInputs = () => {
   let isValid = true;
 
@@ -90,6 +76,47 @@ const validateInputs = () => {
 
   return isValid;
 };
+
+const error = (message) => {
+  alert(message);
+};
+
+const success = (message) => {
+  alert(message);
+};
+
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
+const submitForm = async (event) => {
+  const isValid = validateInputs();
+  if (!isValid) {
+    return;
+  }
+
+  isSubmitting.value = true;
+
+  const templateParams = formElements.value.reduce((params, element) => {
+    params[element.name] = element.modelValue;
+    return params;
+  }, {});
+
+  try {
+    await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      templateParams,
+    );
+    success('Email sent successfully!');
+    formElements.value.forEach((element) => {
+      element.modelValue = ''; // Clear the input fields after successful submission
+    });
+  } catch (error) {
+    console.error('Failed to send email:', error);
+    error('Failed to send email. Please try again later.');
+  } finally {
+    isSubmitting.value = false;
+  }
+};
 </script>
 
 <template>
@@ -101,9 +128,9 @@ const validateInputs = () => {
         <SocialLinks :showSocialTitles="true" />
       </div>
       <div>
-        <form @submit.prevent="handleSubmit" novalidate>
+        <form @submit.prevent="submitForm(formElements)" novalidate>
           <p class="text-right">All fields are required.</p>
-          <FormInput v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
+          <FormFields v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
           <button type="submit" class="btn-submit">
             {{ isSubmitting ? 'Sending' : 'Send' }}
           </button>
