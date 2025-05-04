@@ -152,7 +152,7 @@ const executeRecaptcha = () => {
           <p class="text-right">All fields are required.</p>
           <FormFields v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
           <button type="submit" class="btn-submit">
-            {{ isSubmitting ? 'Sending' : 'Send' }}
+            {{ isSubmitting ? 'Sending' : 'SEND' }}
           </button>
         </form>
       </div>

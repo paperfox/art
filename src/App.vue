@@ -9,6 +9,7 @@ import Modal from './components/Modal.vue';
 
 const isModalVisible = ref(false);
 const modalImage = ref(null);
+const isOpen = ref(false);
 
 const tabs = [{ name: 'Art' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
 
@@ -55,16 +56,22 @@ watch(tab, (newTab) => {
           <p class="logo-byline">Art by Nathalie Garfinkle</p>
         </div>
       </div>
-      <div class="nav-tabs">
-        <button
-          v-for="tabItem of tabs"
-          :key="tabItem.name"
-          @click="tab = tabItem.name.toLowerCase()"
-          :class="{ 'tab-control': true, active: tab === tabItem.name.toLowerCase() }"
-          :id="`tab-${tabItem.name}`"
-        >
-          {{ tabItem.name }}
+      <div>
+        <button type="button" class="toggle" @click="isOpen = !isOpen" aria-label="Toggle navigation">
+          <!-- <span class="toggle-icon" :class="{ open: isOpen }"></span> -->
+          MENU
         </button>
+        <div class="nav-tabs" :class="!isOpen ? 'closed' : ''">
+          <button
+            v-for="tabItem of tabs"
+            :key="tabItem.name"
+            @click="tab = tabItem.name.toLowerCase()"
+            :class="{ 'tab-control': true, active: tab === tabItem.name.toLowerCase() }"
+            :id="`tab-${tabItem.name}`"
+          >
+            {{ tabItem.name }}
+          </button>
+        </div>
       </div>
     </nav>
 
