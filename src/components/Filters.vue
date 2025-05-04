@@ -83,9 +83,10 @@ summary {
   &:hover {
     text-decoration: underline;
   }
-  &&::marker {
+
+  /* &::marker {
     content: '';
-  }
+  } */
 }
 
 #filters {
