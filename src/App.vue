@@ -11,8 +11,6 @@ const isModalVisible = ref(false);
 const modalImage = ref(null);
 const isOpen = ref(false);
 
-const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
-
 const tabs = [{ name: 'Art' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
 
 const tab = ref('art');
@@ -36,10 +34,12 @@ provide('modalImage', modalImage);
 provide('isModalVisible', isModalVisible);
 
 // onMounted(() => {
+// const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
 //   recaptchaBadge.style.display = 'none';
 // });
 
 watch(tab, (newTab) => {
+  const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
   if (recaptchaBadge) {
     recaptchaBadge.style.display = newTab === 'contact' ? 'block' : 'none';
   }
