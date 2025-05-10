@@ -1,5 +1,5 @@
 <script setup>
-import { ref, provide, onMounted, watch } from 'vue';
+import { ref, provide, watch } from 'vue';
 import Filters from './components/Filters.vue';
 import SocialLinks from './components/SocialLinks.vue';
 import TabContact from './components/TabContact.vue';
@@ -10,6 +10,8 @@ import Modal from './components/Modal.vue';
 const isModalVisible = ref(false);
 const modalImage = ref(null);
 const isOpen = ref(false);
+
+const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
 
 const tabs = [{ name: 'Art' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
 
@@ -33,13 +35,11 @@ provide('closeModal', closeModal);
 provide('modalImage', modalImage);
 provide('isModalVisible', isModalVisible);
 
-onMounted(() => {
-  const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
-  recaptchaBadge.style.display = 'none';
-});
+// onMounted(() => {
+//   recaptchaBadge.style.display = 'none';
+// });
 
 watch(tab, (newTab) => {
-  const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
   if (recaptchaBadge) {
     recaptchaBadge.style.display = newTab === 'contact' ? 'block' : 'none';
   }
@@ -108,7 +108,6 @@ watch(tab, (newTab) => {
   <footer>
     <SocialLinks />
   </footer>
-  <Modal />
 </template>
 
 <style scoped>

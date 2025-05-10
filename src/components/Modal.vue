@@ -1,34 +1,64 @@
 <script setup>
-import { inject, ref } from 'vue';
+import { inject, onMounted, onBeforeUnmount, ref, watch } from 'vue';
 import { onClickOutside } from '@vueuse/core';
+
+const props = defineProps({
+  activeElement: {
+    type: String,
+    default: null,
+  },
+});
 
 const isModalVisible = inject('isModalVisible');
 const modalImage = inject('modalImage');
 const closeModal = inject('closeModal');
-// const filteredArts = inject('filteredArts'); // Inject the full array of art pieces
 
 const modal = ref(null);
 
-// Track the current index of the modal image
-// const currentIndex = ref(artPieces.value.findIndex((art) => art === modalImage.value));
+const closeModalWithFocus = async () => {
+  closeModal();
 
-// // Function to go to the next art piece
-// const gotoNext = () => {
-//   currentIndex.value = (currentIndex.value + 1) % artPieces.value.length; // Loop back to the start if at the end
-//   modalImage.value = artPieces.value[currentIndex.value];
-// };
+  const modalFocus = document.getElementById(props.activeElement);
+  if (modalFocus) {
+    modalFocus.focus();
+  }
+
+  props.activeElement = null;
+};
+
+onMounted(() => {
+  window.addEventListener('keydown', handleKeydown);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', handleKeydown);
+});
+
+const handleKeydown = (event) => {
+  if (event.key === 'Escape' && isModalVisible.value) {
+    closeModalWithFocus();
+  }
+};
 
 onClickOutside(modal, () => {
-  closeModal();
+  closeModalWithFocus();
 });
+
+watch(
+  () => props.activeElement,
+  (newVal) => {
+    console.log('activeElement updated in Modal:', newVal);
+    props.activeElement = newVal;
+  },
+);
 </script>
 
 <template>
   <div :class="`${isModalVisible ? 'modal is-visible' : 'modal'}`" id="art-modal" v-show="isModalVisible">
-    <div class="modal-dialog" ref="modal">
+    <div class="modal-dialog" ref="modal" tabindex="-1" id="view-modal">
       <header class="modal-header">
         <h2 class="modal-title">{{ modalImage?.title }}</h2>
-        <button class="close-modal" aria-label="close modal" @click="closeModal">×</button>
+        <button class="close-modal" aria-label="close modal" @click="closeModalWithFocus">×</button>
       </header>
       <section class="modal-content">
         <img :src="`./art/${modalImage?.link}`" :alt="modalImage?.desc" />
