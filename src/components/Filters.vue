@@ -11,6 +11,7 @@ const props = defineProps({
 
 const activeFilters = ref([]);
 const activeFilterClass = ref({});
+const isDetailsOpen = ref(false);
 
 const filterButtons = [
   { filterType: 'media', filterValue: 'watercolor', filterName: 'Watercolor & Ink' },
@@ -49,7 +50,7 @@ const applyFilter = (filter) => {
 <template>
   <h1 class="visually-hidden">Artwork</h1>
   <div class="artwork">
-    <details>
+    <details :aria-expanded="isDetailsOpen" @toggle="isDetailsOpen = $event.target.open">
       <summary>Filter Artwork</summary>
       <div id="filters">
         <button
