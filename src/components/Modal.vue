@@ -47,7 +47,6 @@ onClickOutside(modal, () => {
 watch(
   () => props.activeElement,
   (newVal) => {
-    console.log('activeElement updated in Modal:', newVal);
     props.activeElement = newVal;
   },
 );
