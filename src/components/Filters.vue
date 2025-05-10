@@ -67,7 +67,7 @@ const applyFilter = (filter) => {
           {{ filter.filterName }}
         </button>
       </div>
-      <!-- <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p> -->
+      <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p>
     </details>
     <ArtMasonry :images="filteredArts" />
   </div>
