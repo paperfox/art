@@ -26,7 +26,7 @@ const socials = [
   {
     title: 'Natick Art Association',
     socialHandle: 'Nathalie Garfinkle',
-    link: 'https://www.natickartassociation.org/nathalie-garfinkle',
+    link: 'https://www.natickartassociation.org/naa-artists#!biz/id/680038d67283ae8b760f54f9',
     icon: 'NAA_Logo_Final_C2.png',
   },
   {
