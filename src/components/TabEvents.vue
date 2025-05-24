@@ -13,7 +13,9 @@
         <li>
           <p>
             <strong>Art in the Park</strong><br />
-            June 8, 2025 10:00 am to 3:00 pm Shaw Park, South Natick, MA
+            Sunday, June 8, 2025 10:00 am to 3:00 pm Shaw Park, South Natick, MA<br />
+            53 Eliot St, Natick, MA 01760<br />
+            20+ artists, live music, and tons of fun!
           </p>
         </li>
         <li>
