@@ -53,7 +53,18 @@ const applyFilter = (filter, event) => {
     <details :aria-expanded="isDetailsOpen" @toggle="isDetailsOpen = $event.target.open">
       <summary>Filter Artwork</summary>
       <div id="filters">
-        <div v-for="filter in filterButtons" :key="filter.filterValue">
+        <div
+          v-for="filter in filterButtons"
+          :key="filter.filterValue"
+          class="btn-badge"
+          :class="[
+            { 'active-filters': activeFilterClass[filter.filterValue] },
+            { [filter.filterValue]: activeFilterClass[filter.filterValue] },
+          ]"
+        >
+          <label :for="`filter-${filter.filterValue}`">
+            {{ filter.filterName }}
+          </label>
           <input
             type="radio"
             :id="`filter-${filter.filterValue}`"
@@ -64,15 +75,6 @@ const applyFilter = (filter, event) => {
             @click="applyFilter(filter, $event)"
             :aria-label="filter.filterName"
           />
-          <label
-            :for="`filter-${filter.filterValue}`"
-            class="btn-badge"
-            :class="[
-              { 'active-filters': activeFilterClass[filter.filterValue] },
-              { [filter.filterValue]: activeFilterClass[filter.filterValue] },
-            ]"
-            >{{ filter.filterName }}</label
-          >
         </div>
         <!-- <button
           v-for="filter in filterButtons"
@@ -115,23 +117,24 @@ summary {
 }
 
 .btn-badge {
-  position: relative;
-  border: 0.1rem solid var(--text-body);
-  border-radius: 4rem;
-  color: var(--text-body);
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  padding: var(--base-spacing) var(--xs-spacing);
+  label {
+    position: relative;
+    border: 0.1rem solid var(--text-body);
+    border-radius: 4rem;
+    color: var(--text-body);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: var(--base-spacing) var(--xs-spacing);
+  }
 
-  &.active-filters {
+  &.active-filters label {
     background-color: var(--text-body);
     color: var(--main-bg);
   }
 
-  &:hover {
-    color: var(--text-body);
+  &:hover label {
     border-color: var(--link);
 
     &.active-filters {
@@ -139,7 +142,7 @@ summary {
     }
   }
 
-  &:has(input:focus-visible) {
+  &:has(input:focus-visible) label {
     outline: 0.2rem dotted var(--link);
     outline-offset: 0.2rem;
   }
