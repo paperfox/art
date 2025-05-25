@@ -57,7 +57,7 @@ watch(
     <div class="modal-dialog" ref="modal" tabindex="-1" id="view-modal">
       <header class="modal-header">
         <h2 class="modal-title">{{ modalImage?.title }}</h2>
-        <button class="close-modal" aria-label="close modal" @click="closeModalWithFocus">×</button>
+        <button class="close-modal" aria-label="close modal" @click="closeModalWithFocus">&#10006;</button>
       </header>
       <section class="modal-content">
         <img :src="`./art/${modalImage?.link}`" :alt="modalImage?.desc" />
@@ -98,7 +98,7 @@ watch(
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: var(--xs-spacing) 2.4rem var(--base-spacing);
+  margin: 0 2.4rem var(--base-spacing);
 
   * {
     margin: var(--base-spacing) auto;
@@ -110,7 +110,7 @@ watch(
 
   img {
     max-width: 100%;
-    max-height: 65vh;
+    max-height: 80vh;
   }
 }
 
@@ -119,10 +119,10 @@ watch(
 }
 
 .modal-dialog {
-  border-radius: 0.4rem;
   background: var(--main-bg);
   overflow: auto;
   cursor: default;
+  box-shadow: 0 0 2rem rgba(var(--black), 0.3);
 }
 
 .modal-header {
@@ -130,6 +130,11 @@ watch(
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--xs-spacing);
+  margin-top: 0.5rem;
+
+  * {
+    font-size: 2.5rem;
+  }
 
   .modal-title {
     margin-inline: auto;
@@ -139,7 +144,6 @@ watch(
   .close-modal {
     color: var(--link);
     float: right;
-    font-size: 4.2rem;
     background: none;
     border: 0.1rem solid transparent;
     cursor: pointer;
@@ -148,6 +152,17 @@ watch(
     &:hover,
     &:focus-visible {
       color: var(--text-body);
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    * {
+      font-size: 2.1rem;
+    }
+
+    .modal-title {
+      margin-inline: 0;
+      padding-left: 0.8rem;
     }
   }
 }
