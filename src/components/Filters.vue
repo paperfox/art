@@ -63,6 +63,7 @@ const applyFilter = (filter) => {
           ]"
           :id="`filter-${filter.filterValue}`"
           @click="applyFilter(filter)"
+          :aria-selected="activeFilterClass[filter.filterValue] ? 'true' : 'false'"
         >
           {{ filter.filterName }}
         </button>

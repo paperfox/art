@@ -85,6 +85,7 @@ watch(tab, (newTab) => {
             "
             :class="{ 'tab-control': true, active: tab === tabItem.name.toLowerCase() }"
             :id="`tab-${tabItem.name}`"
+            :aria-selected="tab === tabItem.name.toLowerCase()"
           >
             {{ tabItem.name }}
           </button>
