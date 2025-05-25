@@ -134,6 +134,13 @@ ul {
   }
 }
 
+.footer-text {
+  opacity: 0.8;
+  text-align: center;
+  margin: var(--base-spacing) 0 var(--sm-spacing);
+  font-size: 1.4rem;
+}
+
 /* Grid */
 
 /* clear fix */

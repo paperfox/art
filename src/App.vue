@@ -12,8 +12,8 @@ const modalImage = ref(null);
 const isOpen = ref(false);
 
 const tabs = [{ name: 'Art' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
-
 const tab = ref('art');
+const currentYear = new Date().getFullYear();
 
 const openModal = (image) => {
   modalImage.value = image;
@@ -109,6 +109,7 @@ watch(tab, (newTab) => {
   </main>
   <footer>
     <SocialLinks />
+    <p class="footer-text">© {{ currentYear }} Nathalie Garfinkle</p>
   </footer>
 </template>
 
