@@ -407,3 +407,15 @@ p:has(.form-error) {
     }
   }
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+  cursor: none;
+}
+
+body:has(#tab-Contact[aria-current='true']) {
+  .grecaptcha-badge {
+    visibility: visible;
+    cursor: auto;
+  }
+}

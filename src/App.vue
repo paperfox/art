@@ -1,5 +1,5 @@
 <script setup>
-import { ref, provide, watch } from 'vue';
+import { ref, provide } from 'vue';
 import Filters from './components/Filters.vue';
 import SocialLinks from './components/SocialLinks.vue';
 import TabContact from './components/TabContact.vue';
@@ -32,18 +32,6 @@ provide('openModal', openModal);
 provide('closeModal', closeModal);
 provide('modalImage', modalImage);
 provide('isModalVisible', isModalVisible);
-
-// onMounted(() => {
-// const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
-//   recaptchaBadge.style.display = 'none';
-// });
-
-watch(tab, (newTab) => {
-  const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
-  if (recaptchaBadge) {
-    recaptchaBadge.style.display = newTab === 'contact' ? 'block' : 'none';
-  }
-});
 </script>
 
 <template>
