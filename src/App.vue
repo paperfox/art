@@ -107,7 +107,7 @@ watch(tab, (newTab) => {
     </div>
   </main>
   <footer>
-    <SocialLinks />
+    <SocialLinks :isModalVisible="isModalVisible" />
     <p class="footer-text">© {{ currentYear }} Nathalie Garfinkle</p>
   </footer>
 </template>

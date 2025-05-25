@@ -92,6 +92,7 @@ watch(
   backdrop-filter: blur(3px);
   width: 100%;
   height: 100%;
+  z-index: 1000;
 }
 
 .modal-content {
