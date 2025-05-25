@@ -42,6 +42,7 @@ const applyFilter = (filter, event) => {
     activeFilterClass.value = { [filter.filterValue]: true };
   }
 
+  event.prevent.default();
   event.target.focus();
 };
 </script>
@@ -52,15 +53,7 @@ const applyFilter = (filter, event) => {
     <details :aria-expanded="isDetailsOpen" @toggle="isDetailsOpen = $event.target.open">
       <summary>Filter Artwork</summary>
       <div id="filters">
-        <div
-          v-for="filter in filterButtons"
-          :key="filter.filterValue"
-          class="btn-badge"
-          :class="[
-            { 'active-filters': activeFilterClass[filter.filterValue] },
-            { [filter.filterValue]: activeFilterClass[filter.filterValue] },
-          ]"
-        >
+        <div v-for="filter in filterButtons" :key="filter.filterValue">
           <input
             type="radio"
             :id="`filter-${filter.filterValue}`"
@@ -69,8 +62,17 @@ const applyFilter = (filter, event) => {
             :checked="activeFilterClass[filter.filterValue] ? true : false"
             class="visually-hidden"
             @click="applyFilter(filter, $event)"
+            :aria-label="filter.filterName"
           />
-          <label :for="`filter-${filter.filterValue}`">{{ filter.filterName }}</label>
+          <label
+            :for="`filter-${filter.filterValue}`"
+            class="btn-badge"
+            :class="[
+              { 'active-filters': activeFilterClass[filter.filterValue] },
+              { [filter.filterValue]: activeFilterClass[filter.filterValue] },
+            ]"
+            >{{ filter.filterName }}</label
+          >
         </div>
         <!-- <button
           v-for="filter in filterButtons"
@@ -121,6 +123,7 @@ summary {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  padding: var(--base-spacing) var(--xs-spacing);
 
   &.active-filters {
     background-color: var(--text-body);
@@ -139,11 +142,6 @@ summary {
   &:has(input:focus-visible) {
     outline: 0.2rem dotted var(--link);
     outline-offset: 0.2rem;
-  }
-
-  label {
-    padding-inline: var(--xs-spacing);
-    line-height: 2.8;
   }
 }
 </style>
