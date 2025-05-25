@@ -154,6 +154,10 @@ watch(
     &:focus-visible {
       color: var(--text-body);
     }
+
+    &:visited {
+      color: var(--link);
+    }
   }
 
   @media (max-width: 767.98px) {
