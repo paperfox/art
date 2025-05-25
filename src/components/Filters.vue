@@ -53,7 +53,27 @@ const applyFilter = (filter) => {
     <details :aria-expanded="isDetailsOpen" @toggle="isDetailsOpen = $event.target.open">
       <summary>Filter Artwork</summary>
       <div id="filters">
-        <button
+        <div
+          v-for="filter in filterButtons"
+          :key="filter.filterValue"
+          class="btn-badge"
+          :class="[
+            { 'active-filters': activeFilterClass[filter.filterValue] },
+            { [filter.filterValue]: activeFilterClass[filter.filterValue] },
+          ]"
+        >
+          <input
+            type="radio"
+            :id="`filter-${filter.filterValue}`"
+            name="filter"
+            :value="filter.filterName"
+            :checked="activeFilterClass[filter.filterValue] ? true : false"
+            class="visually-hidden"
+            @click="applyFilter(filter)"
+          />
+          <label :for="`filter-${filter.filterValue}`">{{ filter.filterName }}</label>
+        </div>
+        <!-- <button
           v-for="filter in filterButtons"
           :key="filter.filterValue"
           class="btn-badge"
@@ -62,11 +82,10 @@ const applyFilter = (filter) => {
             { [filter.filterValue]: activeFilterClass[filter.filterValue] },
           ]"
           :id="`filter-${filter.filterValue}`"
-          @click="applyFilter(filter)"
         >
           {{ filter.filterName }}
           <span class="visually-hidden" v-if="activeFilterClass[filter.filterValue]"> active</span>
-        </button>
+        </button> -->
       </div>
       <!-- <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p> -->
     </details>
@@ -85,10 +104,6 @@ summary {
   &:hover {
     text-decoration: underline;
   }
-
-  /* &::marker {
-    content: '';
-  } */
 }
 
 #filters {
@@ -106,7 +121,6 @@ summary {
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
-  padding: var(--base-spacing) var(--xs-spacing);
   letter-spacing: 0.1rem;
 
   &.active-filters {
@@ -126,6 +140,11 @@ summary {
   &:focus-visible {
     outline: 0.2rem dotted var(--link);
     outline-offset: 0.2rem;
+  }
+
+  label {
+    padding-inline: var(--xs-spacing);
+    line-height: 2.8;
   }
 }
 </style>
