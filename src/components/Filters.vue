@@ -63,9 +63,9 @@ const applyFilter = (filter) => {
           ]"
           :id="`filter-${filter.filterValue}`"
           @click="applyFilter(filter)"
-          :aria-selected="activeFilterClass[filter.filterValue] ? true : false"
         >
           {{ filter.filterName }}
+          <span class="visually-hidden" v-if="activeFilterClass[filter.filterValue]"> active</span>
         </button>
       </div>
       <!-- <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p> -->
