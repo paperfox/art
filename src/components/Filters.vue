@@ -15,35 +15,34 @@ const isDetailsOpen = ref(false);
 
 const filterButtons = [
   { filterType: 'media', filterValue: 'watercolor', filterName: 'Watercolor & Ink' },
-  { filterType: 'media', filterValue: 'micron pen', filterName: 'micron pen' },
+  { filterType: 'media', filterValue: 'micron pen', filterName: 'Micron Pen' },
   { filterType: 'media', filterValue: 'printmaking', filterName: 'Printmaking' },
   { filterType: 'media', filterValue: 'digital', filterName: 'Digital' },
-  { filterType: '', filterValue: 'clear', filterName: 'Clear filters' },
+  { filterType: '', filterValue: 'clear', filterName: 'No filters' },
 ];
 
+activeFilters.value = filterButtons.find((filter) => filter.filterValue === 'clear');
+activeFilterClass.value['clear'] = true;
+
 const filteredArts = computed(() => {
-  if (activeFilters.value.length === 0) {
+  if (activeFilters.value.filterValue === 'clear') {
     return artwork;
   }
   return artwork.filter((art) => {
-    return art[activeFilters.value.filterType].includes(activeFilters.value.filterValue);
+    return art[activeFilters.value.filterType]?.includes(activeFilters.value.filterValue);
   });
 });
 
-const applyFilter = (filter) => {
+const applyFilter = (filter, event) => {
   if (filter.filterValue === 'clear') {
-    activeFilters.value = [];
-    activeFilterClass.value = {};
-  } else if (activeFilters.value === filter) {
-    activeFilters.value = null;
-    activeFilterClass.value[filter.filterValue] = false;
-  } else {
-    if (activeFilters.value) {
-      activeFilterClass.value[activeFilters.value.filterValue] = false;
-    }
     activeFilters.value = filter;
-    activeFilterClass.value[filter.filterValue] = true;
+    activeFilterClass.value = { clear: true };
+  } else {
+    activeFilters.value = filter;
+    activeFilterClass.value = { [filter.filterValue]: true };
   }
+
+  event.target.focus();
 };
 </script>
 
@@ -69,7 +68,7 @@ const applyFilter = (filter) => {
             :value="filter.filterName"
             :checked="activeFilterClass[filter.filterValue] ? true : false"
             class="visually-hidden"
-            @click="applyFilter(filter)"
+            @click="applyFilter(filter, $event)"
           />
           <label :for="`filter-${filter.filterValue}`">{{ filter.filterName }}</label>
         </div>
@@ -137,7 +136,7 @@ summary {
     }
   }
 
-  &:focus-visible {
+  &:has(input:focus-visible) {
     outline: 0.2rem dotted var(--link);
     outline-offset: 0.2rem;
   }
