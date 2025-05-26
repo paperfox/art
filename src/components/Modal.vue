@@ -57,7 +57,24 @@ watch(
     <div class="modal-dialog" ref="modal" tabindex="-1" id="view-modal">
       <header class="modal-header">
         <h2 class="modal-title">{{ modalImage?.title }}</h2>
-        <button class="close-modal" aria-label="close modal" @click="closeModalWithFocus">✖ test</button>
+        <button class="close-modal" aria-label="close modal" @click="closeModalWithFocus">
+          <svg viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.9999 2.00004L1.99994 12"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M2.00006 2.00003L12.0001 12"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </header>
       <section class="modal-content">
         <img :src="`./art/${modalImage?.link}`" :alt="modalImage?.desc" />
@@ -149,7 +166,12 @@ watch(
     background: none;
     border: 0.1rem solid transparent;
     cursor: pointer;
-    padding: 0 var(--base-spacing);
+    padding: calc(var(--base-spacing) * 1.5) var(--base-spacing) var(--base-spacing);
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
 
     &:hover,
     &:focus-visible {
