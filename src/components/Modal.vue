@@ -90,9 +90,10 @@ watch(
   cursor: pointer;
   display: none;
   backdrop-filter: blur(3px);
-  width: 100%;
-  height: 100%;
+  width: calc(100% + 2rem);
+  height: calc(100% + 2rem);
   z-index: 1000;
+  padding: var(--xs-spacing);
 }
 
 .modal-content {
