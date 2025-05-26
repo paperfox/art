@@ -59,9 +59,11 @@ body {
   padding: var(--base-spacing) var(--sm-spacing);
 }
 
-body.modal-open {
+body.modal-open,
+html.modal-open {
   height: 100vh;
-  overflow-y: hidden;
+  overflow: hidden;
+  overscroll-behavior: contain;
 }
 
 main {
@@ -165,9 +167,6 @@ ul {
 }
 
 @media (max-width: 992px) {
-  #artTab .artwork div {
-    padding-left: 0.5rem;
-  }
   .grid-sizer,
   .grid-item {
     width: 50%;

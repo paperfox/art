@@ -107,10 +107,9 @@ watch(
   cursor: pointer;
   display: none;
   backdrop-filter: blur(3px);
-  width: calc(100% + 2rem);
-  height: calc(100% + 2rem);
+  width: 100%;
+  height: 100%;
   z-index: 1000;
-  padding: var(--xs-spacing);
 }
 
 .modal-content {
@@ -142,6 +141,7 @@ watch(
   overflow: auto;
   cursor: default;
   box-shadow: 0 0 2rem rgba(var(--black), 0.3);
+  width: 100%;
 }
 
 .modal-header {
@@ -191,6 +191,10 @@ watch(
     .modal-title {
       margin-inline: 0;
       padding-left: 0.8rem;
+    }
+
+    .modal-dialog {
+      height: 100vh;
     }
   }
 }
