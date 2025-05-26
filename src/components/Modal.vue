@@ -143,9 +143,7 @@ watch(
   }
 
   .close-modal {
-    -webkit-appearance: none;
-    appearance: none;
-    color: var(--link) !important;
+    color: red !important;
     float: right;
     background: none;
     border: 0.1rem solid transparent;
