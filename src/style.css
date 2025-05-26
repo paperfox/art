@@ -59,7 +59,7 @@ body {
   padding: var(--base-spacing) var(--sm-spacing);
 }
 
-body:has(.modal.is-visible) {
+body.modal-open {
   height: 100vh;
   overflow-y: hidden;
 }
