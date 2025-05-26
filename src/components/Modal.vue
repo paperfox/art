@@ -108,7 +108,7 @@ watch(
   display: none;
   backdrop-filter: blur(3px);
   width: 100%;
-  height: 110%;
+  height: calc(100% + 4rem);
   z-index: 1000;
 }
 
@@ -142,7 +142,7 @@ watch(
   cursor: default;
   box-shadow: 0 0 2rem rgba(var(--black), 0.3);
   width: 100%;
-  margin-top: -10%;
+  margin-top: -4rem;
 }
 
 .modal-header {
