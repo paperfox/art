@@ -137,7 +137,9 @@ watch(
   }
 
   .close-modal {
-    color: var(--link);
+    -webkit-appearance: none;
+    appearance: none;
+    color: var(--link) !important;
     float: right;
     font-size: 4.2rem;
     background: none;

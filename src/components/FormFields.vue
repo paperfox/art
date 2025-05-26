@@ -83,7 +83,6 @@ const isValidEmail = (email) => {
   display: flex;
   flex-direction: column;
   position: relative;
-
   margin-top: 2rem;
 
   label {
@@ -97,6 +96,7 @@ const isValidEmail = (email) => {
   textarea {
     font-family: inherit;
     padding: var(--xs-spacing);
+    border-radius: 0;
     border: 0;
     border-bottom: var(--border-weight) solid var(--text-body);
     font-size: 1.6rem;
