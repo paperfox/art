@@ -1,5 +1,5 @@
 <script setup>
-import { ref, provide, watch } from 'vue';
+import { ref, provide } from 'vue';
 import Filters from './components/Filters.vue';
 import SocialLinks from './components/SocialLinks.vue';
 import TabContact from './components/TabContact.vue';
@@ -12,8 +12,8 @@ const modalImage = ref(null);
 const isOpen = ref(false);
 
 const tabs = [{ name: 'Art' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
-
 const tab = ref('art');
+const currentYear = new Date().getFullYear();
 
 const openModal = (image) => {
   modalImage.value = image;
@@ -32,18 +32,6 @@ provide('openModal', openModal);
 provide('closeModal', closeModal);
 provide('modalImage', modalImage);
 provide('isModalVisible', isModalVisible);
-
-// onMounted(() => {
-// const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
-//   recaptchaBadge.style.display = 'none';
-// });
-
-watch(tab, (newTab) => {
-  const recaptchaBadge = document.getElementsByClassName('grecaptcha-badge')[0];
-  if (recaptchaBadge) {
-    recaptchaBadge.style.display = newTab === 'contact' ? 'block' : 'none';
-  }
-});
 </script>
 
 <template>
@@ -85,6 +73,7 @@ watch(tab, (newTab) => {
             "
             :class="{ 'tab-control': true, active: tab === tabItem.name.toLowerCase() }"
             :id="`tab-${tabItem.name}`"
+            :aria-current="tab === tabItem.name.toLowerCase() ? true : false"
           >
             {{ tabItem.name }}
           </button>
@@ -106,7 +95,8 @@ watch(tab, (newTab) => {
     </div>
   </main>
   <footer>
-    <SocialLinks />
+    <SocialLinks :isModalVisible="isModalVisible" />
+    <p class="footer-text">© {{ currentYear }} Nathalie Garfinkle</p>
   </footer>
 </template>
 

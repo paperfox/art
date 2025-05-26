@@ -15,35 +15,35 @@ const isDetailsOpen = ref(false);
 
 const filterButtons = [
   { filterType: 'media', filterValue: 'watercolor', filterName: 'Watercolor & Ink' },
-  { filterType: 'media', filterValue: 'micron pen', filterName: 'micron pen' },
+  { filterType: 'media', filterValue: 'micron pen', filterName: 'Micron Pen' },
   { filterType: 'media', filterValue: 'printmaking', filterName: 'Printmaking' },
   { filterType: 'media', filterValue: 'digital', filterName: 'Digital' },
-  { filterType: '', filterValue: 'clear', filterName: 'Clear filters' },
+  { filterType: '', filterValue: 'clear', filterName: 'No filters' },
 ];
 
+activeFilters.value = filterButtons.find((filter) => filter.filterValue === 'clear');
+activeFilterClass.value['clear'] = true;
+
 const filteredArts = computed(() => {
-  if (activeFilters.value.length === 0) {
+  if (activeFilters.value.filterValue === 'clear') {
     return artwork;
   }
   return artwork.filter((art) => {
-    return art[activeFilters.value.filterType].includes(activeFilters.value.filterValue);
+    return art[activeFilters.value.filterType]?.includes(activeFilters.value.filterValue);
   });
 });
 
-const applyFilter = (filter) => {
+const applyFilter = (filter, event) => {
   if (filter.filterValue === 'clear') {
-    activeFilters.value = [];
-    activeFilterClass.value = {};
-  } else if (activeFilters.value === filter) {
-    activeFilters.value = null;
-    activeFilterClass.value[filter.filterValue] = false;
-  } else {
-    if (activeFilters.value) {
-      activeFilterClass.value[activeFilters.value.filterValue] = false;
-    }
     activeFilters.value = filter;
-    activeFilterClass.value[filter.filterValue] = true;
+    activeFilterClass.value = { clear: true };
+  } else {
+    activeFilters.value = filter;
+    activeFilterClass.value = { [filter.filterValue]: true };
   }
+
+  event.prevent.default();
+  event.target.focus();
 };
 </script>
 
@@ -53,7 +53,30 @@ const applyFilter = (filter) => {
     <details :aria-expanded="isDetailsOpen" @toggle="isDetailsOpen = $event.target.open">
       <summary>Filter Artwork</summary>
       <div id="filters">
-        <button
+        <div
+          v-for="filter in filterButtons"
+          :key="filter.filterValue"
+          class="btn-badge"
+          :class="[
+            { 'active-filters': activeFilterClass[filter.filterValue] },
+            { [filter.filterValue]: activeFilterClass[filter.filterValue] },
+          ]"
+        >
+          <label :for="`filter-${filter.filterValue}`">
+            {{ filter.filterName }}
+          </label>
+          <input
+            type="radio"
+            :id="`filter-${filter.filterValue}`"
+            name="filter"
+            :value="filter.filterName"
+            :checked="activeFilterClass[filter.filterValue] ? true : false"
+            class="visually-hidden"
+            @click="applyFilter(filter, $event)"
+            :aria-label="filter.filterName"
+          />
+        </div>
+        <!-- <button
           v-for="filter in filterButtons"
           :key="filter.filterValue"
           class="btn-badge"
@@ -62,10 +85,10 @@ const applyFilter = (filter) => {
             { [filter.filterValue]: activeFilterClass[filter.filterValue] },
           ]"
           :id="`filter-${filter.filterValue}`"
-          @click="applyFilter(filter)"
         >
           {{ filter.filterName }}
-        </button>
+          <span class="visually-hidden" v-if="activeFilterClass[filter.filterValue]"> active</span>
+        </button> -->
       </div>
       <!-- <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p> -->
     </details>
@@ -84,10 +107,6 @@ summary {
   &:hover {
     text-decoration: underline;
   }
-
-  /* &::marker {
-    content: '';
-  } */
 }
 
 #filters {
@@ -98,23 +117,24 @@ summary {
 }
 
 .btn-badge {
-  position: relative;
-  border: 0.1rem solid var(--text-body);
-  border-radius: 4rem;
-  color: var(--text-body);
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: var(--base-spacing) var(--xs-spacing);
-  letter-spacing: 0.1rem;
+  label {
+    position: relative;
+    border: 0.1rem solid var(--text-body);
+    border-radius: 4rem;
+    color: var(--text-body);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: var(--base-spacing) var(--xs-spacing);
+  }
 
-  &.active-filters {
+  &.active-filters label {
     background-color: var(--text-body);
     color: var(--main-bg);
   }
 
-  &:hover {
-    color: var(--text-body);
+  &:hover label {
     border-color: var(--link);
 
     &.active-filters {
@@ -122,7 +142,7 @@ summary {
     }
   }
 
-  &:focus-visible {
+  &:has(input:focus-visible) label {
     outline: 0.2rem dotted var(--link);
     outline-offset: 0.2rem;
   }

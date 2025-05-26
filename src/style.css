@@ -134,6 +134,13 @@ ul {
   }
 }
 
+.footer-text {
+  opacity: 0.8;
+  text-align: center;
+  margin: var(--base-spacing) 0 var(--sm-spacing);
+  font-size: 1.4rem;
+}
+
 /* Grid */
 
 /* clear fix */
@@ -398,5 +405,17 @@ p:has(.form-error) {
       width: 6rem;
       margin-right: var(--base-spacing);
     }
+  }
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+  cursor: none;
+}
+
+body:has(#tab-Contact[aria-current='true']) {
+  .grecaptcha-badge {
+    visibility: visible;
+    cursor: auto;
   }
 }

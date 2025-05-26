@@ -1,6 +1,17 @@
 <script setup>
 import { computed } from 'vue';
 
+const props = defineProps({
+  showSocialTitles: {
+    type: Boolean,
+    default: false,
+  },
+  isModalVisible: {
+    type: Boolean,
+    default: false,
+  },
+});
+
 const socials = [
   {
     title: 'Instagram',
@@ -26,7 +37,7 @@ const socials = [
   {
     title: 'Natick Art Association',
     socialHandle: 'Nathalie Garfinkle',
-    link: 'https://www.natickartassociation.org/nathalie-garfinkle',
+    link: 'https://www.natickartassociation.org/naa-artists#!biz/id/680038d67283ae8b760f54f9',
     icon: 'NAA_Logo_Final_C2.png',
   },
   {
@@ -37,13 +48,6 @@ const socials = [
     addFilter: true,
   },
 ];
-
-const props = defineProps({
-  showSocialTitles: {
-    type: Boolean,
-    default: false,
-  },
-});
 
 const filteredSocials = computed(() => {
   if (props.showSocialTitles) {
@@ -57,7 +61,7 @@ const filteredSocials = computed(() => {
 <template>
   <ul :class="showSocialTitles ? 'contact-socials' : 'footer-socials'">
     <li v-for="social of filteredSocials" :key="social.icon.slice(0, 5)">
-      <a :href="social.link" target="_blank" rel="noreferrer">
+      <a :href="social.link" target="_blank" rel="noreferrer" :tabindex="isModalVisible ? -1 : null">
         <span :class="`social social-${social.title.slice(0, 4).toLowerCase()}`"></span>
         <span v-if="!showSocialTitles" class="visually-hidden">{{ social.title }}</span>
         <p v-if="showSocialTitles">{{ social.title }} - {{ social.socialHandle }}</p>
