@@ -57,7 +57,7 @@ watch(
     <div class="modal-dialog" ref="modal" tabindex="-1" id="view-modal">
       <header class="modal-header">
         <h2 class="modal-title">{{ modalImage?.title }}</h2>
-        <button class="close-modal" aria-label="close modal" @click="closeModalWithFocus">&#10006;</button>
+        <button class="close-modal" aria-label="close modal" @click="closeModalWithFocus">✖</button>
       </header>
       <section class="modal-content">
         <img :src="`./art/${modalImage?.link}`" :alt="modalImage?.desc" />
@@ -143,7 +143,7 @@ watch(
   }
 
   .close-modal {
-    color: red !important;
+    color: var(--link);
     float: right;
     background: none;
     border: 0.1rem solid transparent;
