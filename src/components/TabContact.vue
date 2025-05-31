@@ -106,7 +106,12 @@ const submitForm = async (event) => {
 
     // Data to EmailJS + token
     const templateParams = formElements.value.reduce((params, element) => {
-      params[element.name] = element.modelValue;
+      if (element.name === 'newsletter') {
+        // Map true/false to 'Yes'/'No'
+        params[element.name] = element.modelValue ? 'Yes' : 'No';
+      } else {
+        params[element.name] = element.modelValue;
+      }
       return params;
     }, {});
 
