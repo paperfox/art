@@ -113,7 +113,7 @@ summary {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  gap: var(--base-spacing);
+  gap: var(--xs-spacing) var(--base-spacing);
 }
 
 .btn-badge {

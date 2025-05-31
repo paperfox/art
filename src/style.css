@@ -59,9 +59,11 @@ body {
   padding: var(--base-spacing) var(--sm-spacing);
 }
 
-body:has(.modal.is-visible) {
+body.modal-open,
+html.modal-open {
   height: 100vh;
-  overflow-y: hidden;
+  overflow: hidden;
+  overscroll-behavior: contain;
 }
 
 main {
@@ -165,9 +167,6 @@ ul {
 }
 
 @media (max-width: 992px) {
-  #artTab .artwork div {
-    padding-left: 0.5rem;
-  }
   .grid-sizer,
   .grid-item {
     width: 50%;
@@ -338,7 +337,7 @@ p:has(.form-error) {
     position: absolute;
     right: var(--base-spacing);
     z-index: 100;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
     box-shadow: 0 0 1rem rgba(var(--black), 0.1);
 
     .tab-control {

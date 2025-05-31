@@ -18,10 +18,12 @@ const currentYear = new Date().getFullYear();
 const openModal = (image) => {
   modalImage.value = image;
   isModalVisible.value = true;
+  document.body.classList.add('modal-open');
 };
 
 const closeModal = () => {
   isModalVisible.value = false;
+  document.body.classList.remove('modal-open');
 };
 
 const handleTabContentClick = () => {
