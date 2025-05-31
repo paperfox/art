@@ -227,6 +227,17 @@
     "featured": ["false"]
   },
   {
+    "title": "Queen of the Forest",
+    "date": "May 18, 2024",
+    "desc": "A blond woman in a white dress steps over the root of a large tree with red shelf fungi deep in the forest as light filters through the leaves. In one hand is a shepherds crook, the other arm is lifted and an owlet is perched on it looking at her. Done in micron pen and watercolor.",
+    "dimensions": "9x12 inches",
+    "media": ["micron pen", "watercolor"],
+    "content": ["owl", "animal", "people", "print"],
+    "forSale": false,
+    "link": "queenoftheforest-sm.webp",
+    "featured": ["false"]
+  },
+  {
     "title": "Salmon Run",
     "date": "Dec 31, 2023",
     "desc": "Micron pen and watercolor of a bear carrying off a fish from a fish filled stream in Alaska with 9 sea stars. In the background is a misty forest.",
@@ -290,17 +301,6 @@
     "content": ["bison", "animal"],
     "forSale": false,
     "link": "indian_bison.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Forest Owlet",
-    "date": "Oct 22, 2023",
-    "desc": "A blond woman in a white dress steps over the root of a large tree deep in the forest as light filters through the leaves. In one hand is a shepherds crook, the other arm is lifted and an owlet is perched on it looking at her. Done in micron pen and watercolor.",
-    "dimensions": "9x12 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["owl", "animal", "people", "print"],
-    "forSale": false,
-    "link": "forest-owlet.webp",
     "featured": ["false"]
   },
   {
