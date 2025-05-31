@@ -42,7 +42,7 @@ const applyFilter = (filter, event) => {
     activeFilterClass.value = { [filter.filterValue]: true };
   }
 
-  event.prevent.default();
+  // event.prevent.default();
   event.target.focus();
 };
 </script>
