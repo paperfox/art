@@ -1,5 +1,82 @@
 [
   {
+    "title": "Crocus",
+    "date": "May 12, 2025",
+    "desc": "Watercolor painting of 3 crocus blooming.",
+    "dimensions": "5x7 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["plant", "flower", "fantasy", "print"],
+    "forSale": false,
+    "link": "crocus.webp",
+    "featured": ["false"]
+  },
+  {
+    "title": "Sus",
+    "date": "May 7, 2025",
+    "desc": "Watercolor painting of an white, black, and purple ink cap mushroom giving the side eye suspiciously with their arms crossed.",
+    "dimensions": "5x9 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["plant", "mushroom", "fantasy", "print"],
+    "forSale": false,
+    "link": "mushroom_sus.webp",
+    "featured": ["false"]
+  },
+  {
+    "title": "Shelter to Wonder",
+    "date": "May 3, 2025",
+    "desc": "Watercolor painting of a blue green and white spotted verdigris agaric mushroom protecting it's little mushroom offspring from the rain as it watches the weather in wonder.",
+    "dimensions": "5x9 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["plant", "mushroom", "fantasy", "print"],
+    "forSale": false,
+    "link": "mushroom_joy.webp",
+    "featured": ["false"]
+  },
+  {
+    "title": "Relaxing",
+    "date": "May 1, 2025",
+    "desc": "Watercolor painting of a red hot milk cap mushroom reclining and just relaxing.",
+    "dimensions": "5x9 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["plant", "mushroom", "fantasy", "print"],
+    "forSale": false,
+    "link": "mushroom_relaxed.webp",
+    "featured": ["false"]
+  },
+  {
+    "title": "Joy",
+    "date": "Apr 29, 2025",
+    "desc": "Watercolor painting of a pale brown king oyster mushroom jumping for joy.",
+    "dimensions": "5x9 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["plant", "mushroom", "fantasy", "print"],
+    "forSale": false,
+    "link": "mushroom_joy.webp",
+    "featured": ["false"]
+  },
+  {
+    "title": "In a Huff",
+    "date": "Apr 23, 2025",
+    "desc": "Watercolor painting of a sharp scaly pholiota mushroom with their arms crossed looking angry or pouting.",
+    "dimensions": "5x9 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["plant", "mushroom", "fantasy", "print"],
+    "forSale": false,
+    "link": "mushroom_pout.webp",
+    "featured": ["false"]
+  },
+  {
+    "title": "Spring Cardinal",
+    "date": "Apr 22, 2025",
+    "desc": "Watercolor painting of an cardinal sitting in gray tree banches with budding red leaves.",
+    "dimensions": "5x7 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["animal", "bird", "print"],
+    "forSale": false,
+    "link": "cardinal.webp",
+    "featured": ["false"]
+  },
+  {
     "title": "Sunset Wyvern",
     "date": "Mar 29, 2025",
     "desc": "Watercolor painting of a wyvern landing on the hip of a dragon man walking on a cliff edge at sunset.",
@@ -8,17 +85,6 @@
     "content": ["dragon", "wyvern", "animal", "fantasy", "print"],
     "forSale": false,
     "link": "sunset-wyvern.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Peacock Bass",
-    "date": "Jan 31, 2025",
-    "desc": "Watercolor painting of a peacock bass with a fly-fishing fly in it's mouth on a taught flyline half submerged swimming in the water.",
-    "dimensions": "7x10 inches",
-    "media": ["watercolor", "micron pen"],
-    "content": ["fish", "animal"],
-    "forSale": false,
-    "link": "peacock-bass.webp",
     "featured": ["false"]
   },
   {
@@ -238,17 +304,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Red Squirrel",
-    "date": "Oct 12, 2023",
-    "desc": "A red squirrel with a fluffy tail looks up at the viewer, shocked.",
-    "dimensions": "6x9 inches",
-    "media": ["watercolor"],
-    "content": ["squirrel", "animal"],
-    "forSale": false,
-    "link": "red-squirrel.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Panay Monitor",
     "date": "Oct 7, 2023",
     "desc": "Line art of a panay monitor lizard sitting on a branch facing left staring at the viewer.",
@@ -282,17 +337,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Lamplugh Glacier",
-    "date": "Sep 10, 2023",
-    "desc": "Sme-abstract watercolor painting of the texture of the lamplugh glacier in Alaska.",
-    "dimensions": "6x9 inches",
-    "media": ["watercolor"],
-    "content": ["glacier", "landscape"],
-    "forSale": false,
-    "link": "lamplugh-glacier.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Fog at Sea",
     "date": "Sep 6, 2023",
     "desc": "The sea fades into the sky with no defined horizon line, the only thing visible is a fuzzy silhouette of a bird flying in the distance.",
@@ -301,17 +345,6 @@
     "content": ["bird", "landscape", "animal", "print"],
     "forSale": false,
     "link": "fog-at-sea.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Alaska Sunset",
-    "date": "Sep 4, 2023",
-    "desc": "Watercolor painting of sunset over the ocean in Alaska with several islands sillhoutted in black.",
-    "dimensions": "6x9 inches",
-    "media": ["watercolor"],
-    "content": ["plant", "landscape"],
-    "forSale": false,
-    "link": "alaska-sunset.webp",
     "featured": ["false"]
   },
   {
@@ -392,17 +425,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Cyan Jellyfish",
-    "date": "Nov 20, 2021",
-    "desc": "Jellyfish with frilly tendrils painted in light blues and some yellow with blue paint splatters.",
-    "dimensions": "8x8 inches",
-    "media": ["watercolor"],
-    "content": ["jellyfish", "animal"],
-    "forSale": false,
-    "link": "cyan-jellie.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Finnish Forest Reindeer",
     "date": "Oct 28, 2021",
     "desc": "Digital art of a druid reclining wearing a a reindeer skull mask with glowing red butterflies around him.",
@@ -444,17 +466,6 @@
     "content": ["insect", "ladybug", "animal", "print", "cards", "stickers"],
     "forSale": false,
     "link": "two_spot_ladybug.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Irimote cat",
-    "date": "Oct 1, 2021",
-    "desc": "Micron pen and watercolor of an irimote cat carrying a lizard looking backwards at the viewer over it's shoulder.",
-    "dimensions": "5x5 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["cat", "animal"],
-    "forSale": false,
-    "link": "irimote_cat.webp",
     "featured": ["false"]
   },
   {
@@ -565,17 +576,6 @@
     "content": ["cat", "animal", "fanart"],
     "forSale": false,
     "link": "grumpy_cat.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Stalking but Unaware",
-    "date": "Mar 30, 2020",
-    "desc": "watercolor painting of an angler fish hunting a minnow about to get eaten by an octopus, portraying the Chinese proverb: A mantis stalking a cicada is unaware of an oriole behind.",
-    "dimensions": "10x10 inches",
-    "media": ["watercolor"],
-    "content": ["fish", "animal"],
-    "forSale": false,
-    "link": "stalking_unaware.webp",
     "featured": ["false"]
   },
   {
