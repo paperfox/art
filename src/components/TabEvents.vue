@@ -16,7 +16,9 @@
             Sunday, June 8, 2025 10:00 am to 3:00 pm Shaw Park, South Natick, MA<br />
             53 Eliot St, Natick, MA 01760<br />
             20+ artists, live music, and tons of fun!<br />
-            <a href="https://www.natickartassociation.org/2025-events" target="_blank" rel="noreferrer">More Info</a>
+            <a href="https://www.natickartassociation.org/art-in-the-park" target="_blank" rel="noreferrer"
+              >More Info</a
+            >
           </p>
         </li>
         <li>
