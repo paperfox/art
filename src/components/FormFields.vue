@@ -23,7 +23,7 @@ const props = defineProps({
     default: 'Label',
   },
   modelValue: {
-    type: String,
+    type: [String, Boolean],
     default: '',
   },
   name: {
@@ -54,9 +54,23 @@ const isValidEmail = (email) => {
 </script>
 
 <template>
-  <div class="form-input">
-    <label :for="id" :class="modelValue ? 'float' : null">{{ labelText }} </label>
+  <div :class="type === 'checkbox' ? 'form-checkbox' : 'form-input'">
+    <label
+      :for="id"
+      :class="[{ float: modelValue && type != 'checkbox' }, { checked: modelValue && type === 'checkbox' }]"
+      >{{ labelText }}
+    </label>
+    <input
+      v-if="type === 'checkbox'"
+      type="checkbox"
+      :id="id"
+      :name="name"
+      :checked="modelValue"
+      class="visually-hidden"
+      @input="$emit('update:modelValue', $event.target.checked)"
+    />
     <component
+      v-else
       :is="componentType"
       :type="type"
       :id="id"
@@ -114,6 +128,29 @@ const isValidEmail = (email) => {
     position: absolute;
     top: -2.5rem;
     left: 0;
+  }
+}
+
+.form-checkbox {
+  margin-top: 2rem;
+
+  label:before {
+    content: '';
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: var(--border-weight) solid var(--text-body);
+    border-radius: 0;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+
+  label.checked:before {
+    border-color: var(--link);
+    background-color: var(--link);
+    content: '❤';
+    color: var(--main-bg);
+    text-align: center;
   }
 }
 

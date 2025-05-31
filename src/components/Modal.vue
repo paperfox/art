@@ -23,7 +23,7 @@ const closeModalWithFocus = async () => {
     modalFocus.focus();
   }
 
-  props.activeElement = null;
+  // props.activeElement = null;
 };
 
 onMounted(() => {

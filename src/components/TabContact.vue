@@ -49,6 +49,17 @@ const formElements = ref([
     isError: false,
     modelValue: '',
   },
+  {
+    id: 'checkbox-newsletter',
+    componentType: 'input',
+    name: 'newsletter',
+    type: 'checkbox',
+    labelText: 'Subscribe to newsletter',
+    placeholder: '',
+    isRequired: false,
+    isError: false,
+    modelValue: false,
+  },
 ]);
 
 const isSubmitting = ref(false);
