@@ -101,12 +101,15 @@ summary {
   cursor: pointer;
   padding-bottom: var(--base-spacing);
   margin-inline: auto;
-  margin-bottom: var(--base-spacing);
   text-align: right;
 
   &:hover {
     text-decoration: underline;
   }
+}
+
+details {
+  margin-bottom: var(--base-spacing);
 }
 
 #filters {
