@@ -1,5 +1,16 @@
 [
   {
+    "title": "MASS PRIDE",
+    "date": "May 29, 2025",
+    "desc": "Watercolor painting 6 birds perched on branches creating the colors of the stripes progress pride flag. The background is blue box with a yellow and white glow at the top and a pink square around it. A small purple circle intercepting it at the top. The birds are, from left to write: a purple martin, a blue jay, a mourning warbler, an american goldfinch, an oriole, and a cardinal.",
+    "dimensions": "9x12 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["animal", "mushroom", "bird"],
+    "forSale": false,
+    "link": "massPride.webp",
+    "featured": ["false"]
+  },
+  {
     "title": "Crocus",
     "date": "May 12, 2025",
     "desc": "Watercolor painting of 3 crocus blooming.",
