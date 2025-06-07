@@ -129,6 +129,34 @@ ul li {
   }
 }
 
+@media (max-width: 768px) {
+  .contact-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--sm-spacing);
+
+    li a {
+      .social-nati {
+        margin-right: 0;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    }
+  }
+}
+
 @media (max-width: 576px) {
   .footer-socials {
     padding: var(--base-spacing) calc(var(--xs-spacing) * 2.5);

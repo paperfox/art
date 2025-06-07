@@ -1,5 +1,5 @@
 <script setup>
-import { ref, provide } from 'vue';
+import { ref, provide, onMounted } from 'vue';
 import Filters from './components/Filters.vue';
 import SocialLinks from './components/SocialLinks.vue';
 import TabContact from './components/TabContact.vue';
@@ -34,6 +34,14 @@ provide('openModal', openModal);
 provide('closeModal', closeModal);
 provide('modalImage', modalImage);
 provide('isModalVisible', isModalVisible);
+
+onMounted(() => {
+  const params = new URLSearchParams(window.location.search);
+  const tabParam = params.get('tab');
+  if (tabParam && ['art', 'events', 'about', 'contact'].includes(tabParam.toLowerCase())) {
+    tab.value = tabParam.toLowerCase();
+  }
+});
 </script>
 
 <template>

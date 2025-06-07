@@ -10,7 +10,7 @@ const formElements = ref([
     componentType: 'input',
     name: 'name',
     type: 'text',
-    labelText: 'Name',
+    labelText: 'Name *',
     placeholder: 'Name',
     isRequired: true,
     isError: false,
@@ -21,7 +21,7 @@ const formElements = ref([
     componentType: 'input',
     name: 'email',
     type: 'email',
-    labelText: 'Email',
+    labelText: 'Email *',
     placeholder: 'Email',
     isRequired: true,
     isError: false,
@@ -32,7 +32,7 @@ const formElements = ref([
     componentType: 'input',
     name: 'subject',
     type: 'text',
-    labelText: 'Subject',
+    labelText: 'Subject *',
     placeholder: 'Subject',
     isRequired: true,
     isError: false,
@@ -45,7 +45,7 @@ const formElements = ref([
     type: 'textarea',
     labelText: 'Message',
     placeholder: 'Message',
-    isRequired: true,
+    isRequired: false,
     isError: false,
     modelValue: '',
   },
@@ -176,12 +176,12 @@ watch(
     <h1>Contact</h1>
     <div>
       <div>
-        <p>You can find me on the web at these places, or drop me an email if you have specific questions.</p>
+        <p>You can find me on the web at these places, or drop me an email with a specific questions.</p>
         <SocialLinks :showSocialTitles="true" />
       </div>
       <div>
         <form @submit.prevent="submitForm(formElements)" novalidate id="contact-form">
-          <p class="text-right">All fields are required.</p>
+          <p class="text-right">Required fields are marked with *.</p>
           <FormFields v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
           <p v-if="success">Message sent! <br />Thanks for reaching out, I'll get back to you shortly.</p>
           <button type="submit" class="btn-submit">
