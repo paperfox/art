@@ -9,25 +9,47 @@
           events throughout 2025.
         </p>
       </div>
-      <ul>
-        <li>
-          <p>
-            <strong>Art in the Park</strong><br />
-            Sunday, June 8, 2025 10:00 am to 3:00 pm Shaw Park, South Natick, MA<br />
-            53 Eliot St, Natick, MA 01760<br />
-            20+ artists, live music, and tons of fun!<br />
-            <a href="https://www.natickartassociation.org/art-in-the-park" target="_blank" rel="noreferrer"
-              >More Info</a
-            >
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Natick Open Studios</strong><br />
-            October 18 and 19, 2025 in downtown Natick, MA
-          </p>
-        </li>
-      </ul>
+      <div>
+        <ul>
+          <li>
+            <p>
+              <strong>Public Natick Art</strong><br />
+              July 10, downtown Natick, MA on the Common<br />
+              Come color line art by local artists. I'll be there to help out, and you can help me color my Mushroom
+              Party.
+            </p>
+            <a href="/public/art/mushroom-party.jpg" target="_blank" rel="noopener noreferrer">
+              <img
+                style="width: 100%; max-width: 200px; height: auto"
+                src="../../public/art/mushroom-party.jpg"
+                alt="Mushrooms dancing under a sunny sky while a dragonfly lands on the central mushroom. Public Art Natick is written at the top."
+              />
+              <br />
+              <strong>Download a copy to print and color</strong>
+            </a>
+
+            <br />
+            <br />
+          </li>
+          <li>
+            <p>
+              <strong>Natick Open Studios</strong><br />
+              October 18 and 19, 2025 in downtown Natick, MA
+            </p>
+          </li>
+        </ul>
+        <h2>Past Events</h2>
+        <ul>
+          <li>
+            <p>
+              <strong>Art in the Park</strong><br />
+              Sunday, June 8, 2025 10:00 am to 3:00 pm Shaw Park, South Natick, MA<br />
+              53 Eliot St, Natick, MA 01760<br /><br />
+              Thanks for stopping by if you made it, if not, hope to see you later in the year!
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
