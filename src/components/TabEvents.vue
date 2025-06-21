@@ -18,10 +18,10 @@
               Come color line art by local artists. I'll be there to help out, and you can help me color my Mushroom
               Party.
             </p>
-            <a href="/public/art/mushroom-party.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="/art/mushroom-party.jpg" target="_blank" rel="noopener noreferrer">
               <img
                 style="width: 100%; max-width: 200px; height: auto"
-                src="../../public/art/mushroom-party.jpg"
+                src="/art/mushroom-party.jpg"
                 alt="Mushrooms dancing under a sunny sky while a dragonfly lands on the central mushroom. Public Art Natick is written at the top."
               />
               <br />
