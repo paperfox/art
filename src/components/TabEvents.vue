@@ -13,6 +13,30 @@
         <ul>
           <li>
             <p>
+              <strong>Art in Action</strong><br />
+              August 7th from 5pm to 8pm on the Morse Institute Library lawn. Come make some postcards with me at Art in
+              Action - part of Natick Nights. Also other amazing NAA will be there with other activities too!
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Art in the Park</strong><br />
+              Sunday, September 14, 2025 10am to 3pm Shaw Park, South Natick, MA<br />
+              53 Eliot St, Natick, MA 01760
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Natick Open Studios</strong><br />
+              October 18 and 19, 2025 in downtown Natick, MA
+            </p>
+          </li>
+        </ul>
+        <br />
+        <h2>Past Events</h2>
+        <ul>
+          <li>
+            <p>
               <strong>Public Natick Art</strong><br />
               July 10, downtown Natick, MA on the Common<br />
               Come color line art by local artists. I'll be there to help out, and you can help me color my Mushroom
@@ -31,15 +55,6 @@
             <br />
             <br />
           </li>
-          <li>
-            <p>
-              <strong>Natick Open Studios</strong><br />
-              October 18 and 19, 2025 in downtown Natick, MA
-            </p>
-          </li>
-        </ul>
-        <h2>Past Events</h2>
-        <ul>
           <li>
             <p>
               <strong>Art in the Park</strong><br />
