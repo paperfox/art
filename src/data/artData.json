@@ -1,5 +1,16 @@
 [
   {
+    "title": "Snapdragon",
+    "date": "Aug 11, 2025",
+    "desc": "Four color woodcut print of an orange and yellow snapdragon amongst leaves against a blue sky.",
+    "dimensions": "9x12 inches",
+    "media": ["printmaking", "woodcut"],
+    "content": ["plant", "flower"],
+    "forSale": false,
+    "link": "snapdragon.webp",
+    "featured": ["false"]
+  },
+  {
     "title": "MASS PRIDE",
     "date": "May 29, 2025",
     "desc": "Watercolor painting 6 birds perched on branches creating the colors of the stripes progress pride flag. The background is blue box with a yellow and white glow at the top and a pink square around it. A small purple circle intercepting it at the top. The birds are, from left to write: a purple martin, a blue jay, a mourning warbler, an american goldfinch, an oriole, and a cardinal.",
@@ -425,28 +436,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Sylver Sezari",
-    "date": "Nov 23, 2021",
-    "desc": "Necromancer Sylver Sezari from Sylver Seeker in the foreground with his hand on the hood of his cloak and a string of bones in his other hand. In the background are glowing yellow eyes, bones, and wyvern and wolf shades.",
-    "dimensions": "8x12 inches",
-    "media": ["digital"],
-    "content": ["people", "animal", "fantasy", "fanart"],
-    "forSale": false,
-    "link": "sylver-seeker.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Finnish Forest Reindeer",
-    "date": "Oct 28, 2021",
-    "desc": "Digital art of a druid reclining wearing a a reindeer skull mask with glowing red butterflies around him.",
-    "dimensions": "9x12 inches",
-    "media": ["digital"],
-    "content": ["butterfly", "people", "animal", "insect", "fantasy"],
-    "forSale": false,
-    "link": "finnish_forest_reindeer.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Long-whiskered Owlet",
     "date": "Oct 22, 2021",
     "desc": "Micron pen drawing of an owlet with the night sky behind it.",
@@ -532,28 +521,6 @@
     "content": ["waterlily", "plant"],
     "forSale": false,
     "link": "sacred_blue_lily_of_the_nile.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "White-spotted Char",
-    "date": "Oct 28, 2020",
-    "desc": "Micron pen and ink of a group of White-spotted Char swimming.",
-    "dimensions": "7x8 inches",
-    "media": ["micron pen", "ink"],
-    "content": ["fish", "animal", "print", "cards"],
-    "forSale": false,
-    "link": "white_spotted_char.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Long-snouted Seahorse",
-    "date": "Oct 23, 2020",
-    "desc": "Micron pen drawing of a Long-snouted Seahorse with a giant gold in water drop behind it.",
-    "dimensions": "10x10 inches",
-    "media": ["micron pen", "ink"],
-    "content": ["seahorse", "animal"],
-    "forSale": true,
-    "link": "long_snouted_seahorse.webp",
     "featured": ["false"]
   },
   {
