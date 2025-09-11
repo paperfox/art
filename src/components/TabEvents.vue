@@ -13,6 +13,13 @@
         <ul>
           <li>
             <p>
+              <strong>Art on the Common</strong><br />
+              Saturday, September 13, 2025 9am to 1pm, Farmer's Market @ Natick Common<br />
+              12 S Main St, Natick, MA 01760
+            </p>
+          </li>
+          <li>
+            <p>
               <strong>Art in the Park</strong><br />
               Sunday, September 14, 2025 10am to 3pm Shaw Park, South Natick, MA<br />
               53 Eliot St, Natick, MA 01760
