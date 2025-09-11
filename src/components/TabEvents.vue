@@ -22,7 +22,10 @@
             <p>
               <strong>Art in the Park</strong><br />
               Sunday, September 14, 2025 10am to 3pm Shaw Park, South Natick, MA<br />
-              53 Eliot St, Natick, MA 01760
+              53 Eliot St, Natick, MA 01760<br />
+              <a href="https://www.natickartassociation.org/art-in-the-park" target="_blank" rel="noopener noreferrer"
+                >More info here</a
+              >
             </p>
           </li>
           <li>
