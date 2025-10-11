@@ -14,8 +14,15 @@
           <li>
             <p>
               <strong>Natick Open Studios</strong><br />
-              October 18 and 19, 2025 in downtown Natick, MA
+              October 18 and 19, 2025 in downtown Natick, MA. I'll be at the First Congregational Church!
             </p>
+            <a
+              href="https://www.natickartassociation.org/about-natick-open-studios"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              More info here
+            </a>
           </li>
         </ul>
         <br />
