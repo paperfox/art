@@ -13,6 +13,21 @@
         <ul>
           <li>
             <p>
+              <strong>Snow farm Seconds Sale</strong><br />
+              The Snow Farm Seconds Sale is the last 3 weekends in November. I won't be there, but my work will be along
+              with many other amazing artists!
+              <a href="https://snowfarm.org/support/seconds-sale/" target="_blank" rel="noopener noreferrer">
+                More details
+              </a>
+            </p>
+          </li>
+        </ul>
+        <br />
+        <h2>Past Events</h2>
+        <p>Thanks for stopping by if you made it to one of these events, if not, hope to see you later in the year!</p>
+        <ul>
+          <li>
+            <p>
               <strong>Natick Open Studios</strong><br />
               October 18 and 19, 2025 in downtown Natick, MA. I'll be at the First Congregational Church!
             </p>
@@ -24,11 +39,6 @@
               More info here
             </a>
           </li>
-        </ul>
-        <br />
-        <h2>Past Events</h2>
-        <p>Thanks for stopping by if you made it to one of these events, if not, hope to see you later in the year!</p>
-        <ul>
           <li>
             <p>
               <strong>Art on the Common</strong><br />
