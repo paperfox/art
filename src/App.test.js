@@ -58,7 +58,7 @@ describe('Tab', () => {
 
     const artworkDiv = wrapper.find('#artTab');
     const images = artworkDiv.findAll('img[src$=".webp"]');
-    expect(images).toHaveLength(59);
+    expect(images).toHaveLength(57);
   });
 
   test('Artwork tab - filter shows subset of artwork and only 1 filter is applied at a time', async () => {
@@ -67,25 +67,25 @@ describe('Tab', () => {
     wrapper.find('summary').trigger('click');
 
     const digitalButton = wrapper
-      .findAll('button')
-      .filter((button) => button.text() === 'Digital')
+      .findAll('input')
+      .filter((input) => input.attributes('aria-label') === 'Digital')
       .at(0);
     await digitalButton.trigger('click');
 
     let artworkDiv = wrapper.find('#artTab');
     let images = artworkDiv.findAll('img[src$=".webp"]');
 
-    expect(images).toHaveLength(4);
+    expect(images).toHaveLength(2);
 
     const watercolorButton = wrapper
-      .findAll('button')
-      .filter((button) => button.text() === 'Watercolor & Ink')
+      .findAll('input')
+      .filter((input) => input.attributes('aria-label') === 'Watercolor & Ink')
       .at(0);
     await watercolorButton.trigger('click');
 
     artworkDiv = wrapper.find('#artTab');
     images = artworkDiv.findAll('img[src$=".webp"]');
-    expect(images).toHaveLength(40);
+    expect(images).toHaveLength(41);
   });
 
   test('Events tab is not selected', () => {
