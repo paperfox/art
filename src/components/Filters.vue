@@ -90,7 +90,7 @@ const applyFilter = (filter, event) => {
           <span class="visually-hidden" v-if="activeFilterClass[filter.filterValue]"> active</span>
         </button> -->
       </div>
-      <!-- <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p> -->
+      <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p>
     </details>
     <ArtMasonry :images="filteredArts" />
   </div>

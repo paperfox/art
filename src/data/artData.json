@@ -55,17 +55,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Relaxing",
-    "date": "May 1, 2025",
-    "desc": "Watercolor painting of a red hot milk cap mushroom reclining and just relaxing.",
-    "dimensions": "5x9 inches",
-    "media": ["watercolor", "micron pen"],
-    "content": ["plant", "mushroom", "fantasy", "print"],
-    "forSale": false,
-    "link": "mushroom_relaxed.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Joy",
     "date": "Apr 29, 2025",
     "desc": "Watercolor painting of a pale brown king oyster mushroom jumping for joy.",
@@ -74,17 +63,6 @@
     "content": ["plant", "mushroom", "fantasy", "print"],
     "forSale": false,
     "link": "mushroom_joy.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "In a Huff",
-    "date": "Apr 23, 2025",
-    "desc": "Watercolor painting of a sharp scaly pholiota mushroom with their arms crossed looking angry or pouting.",
-    "dimensions": "5x9 inches",
-    "media": ["watercolor", "micron pen"],
-    "content": ["plant", "mushroom", "fantasy", "print"],
-    "forSale": false,
-    "link": "mushroom_pout.webp",
     "featured": ["false"]
   },
   {
@@ -502,39 +480,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Amir Leopard",
-    "date": "Nov 4, 2020",
-    "desc": "Micron pen portrait of an amir leopard.",
-    "dimensions": "8x8 inches",
-    "media": ["micron pen"],
-    "content": ["leopard", "animal"],
-    "forSale": false,
-    "link": "amir_leopard.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Sacred Blue Lily of the Nile",
-    "date": "Oct 28, 2020",
-    "desc": "Black ink and blue and yellow watercolor paining of a waterlily and two lily pads.",
-    "dimensions": "8x8 inches",
-    "media": ["ink", "watercolor"],
-    "content": ["waterlily", "plant"],
-    "forSale": false,
-    "link": "sacred_blue_lily_of_the_nile.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Four-horned Chameleon",
-    "date": "Oct 10, 2020",
-    "desc": "micron pen drawing of a Four-horned Chameleon sitting in a leafy plant.",
-    "dimensions": "8.5x11 inches",
-    "media": ["micron pen"],
-    "content": ["lizard", "animal", "plant"],
-    "forSale": false,
-    "link": "four_horned_chameleon.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Eld's Deer",
     "date": "Oct 1, 2020",
     "desc": "Micron pen drawing of an eld's deer running on water with a wave following it.",
@@ -557,17 +502,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Almost Rabbits, Watercolor",
-    "date": "Nov 20, 2019",
-    "desc": "Watercolor of a pair of jackalopes looking up at the full moon next to a leafless tree, the moon has a silhouette of a rabbit making medicine in it.",
-    "dimensions": "5x7 inches",
-    "media": ["watercolor", "ink"],
-    "content": ["rabbit", "animal", "fantasy", "landscape", "print", "cards"],
-    "forSale": false,
-    "link": "almost_rabbits_watercolor.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Adding Wings to a Tiger",
     "date": "Nov 15, 2019",
     "desc": "watercolor painting of of a winged tiger landing on a hill and in it's wings is a starry sky.",
@@ -587,17 +521,6 @@
     "content": ["vehicle", "fantasy", "fanart"],
     "forSale": false,
     "link": "alpha_and_omega.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Ghost",
-    "date": "Oct 22, 2019",
-    "desc": "ink and white pen painting of a jellyfish",
-    "dimensions": "6x10 inches",
-    "media": ["ink"],
-    "content": ["jellyfish", "animal", "print"],
-    "forSale": false,
-    "link": "ghost.webp",
     "featured": ["false"]
   },
   {
