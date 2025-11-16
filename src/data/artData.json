@@ -1,5 +1,27 @@
 [
   {
+    "title": "Under the Surface",
+    "date": "Oct 24, 2025",
+    "desc": "Watercolor and micron pen drawing of a black caiman peeking above the water.",
+    "dimensions": "10x7 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["animal", "caiman"],
+    "forSale": true,
+    "link": "under-the-surface.webp",
+    "featured": ["true"]
+  },
+  {
+    "title": "Wind and Sun",
+    "date": "Oct 10, 2025",
+    "desc": "Watercolor and micron pen drawing of a cheetah stretched out running in front of a graphic sun.",
+    "dimensions": "10x7 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["animal", "cheetah"],
+    "forSale": true,
+    "link": "cheetah-sun.webp",
+    "featured": ["true"]
+  },
+  {
     "title": "Snapdragon",
     "date": "Aug 11, 2025",
     "desc": "Four color woodcut print of an orange and yellow snapdragon amongst leaves against a blue sky.",
@@ -282,17 +304,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Himalayan Brown Bear",
-    "date": "Oct 28, 2023",
-    "desc": "Micron pen and watercolor of a Himalayan Brown Bear sitting on a pile of rocks with the sunset in the background.",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["bear", "animal", "print"],
-    "forSale": false,
-    "link": "himalayan_brown_bear.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Indian Bison",
     "date": "Oct 26, 2023",
     "desc": "Portrait of the left half of an Indian Bison's face in watercolor.",
@@ -488,17 +499,6 @@
     "content": ["deer", "animal"],
     "forSale": false,
     "link": "eld_s_deer.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Grumpy Cat",
-    "date": "Apr 19, 2020",
-    "desc": "Watercolor portrait of grumpy cat, grumpy cat fan art.",
-    "dimensions": "8x10 inches",
-    "media": ["watercolor"],
-    "content": ["cat", "animal", "fanart"],
-    "forSale": false,
-    "link": "grumpy_cat.webp",
     "featured": ["false"]
   },
   {
