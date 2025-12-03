@@ -11,6 +11,17 @@
     "featured": ["true"]
   },
   {
+    "title": "Diving: Sinking",
+    "date": "Oct 20, 2025",
+    "desc": "Watercolor and micron pen drawing of a sea serpent and two betta fish in turbulent water and an unsettled cloudy sky.",
+    "dimensions": "7x10 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["animal", "sea serpent", "fish"],
+    "forSale": ["true"],
+    "link": "sea-serpent.webp",
+    "featured": ["true"]
+  },
+  {
     "title": "Wind and Sun",
     "date": "Oct 10, 2025",
     "desc": "Watercolor and micron pen drawing of a cheetah stretched out running in front of a graphic sun.",
@@ -19,6 +30,17 @@
     "content": ["animal", "cheetah"],
     "forSale": true,
     "link": "cheetah-sun.webp",
+    "featured": ["true"]
+  },
+  {
+    "title": "The Way Forward",
+    "date": "Oct 2, 2025",
+    "desc": "Watercolor and micron pen drawing of a puerto rican rock coqui from inside the moth of a cave looking out into a foggy landscape with 8 vines hanging down.",
+    "dimensions": "7x10 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["animal", "frog"],
+    "forSale": ["true"],
+    "link": "frog-coqui.webp",
     "featured": ["true"]
   },
   {
@@ -85,17 +107,6 @@
     "content": ["plant", "mushroom", "fantasy", "print"],
     "forSale": false,
     "link": "mushroom_joy.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Spring Cardinal",
-    "date": "Apr 22, 2025",
-    "desc": "Watercolor painting of an cardinal sitting in gray tree banches with budding red leaves.",
-    "dimensions": "5x7 inches",
-    "media": ["watercolor", "micron pen"],
-    "content": ["animal", "bird", "print"],
-    "forSale": false,
-    "link": "cardinal.webp",
     "featured": ["false"]
   },
   {
@@ -499,17 +510,6 @@
     "content": ["deer", "animal"],
     "forSale": false,
     "link": "eld_s_deer.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Adding Wings to a Tiger",
-    "date": "Nov 15, 2019",
-    "desc": "watercolor painting of of a winged tiger landing on a hill and in it's wings is a starry sky.",
-    "dimensions": "9x12 inches",
-    "media": ["watercolor", "ink"],
-    "content": ["cat", "animal", "fantasy"],
-    "forSale": false,
-    "link": "adding_wings_to_a_tiger.webp",
     "featured": ["false"]
   },
   {
