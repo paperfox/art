@@ -11,8 +11,8 @@
           illustrative, but varied, style draws inspiration from animation and the Japanese woodblock printing
           tradition, particularly the Shin Hanga movement. While she occasionally dabbles in other media, most of her
           work is in watercolor and ink. If she's not creating artwork or adding something new to her
-          <a href="https://paperfox-tarot.netlify.app/" target="_blank">Tarot App</a>, you'll likely find her playing
-          with her dog, out in her garden, or rebuilding parts of this site.
+          <a href="https://tarot.paperfox.art" target="_blank">Tarot App</a>, you'll likely find her playing with her
+          dog, out in her garden, or rebuilding parts of this site.
         </p>
         <p>
           While she is primarily based in the northeastern United States, she loves to travel and see new and exciting

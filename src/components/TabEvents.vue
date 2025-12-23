@@ -6,11 +6,15 @@
       <div>
         <p>
           If you're in New England, drop by and say hi at some of the events I'm taking part in. Updated as I commit to
-          events throughout 2025.
+          events throughout 2026.
         </p>
       </div>
       <div>
-        <ul>
+        <p>
+          No confirmed events yet for 2026, but stay tuned! I'll be updating this page as things get finalized. See you
+          around in the coming year!
+        </p>
+        <!-- <ul>
           <li>
             <p>
               <strong>Snow farm Seconds Sale</strong><br />
@@ -21,11 +25,14 @@
               </a>
             </p>
           </li>
-        </ul>
+        </ul> -->
         <br />
         <h2>Past Events</h2>
-        <p>Thanks for stopping by if you made it to one of these events, if not, hope to see you later in the year!</p>
-        <ul>
+        <p>
+          If you stopped by at one of the many events I was at in 2025, it was great to meet you! I had so much fun over
+          the past year, doing new things and meeting new folks. Hope to connect in 2026!
+        </p>
+        <!-- <ul>
           <li>
             <p>
               <strong>Natick Open Studios</strong><br />
@@ -39,49 +46,7 @@
               More info here
             </a>
           </li>
-          <li>
-            <p>
-              <strong>Art on the Common</strong><br />
-              Saturday, September 13, 2025 9am to 1pm, Farmer's Market @ Natick Common
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Art in the Park</strong><br />
-              Sunday, September 14, 2025 10am to 3pm Shaw Park, South Natick, MA
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Art in Action</strong><br />
-              August 7th from 5pm to 8pm on the Morse Institute Library lawn.
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Public Natick Art</strong><br />
-              July 10, downtown Natick, MA on the Common
-            </p>
-            <a href="/art/mushroom-party.jpg" target="_blank" rel="noopener noreferrer">
-              <img
-                style="width: 100%; max-width: 200px; height: auto"
-                src="/art/mushroom-party.jpg"
-                alt="Mushrooms dancing under a sunny sky while a dragonfly lands on the central mushroom. Public Art Natick is written at the top."
-              />
-              <br />
-              <strong>Download line art to print and color</strong>
-            </a>
-
-            <br />
-            <br />
-          </li>
-          <li>
-            <p>
-              <strong>Art in the Park</strong><br />
-              Sunday, June 8, 2025 10:00 am to 3:00 pm Shaw Park, South Natick, MA
-            </p>
-          </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </div>
