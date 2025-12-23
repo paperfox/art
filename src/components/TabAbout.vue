@@ -22,7 +22,7 @@
           Looking for a piece of art not listed here? Recently the build of older work was moved to an archive. If it's
           a piece of Nathalie's work that was posted online, it's almost guaranteed to be listed there.
           <br />
-          <a href="https://paperfox.github.io/art-archive" target="_blank">Browse the Archives</a>
+          <a href="https://archive.paperfox.art" target="_blank">Browse the Archives</a>
         </p>
       </div>
     </div>
