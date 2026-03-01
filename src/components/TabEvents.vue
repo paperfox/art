@@ -10,10 +10,7 @@
         </p>
       </div>
       <div>
-        <p>
-          No confirmed events yet for 2026, but stay tuned! I'll be updating this page as things get finalized. See you
-          around in the coming year!
-        </p>
+        <h2>Upcoming Events</h2>
         <ul>
           <li>
             <p>
