@@ -14,18 +14,16 @@
           No confirmed events yet for 2026, but stay tuned! I'll be updating this page as things get finalized. See you
           around in the coming year!
         </p>
-        <!-- <ul>
+        <ul>
           <li>
             <p>
-              <strong>Snow farm Seconds Sale</strong><br />
-              The Snow Farm Seconds Sale is the last 3 weekends in November. I won't be there, but my work will be along
-              with many other amazing artists!
-              <a href="https://snowfarm.org/support/seconds-sale/" target="_blank" rel="noopener noreferrer">
-                More details
-              </a>
+              <strong>Natick Farmers' Market Winter Market</strong><br />
+              Saturday, March 7, 9am to 1pm - The Winter market is held at the Common Street Spiritual Center, right
+              next to the park where the outdoor market is usually held. I'll be downstairs, hope to see you there!<br />
+              13 Common St, Natick, MA 01760
             </p>
           </li>
-        </ul> -->
+        </ul>
         <br />
         <h2>Past Events</h2>
         <p>
