@@ -2,22 +2,37 @@
 import { inject, onMounted, watch, nextTick, ref, computed } from 'vue';
 import Masonry from 'masonry-layout';
 import imagesLoaded from 'imagesloaded';
-import Modal from './Modal.vue';
+import Dialog from './Dialog.vue';
 
 const props = defineProps(['images']);
 
 const openModal = inject('openModal');
 const modalFocus = ref(null);
 const activeElement = ref('');
+const currentIndex = ref(0);
 
 const condense = (img) => {
   return img.split(' ').join('').replace(',', '').replace('’', '');
 };
 
 const modal = async (imgData) => {
+  currentIndex.value = props.images.indexOf(imgData); // track which image opened
   openModal(imgData);
   focusModal();
 };
+
+const goToPrev = () => {
+  const prevIndex = (currentIndex.value - 1 + props.images.length) % props.images.length;
+  currentIndex.value = prevIndex;
+  openModal(props.images[prevIndex]);
+};
+
+const goToNext = () => {
+  const nextIndex = (currentIndex.value + 1) % props.images.length;
+  currentIndex.value = nextIndex;
+  openModal(props.images[nextIndex]);
+};
+
 // Masonry instance
 let masonryInstance = null;
 
@@ -71,7 +86,7 @@ async function focusModal() {
 }
 
 const activeElementId = computed(() => {
-  return activeElement.value ? `btn-modal-${activeElement.value}` : null;
+  return activeElement.value ? `btn-dialog-${activeElement.value}` : null;
 });
 </script>
 
@@ -80,18 +95,18 @@ const activeElementId = computed(() => {
     <li class="grid-sizer" aria-hidden="true"></li>
     <li v-for="image of images" :key="image.title" class="grid-item">
       <button
-        type="button"
-        class="btn-modal"
-        :data-open="`modal${condense(image.title)}`"
+        command="show-modal"
+        commandfor="my-dialog"
+        :id="`btn-dialog-${condense(image.title)}`"
         @click="
           activeElement = condense(image.title);
           modal(image);
         "
-        :id="`btn-modal-${condense(image.title)}`"
       >
         <img :src="`./art/${image.link}`" :alt="`${image.title}: ${image.desc}`" />
       </button>
     </li>
   </ul>
-  <Modal :activeElement="activeElementId" />
+
+  <Dialog :activeElement="activeElementId" :goToPrev="goToPrev" :goToNext="goToNext" />
 </template>

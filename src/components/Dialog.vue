@@ -7,6 +7,14 @@ const props = defineProps({
     type: String,
     default: null,
   },
+  goToNext: {
+    type: Function,
+    default: null,
+  },
+  goToPrev: {
+    type: Function,
+    default: null,
+  },
 });
 
 const isModalVisible = inject('isModalVisible');
@@ -17,7 +25,7 @@ const modal = ref(null);
 
 const closeModalWithFocus = async () => {
   closeModal();
-
+  console.log('activeElement in closeModalWithFocus:', props.activeElement);
   const modalFocus = document.getElementById(props.activeElement);
   if (modalFocus) {
     modalFocus.focus();
@@ -53,63 +61,76 @@ watch(
 </script>
 
 <template>
-  <div :class="`${isModalVisible ? 'modal is-visible' : 'modal'}`" id="art-modal" v-show="isModalVisible">
-    <div class="modal-dialog" ref="modal" tabindex="-1" id="view-modal">
-      <header class="modal-header">
-        <h2 class="modal-title">{{ modalImage?.title }}</h2>
-        <button class="close-modal" aria-label="close modal" @click="closeModalWithFocus">
-          <svg viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.9999 2.00004L1.99994 12"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="square"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M2.00006 2.00003L12.0001 12"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="square"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-      </header>
-      <section class="modal-content">
-        <img :src="`./art/${modalImage?.link}`" :alt="modalImage?.desc" />
-        <div>
-          <p>
-            {{ modalImage?.date }} &nbsp; | &nbsp;
-            {{ modalImage?.media.map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(', ') }}
-          </p>
-          <!-- <button
-            aria-label="next button"
-            @click="gotoNext"
-            style="margin: 0 auto; display: block; font-size: 2.4rem; color: var(--link)"
-          >
-            See next art piece ({{ artPieces[currentIndex]?.title || 'First Art Piece' }})
-          </button> -->
+  <dialog id="my-dialog" class="modal" ref="modal">
+    <header class="modal-header">
+      <h2 class="modal-title">{{ modalImage?.title }}</h2>
+      <button
+        class="close-modal"
+        aria-label="close modal"
+        @click="closeModalWithFocus"
+        commandfor="my-dialog"
+        command="close"
+      >
+        <svg viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.9999 2.00004L1.99994 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="square"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M2.00006 2.00003L12.0001 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="square"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </header>
+    <section class="modal-content">
+      <img :src="`./art/${modalImage?.link}`" :alt="modalImage?.desc" />
+      <div>
+        <p>
+          {{ modalImage?.date }} &nbsp; | &nbsp;
+          {{ modalImage?.media.map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(', ') }}
+        </p>
+        <div class="modal-nav">
+          <button aria-label="previous button" @click="goToPrev">< Previous</button>
+          <button aria-label="next button" @click="goToNext">Next ></button>
         </div>
-      </section>
-    </div>
-  </div>
+      </div>
+    </section>
+  </dialog>
 </template>
 
 <style scoped>
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  align-items: center;
-  justify-content: center;
-  background: rgba(var(--black), 0.8);
-  cursor: pointer;
+dialog.modal {
   display: none;
+  background: var(--main-bg);
+  border: none;
   backdrop-filter: blur(3px);
+  color: var(--text-body);
+  flex-direction: column;
   width: 100%;
-  height: 100%;
+  max-height: calc(100% - 4rem);
   z-index: 1000;
+  box-shadow: 0 0 4rem rgba(var(--black), 0.6);
+}
+
+dialog.modal[open] {
+  display: flex;
+}
+
+.modal-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--base-spacing);
+
+  button {
+    margin: 0;
+  }
 }
 
 .modal-content {
@@ -122,26 +143,18 @@ watch(
     margin: var(--base-spacing) auto;
   }
 
-  div:has(img) {
-    max-width: 70rem;
-  }
-
   img {
     max-width: 100%;
-    max-height: 80vh;
+    max-height: 70vh;
   }
-}
 
-.modal.is-visible {
-  display: flex;
-}
+  div {
+    width: 100%;
+  }
 
-.modal-dialog {
-  background: var(--main-bg);
-  overflow: auto;
-  cursor: default;
-  box-shadow: 0 0 2rem rgba(var(--black), 0.3);
-  width: 100%;
+  p {
+    text-align: center;
+  }
 }
 
 .modal-header {
@@ -191,10 +204,6 @@ watch(
     .modal-title {
       margin-inline: 0;
       padding-left: 0.8rem;
-    }
-
-    .modal-dialog {
-      height: 100vh;
     }
   }
 }

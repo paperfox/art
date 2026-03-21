@@ -5,7 +5,6 @@ import SocialLinks from './components/SocialLinks.vue';
 import TabContact from './components/TabContact.vue';
 import TabAbout from './components/TabAbout.vue';
 import TabEvents from './components/TabEvents.vue';
-import Modal from './components/Modal.vue';
 
 const isModalVisible = ref(false);
 const modalImage = ref(null);

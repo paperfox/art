@@ -64,6 +64,8 @@ html.modal-open {
   height: 100vh;
   overflow: hidden;
   overscroll-behavior: contain;
+  opacity: 0.6;
+  filter: blur(3px);
 }
 
 main {
@@ -119,6 +121,7 @@ a {
 button {
   font-family: inherit;
   font-size: 1.8rem;
+  color: var(--link);
   padding: 0;
   background-color: transparent;
   border: none;
