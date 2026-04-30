@@ -16,7 +16,7 @@
             <p>
               <strong>Sweetwater Coffee & Tea Show</strong><br />
               Now - May 31st - Natick Art Association group show is up and awesome at
-              <a href="https://www.sweetwaterscafe.com/ma-natick-center/" target="_blank" style="color: #a01818"
+              <a href="https://www.sweetwaterscafe.com/ma-natick-center/" target="_blank"
                 >Sweetwater</a
               >. Stop by and see my and my association member friends' works while grabbing a tasty drink and a munchy.
               <br />
@@ -27,7 +27,7 @@
             <p>
               <strong>Post Road Art Center Exhibition</strong><br />
               April 20th - May 18th - My art will be up in the juried exhibition at
-              <a href="https://postroadartcenter.com/" target="_blank" style="color: #a01818">Post Road Art Center</a>,
+              <a href="https://postroadartcenter.com/" target="_blank">Post Road Art Center</a>,
               "Spring Forward". Stop by to check it out and pick up art supplies!<br />
               1 Boston Post Rd. E, Marlborough, MA 01752
             </p>
