@@ -16,9 +16,8 @@
             <p>
               <strong>Sweetwater Coffee & Tea Show</strong><br />
               Now - May 31st - Natick Art Association group show is up and awesome at
-              <a href="https://www.sweetwaterscafe.com/ma-natick-center/" target="_blank"
-                >Sweetwater</a
-              >. Stop by and see my and my association member friends' works while grabbing a tasty drink and a munchy.
+              <a href="https://www.sweetwaterscafe.com/ma-natick-center/" target="_blank">Sweetwater</a>. Stop by and
+              see my and my association member friends' works while grabbing a tasty drink and a munchy.
               <br />
               19 S Main St, Natick, MA 01760
             </p>
@@ -26,17 +25,31 @@
           <li>
             <p>
               <strong>Post Road Art Center Exhibition</strong><br />
-              April 20th - May 18th - My art will be up in the juried exhibition at
-              <a href="https://postroadartcenter.com/" target="_blank">Post Road Art Center</a>,
-              "Spring Forward". Stop by to check it out and pick up art supplies!<br />
+              April 20th - May 18th - My pieces <strong>Narcissus</strong> and <strong>Season's Entrance</strong> are up
+              and for sale in the juried exhibition at
+              <a href="https://postroadartcenter.com/" target="_blank">Post Road Art Center</a>, "Spring Forward". Stop
+              by to check it out and pick up art supplies!<br />
               1 Boston Post Rd. E, Marlborough, MA 01752
             </p>
           </li>
           <li>
             <p>
-              <strong>Art in Bloom</strong><br />
-              May 2 and 3 - My work 'Cycles' will be part of the Art in Bloom show at the Morse Institute Library. This
-              is a collaboration between Natick Art Association, the library, and the Garden club.
+              <strong>Art on the Common</strong><br />
+              May 16th, 9am - 1pm - I'll be at Natick Farmers' Market's Art on the Common selling my art. Come by and
+              say hi and check out the new goodies I have.
+              <br />
+              <a href="https://www.natickartassociation.org/art-on-the-common" target="_blank"
+                >Art on the Common Info</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Art in the Park</strong><br />
+              June 7th, 10am - 3pm - I'll be at the Natick Art Association's twice annual art fair at Shaw Park in South
+              Natick.
+              <br />
+              <a href="https://www.natickartassociation.org/art-in-the-park" target="_blank">Art in the Park Info</a>
             </p>
           </li>
         </ul>
@@ -47,6 +60,14 @@
           the past year, doing new things and meeting new folks. Hope to connect in 2026!
         </p>
         <ul>
+          <li>
+            <p>
+              <strong>Art in Bloom</strong><br />
+              Thank you if you stopped by this year's Art in Bloom show! My work 'Cycles' was part of the exhibition at
+              the Morse Institute Library. This is a collaboration between Natick Art Association, the library, and the
+              Garden club.
+            </p>
+          </li>
           <li>
             <p>
               <strong>Natick Farmers' Market Winter Market</strong><br />
