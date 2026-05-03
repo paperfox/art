@@ -1,13 +1,35 @@
 [
   {
-    "title": "Under the Surface",
-    "date": "Oct 24, 2025",
-    "desc": "Watercolor and micron pen drawing of a black caiman peeking above the water.",
+    "title": "Season's Entrance",
+    "date": "Apr 3, 2026",
+    "desc": "Watercolor and micron pen drawing a morel mushroom wearing high heels holding sunglasses.",
     "dimensions": "10x7 inches",
     "media": ["watercolor", "micron pen"],
-    "content": ["animal", "caiman"],
+    "content": ["plant", "mushroom"],
     "forSale": true,
-    "link": "under-the-surface.webp",
+    "link": "seasons-entrance.webp",
+    "featured": ["true"]
+  },
+  {
+    "title": "Narcissus",
+    "date": "Mar 20, 2026",
+    "desc": "Watercolor painting of 7 daffodils blooming.",
+    "dimensions": "10x7 inches",
+    "media": ["watercolor"],
+    "content": ["plant", "flower"],
+    "forSale": true,
+    "link": "narcissus.webp",
+    "featured": ["true"]
+  },
+  {
+    "title": "Cycles",
+    "date": "Jan 22, 2026",
+    "desc": "Watercolor and pen artwork of two robins flying around a young pine tree growing out of a fallen pine log on the shore with light breaking through the clouds.",
+    "dimensions": "10x7 inches",
+    "media": ["watercolor", "micron pen"],
+    "content": ["plant", "flower"],
+    "forSale": true,
+    "link": "cycles.webp",
     "featured": ["true"]
   },
   {
@@ -121,17 +143,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Year of the Snake",
-    "date": "Jan 29, 2025",
-    "desc": "Digital painting of a white snake wearing a crown and adorned with gold chains draped over the hilt of a sword pointing downward.",
-    "dimensions": "7x10 inches",
-    "media": ["digital"],
-    "content": ["snake", "animal", "print"],
-    "forSale": false,
-    "link": "yearofthesnake.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Giant Panda",
     "date": "Oct 28, 2024",
     "desc": "Micron pen and watercolor of a panda sleeping on a crescent moon with 4 swords hanging below them.",
@@ -140,28 +151,6 @@
     "content": ["panda", "animal", "stickers"],
     "forSale": false,
     "link": "giant_panda.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Philippine Eagle",
-    "date": "Oct 22, 2024",
-    "desc": "Watercolor portrait of a Philippine Eagle looking over its shoulder.",
-    "dimensions": "7x10 inches",
-    "media": ["watercolor"],
-    "content": ["eagle", "animal"],
-    "forSale": false,
-    "link": "philippine_eagle.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Mountain Gazelle",
-    "date": "Oct 14, 2024",
-    "desc": "Micron pen and watercolor portrait of a Mountain Gazelle with a sunny sky in the background.",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["gazelle", "animal"],
-    "forSale": false,
-    "link": "mountain_gazelle.webp",
     "featured": ["false"]
   },
   {
@@ -447,17 +436,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Reeve’s Pheasant",
-    "date": "Oct 9, 2021",
-    "desc": "Blue, purple and teal abstract background with a Reeve's Pheasant inspired Luan mythological bird flying over it carying a black ribbon with a jingle bell.",
-    "dimensions": "7x9 inches",
-    "media": ["watercolor", "acrylic", "painting"],
-    "content": ["bird", "animal", "fantasy"],
-    "forSale": false,
-    "link": "reeve_s_pheasant.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Two-spot Ladybug",
     "date": "Oct 7, 2021",
     "desc": "Watercolor in red, yellow, blue, and black of a large two-spot ladybug made up of slightly abstract drips of paint, with the antenna and nead giving it distinct ladybug form.",
@@ -521,17 +499,6 @@
     "content": ["vehicle", "fantasy", "fanart"],
     "forSale": false,
     "link": "alpha_and_omega.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Playing Crow",
-    "date": "Oct 10, 2019",
-    "desc": "Black and gold ink painting of a crow plaing in willow branches.",
-    "dimensions": "6x9 inches",
-    "media": ["ink"],
-    "content": ["crow", "animal"],
-    "forSale": false,
-    "link": "playing_crow.webp",
     "featured": ["false"]
   },
   {
