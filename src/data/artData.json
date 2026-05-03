@@ -66,6 +66,17 @@
     "featured": ["true"]
   },
   {
+    "title": "Almost Rabbits, Cosmic",
+    "date": "Sep 21, 2025",
+    "desc": "Woodcut print over a watercolor sky of a pair of jackalopes looking up at the full moon next to a leafless tree, the moon has a silhouette of a rabbit making medicine in it.",
+    "dimensions": "8x10 inches",
+    "media": ["printmaking", "woodcut"],
+    "content": ["animal", "jackalope", "rabbit", "fantasy"],
+    "forSale": ["true"],
+    "link": "almost-rabbits-cosmic.webp",
+    "featured": ["true"]
+  },
+  {
     "title": "Snapdragon",
     "date": "Aug 11, 2025",
     "desc": "Four color woodcut print of an orange and yellow snapdragon amongst leaves against a blue sky.",
