@@ -228,12 +228,7 @@
     "content": ["jellyfish", "animal"],
     "forSale": false,
     "link": "jellyfish_print.webp",
-    "additionalImages": [
-      "jellyfish_print_addl1.webp",
-      "jellyfish_print_addl2.webp",
-      "jellyfish_print_addl3.webp",
-      "jellyfish_print_addl4.webp"
-    ],
+    "additionalImages": ["jellyfish_print_addl1.webp", "jellyfish_print_addl2.webp", "jellyfish_print_addl3.webp"],
     "featured": ["false"]
   },
   {
@@ -245,29 +240,7 @@
     "content": ["jellyfish", "bird", "animal", "fantasy"],
     "forSale": false,
     "link": "bitter_dreams.webp",
-    "additionalImages": ["bitter_dreams_addl1.webp", "bitter_dreams_addl2.webp", "bitter_dreams_addl3.webp"],
-    "featured": ["false"]
-  },
-  {
-    "title": "Two of Pentacles",
-    "date": "Jun 18, 2024",
-    "desc": "watercolor and ink painting crow flying holding a white ribbon with two jingle bells over a red, orange, and yellow background.",
-    "dimensions": "9x12 inches",
-    "media": ["watercolor", "ink"],
-    "content": ["bird", "animal"],
-    "forSale": false,
-    "link": "twoOfPentacles.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Queen of the Forest",
-    "date": "May 18, 2024",
-    "desc": "A blond woman in a white dress steps over the root of a large tree with red shelf fungi deep in the forest as light filters through the leaves. In one hand is a shepherds crook, the other arm is lifted and an owlet is perched on it looking at her. Done in micron pen and watercolor.",
-    "dimensions": "9x12 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["owl", "animal", "people", "print"],
-    "forSale": false,
-    "link": "queenoftheforest-sm.webp",
+    "additionalImages": ["seabirds.webp", "bitter_dreams_addl1.webp"],
     "featured": ["false"]
   },
   {
@@ -326,17 +299,6 @@
     "featured": ["false"]
   },
   {
-    "title": "Panay Monitor",
-    "date": "Oct 7, 2023",
-    "desc": "Line art of a panay monitor lizard sitting on a branch facing left staring at the viewer.",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen"],
-    "content": ["lizard", "animal"],
-    "forSale": false,
-    "link": "panay-monitor.webp",
-    "featured": ["false"]
-  },
-  {
     "title": "Yellow-billed Loon",
     "date": "Oct 4, 2023",
     "desc": "A loon diving into a school of small fish holding a necklace in its beak with sand dollars on the sea floor.",
@@ -378,17 +340,6 @@
     "content": ["bird", "animal", "cards"],
     "forSale": false,
     "link": "rainbow-shadowcat.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Amelia",
-    "date": "Apr 12, 2023",
-    "desc": "Brown haired woman weaing black pants, brown shoes, steel blue shirt, and a disintegrating cloak sitting on a stoop of a worn building with a chicken wearing a blue bandana coming out of the door. On the door is a sign saying 'Bucky's Out of this World Restaurant'.",
-    "dimensions": "9x12 inches",
-    "media": ["watercolor", "micron pen"],
-    "content": ["people", "animal", "fantasy", "fanart"],
-    "forSale": false,
-    "link": "amelia.webp",
     "featured": ["false"]
   },
   {
@@ -440,7 +391,7 @@
     "date": "Oct 22, 2021",
     "desc": "Micron pen drawing of an owlet with the night sky behind it.",
     "dimensions": "6x6 inches",
-    "media": ["micron pen", "ink"],
+    "media": ["micron pen", "ink", "watercolor"],
     "content": ["owl", "animal"],
     "forSale": false,
     "link": "long_whiskered_owlet.webp",
@@ -455,17 +406,6 @@
     "content": ["insect", "ladybug", "animal", "print", "cards", "stickers"],
     "forSale": false,
     "link": "two_spot_ladybug.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Tarquin",
-    "date": "Sep 29, 2021",
-    "desc": "Micron pen and watercolor of a miqo'te white mage casting a blood lily, FFXIV fan art.",
-    "dimensions": "9x12 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["catboy", "animal", "people", "fantasy", "fanart"],
-    "forSale": false,
-    "link": "tarquin.webp",
     "featured": ["false"]
   },
   {
@@ -484,7 +424,7 @@
     "date": "Nov 22, 2020",
     "desc": "Micron pen drawing on brown paper of a tiny wingless dragon crouched on a teaspoon.",
     "dimensions": "9x12 inches",
-    "media": ["micron pen"],
+    "media": ["micron pen", "watercolor"],
     "content": ["dragon", "animal", "fantasy"],
     "forSale": false,
     "link": "tiny_dragon.webp",
@@ -495,32 +435,10 @@
     "date": "Oct 1, 2020",
     "desc": "Micron pen drawing of an eld's deer running on water with a wave following it.",
     "dimensions": "8x10 inches",
-    "media": ["micron pen"],
+    "media": ["micron pen", "watercolor"],
     "content": ["deer", "animal"],
     "forSale": false,
     "link": "eld_s_deer.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Alpha and Omega",
-    "date": "Oct 29, 2019",
-    "desc": "micron pen and watercolor on brown paper of Alpha, the simulated chocobo, and a silhouette of omega with the galaxy in it, FFXIV fan art",
-    "dimensions": "6x8 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["vehicle", "fantasy", "fanart"],
-    "forSale": false,
-    "link": "alpha_and_omega.webp",
-    "featured": ["false"]
-  },
-  {
-    "title": "Finnley's Treasure",
-    "date": "Jan 20, 2015",
-    "desc": "Woodblock print of a jindo standing with a blue sky with happy clouds and dragon flies behind him",
-    "dimensions": "6x9 inches",
-    "media": ["woodblock", "printmaking"],
-    "content": ["dog", "animal"],
-    "forSale": false,
-    "link": "finnley_s_treasure.webp",
     "featured": ["false"]
   },
   {

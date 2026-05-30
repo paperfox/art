@@ -15,7 +15,6 @@ const isDetailsOpen = ref(false);
 
 const filterButtons = [
   { filterType: 'media', filterValue: 'watercolor', filterName: 'Watercolor & Ink' },
-  { filterType: 'media', filterValue: 'micron pen', filterName: 'Micron Pen' },
   { filterType: 'media', filterValue: 'printmaking', filterName: 'Printmaking' },
   { filterType: 'media', filterValue: 'digital', filterName: 'Digital' },
   { filterType: '', filterValue: 'clear', filterName: 'No filters' },
@@ -90,7 +89,7 @@ const applyFilter = (filter, event) => {
           <span class="visually-hidden" v-if="activeFilterClass[filter.filterValue]"> active</span>
         </button> -->
       </div>
-      <!-- <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p> -->
+      <p>Showing {{ filteredArts.length }} of {{ artwork.length }} art pieces</p>
     </details>
     <ArtMasonry :images="filteredArts" />
   </div>

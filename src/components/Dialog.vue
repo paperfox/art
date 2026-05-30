@@ -91,6 +91,7 @@ watch(
     </header>
     <section class="modal-content">
       <img :src="`./art/${modalImage?.link}`" :alt="modalImage?.desc" />
+      <img v-for="img in modalImage?.additionalImages" :key="img" :src="`./art/${img}`" :alt="modalImage?.desc" />
       <div>
         <p>
           {{ modalImage?.date }} &nbsp; | &nbsp;

@@ -19,8 +19,8 @@
           places, plants, and animals.
         </p>
         <p>
-          Looking for a piece of art not listed here? Recently the build of older work was moved to an archive. If it's
-          a piece of Nathalie's work that was posted online, it's almost guaranteed to be listed there.
+          Looking for a piece of art not listed here? If it's a piece of Nathalie's work that was posted online, it's
+          almost guaranteed to be listed in the archives.
           <br />
           <a href="https://archive.paperfox.art" target="_blank">Browse the Archives</a>
         </p>

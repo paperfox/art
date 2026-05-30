@@ -24,6 +24,23 @@
           </li>
           <li>
             <p>
+              <strong>Art in the Park</strong><br />
+              June 7th, 10am - 3pm - I'll be at the Natick Art Association's twice annual art fair at Shaw Park in South
+              Natick.
+              <br />
+              <a href="https://www.natickartassociation.org/art-in-the-park" target="_blank">Art in the Park Info</a>
+            </p>
+          </li>
+        </ul>
+        <br />
+        <h2>Past Events</h2>
+        <p>
+          If you stopped by at one of the many events I was at in 2025, it was great to meet you! I had so much fun over
+          the past year, doing new things and meeting new folks. Hope to connect in 2026!
+        </p>
+        <ul>
+          <li>
+            <p>
               <strong>Post Road Art Center Exhibition</strong><br />
               April 20th - May 18th - My pieces <strong>Narcissus</strong> and <strong>Season's Entrance</strong> are up
               and for sale in the juried exhibition at
@@ -43,23 +60,6 @@
               >
             </p>
           </li>
-          <li>
-            <p>
-              <strong>Art in the Park</strong><br />
-              June 7th, 10am - 3pm - I'll be at the Natick Art Association's twice annual art fair at Shaw Park in South
-              Natick.
-              <br />
-              <a href="https://www.natickartassociation.org/art-in-the-park" target="_blank">Art in the Park Info</a>
-            </p>
-          </li>
-        </ul>
-        <br />
-        <h2>Past Events</h2>
-        <p>
-          If you stopped by at one of the many events I was at in 2025, it was great to meet you! I had so much fun over
-          the past year, doing new things and meeting new folks. Hope to connect in 2026!
-        </p>
-        <ul>
           <li>
             <p>
               <strong>Art in Bloom</strong><br />
