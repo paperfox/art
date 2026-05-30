@@ -16,7 +16,6 @@ const isDetailsOpen = ref(false);
 const filterButtons = [
   { filterType: 'media', filterValue: 'watercolor', filterName: 'Watercolor & Ink' },
   { filterType: 'media', filterValue: 'printmaking', filterName: 'Printmaking' },
-  { filterType: 'media', filterValue: 'digital', filterName: 'Digital' },
   { filterType: '', filterValue: 'clear', filterName: 'No filters' },
 ];
 
