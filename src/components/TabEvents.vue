@@ -14,21 +14,30 @@
         <ul>
           <li>
             <p>
-              <strong>Sweetwater Coffee & Tea Show</strong><br />
-              Now - May 31st - Natick Art Association group show is up and awesome at
-              <a href="https://www.sweetwaterscafe.com/ma-natick-center/" target="_blank">Sweetwater</a>. Stop by and
-              see my and my association member friends' works while grabbing a tasty drink and a munchy.
+              <strong>Art in the Park</strong><br />
+              CANCELLED! Inclement weather expected this weekend. Natick Art Association's twice annual art fair at Shaw
+              Park in South Natick.
               <br />
-              19 S Main St, Natick, MA 01760
+              <a href="https://www.natickartassociation.org/art-in-the-park" target="_blank">Art in the Park Info</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Natick Farmers' Market Market</strong><br />
+              Saurday, August 8th - Come find me at the Natick Farmers' Market! I'll have my usual cards and stickers as
+              well as some new art!
             </p>
           </li>
           <li>
             <p>
               <strong>Art in the Park</strong><br />
-              June 7th, 10am - 3pm - I'll be at the Natick Art Association's twice annual art fair at Shaw Park in South
-              Natick.
-              <br />
-              <a href="https://www.natickartassociation.org/art-in-the-park" target="_blank">Art in the Park Info</a>
+              Sunday, September 13th
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>MetroWest Humane Society Craft Fair</strong><br />
+              Saturday, September 19th
             </p>
           </li>
         </ul>
@@ -39,6 +48,16 @@
           the past year, doing new things and meeting new folks. Hope to connect in 2026!
         </p>
         <ul>
+          <li>
+            <p>
+              <strong>Sweetwater Coffee & Tea Show</strong><br />
+              Now - May 31st - Natick Art Association group show is up and awesome at
+              <a href="https://www.sweetwaterscafe.com/ma-natick-center/" target="_blank">Sweetwater</a>. Stop by and
+              see my and my association member friends' works while grabbing a tasty drink and a munchy.
+              <br />
+              19 S Main St, Natick, MA 01760
+            </p>
+          </li>
           <li>
             <p>
               <strong>Post Road Art Center Exhibition</strong><br />
