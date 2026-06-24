@@ -11,7 +11,7 @@ const isModalVisible = ref(false);
 const modalImage = ref(null);
 const isOpen = ref(false);
 
-const tabs = [{ name: 'Art' }, { name: 'Shop' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
+const tabs = [{ name: 'Art' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
 const tab = ref('art');
 const currentYear = new Date().getFullYear();
 
