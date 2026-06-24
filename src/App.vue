@@ -5,12 +5,13 @@ import SocialLinks from './components/SocialLinks.vue';
 import TabContact from './components/TabContact.vue';
 import TabAbout from './components/TabAbout.vue';
 import TabEvents from './components/TabEvents.vue';
+import TabShop from './components/TabShop.vue';
 
 const isModalVisible = ref(false);
 const modalImage = ref(null);
 const isOpen = ref(false);
 
-const tabs = [{ name: 'Art' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
+const tabs = [{ name: 'Art' }, { name: 'Shop' }, { name: 'Events' }, { name: 'About' }, { name: 'Contact' }];
 const tab = ref('art');
 const currentYear = new Date().getFullYear();
 
@@ -92,6 +93,9 @@ onMounted(() => {
 
     <div class="tab-content" id="artTab" v-show="tab === 'art'" @click="handleTabContentClick()">
       <Filters />
+    </div>
+    <div class="tab-content" id="shopTab" v-show="tab === 'shop'" @click="handleTabContentClick()">
+      <TabShop />
     </div>
     <div class="tab-content" id="eventTab" v-show="tab === 'events'" @click="handleTabContentClick()">
       <TabEvents />

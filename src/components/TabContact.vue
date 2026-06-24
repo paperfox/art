@@ -184,7 +184,7 @@ watch(
           <p class="text-right">Required fields are marked with *.</p>
           <FormFields v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
           <p v-if="success">Message sent! <br />Thanks for reaching out, I'll get back to you shortly.</p>
-          <button type="submit" class="btn-submit">
+          <button type="submit" class="btn-outline">
             {{ isSubmitting ? 'Sending' : 'SEND' }}
           </button>
           <p role="alert" class="form-error">
@@ -203,21 +203,6 @@ form {
   gap: var(--xs-spacing);
   margin: var(--base-spacing) auto;
   max-width: 55rem;
-
-  .btn-submit {
-    padding: 2rem;
-    background: transparent;
-    color: var(--text-body);
-    font-weight: 600;
-    border: var(--border-weight) solid var(--text-body);
-    margin-top: var(--xs-spacing);
-
-    &:hover {
-      border-color: var(--link);
-      background-color: var(--secondary-bg);
-      color: var(--link);
-    }
-  }
 }
 
 .text-right {

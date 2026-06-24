@@ -14,15 +14,6 @@
         <ul>
           <li>
             <p>
-              <strong>Art in the Park</strong><br />
-              CANCELLED! Inclement weather expected this weekend. Natick Art Association's twice annual art fair at Shaw
-              Park in South Natick.
-              <br />
-              <a href="https://www.natickartassociation.org/art-in-the-park" target="_blank">Art in the Park Info</a>
-            </p>
-          </li>
-          <li>
-            <p>
               <strong>Natick Farmers' Market Market</strong><br />
               Saurday, August 8th - Come find me at the Natick Farmers' Market! I'll have my usual cards and stickers as
               well as some new art!
