@@ -14,21 +14,31 @@
         <ul>
           <li>
             <p>
+              <strong>Art in Action</strong><br />
+              Thursday, August 6, 5pm - 7:30pm - Art activities for folks of all ages will be happening during Natick
+              Nights! Come make some Art Trading Cards with me!<br />
+              Morse Institute Library Lawn, Natick, MA
+            </p>
+          </li>
+          <li>
+            <p>
               <strong>Natick Farmers' Market Market</strong><br />
-              Saurday, August 8th - Come find me at the Natick Farmers' Market! I'll have my usual cards and stickers as
-              well as some new art!
+              Saturday, August 8, 9am - 1pm<br />
+              12 S Main St, Natick, MA
             </p>
           </li>
           <li>
             <p>
               <strong>Art in the Park</strong><br />
-              Sunday, September 13th
+              Sunday, September 13th, 10am to 3pm<br />
+              Shaw Park, South Natick, MA
             </p>
           </li>
           <li>
             <p>
               <strong>MetroWest Humane Society Craft Fair</strong><br />
-              Saturday, September 19th
+              Saturday, September 19th, 10am to 4pm<br />
+              Framingham Centre Common, 2 Oak Street, Framingham, MA
             </p>
           </li>
         </ul>
