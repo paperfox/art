@@ -61,19 +61,17 @@
           </li>
           <li>
             <p>
-              <strong>Post Road Art Center Exhibition</strong><br />
-              April 20th - May 18th - My pieces <strong>Narcissus</strong> and <strong>Season's Entrance</strong> are up
-              and for sale in the juried exhibition at
-              <a href="https://postroadartcenter.com/" target="_blank">Post Road Art Center</a>, "Spring Forward". Stop
-              by to check it out and pick up art supplies!<br />
+              <strong
+                ><a href="https://postroadartcenter.com/" target="_blank">Post Road Art Center</a> Exhibition</strong
+              ><br />
+              April 20th - May 18th<br />
               1 Boston Post Rd. E, Marlborough, MA 01752
             </p>
           </li>
           <li>
             <p>
               <strong>Art on the Common</strong><br />
-              May 16th, 9am - 1pm - I'll be at Natick Farmers' Market's Art on the Common selling my art. Come by and
-              say hi and check out the new goodies I have.
+              May 16th
               <br />
               <a href="https://www.natickartassociation.org/art-on-the-common" target="_blank"
                 >Art on the Common Info</a
@@ -91,8 +89,7 @@
           <li>
             <p>
               <strong>Natick Farmers' Market Winter Market</strong><br />
-              Saturday, March 7, 9am to 1pm - The Winter market is held at the Common Street Spiritual Center, right
-              next to the park where the outdoor market is usually held. I'll be downstairs, hope to see you there!<br />
+              Saturday, March 7<br />
               13 Common St, Natick, MA 01760
             </p>
           </li>
