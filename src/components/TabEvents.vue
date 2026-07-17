@@ -51,10 +51,11 @@
         <ul>
           <li>
             <p>
-              <strong>Sweetwater Coffee & Tea Show</strong><br />
-              Now - May 31st - Natick Art Association group show is up and awesome at
-              <a href="https://www.sweetwaterscafe.com/ma-natick-center/" target="_blank">Sweetwater</a>. Stop by and
-              see my and my association member friends' works while grabbing a tasty drink and a munchy.
+              <strong
+                ><a href="https://www.sweetwaterscafe.com/ma-natick-center/" target="_blank">Sweetwater Coffee & Tea</a>
+                Show</strong
+              ><br />
+              April 1 - May 31
               <br />
               19 S Main St, Natick, MA 01760
             </p>
@@ -64,14 +65,14 @@
               <strong
                 ><a href="https://postroadartcenter.com/" target="_blank">Post Road Art Center</a> Exhibition</strong
               ><br />
-              April 20th - May 18th<br />
+              April 20 - May 18<br />
               1 Boston Post Rd. E, Marlborough, MA 01752
             </p>
           </li>
           <li>
             <p>
               <strong>Art on the Common</strong><br />
-              May 16th
+              May 16
               <br />
               <a href="https://www.natickartassociation.org/art-on-the-common" target="_blank"
                 >Art on the Common Info</a
@@ -81,9 +82,8 @@
           <li>
             <p>
               <strong>Art in Bloom</strong><br />
-              Thank you if you stopped by this year's Art in Bloom show! My work 'Cycles' was part of the exhibition at
-              the Morse Institute Library. This is a collaboration between Natick Art Association, the library, and the
-              Garden club.
+              May 2 & 3<br />
+              Morse Institute Library Lawn, Natick, MA
             </p>
           </li>
           <li>
