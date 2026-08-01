@@ -21,6 +21,12 @@ const socials = [
     addFilter: true,
   },
   {
+    title: 'Etsy',
+    socialHandle: '@paperfoxmakesart',
+    link: 'https://paperfoxmakesart.etsy.com',
+    icon: 'etsy-e-logo.svg',
+  },
+  {
     title: 'Cara',
     socialHandle: '@paperfox',
     link: 'https://cara.app/paperfox',
@@ -28,24 +34,10 @@ const socials = [
     addFilter: true,
   },
   {
-    title: 'GitHub',
-    socialHandle: '@paperfox',
-    link: 'https://github.com/paperfox',
-    icon: 'github-mark.svg',
-    addFilter: true,
-  },
-  {
     title: 'Natick Art Association',
     socialHandle: 'Nathalie Garfinkle',
     link: 'https://www.natickartassociation.org/naa-artists#!biz/id/680038d67283ae8b760f54f9',
     icon: 'NAA_Logo_Final_C2.png',
-  },
-  {
-    title: 'LinkedIn',
-    socialHandle: 'Nathalie Garfinkle',
-    link: 'https://www.linkedin.com/in/nathaliegarfinkle/',
-    icon: 'linkedinlogo.svg',
-    addFilter: true,
   },
 ];
 
@@ -94,6 +86,10 @@ ul li {
 }
 .social-cara {
   background-image: url('../logos/cara-app-logo-circle.svg');
+}
+.social-etsy {
+  background-image: url('../logos/etsy-e-logo.svg');
+  border-radius: 2px;
 }
 .social-gith {
   background-image: url('../logos/github-mark.svg');
