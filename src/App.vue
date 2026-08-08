@@ -3,6 +3,7 @@ import { ref, provide, onMounted } from 'vue';
 import Filters from './components/Filters.vue';
 import SocialLinks from './components/SocialLinks.vue';
 import TabContact from './components/TabContact.vue';
+import NewsletterSignUp from './components/NewsletterSignUp.vue';
 import TabAbout from './components/TabAbout.vue';
 import TabEvents from './components/TabEvents.vue';
 import TabShop from './components/TabShop.vue';
@@ -38,7 +39,7 @@ provide('isModalVisible', isModalVisible);
 onMounted(() => {
   const params = new URLSearchParams(window.location.search);
   const tabParam = params.get('tab');
-  if (tabParam && ['art', 'events', 'about', 'contact'].includes(tabParam.toLowerCase())) {
+  if (tabParam && ['art', 'events', 'about', 'contact', 'newsletter'].includes(tabParam.toLowerCase())) {
     tab.value = tabParam.toLowerCase();
   }
 });
@@ -106,10 +107,28 @@ onMounted(() => {
     <div class="tab-content" id="contactTab" v-show="tab === 'contact'" @click="handleTabContentClick()">
       <TabContact />
     </div>
+    <div class="tab-content" id="newsletterTab" v-show="tab === 'newsletter'" @click="handleTabContentClick()">
+      <NewsletterSignUp />
+    </div>
   </main>
   <footer>
     <SocialLinks :isModalVisible="isModalVisible" />
-    <p class="footer-text">© {{ currentYear }} Nathalie Garfinkle</p>
+    <div>
+      <p class="footer-text">© {{ currentYear }} Nathalie Garfinkle</p>
+
+      <button
+        type="button"
+        class="visually-hidden"
+        aria-hidden="true"
+        tabindex="-1"
+        @click="
+          tab = 'newsletter';
+          handleTabContentClick();
+        "
+      >
+        Newsletter
+      </button>
+    </div>
   </footer>
 </template>
 

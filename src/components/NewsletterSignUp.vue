@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue';
+import { computed, ref, watch } from 'vue';
 import FormFields from './FormFields.vue';
 import SocialLinks from './SocialLinks.vue';
 import emailjs from '@emailjs/browser';
@@ -66,6 +66,8 @@ const isSubmitting = ref(false);
 const success = ref(false);
 const error = ref(false);
 
+const visibleFormElements = computed(() => formElements.value.filter((element) => element.isRequired));
+
 const isValidEmail = (email) => {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailPattern.test(email);
@@ -76,8 +78,9 @@ const validateInputs = () => {
 
   formElements.value = formElements.value.map((element) => {
     if (
-      (element.isRequired && !element.modelValue.trim()) ||
-      (element.name === 'email' && !isValidEmail(element.modelValue))
+      visibleFormElements.value.some((visibleElement) => visibleElement.id === element.id) &&
+      ((element.isRequired && !element.modelValue.trim()) ||
+        (element.name === 'email' && !isValidEmail(element.modelValue)))
     ) {
       element.isError = true;
       isValid = false;
@@ -105,7 +108,7 @@ const submitForm = async (event) => {
     const token = await executeRecaptcha();
 
     // Data to EmailJS + token
-    const templateParams = formElements.value.reduce((params, element) => {
+    const templateParams = visibleFormElements.value.reduce((params, element) => {
       if (element.name === 'newsletter') {
         params[element.name] = element.modelValue ? 'Yes' : 'No';
       } else {
@@ -132,7 +135,7 @@ const submitForm = async (event) => {
     }, 3000);
 
     formElements.value.forEach((element) => {
-      element.modelValue = '';
+      element.modelValue = element.type === 'checkbox' ? true : '';
     });
   } catch (err) {
     console.error('Error submitting form:', err);
@@ -176,17 +179,26 @@ watch(
 
 <template>
   <div class="text-content">
-    <h1>Contact</h1>
+    <h1>Newsletter Sign Up</h1>
+    <p>
+      Sign up for my newsletter to stay up to date on my latest art, events, and other local art happenings! Newsletters
+      go out quarterly, plus the occasional additional special announcement.
+    </p>
     <div>
-      <div>
+      <!-- <div>
         <p>You can find me on the web at these places, or drop me an email with a specific questions.</p>
         <SocialLinks :showSocialTitles="true" />
-      </div>
+      </div> -->
       <div>
         <form @submit.prevent="submitForm(formElements)" novalidate id="contact-form">
-          <p class="text-right">Required fields are marked with *.</p>
-          <FormFields v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
-          <p v-if="success">Message sent! <br />Thanks for reaching out, I'll get back to you shortly.</p>
+          <p class="text-right">All fields required *</p>
+          <FormFields
+            v-for="element in visibleFormElements"
+            :key="element.id"
+            v-bind="element"
+            v-model="element.modelValue"
+          />
+          <p v-if="success">Message sent! <br />Thanks for signing up!</p>
           <button type="submit" class="btn-outline">
             {{ isSubmitting ? 'Sending' : 'SEND' }}
           </button>
@@ -211,5 +223,12 @@ form {
 .text-right {
   text-align: right;
   margin: 0;
+}
+
+.text-content {
+  max-width: 55rem;
+  & > div > * {
+    width: 100%;
+  }
 }
 </style>
