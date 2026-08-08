@@ -28,28 +28,6 @@ const formElements = ref([
     modelValue: '',
   },
   {
-    id: 'input-subject',
-    componentType: 'input',
-    name: 'subject',
-    type: 'text',
-    labelText: 'Subject',
-    placeholder: 'Subject',
-    isRequired: false,
-    isError: false,
-    modelValue: '',
-  },
-  {
-    id: 'input-message',
-    componentType: 'textarea',
-    name: 'message',
-    type: 'textarea',
-    labelText: 'Message',
-    placeholder: 'Message',
-    isRequired: false,
-    isError: false,
-    modelValue: '',
-  },
-  {
     id: 'checkbox-newsletter',
     componentType: 'input',
     name: 'newsletter',
@@ -58,7 +36,7 @@ const formElements = ref([
     placeholder: '',
     isRequired: false,
     isError: false,
-    modelValue: false,
+    modelValue: true,
   },
 ]);
 
@@ -66,7 +44,9 @@ const isSubmitting = ref(false);
 const success = ref(false);
 const error = ref(false);
 
-const visibleFormElements = computed(() => formElements.value.filter((element) => element.isRequired));
+const visibleFormElements = computed(() =>
+  formElements.value.filter((element) => element.isRequired || element.type === 'checkbox'),
+);
 
 const isValidEmail = (email) => {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -230,5 +210,9 @@ form {
   & > div > * {
     width: 100%;
   }
+}
+
+.form-checkbox {
+  display: none;
 }
 </style>
