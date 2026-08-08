@@ -44,10 +44,6 @@ const isSubmitting = ref(false);
 const success = ref(false);
 const error = ref(false);
 
-const visibleFormElements = computed(() =>
-  formElements.value.filter((element) => element.isRequired || element.type === 'checkbox'),
-);
-
 const isValidEmail = (email) => {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailPattern.test(email);
@@ -58,7 +54,7 @@ const validateInputs = () => {
 
   formElements.value = formElements.value.map((element) => {
     if (
-      visibleFormElements.value.some((visibleElement) => visibleElement.id === element.id) &&
+      formElements.value.some((visibleElement) => visibleElement.id === element.id) &&
       ((element.isRequired && !element.modelValue.trim()) ||
         (element.name === 'email' && !isValidEmail(element.modelValue)))
     ) {
@@ -88,7 +84,7 @@ const submitForm = async (event) => {
     const token = await executeRecaptcha();
 
     // Data to EmailJS + token
-    const templateParams = visibleFormElements.value.reduce((params, element) => {
+    const templateParams = formElements.value.reduce((params, element) => {
       if (element.name === 'newsletter') {
         params[element.name] = element.modelValue ? 'Yes' : 'No';
       } else {
@@ -172,12 +168,7 @@ watch(
       <div>
         <form @submit.prevent="submitForm(formElements)" novalidate id="contact-form">
           <p class="text-right">All fields required *</p>
-          <FormFields
-            v-for="element in visibleFormElements"
-            :key="element.id"
-            v-bind="element"
-            v-model="element.modelValue"
-          />
+          <FormFields v-for="element in formElements" :key="element.id" v-bind="element" v-model="element.modelValue" />
           <p v-if="success">Message sent! <br />Thanks for signing up!</p>
           <button type="submit" class="btn-outline">
             {{ isSubmitting ? 'Sending' : 'SEND' }}
