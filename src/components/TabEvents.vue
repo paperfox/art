@@ -13,42 +13,74 @@
         <h2>Upcoming Events</h2>
         <ul>
           <li>
+            <h3>Art in the Park</h3>
             <p>
-              <strong>Art in Action</strong><br />
-              Thursday, August 6, 5pm - 7:30pm - Art activities for folks of all ages will be happening during Natick
-              Nights! Come make some Art Trading Cards with me!<br />
-              Morse Institute Library Lawn, Natick, MA
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Natick Farmers' Market Market</strong><br />
-              Saturday, August 8, 9am - 1pm<br />
-              12 S Main St, Natick, MA
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Art in the Park</strong><br />
               Sunday, September 13th, 10am to 3pm<br />
               Shaw Park, South Natick, MA
             </p>
           </li>
           <li>
+            <h3>MetroWest Humane Society Craft Fair</h3>
             <p>
-              <strong>MetroWest Humane Society Craft Fair</strong><br />
               Saturday, September 19th, 10am to 4pm<br />
               Framingham Centre Common, 2 Oak Street, Framingham, MA
+            </p>
+          </li>
+          <li>
+            <h3>Apple Fest</h3>
+            <p>
+              Saturday, October 3rd, 10am to 2pm<br />
+              Longfellow's Wayside Inn, 72 Wayside Inn Rd, Sudbury, MA
+            </p>
+          </li>
+          <li>
+            <h3>Natick Artist Open Studios</h3>
+            <p>
+              Saturday & Sunday, October 17 & 18, 11am to 5pm<br />
+              Natick, MA
+            </p>
+          </li>
+          <li>
+            <h3>St. Michael's Holiday Bazaar</h3>
+            <p>
+              Saturday, November 7th, 10am to 3pm<br />
+              1162 Highland St, Holliston, MA
+            </p>
+          </li>
+          <li>
+            <h3>Framingham Rotary Holiday Craft Fair</h3>
+            <p>
+              Saturday, December 12th, 9am to 3pm<br />
+              Keefe Regional Technical School, 750 Winter St, Framingham, MA
             </p>
           </li>
         </ul>
         <br />
         <h2>Past Events</h2>
-        <p>
-          If you stopped by at one of the many events I was at in 2025, it was great to meet you! I had so much fun over
-          the past year, doing new things and meeting new folks. Hope to connect in 2026!
-        </p>
+        <p>2026 has been a busy year. It's been lovely seeing everyone. Thanks for all the support!</p>
         <ul>
+          <li>
+            <p>
+              <strong>Natick Farmers' Market Market</strong><br />
+              August 8
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Art in Action</strong><br />
+              August 6
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Art on the Common</strong><br />
+              May 16
+              <br />
+              <a href="https://www.natickartassociation.org/art-on-the-common" target="_blank"
+                >Art on the Common Info</a
+              >
+            </p>
+          </li>
           <li>
             <p>
               <strong
@@ -67,16 +99,6 @@
               ><br />
               April 20 - May 18<br />
               1 Boston Post Rd. E, Marlborough, MA 01752
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Art on the Common</strong><br />
-              May 16
-              <br />
-              <a href="https://www.natickartassociation.org/art-on-the-common" target="_blank"
-                >Art on the Common Info</a
-              >
             </p>
           </li>
           <li>

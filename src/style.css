@@ -9,7 +9,8 @@
   --main-bg: #282a31;
   --secondary-bg: #14151a;
   --tertiary-bg: #373941;
-  --text-body: #d4d4d6;
+  --text-body: #c9c9cb;
+  --text-heading: #e4e4e8;
   --link: #de7826;
   --white: 255, 255, 255;
   --black: 0, 0, 0;
@@ -82,6 +83,7 @@ h5,
 h6 {
   margin: var(--base-spacing) 0;
   font-weight: 600;
+  color: var(--text-heading);
 }
 
 h1 {
@@ -92,6 +94,7 @@ h2 {
 }
 h3 {
   font-size: 1.8rem;
+  margin-bottom: 0;
 }
 p {
   margin-top: 0;
@@ -103,6 +106,7 @@ p {
   line-height: 1.1;
   margin: 0;
   font-weight: 600;
+  color: var(--text-heading);
 }
 
 .logo-byline {
