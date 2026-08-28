@@ -101,6 +101,7 @@ const activeElementId = computed(() => {
           :src="`./art/${image.link}`"
           :alt="`${image.title}: ${image.desc}`"
           :loading="image.lazy ? 'lazy' : 'eager'"
+          :fetchpriority="image.lazy ? 'low' : 'high'"
         />
       </button>
     </li>
