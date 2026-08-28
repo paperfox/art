@@ -1,13 +1,13 @@
 [
   {
-    "title": "Season's Entrance",
-    "date": "Apr 3, 2026",
-    "desc": "Watercolor and micron pen drawing a morel mushroom wearing high heels holding sunglasses.",
+    "title": "Fancy Mushroom",
+    "date": "Aug 13, 2026",
+    "desc": "Watercolor and micron pen drawing of a porcini mushroom wearing a monocle holding a cane.",
     "dimensions": "7x10 inches",
     "media": ["watercolor", "micron pen"],
     "content": ["plant", "mushroom"],
     "forSale": true,
-    "link": "seasons-entrance.webp",
+    "link": "fancy-mushroom.webp",
     "lazy": false
   },
   {
@@ -85,7 +85,7 @@
     "content": ["plant", "flower"],
     "forSale": false,
     "link": "snapdragon.webp",
-    "lazy": false
+    "lazy": true
   },
   {
     "title": "MASS PRIDE",
@@ -96,7 +96,7 @@
     "content": ["animal", "mushroom", "bird"],
     "forSale": false,
     "link": "massPride.webp",
-    "lazy": false
+    "lazy": true
   },
   {
     "title": "Crocus",
@@ -107,7 +107,7 @@
     "content": ["plant", "flower", "fantasy", "print"],
     "forSale": false,
     "link": "crocus.webp",
-    "lazy": false
+    "lazy": true
   },
   {
     "title": "Sus",
@@ -221,18 +221,6 @@
     "lazy": true
   },
   {
-    "title": "Bitter Dreams",
-    "date": "Jun 23, 2024",
-    "desc": "Linocut and gelli plate prints of jellyfish and birds, some over abstract watercolor backgrounds, conveying the idea of dreams and how when reached they sometimes aren't what they were anticipated to be.",
-    "dimensions": "10x14 inches",
-    "media": ["linocut", "printmaking"],
-    "content": ["jellyfish", "bird", "animal", "fantasy"],
-    "forSale": false,
-    "link": "bitter_dreams.webp",
-    "additionalImages": ["seabirds.webp", "bitter_dreams_addl1.webp"],
-    "lazy": true
-  },
-  {
     "title": "Salmon Run",
     "date": "Dec 31, 2023",
     "desc": "Micron pen and watercolor of a bear carrying off a fish from a fish filled stream in Alaska with 9 sea stars. In the background is a misty forest.",
@@ -288,17 +276,6 @@
     "lazy": true
   },
   {
-    "title": "Yellow-billed Loon",
-    "date": "Oct 4, 2023",
-    "desc": "A loon diving into a school of small fish holding a necklace in its beak with sand dollars on the sea floor.",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen", "ink", "watercolor"],
-    "content": ["bird", "animal"],
-    "forSale": false,
-    "link": "yellow-billed-loon.webp",
-    "lazy": true
-  },
-  {
     "title": "Lion’s Mane Jellyfish",
     "date": "Sep 11, 2023",
     "desc": "Watercolor painting of a lion's mane jellyfish with an abstract blue splatter background.",
@@ -332,17 +309,6 @@
     "lazy": true
   },
   {
-    "title": "Seven of Wands",
-    "date": "Feb 1, 2023",
-    "desc": "Seven burnished poles with roots growing and holding them up with fire at the base and the night sky and stars behind. On the central pole, a hrothgar (a cat person from FFXIV) pole dances in an open button up tee shirt and jean shorts.",
-    "dimensions": "9x12 inches",
-    "media": ["watercolor", "ink", "micron pen"],
-    "content": ["people", "animal", "fantasy", "fanart"],
-    "forSale": false,
-    "link": "seven-of-wands.webp",
-    "lazy": true
-  },
-  {
     "title": "Seven of Cups",
     "date": "Jan 26, 2023",
     "desc": "Puddingway, a loporrit from FInal Fantasy 14, sits reading a recipe book with bowls and cups of pudding around him while thinking of pudding.",
@@ -365,39 +331,6 @@
     "lazy": true
   },
   {
-    "title": "Cosmos",
-    "date": "Jan 27, 2022",
-    "desc": "Watercolor painting of a white-throated magpie jay sitting on a gold crescent holding a golden orb with an abstract pink, gold, and black background with a shining gold circle.",
-    "dimensions": "9x12 inches",
-    "media": ["watercolor", "ink"],
-    "content": ["bird", "animal"],
-    "forSale": false,
-    "link": "cosmos.webp",
-    "lazy": true
-  },
-  {
-    "title": "Long-whiskered Owlet",
-    "date": "Oct 22, 2021",
-    "desc": "Micron pen drawing of an owlet with the night sky behind it.",
-    "dimensions": "6x6 inches",
-    "media": ["micron pen", "ink", "watercolor"],
-    "content": ["owl", "animal"],
-    "forSale": false,
-    "link": "long_whiskered_owlet.webp",
-    "lazy": true
-  },
-  {
-    "title": "Two-spot Ladybug",
-    "date": "Oct 7, 2021",
-    "desc": "Watercolor in red, yellow, blue, and black of a large two-spot ladybug made up of slightly abstract drips of paint, with the antenna and nead giving it distinct ladybug form.",
-    "dimensions": "6x9 inches",
-    "media": ["watercolor"],
-    "content": ["insect", "ladybug", "animal", "print", "cards", "stickers"],
-    "forSale": false,
-    "link": "two_spot_ladybug.webp",
-    "lazy": true
-  },
-  {
     "title": "Almost Rabbits, II",
     "date": "May 2, 2021",
     "desc": "Woodblock print of a pair of jackalopes looking up at the full moon next to a leafless tree, the moon has a silhouette of a rabbit making medicine in it.",
@@ -406,28 +339,6 @@
     "content": ["rabbit", "animal", "fantasy", "landscape"],
     "forSale": false,
     "link": "almost_rabbits_II.webp",
-    "lazy": true
-  },
-  {
-    "title": "Tiny Dragon",
-    "date": "Nov 22, 2020",
-    "desc": "Micron pen drawing on brown paper of a tiny wingless dragon crouched on a teaspoon.",
-    "dimensions": "9x12 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["dragon", "animal", "fantasy"],
-    "forSale": false,
-    "link": "tiny_dragon.webp",
-    "lazy": true
-  },
-  {
-    "title": "Eld's Deer",
-    "date": "Oct 1, 2020",
-    "desc": "Micron pen drawing of an eld's deer running on water with a wave following it.",
-    "dimensions": "8x10 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["deer", "animal"],
-    "forSale": false,
-    "link": "eld_s_deer.webp",
     "lazy": true
   },
   {
