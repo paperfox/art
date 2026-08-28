@@ -1,5 +1,27 @@
 [
   {
+    "title": "Hello, Green Dog",
+    "date": "Aug 18, 2026",
+    "desc": "Watercolor painting of a green dog on a pink background with their nose close to the viewer.",
+    "dimensions": "7x10 inches",
+    "media": ["watercolor"],
+    "content": ["animal", "dog"],
+    "forSale": true,
+    "link": "hello-green-dog.webp",
+    "lazy": false
+  },
+  {
+    "title": "Hello, Pink Cat",
+    "date": "Aug 15, 2026",
+    "desc": "Watercolor painting of a pink cat on a blue background looking up at the viewer.",
+    "dimensions": "7x10 inches",
+    "media": ["watercolor"],
+    "content": ["animal", "cat"],
+    "forSale": true,
+    "link": "hello-pink-cat.webp",
+    "lazy": false
+  },
+  {
     "title": "Fancy Mushroom",
     "date": "Aug 13, 2026",
     "desc": "Watercolor and micron pen drawing of a porcini mushroom wearing a monocle holding a cane.",
@@ -9,6 +31,18 @@
     "forSale": true,
     "link": "fancy-mushroom.webp",
     "lazy": false
+  },
+  {
+    "title": "Modern Hunter",
+    "date": "Jun 10, 2064",
+    "desc": "Woodcut print of a shiba inu hunting a bag of treats on the counter.",
+    "dimensions": "10x14 inches",
+    "media": ["woodcut", "printmaking"],
+    "content": ["dog", "animal"],
+    "forSale": false,
+    "link": "modern-hunter-black.webp",
+    "additionalImages": ["modern-hunter-red.webp"],
+    "lazy": true
   },
   {
     "title": "Narcissus",
@@ -52,7 +86,7 @@
     "content": ["animal", "cheetah"],
     "forSale": true,
     "link": "cheetah-sun.webp",
-    "lazy": false
+    "lazy": true
   },
   {
     "title": "The Way Forward",
@@ -63,7 +97,7 @@
     "content": ["animal", "frog"],
     "forSale": ["true"],
     "link": "frog-coqui.webp",
-    "lazy": false
+    "lazy": true
   },
   {
     "title": "Almost Rabbits, Cosmic",
@@ -74,7 +108,7 @@
     "content": ["animal", "jackalope", "rabbit", "fantasy"],
     "forSale": ["true"],
     "link": "almost-rabbits-cosmic.webp",
-    "lazy": false
+    "lazy": true
   },
   {
     "title": "Snapdragon",
@@ -232,17 +266,6 @@
     "lazy": true
   },
   {
-    "title": "Eight of Cups",
-    "date": "Dec 10, 2023",
-    "desc": "Micron pen and watercolor of a Japanese River Otter on a fallen log with shelf fungi on it over a river.",
-    "dimensions": "6x9 inches",
-    "media": ["micron pen", "watercolor"],
-    "content": ["otter", "animal", "plant", "landscape", "print"],
-    "forSale": false,
-    "link": "japanese_river_otter.webp",
-    "lazy": true
-  },
-  {
     "title": "Play",
     "date": "Dec 1, 2023",
     "desc": "Micron pen and watercolor of three dholes playing near a stream with 3 pools of water with a dry grassy field behind them.",
@@ -317,17 +340,6 @@
     "content": ["people", "animal", "fantasy", "fanart", "print"],
     "forSale": false,
     "link": "seven-of-cups.webp",
-    "lazy": true
-  },
-  {
-    "title": "Sad Mushroom",
-    "date": "Jun 27, 2022",
-    "desc": "A sad mushroom with a red cap sits with their legs kicked up and shining eyes as though they're about to cry. Inspired by the baby bun mini from Final Fantasy 14.",
-    "dimensions": "8x8 inches",
-    "media": ["watercolor", "micron pen"],
-    "content": ["landscape", "plant", "fantasy", "fanart", "print", "cards", "stickers"],
-    "forSale": false,
-    "link": "sad-mushroom.webp",
     "lazy": true
   },
   {

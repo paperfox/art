@@ -171,7 +171,7 @@ dialog.modal[open] {
 
   .modal-title {
     margin-inline: auto;
-    padding-left: 5.6rem; /* accomodates the close button */
+    padding-left: 3.6rem; /* accomodates the close button */
   }
 
   .close-modal {
