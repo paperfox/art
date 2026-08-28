@@ -58,6 +58,10 @@ body {
   max-width: 170rem;
   margin-inline: auto;
   padding: var(--base-spacing) var(--sm-spacing);
+
+  &:has(.nav-tabs-open) {
+    overflow: hidden;
+  }
 }
 
 body.modal-open,
@@ -348,6 +352,8 @@ p:has(.form-error) {
   .nav-tabs {
     flex-direction: column;
     /* align-items: flex-start; */
+    width: 100%;
+    height: 100%;
   }
 
   .navbar {
@@ -355,7 +361,7 @@ p:has(.form-error) {
   }
 
   .nav-tabs {
-    margin: var(--base-spacing) 0;
+    margin: var(--sm-spacing) 0;
     padding: var(--sm-spacing);
     background-color: var(--tertiary-bg);
     position: absolute;
@@ -368,10 +374,11 @@ p:has(.form-error) {
       text-align: right;
       border-bottom: none;
       border-right: var(--border-weight) solid transparent;
+      padding-block: var(--xs-spacing);
 
-      &:not(:last-of-type) {
-        margin-bottom: var(--base-spacing);
-      }
+      /* &:not(:last-of-type) {
+        margin-bottom: var(--xs-spacing);
+      } */
 
       &.active {
         border-bottom: none;

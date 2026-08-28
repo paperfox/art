@@ -103,7 +103,11 @@ const activeElementId = computed(() => {
           modal(image);
         "
       >
-        <img :src="`./art/${image.link}`" :alt="`${image.title}: ${image.desc}`" />
+        <img
+          :src="`./art/${image.link}`"
+          :alt="`${image.title}: ${image.desc}`"
+          :loading="image.lazy ? 'lazy' : 'eager'"
+        />
       </button>
     </li>
   </ul>

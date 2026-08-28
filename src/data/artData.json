@@ -8,7 +8,7 @@
     "content": ["plant", "mushroom"],
     "forSale": true,
     "link": "seasons-entrance.webp",
-    "featured": ["true"]
+    "lazy": false
   },
   {
     "title": "Narcissus",
@@ -19,7 +19,7 @@
     "content": ["plant", "flower"],
     "forSale": true,
     "link": "narcissus.webp",
-    "featured": ["true"]
+    "lazy": false
   },
   {
     "title": "Cycles",
@@ -30,7 +30,7 @@
     "content": ["plant", "flower"],
     "forSale": true,
     "link": "cycles.webp",
-    "featured": ["true"]
+    "lazy": false
   },
   {
     "title": "Diving: Sinking",
@@ -41,7 +41,7 @@
     "content": ["animal", "sea serpent", "fish"],
     "forSale": ["true"],
     "link": "sea-serpent.webp",
-    "featured": ["true"]
+    "lazy": false
   },
   {
     "title": "Wind and Sun",
@@ -52,7 +52,7 @@
     "content": ["animal", "cheetah"],
     "forSale": true,
     "link": "cheetah-sun.webp",
-    "featured": ["true"]
+    "lazy": false
   },
   {
     "title": "The Way Forward",
@@ -63,7 +63,7 @@
     "content": ["animal", "frog"],
     "forSale": ["true"],
     "link": "frog-coqui.webp",
-    "featured": ["true"]
+    "lazy": false
   },
   {
     "title": "Almost Rabbits, Cosmic",
@@ -74,7 +74,7 @@
     "content": ["animal", "jackalope", "rabbit", "fantasy"],
     "forSale": ["true"],
     "link": "almost-rabbits-cosmic.webp",
-    "featured": ["true"]
+    "lazy": false
   },
   {
     "title": "Snapdragon",
@@ -85,7 +85,7 @@
     "content": ["plant", "flower"],
     "forSale": false,
     "link": "snapdragon.webp",
-    "featured": ["false"]
+    "lazy": false
   },
   {
     "title": "MASS PRIDE",
@@ -96,7 +96,7 @@
     "content": ["animal", "mushroom", "bird"],
     "forSale": false,
     "link": "massPride.webp",
-    "featured": ["false"]
+    "lazy": false
   },
   {
     "title": "Crocus",
@@ -107,7 +107,7 @@
     "content": ["plant", "flower", "fantasy", "print"],
     "forSale": false,
     "link": "crocus.webp",
-    "featured": ["false"]
+    "lazy": false
   },
   {
     "title": "Sus",
@@ -118,7 +118,7 @@
     "content": ["plant", "mushroom", "fantasy", "print"],
     "forSale": false,
     "link": "mushroom_sus.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Shelter to Wonder",
@@ -129,7 +129,7 @@
     "content": ["plant", "mushroom", "fantasy", "print"],
     "forSale": false,
     "link": "mushroom_parent.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Joy",
@@ -140,7 +140,7 @@
     "content": ["plant", "mushroom", "fantasy", "print"],
     "forSale": false,
     "link": "mushroom_joy.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Sunset Wyvern",
@@ -151,7 +151,7 @@
     "content": ["dragon", "wyvern", "animal", "fantasy", "print"],
     "forSale": false,
     "link": "sunset-wyvern.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Giant Panda",
@@ -162,7 +162,7 @@
     "content": ["panda", "animal", "stickers"],
     "forSale": false,
     "link": "giant_panda.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Sea Serpent Dreams of Flying",
@@ -173,7 +173,7 @@
     "content": ["dragon", "iguana", "animal", "fantasy", "print"],
     "forSale": false,
     "link": "sea_serpent_dreams_of_flying.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Pernambuco Pygmy-owl",
@@ -184,7 +184,7 @@
     "content": ["bird", "animal", "cards", "print"],
     "forSale": false,
     "link": "pernambuco_pygmy_owl.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "How We Dance",
@@ -195,7 +195,7 @@
     "content": ["bird", "animal", "print"],
     "forSale": false,
     "link": "conflict.webp",
-    "featured": ["true"]
+    "lazy": true
   },
   {
     "title": "Sunshine",
@@ -206,7 +206,7 @@
     "content": ["bird", "flower", "plant", "animal"],
     "forSale": false,
     "link": "sunshine.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Jellyfish",
@@ -218,7 +218,7 @@
     "forSale": false,
     "link": "jellyfish_print.webp",
     "additionalImages": ["jellyfish_print_addl1.webp", "jellyfish_print_addl2.webp", "jellyfish_print_addl3.webp"],
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Bitter Dreams",
@@ -230,7 +230,7 @@
     "forSale": false,
     "link": "bitter_dreams.webp",
     "additionalImages": ["seabirds.webp", "bitter_dreams_addl1.webp"],
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Salmon Run",
@@ -241,7 +241,7 @@
     "content": ["fish", "animal", "bear", "landscape", "print"],
     "forSale": false,
     "link": "salmon_run.webp",
-    "featured": ["true"]
+    "lazy": true
   },
   {
     "title": "Eight of Cups",
@@ -252,7 +252,7 @@
     "content": ["otter", "animal", "plant", "landscape", "print"],
     "forSale": false,
     "link": "japanese_river_otter.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Play",
@@ -263,7 +263,7 @@
     "content": ["dog", "animal", "landscape", "print"],
     "forSale": false,
     "link": "dhole_party.webp",
-    "featured": ["true"]
+    "lazy": true
   },
   {
     "title": "Pancakes with Henry",
@@ -274,7 +274,7 @@
     "content": ["demon", "horror", "fantasy", "people", "fanart"],
     "forSale": false,
     "link": "pancakes_with_henry.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Indian Bison",
@@ -285,7 +285,7 @@
     "content": ["bison", "animal"],
     "forSale": false,
     "link": "indian_bison.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Yellow-billed Loon",
@@ -296,7 +296,7 @@
     "content": ["bird", "animal"],
     "forSale": false,
     "link": "yellow-billed-loon.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Lion’s Mane Jellyfish",
@@ -307,7 +307,7 @@
     "content": ["jellyfish", "animal", "print"],
     "forSale": false,
     "link": "lion-jelly.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Fog at Sea",
@@ -318,7 +318,7 @@
     "content": ["bird", "landscape", "animal", "print"],
     "forSale": false,
     "link": "fog-at-sea.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Rainbow Inkblot Cat",
@@ -329,7 +329,7 @@
     "content": ["bird", "animal", "cards"],
     "forSale": false,
     "link": "rainbow-shadowcat.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Seven of Wands",
@@ -340,7 +340,7 @@
     "content": ["people", "animal", "fantasy", "fanart"],
     "forSale": false,
     "link": "seven-of-wands.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Seven of Cups",
@@ -351,7 +351,7 @@
     "content": ["people", "animal", "fantasy", "fanart", "print"],
     "forSale": false,
     "link": "seven-of-cups.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Sad Mushroom",
@@ -362,7 +362,7 @@
     "content": ["landscape", "plant", "fantasy", "fanart", "print", "cards", "stickers"],
     "forSale": false,
     "link": "sad-mushroom.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Cosmos",
@@ -373,7 +373,7 @@
     "content": ["bird", "animal"],
     "forSale": false,
     "link": "cosmos.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Long-whiskered Owlet",
@@ -384,7 +384,7 @@
     "content": ["owl", "animal"],
     "forSale": false,
     "link": "long_whiskered_owlet.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Two-spot Ladybug",
@@ -395,7 +395,7 @@
     "content": ["insect", "ladybug", "animal", "print", "cards", "stickers"],
     "forSale": false,
     "link": "two_spot_ladybug.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Almost Rabbits, II",
@@ -406,7 +406,7 @@
     "content": ["rabbit", "animal", "fantasy", "landscape"],
     "forSale": false,
     "link": "almost_rabbits_II.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Tiny Dragon",
@@ -417,7 +417,7 @@
     "content": ["dragon", "animal", "fantasy"],
     "forSale": false,
     "link": "tiny_dragon.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Eld's Deer",
@@ -428,7 +428,7 @@
     "content": ["deer", "animal"],
     "forSale": false,
     "link": "eld_s_deer.webp",
-    "featured": ["false"]
+    "lazy": true
   },
   {
     "title": "Goji Pet Portrait",
@@ -439,6 +439,6 @@
     "content": ["dog", "animal"],
     "forSale": false,
     "link": "goji_pet_portrait.webp",
-    "featured": ["false"]
+    "lazy": true
   }
 ]

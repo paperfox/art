@@ -74,7 +74,7 @@ onMounted(() => {
         >
           <span class="toggle-icon" />
         </button>
-        <div ref="navTabsRef" class="nav-tabs" :class="!isOpen ? 'closed' : ''">
+        <div ref="navTabsRef" class="nav-tabs" :class="!isOpen ? 'closed' : 'nav-tabs-open'">
           <button
             v-for="tabItem of tabs"
             :key="tabItem.name"

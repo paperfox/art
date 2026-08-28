@@ -27,7 +27,7 @@
             </p>
           </li>
           <li>
-            <h3>Apple Fest</h3>
+            <h3><a href="https://www.wayside.org/events/applefest" target="_blank">Apple Fest</a></h3>
             <p>
               Saturday, October 3rd, 10am to 2pm<br />
               Longfellow's Wayside Inn, 72 Wayside Inn Rd, Sudbury, MA
