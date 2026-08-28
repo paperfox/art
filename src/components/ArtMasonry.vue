@@ -21,14 +21,8 @@ const modal = async (imgData) => {
   focusModal();
 };
 
-const goToPrev = () => {
-  const prevIndex = (currentIndex.value - 1 + props.images.length) % props.images.length;
-  currentIndex.value = prevIndex;
-  openModal(props.images[prevIndex]);
-};
-
-const goToNext = () => {
-  const nextIndex = (currentIndex.value + 1) % props.images.length;
+const goToOffset = (offset) => {
+  const nextIndex = (currentIndex.value + offset + props.images.length) % props.images.length;
   currentIndex.value = nextIndex;
   openModal(props.images[nextIndex]);
 };
@@ -112,5 +106,5 @@ const activeElementId = computed(() => {
     </li>
   </ul>
 
-  <Dialog :activeElement="activeElementId" :goToPrev="goToPrev" :goToNext="goToNext" />
+  <Dialog :activeElement="activeElementId" :goToPrev="() => goToOffset(-1)" :goToNext="() => goToOffset(1)" />
 </template>

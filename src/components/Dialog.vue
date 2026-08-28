@@ -45,6 +45,21 @@ onBeforeUnmount(() => {
 const handleKeydown = (event) => {
   if (event.key === 'Escape' && isModalVisible.value) {
     closeModalWithFocus();
+    return;
+  }
+
+  if (!isModalVisible.value) {
+    return;
+  }
+
+  if (event.key === 'ArrowLeft' && props.goToPrev) {
+    event.preventDefault();
+    props.goToPrev();
+  }
+
+  if (event.key === 'ArrowRight' && props.goToNext) {
+    event.preventDefault();
+    props.goToNext();
   }
 };
 
