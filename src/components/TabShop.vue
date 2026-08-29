@@ -43,10 +43,11 @@ const items = [
 <template>
   <div class="text-content">
     <h1>Shop</h1>
-    <p class="bottom-margin">
+    <p>
       For stickers, prints, and more, check out
       <a href="https://paperfoxmakesart.etsy.com" target="_blank">my Etsy shop!</a>
     </p>
+    <br />
     <div class="shop-container">
       <a class="shop-item" v-for="item in items" :key="item.title" :href="item.link" target="_blank">
         <div class="shop-image">
@@ -104,9 +105,5 @@ const items = [
       padding-bottom: var(--base-spacing);
     }
   }
-}
-
-.bottom-margin {
-  margin-bottom: var(--sm-spacing);
 }
 </style>

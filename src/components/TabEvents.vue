@@ -1,14 +1,9 @@
 <script setup></script>
 <template>
   <div class="text-content">
-    <h1>Events</h1>
+    <h1>Events & Shows</h1>
+    <p>If you're in the area, drop by and say hi at some of the events and shows I'm taking part in.</p>
     <div>
-      <div>
-        <p>
-          If you're in New England, drop by and say hi at some of the events I'm taking part in. Updated as I commit to
-          events throughout 2026.
-        </p>
-      </div>
       <div>
         <h2>Upcoming Events</h2>
         <ul>
@@ -55,66 +50,57 @@
             </p>
           </li>
         </ul>
-        <br />
-        <h2>Past Events</h2>
-        <p>2026 has been a busy year. It's been lovely seeing everyone. Thanks for all the support!</p>
+      </div>
+      <div>
+        <h2>Current Shows</h2>
         <ul>
           <li>
+            <h3>Local Clouds, Gallery 01760 Solo Show</h3>
             <p>
-              <strong>Natick Farmers' Market Market</strong><br />
-              August 8
+              September<br />
+              Micro Gallery, Adams St. Natick, MA<br />
+              My solo show of miniature works will be on display through the month of September in the outdoor Micro
+              Gallery 01760 on Adams St. Come check out my collection, Local Clouds.
             </p>
           </li>
           <li>
+            <h3>Morse Institute Library Group Show</h3>
             <p>
-              <strong>Art in Action</strong><br />
-              August 6
+              September & October - Opening September 9, 630 - 730pm<br />
+              Morse Institute Library, Natick, MA<br />
+              For two months, the library will feature work by Natick Art Association members, including 3 of my pieces.
             </p>
           </li>
           <li>
+            <h3>Natick Town Hall Group Show</h3>
             <p>
-              <strong>Art on the Common</strong><br />
-              May 16
-              <br />
-              <a href="https://www.natickartassociation.org/art-on-the-common" target="_blank"
-                >Art on the Common Info</a
-              >
+              Now through March 5, 2027<br />
+              Natick Town Hall, Natick, MA<br />
+              Town hall is hosting a collection of works by Natick Art Association members, including 2 of my pieces.
             </p>
+          </li>
+        </ul>
+        <br />
+      </div>
+    </div>
+    <div>
+      <div>
+        <h2>Past Events</h2>
+        <p>It's been lovely seeing everyone at these events so far. Thanks for all the support!</p>
+        <ul>
+          <li>August 8 - <strong>Natick Farmers' Market Market</strong></li>
+          <li>August 6 - <strong>Art in Action</strong></li>
+          <li>May 16 - <strong>Art on the Common</strong></li>
+          <li>
+            April 1 - May 31 -
+            <strong>Sweetwater Coffee & Tea Show</strong>
           </li>
           <li>
-            <p>
-              <strong
-                ><a href="https://www.sweetwaterscafe.com/ma-natick-center/" target="_blank">Sweetwater Coffee & Tea</a>
-                Show</strong
-              ><br />
-              April 1 - May 31
-              <br />
-              19 S Main St, Natick, MA 01760
-            </p>
+            April 20 - May 18 -
+            <strong>Post Road Art Center Juried Exhibition</strong>
           </li>
-          <li>
-            <p>
-              <strong
-                ><a href="https://postroadartcenter.com/" target="_blank">Post Road Art Center</a> Exhibition</strong
-              ><br />
-              April 20 - May 18<br />
-              1 Boston Post Rd. E, Marlborough, MA 01752
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Art in Bloom</strong><br />
-              May 2 & 3<br />
-              Morse Institute Library Lawn, Natick, MA
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Natick Farmers' Market Winter Market</strong><br />
-              Saturday, March 7<br />
-              13 Common St, Natick, MA 01760
-            </p>
-          </li>
+          <li>May 2 & 3 - <strong>Art in Bloom</strong></li>
+          <li>March 7 - <strong>Natick Farmers' Market Winter Market</strong></li>
         </ul>
       </div>
     </div>
