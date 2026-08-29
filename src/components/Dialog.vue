@@ -107,15 +107,26 @@ watch(
     <section class="modal-content">
       <img :src="`./art/${modalImage?.link}`" :alt="modalImage?.desc" />
       <img v-for="img in modalImage?.additionalImages" :key="img" :src="`./art/${img}`" :alt="modalImage?.desc" />
-      <div>
-        <p>
-          {{ modalImage?.date }} &nbsp; | &nbsp;
-          {{ modalImage?.media.map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(', ') }}
-        </p>
-        <div class="modal-nav">
+
+      <p>
+        {{ modalImage?.date }} &nbsp; | &nbsp;
+        {{ modalImage?.media.map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(', ') }}
+      </p>
+      <div class="modal-nav">
+        <div class="nav">
           <button aria-label="previous button" @click="goToPrev">< Previous</button>
           <button aria-label="next button" @click="goToNext">Next ></button>
         </div>
+        <br />
+        <button
+          class="close-modal"
+          aria-label="close modal"
+          @click="closeModalWithFocus"
+          commandfor="my-dialog"
+          command="close"
+        >
+          Close
+        </button>
       </div>
     </section>
   </dialog>
@@ -126,13 +137,15 @@ dialog.modal {
   display: none;
   background: var(--main-bg);
   border: none;
-  backdrop-filter: blur(3px);
+  /* backdrop-filter: blur(3px); */
   color: var(--text-body);
   flex-direction: column;
   width: 100%;
-  max-height: calc(100% - 4rem);
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
   z-index: 1000;
-  box-shadow: 0 0 4rem rgba(var(--black), 0.6);
+  /* box-shadow: 0 0 4rem rgba(var(--black), 0.6); */
 }
 
 dialog.modal[open] {
@@ -140,12 +153,21 @@ dialog.modal[open] {
 }
 
 .modal-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: var(--base-spacing);
+  margin-top: auto;
 
-  button {
-    margin: 0;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--base-spacing);
+
+    button {
+      margin: 0;
+    }
+  }
+
+  .close-modal {
+    display: flex;
+    margin: auto;
   }
 }
 
@@ -154,6 +176,7 @@ dialog.modal[open] {
   justify-content: center;
   flex-direction: column;
   margin: 0 2.4rem var(--base-spacing);
+  height: 100%;
 
   * {
     margin: var(--base-spacing) auto;
