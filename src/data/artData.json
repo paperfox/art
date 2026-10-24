@@ -64,7 +64,7 @@
     "content": ["plant", "flower"],
     "forSale": true,
     "link": "cycles.webp",
-    "lazy": false
+    "lazy": true
   },
   {
     "title": "Diving: Sinking",
@@ -75,7 +75,7 @@
     "content": ["animal", "sea serpent", "fish"],
     "forSale": ["true"],
     "link": "sea-serpent.webp",
-    "lazy": false
+    "lazy": true
   },
   {
     "title": "Wind and Sun",
