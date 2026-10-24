@@ -8,38 +8,28 @@
         <h2>Upcoming Events</h2>
         <ul>
           <li>
-            <h3>Art in the Park</h3>
-            <p>
-              Sunday, September 13th, 10am to 3pm<br />
-              Shaw Park, South Natick, MA
-            </p>
-          </li>
-          <li>
-            <h3>MetroWest Humane Society Craft Fair</h3>
-            <p>
-              Saturday, September 19th, 10am to 4pm<br />
-              Framingham Centre Common, 2 Oak Street, Framingham, MA
-            </p>
-          </li>
-          <li>
-            <h3><a href="https://www.wayside.org/events/applefest" target="_blank">Apple Fest</a></h3>
-            <p>
-              Saturday, October 3rd, 10am to 2pm<br />
-              Longfellow's Wayside Inn, 72 Wayside Inn Rd, Sudbury, MA
-            </p>
-          </li>
-          <li>
-            <h3>Natick Artist Open Studios</h3>
-            <p>
-              Saturday & Sunday, October 17 & 18, 11am to 5pm<br />
-              Natick, MA
-            </p>
-          </li>
-          <li>
             <h3>St. Michael's Holiday Bazaar</h3>
             <p>
               Saturday, November 7th, 10am to 3pm<br />
               1162 Highland St, Holliston, MA
+            </p>
+          </li>
+          <li>
+            <h3>
+              <a href="https://snowfarm.org/support/seconds-sale/">Snow Farm Seconds Sale</a>
+            </h3>
+            <p>
+              <b>Friday through Sunday, 10am - 4pm, last three weekends in November</b> (November 13, 14, 15 November
+              20, 21, 22 November 27, 28, 29)<br />
+              5 Clary Rd, Williamsburg, MA
+            </p>
+          </li>
+
+          <li>
+            <h3>Bellforge Holiday Stroll</h3>
+            <p>
+              <b>Friday, December 4th, 4pm - 8:30pm</b><br />
+              468 Main Street, Medfield, MA
             </p>
           </li>
           <li>
@@ -54,15 +44,6 @@
       <div>
         <h2>Current Shows</h2>
         <ul>
-          <li>
-            <h3>Local Clouds, Gallery 01760 Solo Show</h3>
-            <p>
-              September<br />
-              Micro Gallery, Adams St. Natick, MA<br />
-              My solo show of miniature works will be on display through the month of September in the outdoor Micro
-              Gallery 01760 on Adams St. Come check out my collection, Local Clouds.
-            </p>
-          </li>
           <li>
             <h3>Morse Institute Library Group Show</h3>
             <p>
@@ -88,6 +69,10 @@
         <h2>Past Events</h2>
         <p>It's been lovely seeing everyone at these events so far. Thanks for all the support!</p>
         <ul>
+          <li>September 13 - <strong>Art in the Park</strong></li>
+          <li>September 19 - <strong>MetroWest Humane Society Craft Fair</strong></li>
+          <li>October 3 - <strong>Apple Fest</strong></li>
+          <li>October 17 & 18 - <strong>Natick Artist Open Studios</strong></li>
           <li>August 8 - <strong>Natick Farmers' Market Market</strong></li>
           <li>August 6 - <strong>Art in Action</strong></li>
           <li>May 16 - <strong>Art on the Common</strong></li>
