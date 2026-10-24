@@ -66,7 +66,7 @@
     </div>
     <div>
       <div>
-        <h2>Past Events</h2>
+        <h2>2026 Past Events</h2>
         <p>It's been lovely seeing everyone at these events so far. Thanks for all the support!</p>
         <ul>
           <li>September 13 - <strong>Art in the Park</strong></li>
