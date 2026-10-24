@@ -71,6 +71,7 @@
         <ul>
           <li>September 13 - <strong>Art in the Park</strong></li>
           <li>September 19 - <strong>MetroWest Humane Society Craft Fair</strong></li>
+          <li>September - <strong>Local Clouds Micro Gallery Show</strong></li>
           <li>October 3 - <strong>Apple Fest</strong></li>
           <li>October 17 & 18 - <strong>Natick Artist Open Studios</strong></li>
           <li>August 8 - <strong>Natick Farmers' Market Market</strong></li>
