@@ -58,6 +58,10 @@ const items = [
         </div>
       </a>
     </div>
+    <p>
+      Please note that I will only fulfill online orders made through my Etsy, PaperfoxMakesArt. Too many scams out
+      there friends, if you're seeing my items for sale anywhere other than my Etsy shop linked above, it's not legit!
+    </p>
   </div>
 </template>
 
